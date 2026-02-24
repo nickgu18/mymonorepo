@@ -1,0 +1,399 @@
+Found 118 verification files to analyze.
+
+--- Analysis for: 0d1951bc_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 0d1951bc_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 0d1951bc_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 0d1951bc_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the `useSettings` custom hook, defined in `src/common/useSettings.ts`, save the application settings to `localStorage` using the key `'settings'`?"
+      Reason: The question asks to verify a specific, factual detail about a piece of code. This is a common way to check the correctness of a `generated_answer` that consists of a code snippet.
+
+--- Analysis for: 0d1951bc_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Is the component responsible for rendering the detailed movie view located at the file path `src/routes/MetaDetails/MetaDetails.js`?"
+      Reason: The question seeks to confirm a specific, factual claim (the location of a code component). This is a direct way to verify the correctness of information that would typically be found in a 'generated_answer' from a previous turn.
+
+--- Analysis for: 159c81f2_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans1.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "(no output)"
+      Reason: The phrase "(no output)" is a description of a possible state of a `generated_answer`. It indicates that the AI model did not produce a response in a previous step, which is a direct reference to the result of that generation process.
+
+--- Analysis for: 245bee7d_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Is a hook named `useToast` exported from a file located at `src/common/Toast`?"
+      Reason: The question seeks to verify a factual claim about the state of the codebase. This is the kind of specific detail that an AI might generate as an answer, and the question is designed to check if that information is accurate.
+
+--- Analysis for: 3884af73_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "To update user settings, does a component dispatch an action to the `core.transport` with a nested structure of `{ action: 'Ctx', args: { action: 'UpdateSettings', ... } }`?"
+      Reason: The question asks to verify a specific, technical implementation detail—the exact nested structure of an action being dispatched. This is characteristic of confirming the accuracy of a previously generated piece of information or code snippet, which would be the 'generated_answer'.
+
+--- Analysis for: 4841f118_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the implementation in `src/App/withProtectedRoutes.js` cause a redirect to the `/intro` route if the access conditions are not met?"
+      Reason: The question is asking to verify the behavior of a specific code implementation. This implementation is the 'generated_answer' that the question is designed to validate.
+
+--- Analysis for: 588ef3d8_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the Dockerfile's 'builder' stage execute the `pnpm build` command to create the production build of the application?"
+      Reason: The question is asking to verify a specific implementation detail within a file (the Dockerfile). This implies it is checking the content of an artifact that could have been a 'generated_answer' from a previous step.
+  [!] Self-reference DETECTED in Question #2:
+      Question: "In the final stage of the Dockerfile, are both `package.json` and `http_server.js` copied directly from the host build context?"
+      Reason: The question is asking to verify the contents of a Dockerfile. A Dockerfile is a code artifact that can be considered a 'generated_answer' from a previous step, and the question is checking the correctness of its content.
+
+--- Analysis for: 82f0c213_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is the `CoreSuspender` component rendered inside a `React.Suspense` component that is configured with a `fallback` prop?"
+      Reason: The question asks to verify a specific, factual detail about the structure of a piece of code. This type of question is designed to check whether a 'generated_answer' (a code snippet) meets a particular implementation requirement.
+
+--- Analysis for: 903ad80b_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 98904ff8_verification_ans1.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "In `src/routes/Player/usePlayer.js`, does the `timeChanged` function dispatch an action to `core.transport` with a top-level `action` property of `'Player'` and a nested `action` property of `'TimeChanged'`?"
+      Reason: The question asks to verify a specific, factual detail about the code's implementation. This is a direct method for checking the accuracy of a prior response that either generated this code or described its functionality, which would be the 'generated_answer'.
+
+--- Analysis for: 98904ff8_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 98904ff8_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is the final list of "Continue Watching" items sorted in descending order based on the `mtime` property of each item?"
+      Reason: The question is asking to verify a specific property (sort order) of a final output (the list of 'Continue Watching' items). This output is the result of a previous step, which corresponds to the 'generated_answer'.
+
+--- Analysis for: 98904ff8_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 98904ff8_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: a63a57da_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: a63a57da_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is the `MetaItem` data structure an extension of `MetaItemPreview` that adds a `videos` property containing an array of `Video` objects?"
+      Reason: The question seeks to verify a specific, factual statement about the relationship and properties of two data structures. This is a direct confirmation of information that would be present in a `generated_answer` describing these structures.
+
+--- Analysis for: a63a57da_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "In `src/types/MetaItem.d.ts`, is the `MetaItem` type defined in a way that it includes all the properties of the `MetaPreview` type?"
+      Reason: The question asks to verify a specific condition within a source code file. This condition is a potential outcome of a code modification that could have been the `generated_answer`. The question checks if the `generated_answer` (the code change) correctly implemented the requirement of extending `MetaPreview`.
+
+--- Analysis for: a63a57da_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: a63a57da_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: b310ec73_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: b310ec73_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: b310ec73_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: b310ec73_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: be576224_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: be576224_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the `App.js` file import and provide a `ServicesContext` from a file within the `src/services/ServicesContext/` directory?"
+      Reason: The question asks to verify a specific state of the codebase. This is a factual check that can be used to determine if a previously generated answer, which might have involved modifying the `App.js` file, was implemented correctly.
+
+--- Analysis for: be576224_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: be576224_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the key mapping logic in `src/routes/Player/Player.js` define that pressing the 'Space' key toggles play/pause and pressing the 'Escape' key navigates back in history?"
+      Reason: The question is asking to verify a specific state or logic within the codebase. This type of question is designed to confirm whether a code modification, which is the 'generated_answer', was implemented correctly according to a set of requirements.
+
+--- Analysis for: ce677642_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "In `src/components/HorizontalScroll/HorizontalScroll.js`, is there a styled component named `VirtualContent` that is explicitly given a width equal to the total width of all items to create the scrollbar?"
+      Reason: The question seeks to verify a specific implementation detail within a named file. This detail is a factual claim (the existence and properties of a `VirtualContent` styled component) that would typically be found in a `generated_answer` describing the code.
+
+--- Analysis for: db254ecb_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `onFileDrop` function in `src/common/FileDrop/onFileDrop.ts` contain logic to specifically filter for files with either a `.torrent` extension or a `video/` MIME type?"
+      Reason: The question asks to verify a specific, factual detail about the contents of a file. This is a classic verification pattern used to check the correctness of a previously generated AI response (the 'generated_answer'), such as code or a description of code.
+
+--- Analysis for: db254ecb_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the logic within `src/common/FileDrop/onFileDrop.ts` dispatch an action named "play-on-shell" to handle a dropped torrent file?"
+      Reason: The question asks for a factual verification of specific logic within a file. This is a targeted check to confirm whether a particular detail, which would have been part of a previously generated response or code change, is present and correct.
+
+--- Analysis for: f71306a4_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: f71306a4_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: f71306a4_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the main "Board" screen's implementation call a function named `getVisibleChildrenRange` to determine the range of items currently visible in the viewport?"
+      Reason: The question seeks to confirm a specific, factual detail about the codebase's implementation. This is the type of assertion an AI's 'generated_answer' would make, and the question is designed to verify if that assertion is true.
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is there a function named `loadBoardRows` that is responsible for fetching data from the core for the visible items on the "Board" screen?"
+      Reason: The question seeks to confirm a specific, factual detail about the codebase (the existence and purpose of the `loadBoardRows` function). This is a classic example of verifying a statement that could have been generated by an AI in a previous turn.
+
+--- Analysis for: f71306a4_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: f71306a4_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the "Board" screen's implementation use a function named `getVisibleChildrenRange` to calculate the start and end indices of visible list items?"
+      Reason: The question seeks to verify a specific, factual claim about the implementation of a piece of code. This type of detailed question is characteristic of confirming information that would have been presented in a `generated_answer`.

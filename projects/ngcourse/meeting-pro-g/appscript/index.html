@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Ukiyo-e Palette */
+        --indigo-dye: #2A4065;   /* Aizuri-e */
+        --paper-cream: #F4F1E8;  /* Washi Paper */
+        --vermilion: #E85D4E;    /* Seal Red */
+        --sumi-ink: #1A1A1A;     /* Black Ink */
+        --pine-green: #4A6C56;   /* Muted Green */
+      }
+
+      body {
+        font-family: 'Noto Serif JP', serif;
+        background-color: var(--paper-cream);
+        color: var(--sumi-ink);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        /* Subtle texture simulating paper */
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+      }
+
+      .container {
+        width: 100%;
+        max-width: 500px;
+        padding: 40px;
+        border: 2px solid var(--indigo-dye);
+        box-shadow: 10px 10px 0 var(--indigo-dye); /* Block print shadow style */
+        background-color: #fff;
+      }
+
+      h2 {
+        text-align: center;
+        color: var(--indigo-dye);
+        font-weight: 700;
+        margin-bottom: 40px;
+        letter-spacing: 0.1em;
+        border-bottom: 2px solid var(--vermilion);
+        display: inline-block;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--indigo-dye);
+        font-size: 0.9em;
+        letter-spacing: 0.05em;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        border: 1px solid var(--indigo-dye);
+        background-color: transparent;
+        font-family: 'Noto Serif JP', serif;
+        color: var(--sumi-ink);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      input:focus, select:focus {
+        outline: none;
+        background-color: rgba(42, 64, 101, 0.05);
+        border-color: var(--vermilion);
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: var(--indigo-dye);
+        color: var(--paper-cream);
+        border: none;
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+
+      button:hover {
+        background-color: var(--vermilion);
+        box-shadow: 4px 4px 0 var(--sumi-ink);
+        transform: translate(-2px, -2px);
+      }
+      
+      button:active {
+         transform: translate(0, 0);
+         box-shadow: none;
+      }
+      
+      button.secondary {
+        background-color: var(--pine-green);
+        margin-top: 15px;
+      }
+      
+      button.secondary:hover {
+         background-color: #385a44;
+      }
+
+      #status {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0.9em;
+        min-height: 20px;
+        color: var(--pine-green);
+      }
+
+      /* Seal-like accent */
+      .seal-mark {
+        text-align: right;
+        font-size: 0.8em;
+        color: var(--vermilion);
+        margin-top: 30px;
+        opacity: 0.8;
+      }
+
+    </style>
+    </head>
+  <body>
+    <div class="container">
+      <h2>Meeting Scheduler</h2>
+      <form id="configForm">
+        <div class="form-group">
+          <label for="cloudRunUrl">Cloud Run Endpoint</label>
+          <input type="text" id="cloudRunUrl" name="cloudRunUrl" placeholder="https://...">
+        </div>
+        <div class="form-group">
+          <label for="triggerDuration">Check Frequency</label>
+          <select id="triggerDuration" name="triggerDuration">
+            <option value="1">Every Minute</option>
+            <option value="5">Every 5 Minutes</option>
+            <option value="10">Every 10 Minutes</option>
+            <option value="30">Every 30 Minutes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="preferredDuration">Duration (Min)</label>
+          <input type="number" id="preferredDuration" name="preferredDuration" value="30">
+        </div>
+        <div class="form-group">
+          <label for="timezone">Timezone</label>
+          <input type="text" id="timezone" name="timezone" value="America/New_York">
+        </div>
+        <button type="button" onclick="saveConfig()">Save Settings</button>
+        <button type="button" onclick="manualTrigger()" class="secondary">Check Emails Now</button>
+      </form>
+      <div id="status"></div>
+      <div class="seal-mark">会議予定</div>
+      </div>
+
+    <script>
+        function manualTrigger() {
+          const btn = document.querySelector('button.secondary');
+          const originalText = btn.innerText;
+          btn.innerText = 'Checking...';
+          btn.disabled = true;
+
+          google.script.run.withSuccessHandler(function (msg) {
+            document.getElementById('status').style.color = 'var(--pine-green)';
+            document.getElementById('status').innerText = msg;
+            btn.innerText = originalText;
+            btn.disabled = false;
+          }).withFailureHandler(function (err) {
+            document.getElementById('status').style.color = 'var(--vermilion)';
+            document.getElementById('status').innerText = 'Error: ' + err.message;
+            btn.innerText = originalText;
+            btn.disabled = false;
+          }).checkEmails();
+        }
+
+        function saveConfig() {
+        const btn = document.querySelector('#configForm > button'); // First button (Save)
+        const originalText = btn.innerText;
+        btn.innerText = 'Saving...';
+        btn.disabled = true;
+
+        var cloudRunUrl = document.getElementById('cloudRunUrl').value;
+        var triggerDuration = document.getElementById('triggerDuration').value;
+        var preferredDuration = document.getElementById('preferredDuration').value;
+        var timezone = document.getElementById('timezone').value;
+
+        google.script.run.withSuccessHandler(function () {
+          onSuccess();
+          btn.innerText = originalText;
+          btn.disabled = false;
+        }).withFailureHandler(function (err) {
+          document.getElementById('status').style.color = 'var(--vermilion)';
+          document.getElementById('status').innerText = 'Error: ' + err.message;
+          btn.innerText = originalText;
+          btn.disabled = false;
+        }).saveSettings({
+          cloudRunUrl: cloudRunUrl,
+          triggerDuration: triggerDuration,
+          preferredDuration: preferredDuration,
+          timezone: timezone
+        });
+      }
+
+        function onSuccess() {
+          const status = document.getElementById('status');
+          status.style.color = 'var(--pine-green)';
+          status.innerText = 'Settings saved successfully.';
+          setTimeout(() => { status.innerText = ''; }, 3000);
+        }
+      
+        google.script.run.withSuccessHandler(function (settings) {
+          if (settings.cloudRunUrl) document.getElementById('cloudRunUrl').value = settings.cloudRunUrl;
+          if (settings.triggerDuration) document.getElementById('triggerDuration').value = settings.triggerDuration;
+          if (settings.preferredDuration) document.getElementById('preferredDuration').value = settings.preferredDuration;
+          if (settings.timezone) document.getElementById('timezone').value = settings.timezone;
+        }).getSettings();
+      </script>
+    </body>
+</html>

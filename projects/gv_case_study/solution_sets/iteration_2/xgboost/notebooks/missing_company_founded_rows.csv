@@ -1,0 +1,7 @@
+person_id,company_id,performance,education_tier,education_level_score,founder_has_perf,founder_perf_mean,founder_perf_max,founder_perf_last,industry,is_founder_of_target,company_founded,label
+SAZwARIGBAYwBQQJHzk=,SBVwHQAFEAk=,1.0,1.0,5.0,1,1.0,1.0,1.0,Information Technology,True,,0
+SAZwEAAFDA0DMgcCBDMdDzRVWF4=,SBVwFQYCCQ0wHwAGGjI=,1.0,5.0,4.0,1,1.0,1.0,1.0,Information Technology,True,,0
+SAZwEAAdDAwwDBcOEzEH,SBVwAgQFHAcaHg==,1.0,1.0,5.0,1,1.0,1.0,1.0,Other,True,,0
+SAZwERMCBjcVBQoSKW9EUw==,SBVwHQAFEAk=,1.0,1.0,4.0,1,1.0,1.0,1.0,Information Technology,True,,0
+SAZwFQ0OHTcHGAsAKW9EUw==,SBVwFQYCCQ0wHwAGGjI=,1.0,5.0,1.0,1,1.0,1.0,1.0,Information Technology,True,,0
+SAZwHAQPABoGBjoTHzUH,SBVwAgQFHAcaHg==,1.0,2.0,4.0,1,1.0,1.0,1.0,Other,True,,0

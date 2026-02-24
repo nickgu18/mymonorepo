@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founder Ranking Pipeline – Iteration 2</title>
+  <style>
+    :root {
+      --background-color: #f8f9fa;
+      --text-color: #212529;
+      --heading-color: #343a40;
+      --primary-color: #007bff;
+      --border-color: #dee2e6;
+      --card-background-color: #ffffff;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      --arrow-color: #6c757d;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+    .iteration-label {
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: var(--heading-color);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    .pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: stretch;
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stage {
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 0;
+    }
+    .stage:hover {
+      transform: translateX(5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .stage-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+    }
+    .stage-sub {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 1rem;
+      color: #495057;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .pipeline-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--arrow-color);
+      font-size: 2rem;
+      padding: 1rem 0;
+      flex-shrink: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back to Overview</a>
+    <h1>Founder Ranking Pipeline</h1>
+    <div class="iteration-label">Iteration: <strong>2</strong></div>
+
+    <h2>High-level Flow</h2>
+    <div class="pipeline">
+      <div class="stage">
+        <div class="stage-title">1. Config & Data Load</div>
+        <div class="stage-sub">Config-driven loading via <code>src.common</code> / <code>src.data</code></div>
+        <ul>
+          <li>Use <code>load_config()</code> to read <code>configs/base.yaml</code>.</li>
+          <li>Call <code>load_raw(..., dataset="training")</code> and <code>load_raw(..., dataset="ranking")</code>.</li>
+          <li>Call <code>load_targets()</code> for <code>target_variable_training.csv</code>.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">2. Cleaning</div>
+        <div class="stage-sub"><code>src.data.loaders.clean</code></div>
+        <ul>
+          <li>Normalize IDs (strip <code>/p/</code>, <code>/c/</code> prefixes).</li>
+          <li>Parse dates in experience (<code>start_date</code>, <code>end_date</code>).</li>
+          <li>Coerce <code>company_info.performance</code> to numeric, preserving <code>NaN</code>.</li>
+          <li>Return <code>RankingCleanData</code> for training and ranking datasets.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">3. Founder Feature Matrix</div>
+        <div class="stage-sub"><code>FeaturePipeline.build_matrix</code></div>
+        <ul>
+          <li>For each founder, build history from <code>clean_training.experience</code>.</li>
+          <li>Select the last founded company (by <code>order</code>, ignoring missing <code>company_id</code>).</li>
+          <li>Join education features (<code>education_tier</code>, <code>highest_level</code> → score).</li>
+          <li>Attach company context (<code>industry</code>, <code>performance</code>).</li>
+          <li>Aggregate performance across all founded companies:
+            <code>founder_has_perf</code>, <code>founder_perf_mean</code>, <code>founder_perf_max</code>, <code>founder_perf_last</code>.
+          </li>
+          <li>Emit one row per founder (4,772 rows) → <code>FeatureMatrix</code>.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">4. Label Construction & Leakage Removal</div>
+        <div class="stage-sub"><code>build_training_dataset</code></div>
+        <ul>
+          <li>Join founder matrix with <code>target_variable_training</code> on <code>company_id</code>.</li>
+          <li>Attach <code>company_founded</code>, <code>multiple</code>, and target industry metadata.</li>
+          <li>Compute integer label via <code>calculate_relevance_grade(multiple)</code>.</li>
+          <li>Remove founders whose last founded company appears as the last company in the ranking dataset (no train/inference leakage).</li>
+          <li>Coerce <code>company_founded</code> to numeric; rows with missing values were still being dropped later in the splitter.</li>
+          <li>Result: 4,769 founders with labels.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">5. Split: Train / Test (Per Industry)</div>
+        <div class="stage-sub"><code>split_by_industry</code></div>
+        <ul>
+          <li>Drop rows with missing <code>company_founded</code> inside the splitter.</li>
+          <li>Group by <code>industry</code>; within each group, sort by <code>company_founded</code>, then split 80% Train / 20% Test.</li>
+          <li>Return:
+            <ul>
+              <li><code>X_train</code>, <code>y_train</code>, <code>X_test</code>, <code>y_test</code></li>
+              <li><code>train_groups</code>, <code>test_groups</code>, <code>industry_names</code></li>
+            </ul>
+          </li>
+          <li>No separate validation set; Test was used to reason about underfitting vs. generalization.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">6. Model Training & Evaluation</div>
+        <div class="stage-sub"><code>train_ranker</code> + NDCG</div>
+        <ul>
+          <li>Train <code>XGBRanker</code> with:
+            <code>eval_set=[(X_train, y_train), (X_test, y_test)]</code> and per-industry group arrays.</li>
+          <li>Log metrics and artifacts via MLflow.</li>
+          <li>Compute NDCG@20 per industry and macro Train/Test NDCG.</li>
+          <li>Test NDCG often &gt; Train NDCG due to easier, label-0-heavy test cohorts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="meta">
+      Iteration 2 moved the pipeline into shared library code (config, loaders, FeaturePipeline, training_dataset,
+      splitters, training) but still used a single Train/Test temporal split. This exposed label distribution shifts
+      and underfitting, motivating the Train/Validation/Test design in iteration 3.
+    </div>
+  </div>
+</body>
+</html>
+

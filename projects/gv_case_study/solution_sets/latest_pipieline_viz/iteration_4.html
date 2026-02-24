@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founder Ranking Pipeline – Iteration 4</title>
+  <style>
+    :root {
+      --background-color: #f8f9fa;
+      --text-color: #212529;
+      --heading-color: #343a40;
+      --primary-color: #007bff;
+      --border-color: #dee2e6;
+      --card-background-color: #ffffff;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      --arrow-color: #6c757d;
+      --highlight-color: #28a745;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+    .iteration-label {
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+    .callout {
+      background-color: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+    .callout strong {
+      color: #856404;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: var(--heading-color);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    .pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: stretch;
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stage {
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 0;
+    }
+    .stage:hover {
+      transform: translateX(5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .stage.new {
+      border-left: 4px solid var(--highlight-color);
+      background-color: #f0f9f4;
+    }
+    .stage.changed {
+      border-left: 4px solid #ffc107;
+      background-color: #fffbf0;
+    }
+    .stage-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+    }
+    .stage-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .stage-badge.new {
+      background-color: var(--highlight-color);
+      color: white;
+    }
+    .stage-badge.changed {
+      background-color: #ffc107;
+      color: #856404;
+    }
+    .stage-sub {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    li strong {
+      color: var(--highlight-color);
+    }
+    .meta {
+      font-size: 1rem;
+      color: #495057;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .pipeline-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--arrow-color);
+      font-size: 2rem;
+      padding: 1rem 0;
+      flex-shrink: 0;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back to Overview</a>
+    <h1>Founder Ranking Pipeline</h1>
+    <div class="iteration-label">Iteration: <strong>4 (Proposed)</strong></div>
+
+    <div class="callout">
+      <strong>Key Improvement:</strong> This iteration fixes the temporal logic by using the <strong>best exit (max multiple) company</strong>
+      as the label instead of the last labeled company. Each founder now has a single snapshot anchored at
+      <code>label_company_founded_year</code>, features are built only from information available up to that year,
+      and post-split performance/network/team features are fit on Train only and applied to Val/Test, ensuring
+      proper time-respecting, leak-free predictions.
+    </div>
+
+    <h2>High-level Flow</h2>
+    <div class="pipeline">
+      <div class="stage">
+        <div class="stage-title">Phase 1: Environment Setup</div>
+        <div class="stage-sub">Same as Iteration 3</div>
+        <ul>
+          <li>Load configuration via <code>load_config()</code>.</li>
+          <li>Set up MLflow tracking and logging.</li>
+          <li>Initialize random seeds for reproducibility.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage changed">
+        <div class="stage-title">
+          Phase 2: Data Loading & Feature Engineering
+          <span class="stage-badge changed">CHANGED</span>
+        </div>
+        <div class="stage-sub">Explicit label company (max multiple) and pre-split founder snapshot</div>
+        <ul>
+          <li><strong>2.1 Data Loading & Cleaning:</strong> Load raw training/ranking tables and targets with
+            <code>load_raw</code>, <code>clean</code>, and <code>load_targets</code> (same as earlier iterations).</li>
+          <li><strong>2.2 Label Company Selection (max multiple):</strong>
+            <ul>
+              <li>For each founder, identify all founded companies that appear in <code>target_variable_training</code>.</li>
+              <li>Select the company with the <strong>highest multiple (max_founder_multiple)</strong>.</li>
+              <li>Set per founder:
+                <code>label_max_founder_multiple</code>,
+                <code>label_company_id</code>,
+                <code>label_company_founded_year</code>,
+                <code>label_company_industry</code>.</li>
+              <li>This label construction happens <strong>before any train/val/test split</strong>.</li>
+            </ul>
+          </li>
+          <li><strong>2.3 Initial Founder Snapshot (Pre-split matrix):</strong>
+            <ul>
+              <li>Use <code>FeaturePipeline</code> to build local, time-respecting features per founder
+                (e.g., <code>performance</code> of the label company, <code>education_tier</code>,
+                <code>education_level_score</code>).</li>
+              <li>Override metadata so that <code>company_id</code>, <code>industry</code>,
+                and <code>company_founded</code> refer to the <strong>label company</strong>.</li>
+              <li>Attach the raw label <code>label_max_founder_multiple</code> and label metadata
+                (<code>label_company_id</code>, <code>label_company_founded_year</code>,
+                <code>label_company_industry</code>).</li>
+              <li>Result: one row per founder with <strong>only local, non–split-aware features</strong> plus the
+                raw label and label metadata; this is the matrix that will be split.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 3: Data Splitting</div>
+        <div class="stage-sub">Temporal train/val/test split by <code>label_company_founded_year</code></div>
+        <ul>
+          <li>Sort the initial founder matrix by <code>label_company_founded_year</code> within each industry.</li>
+          <li>Split into 70% Train / 15% Validation / 15% Test (oldest → newest).</li>
+          <li>Labels (<code>label_max_founder_multiple</code>) are already attached—fine because they're future
+            outcomes relative to the snapshot and were computed per founder from targets only.</li>
+          <li>Return: <code>X_train</code>, <code>y_train</code>, <code>X_val</code>, <code>y_val</code>, <code>X_test</code>, <code>y_test</code> + groups.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 4: Data Validation</div>
+        <div class="stage-sub">Same validation checks as Iteration 3</div>
+        <ul>
+          <li>Print per-industry counts and label distributions for all splits.</li>
+          <li>Verify temporal ordering (no train rows after test rows).</li>
+          <li>Check for missing values and feature ranges.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage new">
+        <div class="stage-title">
+          Phase 4.5: Advanced Preprocessing (Optional)
+          <span class="stage-badge new">NEW</span>
+        </div>
+        <div class="stage-sub">Post-split, train-fitted feature transformations</div>
+        <ul>
+          <li><strong>Performance features (train-fitted):</strong>
+            <ul>
+              <li>From train founders' histories, compute:
+                <code>founder_has_perf</code>, <code>founder_perf_mean</code>,
+                <code>founder_perf_max</code>, <code>founder_perf_last</code>.</li>
+              <li>Use a <code>cut_off_date</code> (typically the founder’s
+                <code>label_company_founded_year</code>) so performance history
+                after that date is ignored.</li>
+              <li>Join these aggregates into Train / Val / Test by <code>person_id</code>, using
+                <strong>train-derived</strong> mappings for Val/Test.</li>
+            </ul>
+          </li>
+          <li><strong>Network features (train-fitted):</strong>
+            <ul>
+              <li>Build a co-worker graph from train experience and derive:
+                <code>network_quality_1st</code>, <code>network_size_1st</code>.</li>
+              <li>Apply the same <code>cut_off_date</code> when building the
+                graph so edges reflect only relationships active up to
+                <code>label_company_founded_year</code>.</li>
+              <li>Apply these network scores to Val/Test founders without recomputing the graph.</li>
+            </ul>
+          </li>
+          <li><strong>Team features (train-fitted):</strong>
+            <ul>
+              <li>Compute <code>team_size</code> per label company from train founders' histories,
+                counting only founders whose roles start on or before the
+                relevant <code>cut_off_date</code>.</li>
+              <li>Attach the same team_size mapping to founders in Val/Test whose label company matches.</li>
+            </ul>
+          </li>
+          <li><strong>Discipline:</strong> all such transformations are:
+            <ul>
+              <li><strong>Fit on Train only</strong> (aggregates, graphs, buckets).</li>
+              <li><strong>Applied to Val/Test</strong> using train-derived parameters, avoiding leakage.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 5: Model Training</div>
+        <div class="stage-sub">Same <code>train_ranker</code> approach as Iteration 3</div>
+        <ul>
+          <li>Train <code>XGBRanker</code> with Train data, using Validation as eval set.</li>
+          <li>MLflow logs parameters, label histograms, feature importance, NDCG@20.</li>
+          <li>Validation used for tuning; Test remains held-out.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 6: Model Persistence</div>
+        <div class="stage-sub">Same as Iteration 3</div>
+        <ul>
+          <li>Save trained model and feature metadata to <code>mlruns/models/notebook_runs/&lt;timestamp&gt;</code>.</li>
+          <li>Persist model bundle for later loading.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 7: Inference</div>
+        <div class="stage-sub">Same as Iteration 3</div>
+        <ul>
+          <li>Reload model bundle with <code>load_model_bundle</code>.</li>
+          <li>Build ranking features via <code>FeaturePipeline</code> on <code>clean_ranking</code>.</li>
+          <li>Run <code>predict_batch</code> to get scores and rankings.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 8: Ranking Explanation</div>
+        <div class="stage-sub">Same SHAP analysis as Iteration 3</div>
+        <ul>
+          <li>Generate global and per-industry SHAP plots.</li>
+          <li>Compute top-N SHAP explanations for interpretability.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="meta">
+      <strong>Summary of Changes:</strong> Iteration 4 defines the training unit as a single founder snapshot at
+      <code>label_company_founded_year</code> for their <strong>best exit (max multiple) company</strong>. It builds a
+      pre-split founder matrix with only local, time-respecting features plus the raw label
+      <code>label_max_founder_multiple</code>, then performs a temporal 70/15/15 split by industry and
+      <code>label_company_founded_year</code>. Finally, performance, network, and team features are added
+      <strong>after</strong> the split, fit on Train only and applied to Val/Test, preventing subtle information
+      leakage while keeping the pipeline aligned with a realistic, time-aware production scenario.
+    </div>
+  </div>
+</body>
+</html>

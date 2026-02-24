@@ -1,0 +1,51 @@
+repo,commit,creation_date,stars,lines_of_code,primary_language,secondary_language
+dmlgzs/StarResonanceDamageCounter,d33f19f89352d5e4651387b7abf655c3fdab6250,2025-08-02,236,253564.0,JavaScript,HTML
+ZyperWave/ZyperWinOptimize,d20e78bbd906fa179e4cc9f5107b502da5967aa9,2025-08-05,4246,21686.0,MSBuild,C#
+wenge-research/x-agent,78935e129fafbed08af103041304e8e1f53b39e4,2025-08-04,920,688464.0,Vue,Java
+ccfos/huatuo,bb5e6fc1ca32ccbcbeac1a68ef16df653469e9da,2025-08-04,640,1859496.0,Go,C Header
+githubnext/gh-aw,1cc5245d14953177fc9d5a845668728581ac41cc,2025-08-12,182,103948.0,Go,JavaScript
+tangyuanbo1/LifeTrace_app,83d6c7fe20587d3b53b167bf243e5cda628211ed,2025-08-22,867,167712.0,HTML,TypeScript
+mzazon/awesome-cloud-projects,e1784e0b35f1dfb8f51ba275dd5f356ac5052b25,2025-08-24,231,2981402.0,Shell,Terraform
+openai/gpt-5-coding-examples,b5f34ee9c27b7af9b2fd0dbe7314586dfed8e5cc,2025-08-07,1711,72197.0,HTML,CSS
+clduab11/gemini-flow,8e22487dadac8c32bedbba4939933310d7c855c6,2025-08-01,133,475795.0,JavaScript,TypeScript
+cokepoppy/my-quant,516d6a2f0012f2f25f9520707aec71c90ca8423e,2025-08-20,124,79229.0,Vue,TypeScript
+psyb0t/piraterf,0ad22bdbd85e9b9d3cc431068b25ad3e1235e18b,2025-09-17,132,720638.0,Go,License
+jurmy24/mechaverse,47fc4c0c979e76ea0556e10fbc36ec8eabd42b2d,2025-08-05,220,316135.0,JavaScript,HTML
+gepa-ai/gepa,abc6922e4b7a466597279c3de6692b4849a09362,2025-08-05,1263,34360.0,Jupyter,Python
+deweloperuch/rejestr-cen-nieruchomosci,283478929d58aab8a5370b94667443aa245cfcfc,2025-09-26,124,1038222.0,Game Maker Language,License
+looplj/axonhub,c3ccfbd2e57a51dc2b42b95696c098a4f62e83df,2025-09-09,165,185609.0,Go,TypeScript
+Foleyzhao/UBA,7cf01815c68f6c72b3f6e93729f8b82fa0ac89ee,2025-08-21,119,106173.0,Vue,Java
+Deng-m1/MaliangAINovalWriter,2f92fc1dd770632202019813081ee9b33a2e7431,2025-09-09,197,490981.0,JavaScript,Dart
+ludo-technologies/pyscn,c1f9bd36acabb6bac39fb6db836d1b19a615c328,2025-08-06,833,48618.0,Go,Python
+murat-cileli/clyp,e036f0e6944cd35e46a95fa77b851e592d4f3598,2025-08-14,270,369341.0,Go,C
+Shredded-Pork/TempFlow-GRPO,713e44cdb01cba064f43f72fa2bb9dd010736c97,2025-08-05,792,58111.0,JSONL,Python
+Dreamsoft-DreamV/dreamv,baf9daa5fad0902aa3b95ca055b29fb337cf52c3,2025-08-11,129,325935.0,JavaScript,Vue
+XTXMarkets/ternfs,6bfd89dec7d1f6d5e42e263f4dd127d3b3cbbf12,2025-09-02,1011,615037.0,Go,C
+anyup/uView-Pro,a112b44b1cf464c0ebf3ac6b1add3ebe85bdbfd2,2025-08-04,205,40530.0,Vue,TypeScript
+OldSuns/SnapLock,48077dfd4541b85388262310a661d1cbf5d89c7f,2025-08-10,129,241679.0,HTML,Rust
+UZDoom/UZDoom,6ae0b6707990a4b982f7c9ea0ec2821381581d88,2025-10-14,404,1137576.0,C++,C Header
+nook-browser/Nook,472de205977e26239465a5ceb2f2da8797fb874b,2025-08-01,938,50335.0,Swift,C
+BigheadSMZ/Zelda-LA-DX-HD-Updated,4f7fdfe3f9024d2022fb9e051e2ec1738345e303,2025-08-21,197,123439.0,C#,MSBuild
+tt-rss/tt-rss,a47a45d300e20f53ab47ecb5025fc0ca384b0624,2025-10-03,288,82411.0,PHP,CSS
+lokus-ai/lokus,262bf59366cf3ba71e96047a73caf50e4e86c632,2025-09-13,269,142205.0,JavaScript,JSX
+rbalestr-lab/llm-jepa,dd6196630f97016f7a607b0ac74f5e378ddf25db,2025-09-05,108,408693.0,JSONL,Python
+ToolBrain/ToolBrain,a001447f59976f0c06b8bd90bb6f86976886be70,2025-08-05,129,31250.0,Jupyter,Python
+Anttwo/MILo,8f4a89a707381679ae8ed175b56ff2fe8dcc1f66,2025-09-07,225,242733.0,HTML,C++ Header
+mmulet/term.everything,0e17f779aa0d853c2c4a38038e09def2f8bb8df3,2025-09-07T02:52:48Z,6448,910540.0,C Header,TypeScript
+lxz-jiandan/Overt,0963f58925867027636802ad0b86cc0a47353711,2025-08-01,172,52540.0,C Header,C++
+OwnGoalStudio/TrollVNC,14f6f44087059b952a420e393a4645a5db5a45ec,2025-08-25,225,65377.0,C Header,JavaScript
+mmulet/term.everything,ba5fee67ae38e64440d9122501341daaef3ffbf8,2025-09-07,6444,721788.0,C Header,TypeScript
+cogwheel0/conduit,893d8445f26e6f76ffdd69f7ac5d9ee19ca6a6c0,2025-08-09,536,49903.0,Dart,JavaScript
+little-book-of/algorithms,71b682878fca1c03114685b3c4127124c49c0603,2025-09-09,138,160196.0,HTML,CSS
+Brahme27/All-Machine-Learning-Algorithms-Updated,2a2b45d7b9657bf4092a824eef9d77a673688c07,2025-09-07,231,108732.0,Jupyter,
+google-coral/coralnpu,50a64daca11eef0af499a1291393c9c161d42de4,2025-10-02,294,248479.0,Emacs Lisp,SystemVerilog
+mafik/keyer,0f8eb0efaae77bea840d6cc199159995b61e6a1c,2025-10-09,347,374918.0,JavaScript,C++
+iflytek/astron-agent,7654df4e2055d1c2b58eef5d109ba3462284e719,2025-09-19T08:46:01Z,1863,442351.0,Java,Python
+ichason/CPosed,9df0d74b4574582e5118329f7a969a1b4fb85cf8,2025-08-07,874,29343.0,Java,C++
+oiy-ai/learnify,62d8494dbb01a8515a8e5463939d70f56ca7e2d0,2025-08-11,202,688504.0,TypeScript,Rust
+Pimzino/spec-workflow-mcp,d5cb55ed65957b3415525c889212569aac8adf54,2025-08-07,2590,20175.0,TypeScript,License
+iOfficeAI/AionUi,501b8100df6441591b4872c3eeaf89647e2b36d9,2025-08-07,2498,22235.0,TypeScript,CSS
+alexanderwanyoike/the0,e847b526043be8cd775b54776040644a899d9c28,2025-08-04,108,75668.0,TypeScript,Go
+Devin-AXIS/AINO,a808d81dff744ecc11c4c1959ab14703de8da736,2025-08-25,438,148010.0,TypeScript,JavaScript
+thuml/MiniVeo3-Reasoner,a41753235febe1d146ba132287bdfb67f29d8e27,2025-10-06,132,256857.0,HTML,Python
+opanel-mc/opanel,c2c0feae8c1284f8188c7ff88f2ba7ee9d26be29,2025-08-02,122,38544.0,Java,TypeScript

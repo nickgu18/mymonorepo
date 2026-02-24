@@ -1,0 +1,9 @@
+# Dev overrides for faster iterations
+features:
+  current_year: 2024
+model:
+  hyperparameters:
+    n_estimators: 50
+    learning_rate: 0.2
+logging:
+  level: DEBUG

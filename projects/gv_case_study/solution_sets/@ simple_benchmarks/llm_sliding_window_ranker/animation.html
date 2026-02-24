@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallel Merge Reranking</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #d4d4d4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #569cd6;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #858585;
+      margin-bottom: 20px;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .main-container {
+      display: flex;
+      gap: 60px;
+      margin-top: 20px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .column-title {
+      font-size: 18px;
+      color: #ce9178;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .list-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: relative;
+      padding: 10px;
+      background-color: #252526;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .item {
+      width: 180px;
+      padding: 8px;
+      background-color: #333333;
+      border: 1px solid #454545;
+      border-radius: 4px;
+      text-align: center;
+      transition: all 0.5s ease;
+      position: absolute;
+      left: 10px;
+      z-index: 1;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    .item.moving {
+      background-color: #264f78;
+      border-color: #3794ff;
+      z-index: 2;
+    }
+
+    .item.merge-moving {
+      background-color: #652d90;
+      border-color: #b400ff;
+      z-index: 2;
+    }
+
+    .window {
+      position: absolute;
+      left: 5px;
+      width: calc(100% - 10px);
+      border: 2px solid #dcdcaa;
+      border-radius: 6px;
+      background-color: rgba(220, 220, 170, 0.1);
+      transition: all 0.5s ease;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .window.merge {
+      border-color: #b400ff;
+      background-color: rgba(180, 0, 255, 0.1);
+    }
+
+    .controls {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #0e639c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #1177bb;
+    }
+
+    button:disabled {
+      background-color: #555;
+      cursor: not-allowed;
+    }
+
+    .status-bar {
+      margin-top: 20px;
+      display: flex;
+      gap: 40px;
+      font-size: 16px;
+    }
+
+    .status-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .timer {
+      font-family: monospace;
+      color: #b5cea8;
+      font-size: 18px;
+    }
+
+    .phase-info {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #ce9178;
+      height: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Parallel Merge Reranking</h1>
+  <div class="subtitle">Phase 1: Parallel Block Reranking<br>Phase 2: Parallel Merge Sort</div>
+
+  <div class="phase-info" id="phase-info">Ready to start</div>
+
+  <div class="main-container">
+    <div class="column">
+      <div class="column-title">Parallel Merge Sort</div>
+      <div class="list-container" id="par-container">
+        <!-- Multiple windows will be added dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <div class="status-bar">
+    <div class="status-item">Total Time: <span id="par-timer" class="timer">0.0s</span></div>
+  </div>
+
+  <div class="controls">
+    <button id="start-btn">Start Animation</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+
+  <script>
+    const NUM_ITEMS = 16; // Power of 2 for easy merge
+    const BLOCK_SIZE = 4;
+    const ITEM_HEIGHT = 35;
+    const ANIM_SPEED = 1000;
+
+    let parState = { items: [], elements: {}, windowEls: [], timer: 0, interval: null, running: false };
+
+    function initList(containerId, state) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = ''; // Clear
+      container.style.height = `${NUM_ITEMS * ITEM_HEIGHT}px`;
+      container.style.width = '200px';
+
+      state.items = Array.from({ length: NUM_ITEMS }, (_, i) => ({
+        id: i, label: `Founder ${i + 1}`
+      }));
+      state.elements = {};
+
+      state.items.forEach((item, index) => {
+        const el = document.createElement('div');
+        el.className = 'item';
+        el.textContent = item.label;
+        el.style.top = `${index * ITEM_HEIGHT}px`;
+        container.appendChild(el);
+        state.elements[item.id] = el;
+      });
+
+      state.windowEls = [];
+      // Pre-create windows for parallel blocks (4 blocks) + merge windows
+      for (let i = 0; i < 8; i++) {
+        const win = document.createElement('div');
+        win.className = 'window';
+        win.style.display = 'none';
+        container.appendChild(win);
+        state.windowEls.push(win);
+      }
+    }
+
+    function startTimer(state, timerId) {
+      state.timer = 0;
+      const el = document.getElementById(timerId);
+      el.textContent = '0.0s';
+      state.interval = setInterval(() => {
+        state.timer += 0.1;
+        el.textContent = state.timer.toFixed(1) + 's';
+      }, 100);
+    }
+
+    function stopTimer(state) {
+      clearInterval(state.interval);
+    }
+
+    async function runParallel() {
+      parState.running = true;
+      startTimer(parState, 'par-timer');
+      const phaseInfo = document.getElementById('phase-info');
+
+      // --- Phase 1: Parallel Blocks ---
+      phaseInfo.textContent = "Phase 1: Parallel Block Reranking (Simultaneous)";
+      const blocks = [
+        { start: 0, size: 4, winIdx: 0 },
+        { start: 4, size: 4, winIdx: 1 },
+        { start: 8, size: 4, winIdx: 2 },
+        { start: 12, size: 4, winIdx: 3 }
+      ];
+
+      // Show all windows
+      blocks.forEach(b => {
+        const win = parState.windowEls[b.winIdx];
+        win.style.display = 'block';
+        win.style.height = `${b.size * ITEM_HEIGHT - 5}px`;
+        win.style.top = `${b.start * ITEM_HEIGHT}px`;
+
+        const windowItems = parState.items.slice(b.start, b.start + b.size);
+        windowItems.forEach(item => parState.elements[item.id].classList.add('moving'));
+      });
+
+      await new Promise(r => setTimeout(r, ANIM_SPEED));
+
+      // Rerank all blocks
+      blocks.forEach(b => {
+        const windowItems = parState.items.slice(b.start, b.start + b.size);
+        const shuffled = [...windowItems].sort(() => Math.random() - 0.5);
+        for (let j = 0; j < b.size; j++) {
+          parState.items[b.start + j] = shuffled[j];
+        }
+      });
+
+      // Update positions
+      parState.items.forEach((item, index) => {
+        parState.elements[item.id].style.top = `${index * ITEM_HEIGHT}px`;
+      });
+
+      await new Promise(r => setTimeout(r, ANIM_SPEED));
+
+      // Hide windows
+      blocks.forEach(b => {
+        parState.windowEls[b.winIdx].style.display = 'none';
+        const windowItems = parState.items.slice(b.start, b.start + b.size);
+        windowItems.forEach(item => parState.elements[item.id].classList.remove('moving'));
+      });
+
+      if (!parState.running) return;
+
+      // --- Phase 2: Parallel Merge Sort ---
+      // Step 2.1: Merge blocks of 4 into blocks of 8
+      phaseInfo.textContent = "Phase 2.1: Merge blocks of 4 into 8 (Parallel)";
+      const merge1 = [
+        { start: 0, size: 8, winIdx: 4 },
+        { start: 8, size: 8, winIdx: 5 }
+      ];
+
+      merge1.forEach(b => {
+        const win = parState.windowEls[b.winIdx];
+        win.className = 'window merge';
+        win.style.display = 'block';
+        win.style.height = `${b.size * ITEM_HEIGHT - 5}px`;
+        win.style.top = `${b.start * ITEM_HEIGHT}px`;
+        const windowItems = parState.items.slice(b.start, b.start + b.size);
+        windowItems.forEach(item => parState.elements[item.id].classList.add('merge-moving'));
+      });
+
+      await new Promise(r => setTimeout(r, ANIM_SPEED));
+
+      merge1.forEach(b => {
+        const windowItems = parState.items.slice(b.start, b.start + b.size);
+        const shuffled = [...windowItems].sort(() => Math.random() - 0.5);
+        for (let j = 0; j < b.size; j++) {
+          parState.items[b.start + j] = shuffled[j];
+        }
+      });
+      parState.items.forEach((item, index) => {
+        parState.elements[item.id].style.top = `${index * ITEM_HEIGHT}px`;
+      });
+
+      await new Promise(r => setTimeout(r, ANIM_SPEED));
+      merge1.forEach(b => {
+        parState.windowEls[b.winIdx].style.display = 'none';
+        const windowItems = parState.items.slice(b.start, b.start + b.size);
+        windowItems.forEach(item => parState.elements[item.id].classList.remove('merge-moving'));
+      });
+
+      if (!parState.running) return;
+
+      // Step 2.2: Merge blocks of 8 into 16
+      phaseInfo.textContent = "Phase 2.2: Merge blocks of 8 into 16";
+      const merge2 = { start: 0, size: 16, winIdx: 6 };
+      const win = parState.windowEls[merge2.winIdx];
+      win.className = 'window merge';
+      win.style.display = 'block';
+      win.style.height = `${merge2.size * ITEM_HEIGHT - 5}px`;
+      win.style.top = `${merge2.start * ITEM_HEIGHT}px`;
+      const windowItems = parState.items.slice(merge2.start, merge2.start + merge2.size);
+      windowItems.forEach(item => parState.elements[item.id].classList.add('merge-moving'));
+
+      await new Promise(r => setTimeout(r, ANIM_SPEED));
+
+      const shuffled = [...windowItems].sort(() => Math.random() - 0.5);
+      for (let j = 0; j < merge2.size; j++) {
+        parState.items[merge2.start + j] = shuffled[j];
+      }
+      parState.items.forEach((item, index) => {
+        parState.elements[item.id].style.top = `${index * ITEM_HEIGHT}px`;
+      });
+
+      await new Promise(r => setTimeout(r, ANIM_SPEED));
+      win.style.display = 'none';
+      windowItems.forEach(item => parState.elements[item.id].classList.remove('merge-moving'));
+
+      stopTimer(parState);
+      parState.running = false;
+      phaseInfo.textContent = "Reranking Complete!";
+      document.getElementById('start-btn').disabled = false;
+    }
+
+    function init() {
+      initList('par-container', parState);
+      document.getElementById('par-timer').textContent = '0.0s';
+      document.getElementById('start-btn').disabled = false;
+      document.getElementById('phase-info').textContent = "Ready to start";
+    }
+
+    document.getElementById('start-btn').addEventListener('click', () => {
+      document.getElementById('start-btn').disabled = true;
+      init(); // Reset positions before starting
+      runParallel();
+    });
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+      parState.running = false;
+      stopTimer(parState);
+      init();
+    });
+
+    init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+repo_name,commit,creation_date,stars,lines_of_code,primary_language,secondary_language
+ZyperWave/ZyperWinOptimize,d20e78bbd906fa179e4cc9f5107b502da5967aa9,2025-08-05,4246,21686,MSBuild,C#
+Pimzino/spec-workflow-mcp,d5cb55ed65957b3415525c889212569aac8adf54,2025-08-07,2590,20175,TypeScript,License
+iOfficeAI/AionUi,501b8100df6441591b4872c3eeaf89647e2b36d9,2025-08-07,2498,22235,TypeScript,CSS
+answeryt/Neosgenesis,83c1be224d5ad361ce7342b39b2df5e7d860a032,2025-08-04,1921,45789,Python,License
+openai/gpt-5-coding-examples,b5f34ee9c27b7af9b2fd0dbe7314586dfed8e5cc,2025-08-07,1711,72197,HTML,CSS
+gepa-ai/gepa,abc6922e4b7a466597279c3de6692b4849a09362,2025-08-05,1263,34360,Jupyter,Python
+whyisdifficult/jiratui,31341b6827aaf7454c27a2417afecf6e232daebe,2025-08-04,976,21264,Python,HTML
+nook-browser/Nook,472de205977e26239465a5ceb2f2da8797fb874b,2025-08-01,938,50335,Swift,C
+wenge-research/x-agent,78935e129fafbed08af103041304e8e1f53b39e4,2025-08-04,920,688464,Vue,Java
+ichason/CPosed,9df0d74b4574582e5118329f7a969a1b4fb85cf8,2025-08-07,874,29343,Java,C++
+ludo-technologies/pyscn,c1f9bd36acabb6bac39fb6db836d1b19a615c328,2025-08-06,833,48618,Go,Python
+Shredded-Pork/TempFlow-GRPO,713e44cdb01cba064f43f72fa2bb9dd010736c97,2025-08-05,792,58111,JSONL,Python
+ccfos/huatuo,bb5e6fc1ca32ccbcbeac1a68ef16df653469e9da,2025-08-04,640,1859496,Go,C Header
+yongliang-wu/DFT,d5540a879c497150e908ec803a638372b39b2327,2025-08-01,467,122597,Python,JSONL
+OPPO-PersonalAI/Agent_Foundation_Models,9a6594d4661fa994f189074ecfdfd259eea87c6d,2025-08-05,459,101517,Python,Shell
+Mrpachimari0704/MidState-Yolo,c1dc00cbfef9f93724dd2ed9aed6ae949175b462,2025-08-02,444,34567,Python,Rust
+Din829/DbRheo-CLI,278e8a2c4b5fb1ef1da746b7d0424673ebd935e5,2025-08-01,427,20429,Python,TypeScript
+autobrr/qui,ff915d5d7e1008f3f53239acbfa0de376abbda0d,2025-08-04,423,47644,TypeScript,Go
+NVIDIA/tilus,9d216e8926c85be51b5caf8ee931a17c9a160e6f,2025-08-01,379,31214,Python,ReStructuredText
+diodiogod/TTS-Audio-Suite,6405e8494c854f74f509daefaca6f582acfb1e5a,2025-08-06,330,136254,Python,JavaScript
+quests-org/quests,1eade9dcfd3a71eb842baf11a6b1a657a5cb154f,2025-08-06,316,47749,TypeScript,License
+MetaStone-AI/XBai-o4,2d2c5584cd7ea1bc32470e32303bdd8e5c5614fc,2025-08-01,300,42593,Python,ReStructuredText
+kxn/claude-code-companion,9f3c620a1e240df86bef324eef63784f91ba4089,2025-08-06,274,25202,Go,JavaScript
+dmlgzs/StarResonanceDamageCounter,d33f19f89352d5e4651387b7abf655c3fdab6250,2025-08-02,236,253564,JavaScript,HTML
+jurmy24/mechaverse,47fc4c0c979e76ea0556e10fbc36ec8eabd42b2d,2025-08-05,220,316135,JavaScript,HTML
+allenai/molmoact,b5fe5edba2ef2512ddf262449001ac5728e040d6,2025-08-01,217,47838,Python,Jupyter
+Vijayabaskar56/tan-builder,bd8624c1bd8c98d4c9fb377fe452a441df1b9322,2025-08-03,215,35660,TypeScript,TypeScript Typings
+anyup/uView-Pro,a112b44b1cf464c0ebf3ac6b1add3ebe85bdbfd2,2025-08-04,205,40530,Vue,TypeScript
+Edison-Watch/open-edison,45c66e8426eae7fd9c97a09be265104192b04447,2025-08-05,202,25165,TypeScript,Python
+CelestialRipple/Gamer,8e5d754b27c1969a8f01b0381641b0c875dd9d99,2025-08-05,202,21858,TypeScript,CSS
+SunzeY/SEAgent,c8887f157352494953b3317047929cf81465defa,2025-08-06,196,27282,Python,JSONL
+csbhr/Vivid-VR,38c736af2f8ee98243abf1d52e4796de35ef9c73,2025-08-05,190,208745,Python,Makefile
+lxz-jiandan/Overt,0963f58925867027636802ad0b86cc0a47353711,2025-08-01,172,52540,C Header,C++
+clduab11/gemini-flow,8e22487dadac8c32bedbba4939933310d7c855c6,2025-08-01,133,475795,JavaScript,TypeScript
+steipete/Tachikoma,5ca9b83885c448b7bd776153308a194da289afae,2025-08-02,129,35769,Swift,Shell
+ToolBrain/ToolBrain,a001447f59976f0c06b8bd90bb6f86976886be70,2025-08-05,129,31250,Jupyter,Python
+Fr1ngg/remnawave-bedolaga-telegram-bot,2dbc23fa800eefd12194c1895e4fe633437641b8,2025-08-04,128,89544,Python,Shell
+namastexlabs/automagik-genie,21dfe87a76b2315962fffa41d7222c8ceeaee432,2025-08-01,123,21681,JavaScript,TypeScript
+opanel-mc/opanel,c2c0feae8c1284f8188c7ff88f2ba7ee9d26be29,2025-08-02,122,38544,Java,TypeScript
+InfiXAI/InfiGUI-G1,0b47da6d77eb076e11d3e2c97745f0b9893f49fd,2025-08-07,110,44917,Python,License
+getlilac/lilac,783c52a70d1aebd77fd068554e9a455691522b20,2025-08-04,110,23012,TypeScript,Rust
+alexanderwanyoike/the0,e847b526043be8cd775b54776040644a899d9c28,2025-08-04,108,75668,TypeScript,Go
+abhigyanpatwari/GitNexus,34abd5dc382a118390c00c72167bc73660a45bad,2025-08-02,104,35936,TypeScript,JavaScript
+ECNU-ICALK/ELL-StuLife,a689d0039eeabb03df469ae7a5f88958caa709bc,2025-08-06,104,30881,Python,Shell
+react-zero-ui/icon-sprite,a702c95581971ea145b8dee750224d50d909a362,2025-08-04,103,30139,TypeScript,JavaScript
+ethereum/kohaku,0cdec41714dbb17ce1de7e4417f50fff1fb3d295,2025-08-01,102,37999,TypeScript,TypeScript Typings
+suhang12332/Swift-Craft-Launcher,de59264d3d5bb346e820181a0a5abb20b4bdd341,2025-08-02,101,22938,Swift,License
+Haleclipse/Cometix-Tab,250f4b846c7ff85cbc1b410c17d331282e29de76,2025-08-01,101,26665,TypeScript,Protocol Buffers
+firecrawl/open-lovable,ce3e23c921cc37282df37b50bf7c87d4e7cda064,2025-08-08,20926,30219,TypeScript,CSS
+MoonTechLab/LunaTV,877843372b7806a51d59f58216cbdaa3bf33dc0f,2025-08-12,5977,27049,TypeScript,CSS
+firecrawl/open-lovable,ce3e23c921cc37282df37b50bf7c87d4e7cda064,2025-08-08,20927,30219,TypeScript,CSS
+MoonTechLab/LunaTV,877843372b7806a51d59f58216cbdaa3bf33dc0f,2025-08-12,5977,27049,TypeScript,CSS
+nv-tlabs/vipe,71f2cc77594e7b10bf2c3ba090cc20bf3cbf1755,2025-08-11,1418,38880,Python,Cuda
+Francis-Rings/StableAvatar,928992be66126c17531c62a280f2c9800ec97cd1,2025-08-11,1094,24361,Python,Shell
+fccview/rwMarkable,766dd38f465adc3a94319b6f4ddff36aea1b95a9,2025-08-11,742,22338,TypeScript,CSS
+Melmaphother/Science-Star,420532747bd5f4ec885c02678d1050c75a496673,2025-08-12,732,21715,Python,JSONL
+RLinf/RLinf,14f59f13d2263a614e446881a8eb91c7ea5ec31e,2025-08-14,572,49805,Python,ReStructuredText
+jd-opensource/xllm,eda1805ff1c518bec4cfca4e7c1b1effe7b37ed4,2025-08-12,550,72283,C++,C Header
+cogwheel0/conduit,893d8445f26e6f76ffdd69f7ac5d9ee19ca6a6c0,2025-08-09,536,49903,Dart,JavaScript
+SkyworkAI/Matrix-3D,6cc004c105c9e0ae9e47f1db4ec7c7f0eb9c41cd,2025-08-11,534,136637,Python,Jupyter
+HarborGuard/HarborGuard,f6122ee730f74ad2d984be97d7a807a837bb96f6,2025-08-14,494,43570,TypeScript,SQL
+Chen-zexi/vllm-cli,b49de5b4635b20dbf81cc985fb7b913551c5166a,2025-08-14,427,23884,Python,Shell
+timeshiftsauce/CeruMusic,b1c471f15c9748ef409938520c03a130692cd4e5,2025-08-13,344,49749,Vue,JavaScript
+chaosblade-io/chaosblade-space-exploration,453bd960844dbd0b88e5249326697afdfda05044,2025-08-14,338,31752,Java,Shell
+RosettaCommons/atomworks,e2dd20e0e84580cff547a2239c44492df13f64fa,2025-08-14,304,39161,Python,ReStructuredText
+cartesiancs/vessel,75d59b5ae92ab5762543ff605cff7c4b1e120bba,2025-08-10,287,25141,TypeScript,Rust
+murat-cileli/clyp,e036f0e6944cd35e46a95fa77b851e592d4f3598,2025-08-14,270,369341,Go,C
+dodopayments/billingsdk,e20fa07390ef9153d74f2371983995b223b28fb8,2025-08-08,219,29486,TypeScript,License
+oiy-ai/learnify,62d8494dbb01a8515a8e5463939d70f56ca7e2d0,2025-08-11,202,688504,TypeScript,Rust
+githubnext/gh-aw,1cc5245d14953177fc9d5a845668728581ac41cc,2025-08-12,182,103948,Go,JavaScript
+AdoPi/wlgblock,fc3f3535008b35859c6407915e7040c3c50c857e,2025-08-08,172,21329,C,C Header
+agentscope-ai/agentscope-runtime,d2a104dd5db7fec44da86d4a9d689d5011417061,2025-08-14,165,25737,Python,TypeScript
+Kai-46/minFM,385568691b021aa4888269dafa671900daf17cf6,2025-08-10,161,22376,HTML,Python
+RhythmicWave/NovelForge,11ad9b88246f44e28077b9936c24c48b76336856,2025-08-09,155,25496,Vue,Python
+TsinghuaC3I/SSRL,3009f2163497ec3f14508bb5e0c60e82536c13f6,2025-08-11,147,50823,Python,Shell
+8421BCD/ReasonRank,b0dfea9f98abdfc2c4e4182d177ef096bb399e90,2025-08-09,145,83301,Python,ReStructuredText
+Topkill/tianruoocr,31dd05bda06de1c4d1f98d484deeea8075a88ba1,2025-08-10,134,42012,C#,MSBuild
+Dreamsoft-DreamV/dreamv,baf9daa5fad0902aa3b95ca055b29fb337cf52c3,2025-08-11,129,325935,JavaScript,Vue
+OldSuns/SnapLock,48077dfd4541b85388262310a661d1cbf5d89c7f,2025-08-10,129,241679,HTML,Rust
+adc666sav466/-gemini-,67415d9317cf50c55e7dfd5b7a0b53078c409479,2025-08-13,127,23676,HTML,Python
+dochia-dev/dochia-cli,7f6c1e8a303157edeca4411ac133975becb5c437,2025-08-09,126,81503,Java,CloudFormation (YAML)
+cwuom/NeriPlayer,511b570ebb67f881a0dba27ea46c7d4e7fa7e33c,2025-08-08,115,22000,Kotlin,License
+jofoerster/habitsync,c2f97e190487536292feb7907545b7a2fd78ad8c,2025-08-13,114,20003,TypeScript,Java
+32BitKlepto/BadStick,7000cebf88ea316509a639898d5ca0b90443f9b5,2025-08-10,111,42807,MSBuild,C#
+2mawi2/schaltwerk,807e1321ee17855e2d585b084294f88974f1a75b,2025-08-10,105,119953,TypeScript,Rust
+HKU-MMLab/OmniPart,9e47fea9c4b28172ee3086c1835f1599ea8c19b2,2025-08-14,101,27130,Python,License
+TencentCloudADP/youtu-agent,261bd01b8b02b1c32de394965f4b60433f742bd0,2025-08-21,3478,21914,Python,TypeScript
+basecamp/once-campfire,5c0526eaf7f83d129472a520fa673bfcb9c2f397,2025-08-15,3407,20222,JavaScript,Ruby
+growchief/growchief,abb1e37a6f5595d8d105aef5871a2eeb0c22a1dc,2025-08-21,3134,25515,TypeScript,License
+opactorai/Claudable,ab76ad9f59fd91aeccad83d42ee76dfa808630ac,2025-08-20,2711,23340,TypeScript,Python
+NiladriHazra/Open-Fiesta,0a5cf83eea6f26cf1b3c97d0b14a12af93fbdaf8,2025-08-18,935,60007,TypeScript,CSS
+MaliosDark/wifi-3d-fusion,0c0f99e6af9fa1a22d850c45b8f23aa75f34f328,2025-08-19,843,205177,Python,C++
+vercel/ai-elements,14888a647512057fbb74cf7fb76a51cec2e36443,2025-08-15,831,23987,TypeScript,CSS
+yfzhang114/Thyme,bcf036f206d6c0ba2c25a5083475de9208132bc7,2025-08-17,501,135982,Python,Shell
+dahlia/optique,4ba008d131424bfef7ec67f81ad499fcf919c291,2025-08-19,457,27367,TypeScript,CSS
+AQ-MedAI/MedResearcher-R1,e85c49274275c529c46edb917f0bcc90e21de80f,2025-08-21,396,33634,Python,JavaScript
+HoshinoSuzumi/chronoframe,6713340ac8bafed5960c5f20a832222a8bedd385,2025-08-21,379,21093,Vue,TypeScript
+Coral-Protocol/Anemoi,457e8fcbd7710a66c1a600ad944f0665460d1354,2025-08-20,367,73479,Python,Kotlin
+Stardm0/MoonTV,d47a0c98d3b28deb01f64c15cf002b8a6448d09e,2025-08-18,342,22394,TypeScript,CSS
+DRYTRIX/TimeTracker,1e1e3ad43a1bb68dbf310b420be7fd0989c34416,2025-08-15,310,64710,HTML,Python
+RosettaCommons/RFdiffusion2,b22d76138973aaeb43b7bcd1e34157253cf08f43,2025-08-18,301,160976,Python,C++ Header
+agregarr/agregarr,a40b1d94771e77588d0a7ab64646b609ef85516e,2025-08-17,298,102217,TypeScript,CloudFormation (YAML)
+higress-group/himarket,3879d7108e21355aafcb00edfe91be4fbf7d26d7,2025-08-21,278,25619,TypeScript,Java
+productdevbook/nitroping,8ace1d6679c731cdaf336f00beaeef5b008fb8b2,2025-08-15,231,29064,Vue,TypeScript
+Lobotomy-Software/SlaveDriver-Engine,a8986591557b6e680550d3c23970284d3b38ff8f,2025-08-16,212,115118,C,C Header
+BigheadSMZ/Zelda-LA-DX-HD-Updated,4f7fdfe3f9024d2022fb9e051e2ec1738345e303,2025-08-21,197,123439,C#,MSBuild
+allenai/asta-paper-finder,64a4956a428f229cc977a8ee3bb8685b8950c47d,2025-08-19,189,20764,Python,License
+Mengmouxu/SceneGen,551ff61445e12b10d8db38f59b7af822ba1e9efd,2025-08-19,183,23722,Python,Jupyter
+Shashankss1205/CodeGraphContext,f9250fd24ae4ece989217385bda977660ec60e71,2025-08-16,180,35916,Python,TypeScript
+arsfeld/reel,1978bab8362b5157738127b4b5e76ce7c05146d0,2025-08-19,164,52665,Rust,CSS
+PrimeIntellect-ai/prime-environments,e782084a6f67258f6cd8a209258084457e369204,2025-08-16,128,31856,Python,JSONL
+cokepoppy/my-quant,516d6a2f0012f2f25f9520707aec71c90ca8423e,2025-08-20,124,79229,Vue,TypeScript
+Foleyzhao/UBA,7cf01815c68f6c72b3f6e93729f8b82fa0ac89ee,2025-08-21,119,106173,Vue,Java
+vibe-log/vibe-log-cli,c88b92239757c74fd0865fdbe7b1a97da8c4bbbd,2025-08-15,117,33166,TypeScript,HTML
+jamesplotts/simpleide,a3f6b4de25e6adf3b9cb699fe75a4e9124108402,2025-08-17,109,71476,Visual Basic,MSBuild
+BlakeDarrow/bevy_granite,f4ea0d2ea7ce8ee28d199045f948ee13a57048c4,2025-08-15,108,20287,Rust,License
+project-sekai-ctf/sekaictf-2025,683dd81ae520581add40ec21c4819866e28cbde4,2025-08-18,104,97761,TypeScript,Lua
+Michael-A-Kuykendall/shimmy,37f67acbbf322c4002c0962c8bfe20f5e223ba52,2025-08-28,3025,24964,Rust,C Header
+cloudflare/vibesdk,1fa292ea92642992c867ee0a004fe1ed71a80c79,2025-08-25,2461,67182,TypeScript,Python
+vllm-project/semantic-router,260d1657d36258296f7178f66271a3e2c83c35a4,2025-08-26,1854,73844,Go,Python
+tangyuanbo1/LifeTrace_app,83d6c7fe20587d3b53b167bf243e5cda628211ed,2025-08-22,867,167712,HTML,TypeScript
+scabench-org/hound,c29890180b317b66b06342521c8e2d82117bb93b,2025-08-24,524,23002,Python,JavaScript
+lunarengine/lunar-test-v1,6b73e4bf2402fcc8766b80069f0a037f1e409715,2025-08-23,507,286023,C++,C Header
+Devin-AXIS/AINO,a808d81dff744ecc11c4c1959ab14703de8da736,2025-08-25,438,148010,TypeScript,JavaScript
+unhappychoice/gittype,0267c93e55097b29c931c1a0e35aec5b23243a0b,2025-08-28,426,54670,Rust,Shell
+ethz-vlg/mvtracker,ceea8ad2af77ed9b44148ef8e9eeba4ea3c3f072,2025-08-28,397,35008,Python,Shell
+OschAI/VisioFirm,970dfd5c565c431b8b8ea2a9eb56cfc7f516fbe7,2025-08-25,365,21533,Python,JavaScript
+Accenture/mcp-bench,7a8eaeae83a842a2949080acc5473f65e1569daf,2025-08-27,348,106463,Python,HTML
+NVIDIA/nvshmem,7dd48c9fd7aa2134264400802881269b7822bd2f,2025-08-27,342,77581,C++,C Header
+crafter-station/elements,bf5138de3f0d6472148ebc18c67e6b12a7f1f279,2025-08-25,302,22529,TypeScript,CSS
+apache/sedona-db,f577f83a4390456fe8a52b46efa06b3ab9037587,2025-08-25,283,106882,Rust,C
+manycore-research/SpatialGen,788a7716325a8484c5d9748bf94a8b02b8065d29,2025-08-24,282,21284,Python,JSONL
+Gen-Verse/dLLM-RL,5516f5d1541775896e223c7e4acf9e92bcc68cc0,2025-08-26,269,29950,Python,License
+agent-era/devteam,00afd9dcd48eba2610ae629f33800e5cec1cfb35,2025-08-26,235,20774,TypeScript,JavaScript
+mzazon/awesome-cloud-projects,e1784e0b35f1dfb8f51ba275dd5f356ac5052b25,2025-08-24,231,2981402,Shell,Terraform
+OwnGoalStudio/TrollVNC,14f6f44087059b952a420e393a4645a5db5a45ec,2025-08-25,225,65377,C Header,JavaScript
+vlongle/pixie,32fd7fc6f7b125109d27e436583f0166249befba,2025-08-26,220,55071,Python,Jupyter
+NVIDIA-Digital-Bio/la-proteina,cde5de3ead6e4d76f367da6dc5174be9913ef6ca,2025-08-26,208,25750,Python,License
+yifangao112/DinoUNet,8a365a7626cf40aedca3608f702ecfa8c344154d,2025-08-27,192,27117,Python,Cuda
+NVIDIA-Digital-Bio/nvMolKit,0ddf63e3a54e6829d7bd75c70d5fcf104728168f,2025-08-27,187,29129,Cuda,C++
+glowxq/glowxq-oj,d9c6f34ddff18c84374c3445e1a9487fc19ed858,2025-08-28,180,92128,Java,JavaScript
+VectorSpaceLab/Infomatica,eba3aaee5c3a31598c4ca7b9ebdedf067d9b77fc,2025-08-27,173,23766,Python,License
+jwest33/jam_model_memory,b12475ca9fdfcaa8d0d4d3009a22d4e79d3c3f7b,2025-08-23,172,24973,Python,HTML
+johnson7788/TrainPPTAgent,ec1f04d8897af91a050a2819252facb2e34b72d8,2025-08-22,168,49604,Vue,TypeScript
+mckinsey/agents-at-scale-ark,eb099780cf1cf425de845c4966e7d6746d231144,2025-08-28,163,97936,TypeScript,Python
+mingolucky/MeowKit,028fb7cd67c7757f3966ca7cefa896332dc22062,2025-08-22,157,27858,C,C++
+wshobson/maverick-mcp,06408813a287d24fbca8fc6dae5e4f90beaf8ea9,2025-08-24,153,102879,Python,Shell
+zli12321/Vision-SR1,98e5d27aff513767be29c636a2468f61f8b16e28,2025-08-22,136,24360,Python,Shell
+cenodude/CrossWatch,63fd4a9309b615ddbd4c96e9e39d886c5cd24467,2025-08-27,127,36732,Python,JavaScript
+HapeLee/legado-with-MD3,82b4a300590c2c11bc99a6b7b61d76bfa2beb67f,2025-08-28,124,130433,Kotlin,Java
+ricklisz/MedDINOv3,bd6a650dda4e32d22e913cfc28458df24bb39b83,2025-08-22,104,35093,Python,License
+facebookresearch/map-anything,44cbc5a4a3960cab50c449797afef200b88b94b7,2025-09-04,1989,48984,Python,Shell
+little-book-of/linear-algebra,71866214207b0fee79b2ab687a4e20b264065539,2025-09-02,1848,52061,HTML,Jupyter
+docker/cagent,7b938490c2064f3b70fc8927c094995bf01eafe1,2025-09-01,1325,26976,Go,Python
+elevenlabs/ui,3127c4554926a35e82549e2d4abeeeb3e5128c0f,2025-09-03,1043,24401,TypeScript,CSS
+XTXMarkets/ternfs,6bfd89dec7d1f6d5e42e263f4dd127d3b3cbbf12,2025-09-02,1011,615037,Go,C
+enetx/surf,323eebf0805fa75aaf419331167e92d4a35558f6,2025-08-30,975,22664,Go,License
+BeaconBay/ck,3052c6aaa8707cdb868fc1a668878ddeab958093,2025-08-30,890,21153,Rust,TypeScript
+google-deepmind/limit,90c5dd3a7c3c0d68bc6cc7a0c5b0f4ca124dfdcb,2025-08-29,582,59407,JSONL,Jupyter
+vercel-labs/dev3000,8aa088b8970de1634d17ee8d39e298bf3a9337c8,2025-09-02,486,22349,TypeScript,JavaScript
+Kocoro-lab/Shannon,0879859a0e11e3a277caaa560fd8623e6dfc5281,2025-08-29,432,73422,Go,Python
+Chevey339/kelivo,f087f5cfe409a2750a47212ec70581dde8789726,2025-08-29,406,58440,Dart,JavaScript
+eclaire-labs/eclaire,4837f364ffa93e29527b5d1e427d7c0ed952d2a2,2025-09-02,376,106090,TypeScript,JavaScript
+pengzhangzhi/Open-dLLM,83c9894cecf22ba980575319cc4d777d88d78e05,2025-09-02,334,81522,Python,Jupyter
+YOOTeam/OpenPPT,f9f8de9dd39e110117adc4b62c17896c5ca51e89,2025-08-30,287,118549,TypeScript,Vue
+CameronFoxly/Ascii-Motion,8d914f31d649ad1ad904a62df95591dff7b6e5bb,2025-09-03,225,48849,TypeScript,JavaScript
+onecat-ai/OneCAT,fc971e408327c733224e8ebfb69569fada602e8b,2025-09-02,221,24895,Python,License
+Tencent-BAC/FastMTP,5875b708b34007eeab3cdf27bc8aca517f87eb21,2025-09-01,195,1237994,Python,Shell
+PasarGuard/panel,4c497d8d530dea42dfa4cb8f70c50425d3dffac9,2025-08-30,176,56864,TypeScript,Python
+ValueCell-ai/valuecell,ae4acfe8219fe31211d3b996ae30cd019b33fce9,2025-09-01,174,54084,Python,TypeScript
+TsinghuaC3I/Unify-Post-Training,ae332f5fa4dc8b4c3d3cd77ebc9cff3a3abab2d0,2025-09-04,163,39966,Python,Jupyter
+Norbert515/nocterm,dbdfc9950a03b620d05b9d61db5209dd614650ff,2025-09-03,156,45876,Dart,License
+scrimba/learn-fullstack-development,d3abf0d1d19617af63c097a09fce29ca515bc097,2025-09-03,154,34373,CSS,JavaScript
+VersusControl/ai-infrastructure-agent,7298ca0b0a3c8bd1c4975afa32a9d249cd9f1475,2025-08-30,142,28844,Go,HTML
+xaitax/NTSleuth,2e15c178fa12a7a86cf8bcd1e3869be2882be204,2025-08-30,140,25829,C++ Header,C++
+antgroup/YASA-Engine,5a773cb75bdb350dd35a4c8827a951b044af5c38,2025-09-04,140,20665,JavaScript,License
+lkpAgent/openAgent,e45abc1525bd13e55781818dd56304f3370cb6d3,2025-08-29,136,39962,Vue,Python
+mlapaglia/Borgitory,d55db19b0faa4dd5b162ad7f05e85766f515c179,2025-08-30,131,75738,Python,HTML
+vibesurf-ai/VibeSurf,8865ef13eee2c9e4c392737dc12d7bc0f5cb1353,2025-08-31,127,37644,Python,JavaScript
+firecrawl/ai-ready-website,6944f04ada7ac893e72e5b2af6f702ef88e4eadc,2025-09-02,126,20032,TypeScript,CSS
+blankresearch/Paperion,03e9d5a51ab5c7fa24c923edb0b8c40b2eb6da6e,2025-08-29,125,82364,JavaScript,TypeScript
+CherryHQ/hanlin-ai,b38b70f0bec3eef960cba58c19cb0d47287f785c,2025-08-31,123,29664,Swift,License
+TencentARC/GenCompositor,e470eb1ed4543497523d9752181413c342fca84a,2025-09-01,122,239889,Python,Cuda
+ZTMYO/XiaoShiLiu,0ce96f9ee1f4af756f2a9f2d4452e119696d08da,2025-09-03,117,47765,Vue,JavaScript
+zquestz/dream-prompter,654219f6b6afca042ba9433eda453b48a151333d,2025-08-30,115,106328,Python,License
+vinhnx/vtcode,90f5e793d007f67d4f876f551d5e9b6ce9ba8f5b,2025-08-29,104,78939,Rust,Shell
+NiTianErXing666/Small-Trace,3d685adf6be536aa10ea0fe94f5ec5b16daf2f05,2025-08-30,101,45308,C Header,C++
+mmulet/term.everything,ba5fee67ae38e64440d9122501341daaef3ffbf8,2025-09-07,6444,721788,C Header,TypeScript
+microsoft/amplifier,106c3b9c3eb78244a14bbb6b408f33e5fc79381c,2025-09-09,1481,28901,Python,Makefile
+midday-ai/ai-sdk-tools,c7d072755ac60d743db5bf05e295e6396a7caf11,2025-09-10,1201,31277,TypeScript,CSS
+volantvm/flint,99c55486bccf2bf01d8c7a9c8c4af57577cbcada,2025-09-06,1139,24420,TypeScript,Go
+djteang/OrangeTV,2194a3d6adf6cc169a32a18cea5b37bc2f93b2e7,2025-09-08,900,37767,TypeScript,CSS
+OpenGVLab/ScaleCUA,229ea8df7a8f34557991ac55d3b59f31f2b23c6e,2025-09-09,648,223148,Python,JavaScript
+nv-tlabs/lyra,b499fb6c65f3d837d623ce6bb107b595530da211,2025-09-09,517,57438,Python,License
+WooooDyy/AgentGym-RL,cd49e7776784c3021db63c181eee4b26f18c7ee6,2025-09-10,437,23784,Python,ReStructuredText
+NJU-3DV/SpatialVID,3b7e4f2fd8a1319865da3ee093565ac7be75803e,2025-09-10,383,64662,Python,TypeScript
+Decohererk/DecoTV,e253a60b8f807cc682cf3f2ac6152a1f36a23e45,2025-09-09,369,33633,TypeScript,CSS
+TheAuditorTool/Auditor,4115f9b2a060fa34b7902c6ef7ca841365b2e396,2025-09-07,362,32790,Python,License
+Mini-o3/Mini-o3,8654dbf42d2ea98b9d81b6cc7179026dd0598fdf,2025-09-09,337,42444,Python,Jupyter
+inkeep/agents,f878545c287859b981f674d2ccd3a9be9d7f240b,2025-09-05,326,142865,TypeScript,JavaScript
+facebookresearch/meta-agents-research-environments,9d29062e377a25e9a79e262f401a97ed7d4181aa,2025-09-11,312,84287,Python,TypeScript
+little-book-of/c,0e8a33e9852266d417fb85ee48ce577c304e1671,2025-09-06,308,24691,HTML,C
+baibizhe/M_GRPO,531168b5c81e51adab65b971e8e28cda140fedea,2025-09-09,301,72675,Python,Shell
+HorizonWind2004/reconstruction-alignment,1c86f05ca34d82cecf30af0f8996d8340fcd0993,2025-09-10,286,25517,Python,JSONL
+iszhanjiawei/indexTTS2,bae9221fd0a1bc98e8409fb97b8d6bd6a119bb64,2025-09-06,260,41053,Python,Cuda
+math-inc/strongpnt,2f5835c322314f55f1026ec2f139d704b7c45c69,2025-09-05,249,21824,Lean,Sass
+antgroup/FluidMarkdown,9339d466a2ba3a86b0dfc0ee186b1d7dfb2cb23c,2025-09-10,233,75948,C,Java
+Brahme27/All-Machine-Learning-Algorithms-Updated,2a2b45d7b9657bf4092a824eef9d77a673688c07,2025-09-07,231,108732,Jupyter,
+alibaba/RecIS,40663ec676a676bd1b6171afb418d3e5a6afd622,2025-09-11,227,308378,C++,C Header
+Anttwo/MILo,8f4a89a707381679ae8ed175b56ff2fe8dcc1f66,2025-09-07,225,242733,HTML,C++ Header
+zhengkid/Parallel-R1,ca3ed77ff3f3809154ddc69362017f57558323ba,2025-09-08,223,126231,Python,Shell
+Deng-m1/MaliangAINovalWriter,2f92fc1dd770632202019813081ee9b33a2e7431,2025-09-09,197,490981,JavaScript,Dart
+scaleapi/SWE-bench_Pro-os,21ced48139be967dd3729701bb3b8a9d07cde01f,2025-09-05,193,137335,Python,Shell
+xn1cklas/tokenlens,94c32330a67963fba45275eace7a01c0232604d9,2025-09-07,170,24454,TypeScript,JavaScript
+looplj/axonhub,c3ccfbd2e57a51dc2b42b95696c098a4f62e83df,2025-09-09,165,185609,Go,TypeScript
+agentjido/req_llm,e707860947229dd9bead7fd441a14c3b681412ca,2025-09-05,163,42517,Elixir,License
+bibinprathap/VeritasGraph,73309eda307d7ba2ac6a2e5002575a48fd192a34,2025-09-06,161,23929,Python,Jupyter
+specpulse/specpulse,089330ca0f9dfe9a3ed1baf3b148a65159d3a8f3,2025-09-11,150,23112,Python,License
+little-book-of/algorithms,71b682878fca1c03114685b3c4127124c49c0603,2025-09-09,138,160196,HTML,CSS
+OpenHelix-Team/OpenTrajBooster,d89f96327d51249307085d295debee262eb4079c,2025-09-11,131,120432,C++ Header,Python
+OpenAnalystInc/OpenAnalyst,96adc4f87c34ef55b80c408317718a4c4b62fa30,2025-09-07,114,213011,TypeScript,CSS
+MBZUAI-IFM/K2-Think-SFT,049171e642e02f8145d910beffe6582d39f84fc4,2025-09-08,112,25493,Python,JSONL
+rbalestr-lab/llm-jepa,dd6196630f97016f7a607b0ac74f5e378ddf25db,2025-09-05,108,408693,JSONL,Python
+KIMGEONUNG/VideoFrom3D,4bcc33925a2c838476356c027bc2066e4f1c6139,2025-09-08,103,21645,Python,Java
+sii-research/VCCL,54df14777dfbd7c9241214c9afa907f1e5827226,2025-09-09,102,57480,C++,C Header
+JHDev2006/Super-Mario-Bros.-Remastered-Public,8474bc3c192a46eed593cb3375f13e0ab1f689ba,2025-09-13,1716,23847,GDScript,License
+saifyxpro/HeadlessX,207fb824b3a121a6e21823cd5f2049223b0d3208,2025-09-12,889,21429,JavaScript,TypeScript
+SakanaAI/ShinkaEvolve,59a338c644fbfae67b7379a23aaea0f0419b2718,2025-09-17,550,32311,Python,HTML
+EvolvingLMMs-Lab/LLaVA-OneVision-1.5,b4527f914255cf7de8540ca154a50d358557351b,2025-09-16,531,158732,Python,Shell
+PatchMon/PatchMon,fdd0cfd61915a4bc0dedd7d091b72bedb3186480,2025-09-16,381,40753,JSX,JavaScript
+lokus-ai/lokus,262bf59366cf3ba71e96047a73caf50e4e86c632,2025-09-13,269,142205,JavaScript,JSX
+Kelsidavis/System7,a1234baccd1a631f0618f481ff86c3241555b2e6,2025-09-18,210,155432,C,C Header
+spring-ai-alibaba/JManus,b1889d4cd4335b04c9e7271435c4f227e56c8420,2025-09-12,165,80962,Java,Vue
+MGdaasLab/WHartTest,cf9fc539998834163ff4a67b65b706d92ee07f8d,2025-09-15,158,43858,Vue,Python
+silicondeck/shadcn-dashboard-landing-template,235b120190e563055910726319c89f05ff5362cc,2025-09-16,148,50921,TypeScript,CSS
+SantiagoMille/germinal,88d7f85aeb78684b05f872ec524255535ad15106,2025-09-18,134,32788,Python,Jupyter
+psyb0t/piraterf,0ad22bdbd85e9b9d3cc431068b25ad3e1235e18b,2025-09-17,132,720638,Go,License
+DavidLiedle/DriftDB,e2744dc61b51322c1052310de3e07b8a6428f1d8,2025-09-14,131,87944,Rust,JSONL
+mschneider456/worldexplorer,510e5f5ad4ad956579356965e32c25e97cde6263,2025-09-17,127,26875,Python,License
+jaapp/smart-grind-by-weight,a61d548895f0a22ee5e52cd23a17eacdbfaf953e,2025-09-14,118,121504,C,C++
+iflytek/astron-agent,bf285fd637e0920f38fbfd293f22e950b7534484,2025-09-19,1852,321122,TypeScript,Java
+jd-opensource/JoySafety,e2e26b2b0917720a44ed643f159fab81c2f88d96,2025-09-24,369,21388,Java,Python
+BalajeS/WSL-For-FreeBSD,7495ef404c464341d41ff18bd56bcc03aaa46dbb,2025-09-20,309,133754,C++,C
+NVlabs/DiffusionNFT,24af5554898d85e93efa492f42b5e9cdf4156e9b,2025-09-19,298,55628,JSONL,Python
+NVlabs/QeRL,32fc3932e1c9324c4019dfdaa32fc25afcee3bcc,2025-09-22,283,42456,Python,Shell
+bahdotsh/blogr,36e741489b051b39bcc637ece13e10e39fb30473,2025-09-20,237,22610,Rust,CSS
+iflytek/astron-rpa,1acf41b3e2e68c2baaf09f2badff2cedbac01719,2025-09-20,236,144304,Python,TypeScript
+IRS-Public/fact-graph,c573c48375b5bbc962db59f0ac363efafb1e62b6,2025-09-19,221,172062,JavaScript,Scala
+nvidia-cosmos/cosmos-predict2.5,c47906768e53c10a430eb4a168c81a82980c4544,2025-09-25,187,83626,Python,Shell
+discountry/ritmex-bot,fabc8af67996bce357d265d5c0258cbebb61b7dc,2025-09-22,186,27381,TypeScript,JavaScript
+halo-dev/upage,c1a597e7fb15f501f0b4da8792af2ff07571bf00,2025-09-24,185,39275,TypeScript,Sass
+wieslawsoltes/VelloSharp,d3208ba453156c390b5309244fbeae27b4a7b96c,2025-09-25,181,152687,C#,Rust
+reneverland/CBIT-AiExam-plus,61074f7d8e73404abf6982f3b03f9246c812796d,2025-09-24,161,31036,Python,HTML
+AMAP-ML/Tree-GRPO,90b170995d996d772d68117e0c7bd0b8fe00d393,2025-09-25,148,26762,Python,Shell
+Wemino/MarkerPatch,5e7c710a91d1859f333562a8e2687c3ea151d645,2025-09-20,135,58216,C,C Header
+SciML/Julia_Modeling_Workshop,f78805846d6ba5a1aa44a6017c44398a06e5cb82,2025-09-22,125,21003,Julia,HTML
+tile-ai/tilelang-ascend,cbe8971c250197dba33e0c88ede8863fa931a6ee,2025-09-25,119,53250,Python,C++
+princeton-pli/RLMT,3eec4c51d80b07bd4b6e20ab6a6b1cc58d0be461,2025-09-22,105,97530,Python,Shell
+facebook/openzl,cb29c2e7b417043e9bb6f1e315533574b1bfad23,2025-09-30,2337,315914,C,C++
+LucklySpace/Lucky-client,e91e02c82b6479bdf10f98823f195f086bb7427f,2025-10-02,1095,41488,TypeScript,Vue
+openai/codex-action,0cb7e270ce49747f8c51ebb61d1a169ed67b5764,2025-10-01,501,27373,JavaScript,TypeScript
+Inception3D/TTT3R,cc6142bd9c15df57817a5c7a4797c163e46fa221,2025-10-01,441,24922,Python,Jupyter
+ghostmkg/dsa-code,882711cf3707032f49c05bf90d65f145d215d870,2025-09-30,304,45210,C++,Java
+google-coral/coralnpu,50a64daca11eef0af499a1291393c9c161d42de4,2025-10-02,294,248479,Emacs Lisp,SystemVerilog
+unkn0wn-root/resterm,c5121018472007e7ba0202f112b5b5542139d22a,2025-09-30,274,27551,Go,License
+93won/lidar_odometry,f00870dcffe0420daae6255942ddc597849d51ad,2025-09-26,259,214268,C++,C Header
+Flixorui/flixor,634596ac0b16a708559282a8e020f9d3e7a1c920,2025-10-01,175,46009,TypeScript,Swift
+JjyKsi/bmw-cardata-ha,2f9ce931ba1dad20767cfbf74d232d00e2f2babf,2025-09-27,141,304811,Python,License
+deweloperuch/rejestr-cen-nieruchomosci,283478929d58aab8a5370b94667443aa245cfcfc,2025-09-26,124,1038222,Game Maker Language,License
+TheAgentArk/Toucan,73ce70372a301844d266557705f9fbd79c6379d8,2025-09-30,122,22286,Python,Jupyter
+TinyActive/nginx-love,1e57c74caab4a4f905fc67345b5407dc63826f0d,2025-10-02,113,44009,TypeScript,Shell
+DecartAI/Decart-XR,52251bc1d2535d9fa0cece7dbf0474b7dd17f8d7,2025-09-28,106,57829,C#,License
+Mordoria/unnamed_game_1_v2,d4e0ad33af247895a615e6dbd873cb51c9af3c26,2025-10-07,1038,42918,Lua,GLSL
+showlab/Paper2Video,a423ffd0a49685678568b5ee5bca3d73471aa7d3,2025-10-03,1006,21924,Python,BuildStream
+xincmm/sageread,8b75aff7406512f4dff238832e90e59f0e2358fb,2025-10-08,402,48189,TypeScript,Rust
+mafik/keyer,0f8eb0efaae77bea840d6cc199159995b61e6a1c,2025-10-09,347,374918,JavaScript,C++
+fanegg/Human3R,b1b578a54c47eaaee84e280788ca0b112220eb74,2025-10-07,325,28607,Python,Jupyter
+tt-rss/tt-rss,a47a45d300e20f53ab47ecb5025fc0ca384b0624,2025-10-03,288,82411,PHP,CSS
+cyberblu3s/CyberBlue,d1f08f5b7afacdbb907f50366b229d630b89c9f8,2025-10-05,271,60518,Snakemake,Shell
+McGill-NLP/the-markovian-thinker,7609ab680a4548ccf7fa79a30ebf19e829f339cf,2025-10-08,248,49937,Python,Shell
+linkedlist771/SoraWatermarkCleaner,86a765671cc489551abb28d776b504aca32810c0,2025-10-04,227,46143,Python,Jupyter
+vita-epfl/Stable-Video-Infinity,19bbf13b74a012519276de106ea1956afd224e6f,2025-10-09,144,51062,Python,Shell
+thuml/MiniVeo3-Reasoner,a41753235febe1d146ba132287bdfb67f29d8e27,2025-10-06,132,256857,HTML,Python
+mit-han-lab/streaming-vlm,a940d8cbfa14eefe651b7f4adeb81825c28cc6c6,2025-10-11,439,90413,Python,Jupyter
+UZDoom/UZDoom,6ae0b6707990a4b982f7c9ea0ec2821381581d88,2025-10-14,404,1137576,C++,C Header
+samber/ro,95afa531914abb53faa7fd2a52e1be408450badf,2025-10-14,234,48186,Go,TypeScript
+Mina-Massoud/Mina-Rich-Editor,29ecb9b1d8a1df29a3df515c93be466083adc58e,2025-10-11,185,21384,TypeScript,CSS
+mahdiMGF2/mirza_pro,df521b58d93b7d67191a8dd812164a06c693d699,2025-10-15,161,170471,PHP,JavaScript
+eric-ai-lab/EvoPresent,7a5eeaa5f4d28102d8d827a3f2b23ca7a3c0c615,2025-10-13,135,64203,Python,CSS
+OpenImagingLab/FlashVSR,e60b29cf74700f42d256e9d1dc96cf1174be01e8,2025-10-14,115,38912,Python,License
+LLmHub-dev/open-computer-use,9c976cc8f1b34d492d331ee65bbda76d3fa3e276,2025-10-11,104,79620,TypeScript,Python
+iflytek/astron-agent,7654df4e2055d1c2b58eef5d109ba3462284e719,2025-09-19T08:46:01Z,1863,442351.0,Java,Python
+mmulet/term.everything,0e17f779aa0d853c2c4a38038e09def2f8bb8df3,2025-09-07T02:52:48Z,6448,910540.0,C Header,TypeScript
+NiuTrans/LaTeXTrans,21d9627a2d181505e8bb3932ba59ddcff61b4dc7,2025-09-04T05:07:26Z,402,31409.0,bib,Python
+FuzzingLabs/fuzzforge_ai,4ad44332eef81a1dced3154178e4707059ff481b,2025-09-15T10:04:25Z,281,55886.0,JSON,Python
+iflytek/astron-rpa,480b24378e750fd4cab0b834b06c09eb78145fb8,2025-09-20T08:51:40Z,238,234164.0,Python,Java

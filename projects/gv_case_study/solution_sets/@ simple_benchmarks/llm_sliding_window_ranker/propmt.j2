@@ -1,0 +1,46 @@
+### founder_properties
+{% for founder in founders %}
+Founder {{ founder.person_id }}: {{ founder.properties }}
+{% endfor %}
+
+### criteria of good founders
+
+Use evidence-based criteria from entrepreneurship research and venture capital practice when evaluating founders. In general, prefer founders who, based on the provided @founder_properties, show strong long-term potential to build and scale a high-impact, ethical company rather than just short-term fundraising ability.
+
+- Career experience  
+  Favor founders with deep, *relevant* operating and leadership experience (e.g. building products, owning P&L, managing teams) in the same or adjacent industry to their current startup domain. Prior roles that involved high uncertainty, rapid learning, and accountability (e.g. early-stage operator, GM, product lead) are especially positive. Give extra weight when their experience directly exposes them to the customer problems they now want to solve.
+
+- Previous company performance  
+  Rank higher founders who have helped create or scale successful companies: evidence of revenue growth, strong unit economics, durable product-market fit, meaningful exits, or significant value creation for customers and employees. Treat “quick hype then collapse” or purely vanity outcomes as weaker than steady, compounding performance.
+
+- Network quality and access  
+  Prefer founders whose networks give them advantaged access to capital, talent, customers, and partners in the relevant ecosystem. Strong signals include: central or well-connected positions in founder / investor / operator networks, repeated collaborations with high-quality people, and bridges across domains that unlock distribution or insight. Large but shallow or irrelevant networks should count less than smaller, high-trust, high-relevance networks.
+
+- Education and human capital  
+  Treat education as one component of human capital, not a gatekeeper. Rank higher founders whose education (formal degrees, bootcamps, or equivalent self-directed learning) clearly builds capabilities that matter for their current or likely domains: technical depth, domain knowledge, analytical thinking, and the ability to learn quickly. Elite credentials alone without evidence of applied execution should not outweigh strong, practice-driven experience.
+
+- Personality traits and working style  
+  From the inferred personality traits and Merrill-Reid style (driver, analytical, expressive, amiable), favor patterns associated with high entrepreneurial performance: high conscientiousness, openness to new ideas, resilience under stress, internal locus of control, and willingness to take calculated risks while learning from feedback.  
+  Drivers and expressives are often strong at vision, selling, and momentum; analyticals at rigorous thinking and decision-making; amiables at culture, retention, and stakeholders. Rank highest when a founder’s style matches the demands of their domain and they show emotional stability, self-awareness, and the ability to work with complementary personalities. Clearly toxic, unethical, or extremely volatile behavior is a strong negative signal regardless of other strengths.
+
+- Track record with failure  
+  Do **not** automatically penalize founders for prior failed startups. Research suggests that experience, including failure, can improve judgment, negotiation power, and execution in later ventures when the founder learns from it. Favor founders who explicitly show reflection, pattern-breaking, and better outcomes over time. Mark down only when there is a repeated pattern of similar failures, denial of responsibility, or no visible learning.
+
+- Domain expertise and thought leadership  
+  Prefer founders whose expertise domain (from experience, education, publications, OSS contributions, patents, blogs, talks, etc.) tightly overlaps with the technical, regulatory, or customer realities of their current or likely startup domain. Deep, hands-on, niche expertise that creates “earned secrets” (non-obvious insights about how the market or technology really works) should be weighted strongly.
+
+- Current startup domain and founder–market fit  
+  Rank founders higher when their current startup domain is a natural extension of their past experience, network, and motivations. Strong founder–market fit looks like: lived experience of the customer pain, nuanced understanding of the competitive and regulatory landscape, and clear advantages in distribution, product insight, or execution in that specific market. Penalize cases where the startup domain appears trendy but poorly aligned with the founder’s background and resources.
+
+When making trade-offs, prioritize: (1) relevant track record of execution and learning (including from failure), (2) strong founder–market fit between skills, network, and domain, and (3) evidence of resilient, ethical, and collaborative behavior. Ignore demographic attributes (e.g., gender, ethnicity, age) and superficial status signals; base the ranking only on the substance of the provided @founder_properties.
+
+### task
+For all the provided founders in @founder_properties, please re-rank them from best to worst based on the @founder_properties and @criteria of good founders.
+
+### output
+Return a JSON array of `person_id` strings, in order from best to worst, like:
+
+["id_1", "id_2", "id_3"]
+
+Do not include any explanation. Output only the JSON.
+

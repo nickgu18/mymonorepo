@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple XGBoost Pipeline – Companion View</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 24px;
+      line-height: 1.5;
+      color: #222;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    table.matrix {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1100px;
+    }
+    table.matrix th,
+    table.matrix td {
+      border: 1px solid #ddd;
+      vertical-align: top;
+      padding: 6px 8px;
+    }
+    table.matrix th {
+      background: #f2f2f2;
+      text-align: left;
+    }
+    td.col-current {
+      width: 50%;
+      background: #fafafa;
+    }
+    td.col-new {
+      width: 50%;
+      background: #fbfbff;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    ul {
+      margin: 4px 0 0 18px;
+      padding: 0;
+    }
+    li {
+      margin: 2px 0;
+    }
+    code {
+      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.9em;
+    }
+    a {
+      color: #0b63c5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .kept {
+      color: #1a7f37;
+    }
+    .removed {
+      color: #b3261e;
+    }
+    .added {
+      color: #0b63c5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple XGBoost Pipeline – Companion View</h1>
+  <p>
+    Left: modules and functions in the <strong>current</strong> codebase.<br/>
+    Right: modules and functions the <strong>new/simple pipeline</strong> will use.<br/>
+    <span class="kept">Kept</span> = used in both, <span class="removed">Removed</span> = only current,
+    <span class="added">Added</span> = only new.
+  </p>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Current</th>
+        <th>New / Simple</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- src/data -->
+      <tr>
+        <td class="col-current">
+          <div class="section-title">src/data</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/data/loaders.py">xgboost/src/data/loaders.py</a>
+              <ul>
+                <li class="kept"><code>require_columns</code> – validate required columns; unchanged.</li>
+                <li class="kept"><code>load_raw</code> – load CSVs for training or ranking; unchanged.</li>
+                <li class="kept"><code>clean</code> – normalize IDs, parse dates, coerce performance to numeric; unchanged.</li>
+                <li class="removed"><code>load_and_clean</code> – wrapper around <code>load_raw</code> + <code>clean</code>; notebook will stop using this and it can be deleted.</li>
+                <li class="kept"><code>load_targets</code> – load <code>target_variable_training.csv</code>; unchanged.</li>
+                <li class="removed"><code>build_company_founded_lookup</code> – build company_id → founding year mapping from <code>target_variable_training.csv</code>; no longer needed once founding years come from <code>company_info.company_founded</code> and the feature config’s <code>current_year</code>.</li>
+                <li class="kept"><code>normalize_ids</code> – strip <code>/p/</code> and <code>/c/</code> prefixes; unchanged.</li>
+                <li class="kept"><code>parse_dates</code> – parse <code>start_date</code>/<code>end_date</code> to timestamps; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/data/splitters.py">xgboost/src/data/splitters.py</a>
+              <ul>
+                <li class="kept"><code>split_by_industry</code> – deterministic year‑cutoff split per industry using <code>company_founded</code>; returns groups and frames with minimal side effects.</li>
+                <li class="removed"><code>save_split_summary</code> – write CSV summary of splits; not used in the simple pipeline.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/data/analysis.py">xgboost/src/data/analysis.py</a>
+              <ul>
+                <li class="removed"><code>summarize_training_company_coverage</code> – analysis helper only; not part of train/infer loop.</li>
+                <li class="removed"><code>summarize_founder_company_coverage</code> – analysis helper only; not part of train/infer loop.</li>
+                <li class="removed"><code>build_founder_experience_summary</code> – analysis helper only; not part of train/infer loop.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td class="col-new">
+          <div class="section-title">src/data</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/data/loaders.py">xgboost/src/data/loaders.py</a>
+              <ul>
+                <li class="kept"><code>require_columns</code> – validate required columns; unchanged.</li>
+                <li class="kept"><code>load_raw</code> – load CSVs for training or ranking; unchanged.</li>
+                <li class="kept"><code>clean</code> – normalize IDs, parse dates, coerce performance to numeric; unchanged.</li>
+                <li class="kept"><code>load_targets</code> – load <code>target_variable_training.csv</code>; unchanged.</li>
+                <li class="kept"><code>normalize_ids</code> – strip <code>/p/</code> and <code>/c/</code> prefixes; unchanged.</li>
+                <li class="kept"><code>parse_dates</code> – parse <code>start_date</code>/<code>end_date</code> to timestamps; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/data/splitters.py">xgboost/src/data/splitters.py</a>
+              <ul>
+                <li class="kept"><code>split_by_industry</code> – deterministic year‑cutoff split per industry using <code>company_founded</code>.</li>
+              </ul>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- src/features -->
+      <tr>
+        <td class="col-current">
+          <div class="section-title">src/features</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/features/pipeline.py">xgboost/src/features/pipeline.py</a>
+              <ul>
+                <li class="kept"><code>FeaturePipeline.build_matrix</code> – construct founder‑level matrix with one row per founder (last founded company) selected via <code>founder_experience.order</code> (descending per person); attaches <code>industry</code> and features via merges, defers <code>company_founded</code> to the training target join.</li>
+                <li class="removed"><code>FeaturePipeline.impute_field</code> – column imputer; new pipeline will not call this and it can be removed.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/features/types.py">xgboost/src/features/types.py</a>
+              <ul>
+                <li class="kept"><code>FeatureMatrix</code> – wrapper for feature dataframe; unchanged.</li>
+                <li class="kept"><code>FeatureMetadata</code> – stores feature column names and entity column; unchanged.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td class="col-new">
+          <div class="section-title">src/features</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/features/pipeline.py">xgboost/src/features/pipeline.py</a>
+              <ul>
+                <li class="kept"><code>FeaturePipeline.build_matrix</code> – construct founder‑level feature matrix; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/features/types.py">xgboost/src/features/types.py</a>
+              <ul>
+                <li class="kept"><code>FeatureMatrix</code> – wrapper for feature dataframe; unchanged.</li>
+                <li class="kept"><code>FeatureMetadata</code> – stores feature column names and entity column; unchanged.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- src/models -->
+      <tr>
+        <td class="col-current">
+          <div class="section-title">src/models</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/models/metrics.py">xgboost/src/models/metrics.py</a>
+              <ul>
+                <li class="kept"><code>calculate_relevance_grade</code> – map MOIC to integer relevance via <code>floor(log1p(moic))</code>; unchanged.</li>
+                <li class="kept"><code>parse_eval_metric_k</code> – parse <code>ndcg@k</code> metrics; unchanged.</li>
+                <li class="kept"><code>calculate_ndcg</code> – compute NDCG for one list; unchanged.</li>
+                <li class="kept"><code>compute_cohort_ndcg</code> – compute NDCG per cohort; unchanged.</li>
+                <li class="kept"><code>calculate_mean_ndcg</code> – macro average NDCG across groups; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/training.py">xgboost/src/models/training.py</a>
+              <ul>
+                <li class="kept"><code>train_ranker</code> – fit <code>XGBRanker</code> with groups and log metrics to MLflow; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/types.py">xgboost/src/models/types.py</a>
+              <ul>
+                <li class="kept"><code>ModelBundle</code> – container for estimator + metadata; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/io.py">xgboost/src/models/io.py</a>
+              <ul>
+                <li class="kept"><code>load_model_bundle</code> – load <code>ranker.json</code> + <code>artifacts.json</code> into a <code>ModelBundle</code>; unchanged.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td class="col-new">
+          <div class="section-title">src/models</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/models/metrics.py">xgboost/src/models/metrics.py</a>
+              <ul>
+                <li class="kept"><code>calculate_relevance_grade</code> – map MOIC to integer relevance via <code>floor(log1p(moic))</code>; unchanged.</li>
+                <li class="kept"><code>parse_eval_metric_k</code> – parse <code>ndcg@k</code> metrics; unchanged.</li>
+                <li class="kept"><code>calculate_ndcg</code> – compute NDCG for one list; unchanged.</li>
+                <li class="kept"><code>compute_cohort_ndcg</code> – compute NDCG per cohort; unchanged.</li>
+                <li class="kept"><code>calculate_mean_ndcg</code> – macro average NDCG across groups; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/training.py">xgboost/src/models/training.py</a>
+              <ul>
+                <li class="kept"><code>train_ranker</code> – fit <code>XGBRanker</code> with groups and log metrics to MLflow; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/types.py">xgboost/src/models/types.py</a>
+              <ul>
+                <li class="kept"><code>ModelBundle</code> – container for estimator + metadata; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/io.py">xgboost/src/models/io.py</a>
+              <ul>
+                <li class="kept"><code>load_model_bundle</code> – load <code>ranker.json</code> + <code>artifacts.json</code> into a <code>ModelBundle</code>; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/models/training_pipeline.py">xgboost/src/models/training_pipeline.py</a>
+              <ul>
+                <li class="added"><code>build_training_dataset</code> – build founder‑level training dataframe (one row per founder: last founded company) by running <code>FeaturePipeline.build_matrix</code>, joining <code>target_variable_training.csv</code> to bring <code>company_founded</code>, <code>multiple</code>, and corrected <code>industry</code>, deriving labels via <code>calculate_relevance_grade</code>, and removing founders whose last companies overlap with the ranking dataset.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- src/predict -->
+      <tr>
+        <td class="col-current">
+          <div class="section-title">src/predict</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/predict/inference.py">xgboost/src/predict/inference.py</a>
+              <ul>
+                <li class="kept"><code>predict_batch</code> – compute scores, ranks, and explanations for a feature matrix; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/predict/explanations.py">xgboost/src/predict/explanations.py</a>
+              <ul>
+                <li class="kept"><code>summarize_shap</code> – summarize SHAP values into top‑K textual explanations; unchanged.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td class="col-new">
+          <div class="section-title">src/predict</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/src/predict/inference.py">xgboost/src/predict/inference.py</a>
+              <ul>
+                <li class="kept"><code>predict_batch</code> – compute scores, ranks, and explanations for a feature matrix; unchanged.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../xgboost/src/predict/explanations.py">xgboost/src/predict/explanations.py</a>
+              <ul>
+                <li class="kept"><code>summarize_shap</code> – summarize SHAP values into top‑K textual explanations; unchanged.</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- notebooks & top-level -->
+      <tr>
+        <td class="col-current">
+          <div class="section-title">notebooks &amp; top-level</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/notebooks/GV_Exercise_Simple.ipynb">xgboost/notebooks/GV_Exercise_Simple.ipynb</a>
+            </li>
+            <li>
+              <a href="../../xgboost/notebooks/GV_AutoML.ipynb">xgboost/notebooks/GV_AutoML.ipynb</a>
+            </li>
+            <li>
+              <a href="../../xgboost/automl_code_block.py">xgboost/automl_code_block.py</a>
+            </li>
+          </ul>
+        </td>
+        <td class="col-new">
+          <div class="section-title">notebooks &amp; top-level</div>
+          <ul>
+            <li>
+              <a href="../../xgboost/notebooks/GV_Exercise_Simple.ipynb">xgboost/notebooks/GV_Exercise_Simple.ipynb</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Final notebook structure (GV_Exercise_Simple.ipynb)</h2>
+  <p>The exercise notebook becomes a thin orchestrator over the library functions above.</p>
+  <ol>
+    <li><strong>Imports</strong>
+      <ul>
+        <li><code>from src.common.config import load_config</code></li>
+        <li><code>from src.data.loaders import load_raw, clean, load_targets</code></li>
+        <li><code>from src.models.training_pipeline import build_training_dataset</code></li>
+        <li><code>from src.data.splitters import split_by_industry</code></li>
+        <li><code>from src.features.pipeline import FeaturePipeline</code></li>
+        <li><code>from src.models.training import train_ranker</code></li>
+        <li><code>from src.models.io import load_model_bundle</code></li>
+        <li><code>from src.predict.inference import predict_batch</code></li>
+      </ul>
+    </li>
+    <li><strong>Load config</strong>
+      <ul>
+        <li>Call <code>cfg = load_config(&quot;configs/base.yaml&quot;)</code>.</li>
+      </ul>
+    </li>
+    <li><strong>Load and clean data</strong>
+      <ul>
+        <li>Load curated training CSVs with <code>raw_training = load_raw(cfg.data, dataset=&quot;training&quot;)</code> and build <code>clean_training = clean(raw_training)</code>.</li>
+        <li>Load ranking CSVs with <code>raw_ranking = load_raw(cfg.data, dataset=&quot;ranking&quot;)</code> and build <code>clean_ranking = clean(raw_ranking)</code>.</li>
+        <li>Load the training targets with <code>target_df = load_targets(cfg.data)</code>.</li>
+      </ul>
+    </li>
+    <li><strong>Build training dataset</strong>
+      <ul>
+        <li>Call <code>train_df = build_training_dataset(clean_training, clean_ranking, target_df, cfg.features)</code> to get founder‑level rows (last founded company) with features, joined <code>company_founded</code>, corrected <code>industry</code> when applicable, and labels based on <code>floor(log1p(multiple))</code> (with strict founder‑level leakage removal).</li>
+        <li>Optionally inspect label distribution / counts by industry.</li>
+      </ul>
+    </li>
+    <li><strong>Split by industry</strong>
+      <ul>
+        <li>Select feature columns from <code>train_df</code> and the label column.</li>
+        <li>Call <code>X_train, y_train, X_test, y_test, train_df_s, test_df_s, train_groups, test_groups, industry_names = split_by_industry(train_df, feature_columns, target_col="label", cutoff_year_map=cfg.data.cohort_cutoffs)</code>.</li>
+      </ul>
+    </li>
+    <li><strong>Train ranker</strong>
+      <ul>
+        <li>Call <code>ranker, metrics = train_ranker(X_train, y_train, X_test, y_test, params=cfg.model.hyperparameters, tracking_uri=cfg.tracking.uri, experiment_name=cfg.tracking.experiment_name, train_groups=train_groups, test_groups=test_groups, industry_names=industry_names)</code>.</li>
+        <li>Compute per‑industry SHAP importance: build a TreeExplainer on the trained ranker, compute SHAP on train/test features, aggregate by mean absolute value per cohort, and log/display top‑K features per industry.</li>
+        <li>Save <code>ranker.json</code> and <code>artifacts.json</code> using the existing IO utilities (or rely on MLflow artifacts if already wired).</li>
+      </ul>
+    </li>
+    <li><strong>Run inference on ranking data</strong>
+      <ul>
+        <li>Reuse <code>clean_ranking</code> from the earlier load/clean step.</li>
+        <li>Create a <code>FeaturePipeline</code> and call <code>build_matrix</code> on <code>clean_ranking</code> to get the founder feature matrix for the interest list.</li>
+        <li>Load the trained bundle via <code>load_model_bundle</code>.</li>
+        <li>Score per industry: filter by <code>industry</code>, predict, and rank within each cohort. Use <code>predict_batch</code> to produce <code>founder_id</code>, <code>industry</code>, optional <code>company_founded</code> (when available), <code>score</code>, <code>rank</code>, and <code>explanation</code> (mandatory SHAP top‑K).</li>
+      </ul>
+    </li>
+    <li><strong>Inspect results</strong>
+      <ul>
+        <li>Sort and display top founders per industry, plot simple diagnostics, etc.</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>

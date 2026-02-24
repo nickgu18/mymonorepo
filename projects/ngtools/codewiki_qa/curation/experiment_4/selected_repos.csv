@@ -1,0 +1,51 @@
+repo,commit,creation_date,stars,lines_of_code,primary_language,secondary_language
+TencentARC/GenCompositor,e470eb1ed4543497523d9752181413c342fca84a,2025-09-01,122,239889.0,Python,Cuda
+OpenGVLab/ScaleCUA,229ea8df7a8f34557991ac55d3b59f31f2b23c6e,2025-09-09,648,223148.0,Python,JavaScript
+csbhr/Vivid-VR,38c736af2f8ee98243abf1d52e4796de35ef9c73,2025-08-05,190,208745.0,Python,Makefile
+MaliosDark/wifi-3d-fusion,0c0f99e6af9fa1a22d850c45b8f23aa75f34f328,2025-08-19,843,205177.0,Python,C++
+JjyKsi/bmw-cardata-ha,2f9ce931ba1dad20767cfbf74d232d00e2f2babf,2025-09-27,141,304811.0,Python,License
+RosettaCommons/RFdiffusion2,b22d76138973aaeb43b7bcd1e34157253cf08f43,2025-08-18,301,160976.0,Python,C++ Header
+EvolvingLMMs-Lab/LLaVA-OneVision-1.5,b4527f914255cf7de8540ca154a50d358557351b,2025-09-16,531,158732.0,Python,Shell
+iflytek/astron-rpa,1acf41b3e2e68c2baaf09f2badff2cedbac01719,2025-09-20,236,144304.0,Python,TypeScript
+scaleapi/SWE-bench_Pro-os,21ced48139be967dd3729701bb3b8a9d07cde01f,2025-09-05,193,137335.0,Python,Shell
+SkyworkAI/Matrix-3D,6cc004c105c9e0ae9e47f1db4ec7c7f0eb9c41cd,2025-08-11,534,136637.0,Python,Jupyter
+unhappychoice/gittype,0267c93e55097b29c931c1a0e35aec5b23243a0b,2025-08-28,426,54670.0,Rust,Shell
+arsfeld/reel,1978bab8362b5157738127b4b5e76ce7c05146d0,2025-08-19,164,52665.0,Rust,CSS
+vinhnx/vtcode,90f5e793d007f67d4f876f551d5e9b6ce9ba8f5b,2025-08-29,104,78939.0,Rust,Shell
+DavidLiedle/DriftDB,e2744dc61b51322c1052310de3e07b8a6428f1d8,2025-09-14,131,87944.0,Rust,JSONL
+Michael-A-Kuykendall/shimmy,37f67acbbf322c4002c0962c8bfe20f5e223ba52,2025-08-28,3025,24964.0,Rust,C Header
+bahdotsh/blogr,36e741489b051b39bcc637ece13e10e39fb30473,2025-09-20,237,22610.0,Rust,CSS
+BeaconBay/ck,3052c6aaa8707cdb868fc1a668878ddeab958093,2025-08-30,890,21153.0,Rust,TypeScript
+murat-cileli/clyp,e036f0e6944cd35e46a95fa77b851e592d4f3598,2025-08-14,270,369341.0,Go,C
+looplj/axonhub,c3ccfbd2e57a51dc2b42b95696c098a4f62e83df,2025-09-09,165,185609.0,Go,TypeScript
+XTXMarkets/ternfs,6bfd89dec7d1f6d5e42e263f4dd127d3b3cbbf12,2025-09-02,1011,615037.0,Go,C
+githubnext/gh-aw,1cc5245d14953177fc9d5a845668728581ac41cc,2025-08-12,182,103948.0,Go,JavaScript
+vllm-project/semantic-router,260d1657d36258296f7178f66271a3e2c83c35a4,2025-08-26,1854,73844.0,Go,Python
+mafik/keyer,0f8eb0efaae77bea840d6cc199159995b61e6a1c,2025-10-09,347,374918.0,JavaScript,C++
+Dreamsoft-DreamV/dreamv,baf9daa5fad0902aa3b95ca055b29fb337cf52c3,2025-08-11,129,325935.0,JavaScript,Vue
+jurmy24/mechaverse,47fc4c0c979e76ea0556e10fbc36ec8eabd42b2d,2025-08-05,220,316135.0,JavaScript,HTML
+dmlgzs/StarResonanceDamageCounter,d33f19f89352d5e4651387b7abf655c3fdab6250,2025-08-02,236,253564.0,JavaScript,HTML
+Kelsidavis/System7,a1234baccd1a631f0618f481ff86c3241555b2e6,2025-09-18,210,155432.0,C,C Header
+jaapp/smart-grind-by-weight,a61d548895f0a22ee5e52cd23a17eacdbfaf953e,2025-09-14,118,121504.0,C,C++
+Lobotomy-Software/SlaveDriver-Engine,a8986591557b6e680550d3c23970284d3b38ff8f,2025-08-16,212,115118.0,C,C Header
+OwnGoalStudio/TrollVNC,14f6f44087059b952a420e393a4645a5db5a45ec,2025-08-25,225,65377.0,C Header,JavaScript
+lxz-jiandan/Overt,0963f58925867027636802ad0b86cc0a47353711,2025-08-01,172,52540.0,C Header,C++
+oiy-ai/learnify,62d8494dbb01a8515a8e5463939d70f56ca7e2d0,2025-08-11,202,688504.0,TypeScript,Rust
+iflytek/astron-agent,bf285fd637e0920f38fbfd293f22e950b7534484,2025-09-19,1852,321122.0,TypeScript,Java
+FuzzingLabs/fuzzforge_ai,4ad44332eef81a1dced3154178e4707059ff481b,2025-09-15T10:04:25Z,281,55886.0,JSON,Python
+glowxq/glowxq-oj,d9c6f34ddff18c84374c3445e1a9487fc19ed858,2025-08-28,180,92128.0,Java,JavaScript
+dochia-dev/dochia-cli,7f6c1e8a303157edeca4411ac133975becb5c437,2025-08-09,126,81503.0,Java,CloudFormation (YAML)
+HapeLee/legado-with-MD3,82b4a300590c2c11bc99a6b7b61d76bfa2beb67f,2025-08-28,124,130433.0,Kotlin,Java
+nook-browser/Nook,472de205977e26239465a5ceb2f2da8797fb874b,2025-08-01,938,50335.0,Swift,C
+wieslawsoltes/VelloSharp,d3208ba453156c390b5309244fbeae27b4a7b96c,2025-09-25,181,152687.0,C#,Rust
+alibaba/RecIS,40663ec676a676bd1b6171afb418d3e5a6afd622,2025-09-11,227,308378.0,C++,C Header
+mahdiMGF2/mirza_pro,df521b58d93b7d67191a8dd812164a06c693d699,2025-10-15,161,170471.0,PHP,JavaScript
+mmulet/term.everything,ba5fee67ae38e64440d9122501341daaef3ffbf8,2025-09-07,6444,721788.0,C Header,TypeScript
+Tencent-BAC/FastMTP,5875b708b34007eeab3cdf27bc8aca517f87eb21,2025-09-01,195,1237994.0,Python,Shell
+clduab11/gemini-flow,8e22487dadac8c32bedbba4939933310d7c855c6,2025-08-01,133,475795.0,JavaScript,TypeScript
+wenge-research/x-agent,78935e129fafbed08af103041304e8e1f53b39e4,2025-08-04,920,688464.0,Vue,Java
+mzazon/awesome-cloud-projects,e1784e0b35f1dfb8f51ba275dd5f356ac5052b25,2025-08-24,231,2981402.0,Shell,Terraform
+deweloperuch/rejestr-cen-nieruchomosci,283478929d58aab8a5370b94667443aa245cfcfc,2025-09-26,124,1038222.0,Game Maker Language,License
+ccfos/huatuo,bb5e6fc1ca32ccbcbeac1a68ef16df653469e9da,2025-08-04,640,1859496.0,Go,C Header
+Deng-m1/MaliangAINovalWriter,2f92fc1dd770632202019813081ee9b33a2e7431,2025-09-09,197,490981.0,JavaScript,Dart
+psyb0t/piraterf,0ad22bdbd85e9b9d3cc431068b25ad3e1235e18b,2025-09-17,132,720638.0,Go,License

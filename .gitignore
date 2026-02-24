@@ -1,0 +1,16 @@
+# Standalone projects
+projects/bench-hub/
+projects/harbor/
+projects/koe/
+
+# Common ignores
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+node_modules/
+.venv/
+venv/
+.env
+.idea/
+.vscode/

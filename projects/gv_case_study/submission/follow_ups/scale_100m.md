@@ -1,0 +1,3 @@
+# Imagine you now have 100 million founders to rank. How would you scale up your solution?
+
+To scale to 100 million founders, I would transition to a distributed architecture. I'd use BigQuery for storage and feature engineering, leveraging its scalability for large datasets. For training, I'd employ XGBoost on Spark via Dataproc or Vertex AI Training to handle the volume. Network features, which become computationally expensive at this scale, would be managed using Vertex AI Vector Search (ANN) for efficient proximity calculations. Scoring would primarily be handled via distributed batch processing in BigQuery or Dataflow, with real-time scoring reserved for new or updated profiles.

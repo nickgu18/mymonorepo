@@ -1,0 +1,40 @@
+﻿This document gives further explanation to select columns in the datasets given to you.
+
+
+founder_experience
+
+
+* person_id - A UUID for every person.
+* order - The chronological order of each experience, per person.
+* company_id - A UUID for every company. [prev missing]
+* title - The job title held during this experience. [prev missing]
+* job_type - The category or type of job (e.g., full-time, part-time, advisory). [prev missing]
+* start_date - The date this experience began. [prev missing]
+* end_date - Current roles will have a null end_date. A null end date however does not necessarily indicate a current role. It could just mean info is missing.
+* is_c_suite - If True, the person held a C-suite (executive) role. [prev missing]
+* is_employee - If True, the person was an employee of the company. [prev missing]
+* is_executive - If True, the person held an executive-level position. [prev missing]
+* is_founder - If True, it means the person is a founder of a company. [prev missing]
+* is_on_board - If True, it means the person is on the board of directors of a company.
+person_id,order,company_id,title,job_type,start_date,end_date,is_c_suite,is_employee,is_executive,is_founder,is_on_board
+
+
+
+education_training
+
+
+* person_id - The same UUID that identifies people in founder_experience.
+* education_tier - A measure of the quality of a person’s education (independent of the highest_level -value), scored discretely from 1-5.
+* highest_level - A string of highest degree level [prev missing]
+
+
+company_info
+* company_id - A UUID for every company.
+* industry - A industry of the company [prev missing]
+* performance - A measure of the level of achievement for companies. Whereas multiple in target_variable_training.csv requires a company to have exited, this ‘performance’ measure applies to companies that have not exited as well. It is a related measure, but the exact details of the computation are not necessary to know. Just know a larger number indicates a better performing company. Many companies will have a Null for this field.
+
+
+target_variable_training
+* company_id - A UUID for every company, the same as in company_info.
+* company_founded  - The year in which that company was founded.
+* multiple - The return on capital venture capitalists achieved by investing in an early financing round of this company, expressed as a ratio of ($ returned / $ invested). A multiple of 1.0 for instance would indicate no profit, and no loss of money. This is the core metric that VCs want to optimize for.

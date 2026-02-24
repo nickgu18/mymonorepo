@@ -1,0 +1,52 @@
+{
+  "hooks": {
+    "AfterAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "silent": true,
+            "command": "PYTHONPATH=\"${extensionPath}\":$PYTHONPATH $HOME/.gemini_chat_bridge/venv/bin/python3 ${extensionPath}/hooks/chat_hook.py --event agent_output"
+          }
+        ]
+      }
+    ],
+    "AfterModel": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "silent": true,
+            "command": "PYTHONPATH=\"${extensionPath}\":$PYTHONPATH $HOME/.gemini_chat_bridge/venv/bin/python3 ${extensionPath}/hooks/chat_hook.py --event model_output"
+          }
+        ]
+      }
+    ],
+    "BeforeTool": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "silent": true,
+            "command": "PYTHONPATH=\"${extensionPath}\":$PYTHONPATH $HOME/.gemini_chat_bridge/venv/bin/python3 ${extensionPath}/hooks/chat_hook.py --event tool_start"
+          }
+        ]
+      }
+    ],
+    "AfterTool": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "silent": true,
+            "command": "PYTHONPATH=\"${extensionPath}\":$PYTHONPATH $HOME/.gemini_chat_bridge/venv/bin/python3 ${extensionPath}/hooks/chat_hook.py --event tool_output"
+          }
+        ]
+      }
+    ]
+  }
+}

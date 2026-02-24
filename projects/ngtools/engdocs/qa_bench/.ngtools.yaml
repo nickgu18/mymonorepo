@@ -1,0 +1,8 @@
+source: "/usr/local/google/home/guyu/Desktop/gcli/agent-prototypes/agent_prototypes"
+procedural_instructions:
+    test:
+        unit_tests:
+            cmd: cmd to run
+            override: "run this only when xxx"
+        integration_tests:
+            cmd: cmd to run

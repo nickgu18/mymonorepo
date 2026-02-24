@@ -1,0 +1,3 @@
+# How would you productionize it and support real time scoring for new founders?
+
+To productionize this for real-time scoring, I would leverage a cloud-native ML stack (i.e vertex). The model would be deployed on Vertex AI Prediction or GKE for scalable, low-latency serving. We'd use Vertex AI Feature Store to manage and serve features consistently between training and serving, with Pub/Sub and Dataflow handling real-time feature updates from sources like LinkedIn or news feeds. Finally, Vertex AI Model Monitoring would track data and concept drift, triggering automated retraining pipelines via Vertex AI Pipelines to ensure the model remains accurate as founder and market dynamics evolve.

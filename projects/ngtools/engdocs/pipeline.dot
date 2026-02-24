@@ -1,0 +1,71 @@
+digraph QABenchPipeline {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fillcolor="#EFEFEF"];
+    edge [fontname="Helvetica"];
+
+    subgraph cluster_main {
+        label="QABench Pipeline";
+        bgcolor="#F5F5F5";
+
+        start [label="Start", shape=ellipse, style=filled, fillcolor="#A2D2FF"];
+        load_questions [label="Load All Questions\n(from *_questions.json)"];
+        
+        subgraph cluster_parallel_questions {
+            label="Parallel Processing per Question (Concurrency Limit)";
+            bgcolor="#FFFFFF";
+            style="dashed";
+
+            subgraph cluster_question {
+                label="Process Single Question";
+                bgcolor="#FFFFFF";
+                
+                gen_answers [label="1. Generate N Answers\n(Parallel for N answers)"];
+                
+                subgraph cluster_verification {
+                    label="Parallel Verification per Answer";
+                    bgcolor="#FAFAFA";
+                    gen_verify_q [label="2. Generate Verification Questions"];
+                    verify_answers [label="3. Verify Answers"];
+                }
+                
+                filter_passed [label="4. Filter Passed Answers"];
+                synthesize [label="5. Synthesize Best Answer", fillcolor="#FFCBCB", tooltip="Significant Bottleneck: LLM Call + Subprocess Overhead"];
+                
+                subgraph cluster_synth_verify {
+                    label="Final Sequential Verification";
+                    bgcolor="#FAFAFA";
+                    gen_synth_verify_q [label="6. Generate Verification for Synthesized Answer", fillcolor="#FFCBCB", tooltip="Significant Bottleneck: LLM Call + Subprocess Overhead"];
+                    verify_synth [label="7. Verify Synthesized Answer", fillcolor="#FFCBCB", tooltip="Significant Bottleneck: LLM Call + Subprocess Overhead"];
+                }
+                
+                gen_answers -> gen_verify_q [label="N answers"];
+                gen_verify_q -> verify_answers [label="N verification questions"];
+                verify_answers -> filter_passed [label="N verification results"];
+                filter_passed -> synthesize [label="If any answers passed"];
+                synthesize -> gen_synth_verify_q [label="If synthesis succeeds"];
+                gen_synth_verify_q -> verify_synth;
+            }
+        }
+        
+        collect_golden [label="Collect Golden Q&A Pairs\n(After all questions are processed)"];
+        end_node [label="Finish", shape=ellipse, style=filled, fillcolor="#A2D2FF"];
+
+        start -> load_questions;
+        load_questions -> gen_answers [label="Process each question"];
+        verify_synth -> collect_golden [style=invis]; // Layout helper
+        
+        // Edge from cluster to node
+        edge [lhead=cluster_main, ltail=cluster_parallel_questions, style=invis];
+        filter_passed -> collect_golden [style=invis];
+        collect_golden -> end_node;
+    }
+
+    // Annotations for bottlenecks
+    gen_answers [fillcolor="#FFCBCB", tooltip="Significant Bottleneck: N LLM Calls + N Subprocesses"];
+    gen_verify_q [fillcolor="#FFCBCB", tooltip="Significant Bottleneck: N LLM Calls + N Subprocesses"];
+    verify_answers [fillcolor="#FFCBCB", tooltip="Significant Bottleneck: N LLM Calls + N Subprocesses"];
+
+    // Invisible edges for ordering clusters
+    load_questions -> cluster_parallel_questions [style=invis];
+    cluster_parallel_questions -> collect_golden [style=invis];
+}

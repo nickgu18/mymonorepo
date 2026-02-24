@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NDCG@k Explainer</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; margin: 24px; color: #111; }
+h1 { font-size: 20px; margin-bottom: 8px; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+label { display: block; margin: 8px 0 4px; font-weight: 600; }
+input, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; }
+button { padding: 10px 14px; border: none; border-radius: 6px; background: #0a7; color: #fff; font-weight: 600; cursor: pointer; }
+button:disabled { background: #aaa; cursor: not-allowed; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+th, td { border: 1px solid #eee; padding: 6px 8px; text-align: right; }
+th { background: #fafafa; }
+.left { text-align: left; }
+.highlight { background: #f1fff6; }
+.summary { font-weight: 600; }
+.small { color: #666; font-size: 12px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+</style>
+</head>
+<body>
+<h1>NDCG@k Explainer</h1>
+<div class="card">
+  <p class="small">Enter relevance labels and predicted scores, choose k, and compute DCG, IDCG, and NDCG@k.</p>
+  <div class="grid2" style="margin-bottom:8px">
+    <div>
+      <label>Load CSV (columns: group,label,score)</label>
+      <input id="csvFile" type="file" accept=".csv" />
+    </div>
+    <div>
+      <label>CSV URL</label>
+      <div style="display:flex; gap:8px">
+        <input id="csvUrl" type="text" placeholder="http://localhost:8000/xgboost/src/models/held_out_test.csv" />
+        <button id="loadUrl">Load via URL</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <label>Labels (CSV)</label>
+      <textarea id="labels" rows="4">3,0,2,1,0,2,3,0,1</textarea>
+    </div>
+    <div>
+      <label>Scores (CSV)</label>
+      <textarea id="scores" rows="4">0.92,0.15,0.81,0.64,0.20,0.78,0.97,0.05,0.55</textarea>
+    </div>
+  </div>
+  <div class="grid2" style="margin-top: 8px; align-items: end;">
+    <div>
+      <label>k</label>
+      <input id="k" type="number" min="1" value="5" />
+    </div>
+    <div style="text-align:right">
+      <button id="compute">Compute</button>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="summary">Group Results</div>
+  <div class="small">If the CSV lacks a 'group' column, groups are assigned by sizes [441, 154, 122] → [IT, Healthcare, Other].</div>
+  <div style="margin:8px 0; display:flex; gap:8px; align-items:center">
+    <label style="margin:0">Select group to visualize</label>
+    <select id="groupSelect"></select>
+    <button id="visualizeGroup">Visualize Selected Group</button>
+  </div>
+  <table id="groupTable">
+    <thead>
+      <tr>
+        <th class="left">group</th>
+        <th>size</th>
+        <th>ndcg@k</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="groupMean" class="summary" style="margin-top:8px"></div>
+</div>
+
+<div class="card">
+  <div class="grid2">
+    <div>
+      <div class="summary">Predicted Ranking (Top k)</div>
+      <table id="predTable">
+        <thead>
+          <tr>
+            <th class="left">rank</th>
+            <th>label</th>
+            <th>score</th>
+            <th>gain</th>
+            <th>discount</th>
+            <th>contribution</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="dcgOut" class="summary"></div>
+    </div>
+    <div>
+      <div class="summary">Ideal Ranking (Top k)</div>
+      <table id="idealTable">
+        <thead>
+          <tr>
+            <th class="left">rank</th>
+            <th>label</th>
+            <th>gain</th>
+            <th>discount</th>
+            <th>contribution</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="idcgOut" class="summary"></div>
+    </div>
+  </div>
+  <div style="margin-top:12px" id="ndcgOut" class="summary"></div>
+</div>
+
+<script>
+function parseCSV(text) {
+  return text.split(/[\s,]+/).filter(Boolean).map(Number);
+}
+function gain(rel) { return Math.pow(2, rel) - 1; }
+function discount(i) { return Math.log2(i + 2); }
+function dcgFromRelevances(rels, k) {
+  let sum = 0;
+  for (let i = 0; i < Math.min(k, rels.length); i++) {
+    const g = gain(rels[i]);
+    const d = discount(i);
+    sum += g / d;
+  }
+  return sum;
+}
+function fmt(x) { return Number.isFinite(x) ? x.toFixed(6) : String(x); }
+function renderPredicted(labels, scores, k) {
+  const paired = labels.map((rel, idx) => ({ rel, score: scores[idx], idx }));
+  paired.sort((a, b) => b.score - a.score);
+  const top = paired.slice(0, k);
+  const tbody = document.querySelector('#predTable tbody');
+  tbody.innerHTML = '';
+  let dcg = 0;
+  top.forEach((item, i) => {
+    const g = gain(item.rel);
+    const d = discount(i);
+    const contrib = g / d;
+    dcg += contrib;
+    const tr = document.createElement('tr');
+    tr.className = 'highlight';
+    tr.innerHTML = `<td class="left">${i+1}</td><td>${item.rel}</td><td>${fmt(item.score)}</td><td>${fmt(g)}</td><td>${fmt(d)}</td><td>${fmt(contrib)}</td>`;
+    tbody.appendChild(tr);
+  });
+  document.getElementById('dcgOut').textContent = `DCG@${k} = ${fmt(dcg)}`;
+  return dcg;
+}
+function renderIdeal(labels, k) {
+  const rels = labels.slice().sort((a, b) => b - a).slice(0, k);
+  const tbody = document.querySelector('#idealTable tbody');
+  tbody.innerHTML = '';
+  let idcg = 0;
+  rels.forEach((rel, i) => {
+    const g = gain(rel);
+    const d = discount(i);
+    const contrib = g / d;
+    idcg += contrib;
+    const tr = document.createElement('tr');
+    tr.className = 'highlight';
+    tr.innerHTML = `<td class="left">${i+1}</td><td>${rel}</td><td>${fmt(g)}</td><td>${fmt(d)}</td><td>${fmt(contrib)}</td>`;
+    tbody.appendChild(tr);
+  });
+  document.getElementById('idcgOut').textContent = `IDCG@${k} = ${fmt(idcg)}`;
+  return idcg;
+}
+function compute() {
+  const labels = parseCSV(document.getElementById('labels').value);
+  const scores = parseCSV(document.getElementById('scores').value);
+  const k = Math.max(1, parseInt(document.getElementById('k').value, 10) || 10);
+  if (labels.length !== scores.length || labels.length === 0) {
+    alert('Labels and scores must be same non-empty length');
+    return;
+    }
+  const dcg = renderPredicted(labels, scores, k);
+  const idcg = renderIdeal(labels, k);
+  const ndcg = idcg === 0 ? 0 : dcg / idcg;
+  document.getElementById('ndcgOut').textContent = `NDCG@${k} = DCG@${k} / IDCG@${k} = ${fmt(ndcg)}`;
+}
+document.getElementById('compute').addEventListener('click', compute);
+window.addEventListener('load', compute);
+
+// Group evaluation utilities
+let loadedGroups = null; // {name: string, labels: number[], scores: number[]}[]
+
+function computeGroupNDCGs(k) {
+  if (!loadedGroups) return;
+  const tbody = document.querySelector('#groupTable tbody');
+  tbody.innerHTML = '';
+  let sum = 0;
+  loadedGroups.forEach(g => {
+    const ndcg = (function(){
+      const paired = g.labels.map((rel, idx) => ({ rel, score: g.scores[idx] }));
+      paired.sort((a,b) => b.score - a.score);
+      const topRel = paired.slice(0, k).map(x => x.rel);
+      const dcg = dcgFromRelevances(topRel, k);
+      const idealRel = g.labels.slice().sort((a,b) => b - a).slice(0, k);
+      const idcg = dcgFromRelevances(idealRel, k);
+      return idcg === 0 ? 0 : dcg / idcg;
+    })();
+    sum += ndcg;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td class="left">${g.name}</td><td>${g.labels.length}</td><td>${fmt(ndcg)}</td>`;
+    tbody.appendChild(tr);
+  });
+  const mean = loadedGroups.length ? sum / loadedGroups.length : 0;
+  document.getElementById('groupMean').textContent = `Mean NDCG@${k} across groups: ${fmt(mean)}`;
+}
+
+function populateGroupSelect() {
+  const sel = document.getElementById('groupSelect');
+  sel.innerHTML = '';
+  if (!loadedGroups) return;
+  loadedGroups.forEach((g, idx) => {
+    const opt = document.createElement('option');
+    opt.value = String(idx);
+    opt.textContent = `${g.name} (${g.labels.length})`;
+    sel.appendChild(opt);
+  });
+}
+
+function visualizeSelectedGroup() {
+  const sel = document.getElementById('groupSelect');
+  const idx = parseInt(sel.value, 10);
+  if (!loadedGroups || !(idx >= 0) || idx >= loadedGroups.length) return;
+  const k = Math.max(1, parseInt(document.getElementById('k').value, 10) || 10);
+  const g = loadedGroups[idx];
+  document.getElementById('labels').value = g.labels.join(',');
+  document.getElementById('scores').value = g.scores.join(',');
+  compute();
+}
+
+document.getElementById('visualizeGroup').addEventListener('click', visualizeSelectedGroup);
+
+function parseCSVTextToGroups(text) {
+  const lines = text.trim().split(/\r?\n/);
+  const header = lines[0].split(',').map(s => s.trim().toLowerCase());
+  const idxGroup = header.indexOf('group');
+  const idxLabel = header.indexOf('label');
+  const idxScore = header.indexOf('score');
+  const rows = lines.slice(1).map(line => line.split(',').map(s => s.trim()));
+  let groupsMap = new Map();
+  if (idxGroup >= 0) {
+    rows.forEach(r => {
+      const g = r[idxGroup];
+      const rel = Number(r[idxLabel]);
+      const sc = Number(r[idxScore]);
+      if (!groupsMap.has(g)) groupsMap.set(g, { name: g, labels: [], scores: [] });
+      const obj = groupsMap.get(g);
+      obj.labels.push(rel);
+      obj.scores.push(sc);
+    });
+  } else {
+    // Assign by sizes [441,154,122] → [IT, Healthcare, Other]
+    const sizes = [441,154,122];
+    const names = ['IT','Healthcare','Other'];
+    let start = 0;
+    for (let gi = 0; gi < sizes.length; gi++) {
+      const end = start + sizes[gi];
+      const name = names[gi];
+      for (let i = start; i < Math.min(end, rows.length); i++) {
+        const rel = Number(rows[i][idxLabel]);
+        const sc = Number(rows[i][idxScore]);
+        if (!groupsMap.has(name)) groupsMap.set(name, { name, labels: [], scores: [] });
+        const obj = groupsMap.get(name);
+        obj.labels.push(rel);
+        obj.scores.push(sc);
+      }
+      start = end;
+    }
+  }
+  loadedGroups = Array.from(groupsMap.values());
+  populateGroupSelect();
+  const k = Math.max(1, parseInt(document.getElementById('k').value, 10) || 10);
+  computeGroupNDCGs(k);
+}
+
+document.getElementById('csvFile').addEventListener('change', (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => parseCSVTextToGroups(reader.result);
+  reader.readAsText(file);
+});
+
+document.getElementById('loadUrl').addEventListener('click', async () => {
+  const url = document.getElementById('csvUrl').value.trim();
+  if (!url) return;
+  try {
+    const res = await fetch(url);
+    const text = await res.text();
+    parseCSVTextToGroups(text);
+  } catch (err) {
+    alert('Failed to load CSV: ' + err);
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Founder Ranking ML Pipeline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem 1.5rem 3rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1d4ed8 0, #020617 45%, #020617 100%);
+      color: #e5e7eb;
+    }
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin: 0 0 0.4rem;
+    }
+    .subtitle {
+      margin: 0 0 2rem;
+      color: #9ca3af;
+      max-width: 640px;
+      font-size: 0.98rem;
+    }
+    .flow {
+      margin: 0 0 2.3rem;
+      padding: 1.2rem 1.4rem;
+      border-radius: 1rem;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px dashed rgba(148, 163, 184, 0.75);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
+    }
+    .flow-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+    .flow-pill {
+      padding: 0.32rem 0.85rem;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid rgba(148, 163, 184, 0.9);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    .flow-arrow {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .legend-dot {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 999px;
+    }
+    .dot-data { background: #38bdf8; }
+    .dot-label { background: #f97316; }
+    .dot-model { background: #22c55e; }
+    .dot-output { background: #a855f7; }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.6rem;
+    }
+    @media (min-width: 900px) {
+      .pipeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    .stage {
+      position: relative;
+      padding: 1.5rem 1.7rem;
+      border-radius: 1.1rem;
+      background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), rgba(15, 23, 42, 0.96));
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+      overflow: hidden;
+    }
+    .stage::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.2), transparent 55%);
+      pointer-events: none;
+    }
+    .stage-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.55rem;
+      position: relative;
+      z-index: 1;
+    }
+    .stage-index {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+    }
+    .stage-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .stage-tag {
+      margin-left: auto;
+      font-size: 0.72rem;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #c7d2fe;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .stage-body {
+      position: relative;
+      z-index: 1;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      line-height: 1.4;
+    }
+    .stage-body strong { color: #fbbf24; font-weight: 600; }
+    .sublist {
+      margin-top: 0.55rem;
+      padding-left: 1rem;
+      font-size: 0.86rem;
+      color: #cbd5f5;
+    }
+    .sublist li { margin-bottom: 0.18rem; }
+    .code-snippet {
+      margin-top: 0.65rem;
+      padding: 0.6rem 0.75rem;
+      background: rgba(15, 23, 42, 0.98);
+      border-radius: 0.55rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.74rem;
+      overflow-x: auto;
+      border: 1px solid rgba(30, 64, 175, 0.9);
+      color: #e5e7eb;
+      white-space: pre;
+    }
+    footer {
+      margin-top: 2.3rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    code { font-family: inherit; padding: 0.1rem 0.25rem; border-radius: 0.25rem; background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(31, 41, 55, 0.9); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Founder Ranking ML Pipeline</h1>
+    <p class="subtitle">
+      A visual walkthrough of how raw CSV files become ranked founder scores using a learning-to-rank model.
+    </p>
+
+    <section class="flow">
+      <div class="flow-row">
+        <span class="flow-pill">CSV files</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Load data</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Validate schema</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Clean &amp; join tables</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Engineer features</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Create labels (0–5)</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Train ranker</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Evaluate &amp; save model</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Score founders</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-pill">Sort &amp; display ranking</span>
+      </div>
+      <div class="legend">
+        <span><span class="legend-dot dot-data"></span>Data</span>
+        <span><span class="legend-dot dot-label"></span>Labels</span>
+        <span><span class="legend-dot dot-model"></span>Model</span>
+        <span><span class="legend-dot dot-output"></span>Results</span>
+      </div>
+    </section>
+
+    <section class="pipeline">
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">1</div>
+          <div class="stage-title">Raw CSV → dataframes</div>
+          <div class="stage-tag">Data</div>
+        </div>
+        <div class="stage-body">
+          You start with CSV files for founders, companies, and historical outcomes. They are loaded into dataframes and checked against a
+          <strong>schema</strong> so that IDs, types, and required columns are consistent.
+          <ul class="sublist">
+            <li>Read CSVs: founders, companies, exits, performance.</li>
+            <li>Validate: column names, data types, primary keys, null constraints.</li>
+            <li>Fail fast if something is missing or malformed.</li>
+          </ul>
+          <div class="code-snippet">
+csv &rarr; pandas.DataFrame &rarr; schema.validate(df)
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">2</div>
+          <div class="stage-title">Cleaning &amp; joining tables</div>
+          <div class="stage-tag">Data</div>
+        </div>
+        <div class="stage-body">
+          Next you clean and align tables so that every row refers to the same entities, and IDs line up across files.
+          <ul class="sublist">
+            <li>Normalize IDs (company_id, founder_id).</li>
+            <li>Drop impossible or inconsistent rows.</li>
+            <li>Join founders ↔ companies ↔ outcomes into a single training table.</li>
+          </ul>
+          <div class="code-snippet">
+companies ⨝ founders ⨝ outcomes &rarr; clean_training_table
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">3</div>
+          <div class="stage-title">Feature engineering</div>
+          <div class="stage-tag">Data → Model</div>
+        </div>
+        <div class="stage-body">
+          From each founder/company, you build numeric and categorical <strong>features</strong> that summarize their history and context.
+          <ul class="sublist">
+            <li>Counts of past exits: 1–3x, 3–10x, 10x+.</li>
+            <li>Education tiers, markets, years of experience.</li>
+            <li>Aggregations over portfolios (mean performance, max MOIC).</li>
+          </ul>
+          <div class="code-snippet">
+raw_columns &rarr; engineered_features_matrix (X)
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">4</div>
+          <div class="stage-title">Label creation (target variable)</div>
+          <div class="stage-tag">Outcome → Label</div>
+        </div>
+        <div class="stage-body">
+          For past companies you know the outcome (for example, MOIC). You compress that continuous outcome into a discrete
+          <strong>relevance label</strong> from 0 to 5.
+          <ul class="sublist">
+            <li>Use historical MOIC / performance as ground truth.</li>
+            <li>Apply a function: outcome → grade ∈ {0…5}.</li>
+            <li>This grade is the <strong>training label</strong> (y), not the final founder score.</li>
+          </ul>
+          <div class="code-snippet">
+y = calculate_relevance_grade(moic)
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">5</div>
+          <div class="stage-title">Training the ranking model</div>
+          <div class="stage-tag">Model</div>
+        </div>
+        <div class="stage-body">
+          You feed features (X) and labels (y) into a learning-to-rank model such as <strong>XGBoost's XGBRanker</strong>. It learns to assign
+          higher scores to rows with higher labels.
+          <ul class="sublist">
+            <li>Objective: learn scores so that higher-label founders outrank lower-label ones.</li>
+            <li>Optimization uses many pairwise comparisons between rows inside each training group.</li>
+            <li>Output: a trained model that maps features → score.</li>
+          </ul>
+          <div class="code-snippet">
+ranker.fit(X_train, y_train, group=groups)
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">6</div>
+          <div class="stage-title">Evaluating &amp; saving the model</div>
+          <div class="stage-tag">Model</div>
+        </div>
+        <div class="stage-body">
+          On validation data, you check whether high-label founders tend to receive higher scores, and you store the best model.
+          <ul class="sublist">
+            <li>Compute ranking metrics (e.g. NDCG) to see how well the ordering matches labels.</li>
+            <li>Inspect feature importance / SHAP explanations for sanity.</li>
+            <li>Serialize the trained model artifact for later use in scoring.</li>
+          </ul>
+          <div class="code-snippet">
+metric = ndcg(y_valid, scores_valid)
+save_model(ranker, "founder_ranking_model.xgb")
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">7</div>
+          <div class="stage-title">Scoring new founders</div>
+          <div class="stage-tag">Serving</div>
+        </div>
+        <div class="stage-body">
+          For new founders, you repeat the data and feature steps, but there is no label yet. You simply ask the model for a
+          <strong>score</strong>.
+          <ul class="sublist">
+            <li>Build the same feature columns as during training.</li>
+            <li>Load the saved model and apply it: X_new → score.</li>
+            <li>Each founder gets a continuous score (e.g. 2.73).</li>
+          </ul>
+          <div class="code-snippet">
+scores = ranker.predict(X_new)
+          </div>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-header">
+          <div class="stage-index">8</div>
+          <div class="stage-title">Ranking &amp; presenting results</div>
+          <div class="stage-tag">Output</div>
+        </div>
+        <div class="stage-body">
+          Finally you sort founders by score and display them in order, optionally with explanations for transparency.
+          <ul class="sublist">
+            <li>Sort descending by score → rank 1, 2, 3…</li>
+            <li>Attach per-founder explanations (key features that moved the score).</li>
+            <li>Render a clean table or UI view for decision-makers.</li>
+          </ul>
+          <div class="code-snippet">
+results = founders.assign(score=scores)
+results = results.sort_values("score", ascending=False)
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      Save this file as <code>index.html</code> and open it in a browser to explore the pipeline visually end-to-end.
+    </footer>
+  </div>
+</body>
+</html>

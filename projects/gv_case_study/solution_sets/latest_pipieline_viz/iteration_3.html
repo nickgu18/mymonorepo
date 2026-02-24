@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founder Ranking Pipeline – Iteration 3</title>
+  <style>
+    :root {
+      --background-color: #f8f9fa;
+      --text-color: #212529;
+      --heading-color: #343a40;
+      --primary-color: #007bff;
+      --border-color: #dee2e6;
+      --card-background-color: #ffffff;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      --arrow-color: #6c757d;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+    .iteration-label {
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: var(--heading-color);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    .pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: stretch;
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stage {
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 0;
+    }
+    .stage:hover {
+      transform: translateX(5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .stage-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+    }
+    .stage-sub {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 1rem;
+      color: #495057;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .pipeline-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--arrow-color);
+      font-size: 2rem;
+      padding: 1rem 0;
+      flex-shrink: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back to Overview</a>
+    <h1>Founder Ranking Pipeline</h1>
+    <div class="iteration-label">Iteration: <strong>3</strong></div>
+
+    <h2>High-level Flow</h2>
+    <div class="pipeline">
+      <div class="stage">
+        <div class="stage-title">Phase 1: Environment Setup</div>
+        <div class="stage-sub">Configuration and initialization</div>
+        <ul>
+          <li>Load configuration via <code>load_config()</code>.</li>
+          <li>Set up MLflow tracking and logging.</li>
+          <li>Initialize random seeds for reproducibility.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 2: Data Loading & Feature Engineering</div>
+        <div class="stage-sub">Load data and build founder features</div>
+        <ul>
+          <li><strong>2.1 Data Loading & Cleaning:</strong>
+            <ul>
+              <li>Call <code>load_raw</code> for training and ranking datasets.</li>
+              <li>Call <code>clean()</code> to get <code>RankingCleanData</code>.</li>
+              <li>Call <code>load_targets()</code> for curated targets + founding metadata.</li>
+            </ul>
+          </li>
+          <li><strong>2.5 Feature Matrix Construction:</strong>
+            <ul>
+              <li>Build <code>FeaturePipeline</code> founder matrix with education, experience, and company features.</li>
+              <li>Build label metadata using <code>_build_last_labeled_company_metadata</code>:</li>
+              <li>Filter founder rows with non-null <code>company_id</code>.</li>
+              <li>Inner-join with targets to keep only labeled companies.</li>
+              <li>Select the <strong>last labeled company</strong> per founder.</li>
+              <li>Join founder features with label metadata via <code>build_training_dataset</code>.</li>
+              <li>Compute integer labels via <code>calculate_relevance_grade(multiple)</code>.</li>
+              <li>Remove train/inference leakage.</li>
+              <li>Result: 4,763 founders with labels and valid founding years.</li>
+            </ul>
+          </li>
+          <li><strong>2.7 Manual Feature Engineering:</strong> Additional derived features if needed.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 3: Data Splitting</div>
+        <div class="stage-sub"><code>temporal_train_val_test_split_by_industry</code></div>
+        <ul>
+          <li>Group <code>training_df</code> by <code>industry</code>.</li>
+          <li>Within each industry:
+            <ul>
+              <li>Sort by <code>company_founded</code>, <code>company_id</code>, <code>person_id</code>.</li>
+              <li>Split into ~70% Train, 15% Validation, 15% Test (adjusting small cohorts).</li>
+            </ul>
+          </li>
+          <li>Return: <code>X_train</code>, <code>y_train</code>, <code>X_val</code>, <code>y_val</code>, <code>X_test</code>, <code>y_test</code> + groups.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 4: Data Validation</div>
+        <div class="stage-sub">Verify split quality and data integrity</div>
+        <ul>
+          <li>Print per-industry counts and label distributions for all three splits.</li>
+          <li>Verify temporal ordering (no train rows after test rows).</li>
+          <li>Check for missing values and feature ranges.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 5: Model Training</div>
+        <div class="stage-sub"><code>train_ranker</code> with validation as eval set</div>
+        <ul>
+          <li>Train <code>XGBRanker</code> with:
+            <ul>
+              <li><code>X_train</code>, <code>y_train</code>, <code>train_groups</code></li>
+              <li><code>X_val</code>, <code>y_val</code>, <code>val_groups</code> as the eval set</li>
+            </ul>
+          </li>
+          <li>MLflow logs parameters, label histograms, feature importance, and NDCG@20 for Train and Validation.</li>
+          <li>Validation is used for model selection / tuning; Test remains untouched.</li>
+          <li>After training, compute final Test NDCG@20 using <code>calculate_mean_ndcg</code>.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 6: Model Persistence</div>
+        <div class="stage-sub">Save model and metadata</div>
+        <ul>
+          <li>Persist the trained model and feature metadata under <code>mlruns/models/notebook_runs/&lt;timestamp&gt;</code>.</li>
+          <li>Save model bundle for later loading.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 7: Inference</div>
+        <div class="stage-sub">Run predictions on ranking dataset</div>
+        <ul>
+          <li>Reload the bundle with <code>load_model_bundle</code>.</li>
+          <li>Build ranking features via <code>FeaturePipeline</code> on <code>clean_ranking</code>.</li>
+          <li>Run <code>predict_batch</code> to get scores and rankings.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+
+      <div class="stage">
+        <div class="stage-title">Phase 8: Ranking Explanation</div>
+        <div class="stage-sub">SHAP analysis for interpretability</div>
+        <ul>
+          <li>Generate global and per-industry SHAP plots.</li>
+          <li>Compute top-N SHAP explanations for feature importance.</li>
+          <li>Visualize how different features contribute to founder rankings.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="meta">
+      Iteration 3 keeps the shared library structure from Iteration 2 but fixes label attachment, removes
+      unnecessary row loss, and moves to a per-industry temporal Train/Validation/Test split. Model tuning
+      now uses the validation slice, and the test slice is reserved strictly for final reporting.
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,1584 @@
+person_id,order,company_id,title,job_type,start_date,end_date,is_c_suite,is_employee,is_executive,is_founder,is_on_board
+/p/SAZwFQMZBAUwCQQQBTAa,1,,Intern,employee,2010-02-01,2011-01-01,False,,False,False,False
+/p/SAZwFQMZBAUwCQQQBTAa,2,,"Product Design, Co-founder",founder,2011-04-01,2012-01-01,False,,False,False,False
+/p/SAZwFQMZBAUwCQQQBTAa,3,/c/SBVwBxc0BAYICAk=,Investor,investor,2012-01-01,2018-01-01,False,False,False,False,False
+/p/SAZwFQMZBAUwCQQQBTAa,4,/c/SB9wBxc0BAYICAk=,Principal,employee,2012-10-01,,False,True,False,False,False
+/p/SAZwFQMZBAUwCQQQBTAa,5,,Independent,employee,2018-01-01,2021-01-01,False,True,False,False,False
+/p/SAZwFQMZBAUwCQQQBTAa,6,,Independent,,2018-01-01,2021-01-01,False,,False,False,False
+/p/SAZwFQMZBAUwCQQQBTAa,7,/c/SBVwRBkYFQQGGRY=,Founder,founder,2021-09-01,,False,True,False,True,False
+/p/SAZwFQMZBAUwCQQQBTAa,8,,Founder,founder,2021-09-01,,False,,False,True,
+/p/SAZwFQMZBAUwCQQQBTAa,9,/c/SBVwRBkYFQQGGRY=,Co-Founder,founder,,,False,True,False,True,False
+/p/SAZwFQUOCQ0wAgkOAD4=,01,,"Financial Analyst, Senior Financial Analyst, Commercial Lending Officer",employee,1988-01-01,1991-01-01,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,02,/c/SBVwGwYCCR4W,Marketing Associate Intern,employee,1992-01-01,1992-01-01,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,03,/c/SB9wFQ0fBAUGHw==,Partner,employee,1997-01-01,2007-01-01,False,True,False,False,False
+/p/SAZwFQUOCQ0wAgkOAD4=,04,/c/SBVwFREKHTcfDBcTGDoGEg==,Co-Head of US Healthcare,employee,2005-01-01,2007-01-01,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,05,/c/SBVwGggfFwEMMgcOGQ==,Board Member,board_member,2006-04-01,2013-07-01,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,06,,Partner,executive,2007-01-01,,False,,True,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,07,/c/SB9wBRQKDg0dMhUGBCsaBBkW,Partner & Member of Investment Team,employee,2007-05-01,,False,True,False,False,False
+/p/SAZwFQUOCQ0wAgkOAD4=,08,/c/SBVwEQoZOhwHCBcGBjoBFQIGGw==,Board Member,board_member,2007-08-22,2012-06-27,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,09,/c/SBVwBwQGFRoOCDoLFz0bEwoRBx0EABQ=,Board Member,board_member,2008-09-24,2013-12-30,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,10,/c/SBVwGg4dBBsAAA==,Board Member,board_member,2011-06-27,,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,11,/c/SBVwAAQHBDcNBAo=,Board Member,board_member,2012-01-01,,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,12,/c/SBVwBBMOBgEcBAoJKTsREwYEHAABCgAP,Board Member,board_member,2012-11-12,2014-07-08,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,13,/c/SBVwFw4HChoKHgYOEzEXBA==,Board Member,board_member,2013-05-01,,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,14,/c/SBVwRVJaUDcMDBUOAj4Y,Founding Partner,founder,2014-01-01,,False,,False,True,
+/p/SAZwFQUOCQ0wAgkOAD4=,15,/c/SB9wRVJaUDcMDBUOAj4Y,"Co-Founder, Partner & Member of Investment Team",founder,2014-01-01,,False,True,False,True,False
+/p/SAZwFQUOCQ0wAgkOAD4=,16,/c/SBVwEQ8IChoKMgECBDIVFQQJBwgU,Board Member,board_member,2015-05-27,2021-09-20,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,17,/c/SBVwGw8AChswHhAVETYXAAc=,Board Member,board_member,2015-10-06,,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,18,/c/SBVwFw4HChoKHgYOEzEXBA==,Board Of Director,board_member,,,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,19,/c/SBVwGw8AChswHhAVETYXAAc=,Board Member,board_member,,,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,20,/c/SBVwGg4dBBsAAA==,Director of the Board,board_member,,,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,21,/c/SBVwEQ8IChoKMgECBDIVFQQJBwgU,Board Member,board_member,,,False,,False,False,
+/p/SAZwFQUOCQ0wAgkOAD4=,22,/c/SBVwAAQKFxsMBAAJFTo=,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,23,/c/SBVwGQQPAAQ=,Board Member,board_member,,2002-11-14,False,False,False,False,True
+/p/SAZwFQUOCQ0wAgkOAD4=,24,/c/SBVwBxEZCh0bMhUPFy0ZAAgAHRsEBgYaLA==,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,01,,International Sales Consultant,employee,2010-09-01,2011-09-01,False,True,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,02,,President & Associate,employee,2012-03-01,2015-08-01,True,True,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,03,,Growth Analyst,employee,2015-03-01,2015-09-01,False,True,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,04,,Material Planner and Project Management,,2016-01-01,2016-10-01,False,,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,05,,Material Planner and Project Management,employee,2016-01-01,2016-10-01,False,True,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,06,/c/SBVwFhMECgMcMgcVGSscBBkW,Demand Planning Specialist,employee,2016-11-01,2017-10-01,False,True,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,07,/c/SBVwFhMECgMcMgcVGSscBBkW,Sr Global Demand Planner,employee,2017-11-01,2020-02-01,False,True,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,08,/c/SBVwRVFbVQ4OHwgGFTYR,Co-Founder & Chief Marketing Officer,founder,2019-01-01,,True,True,False,True,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,09,/c/SBVwRVFbVQ4OHwgGFTYR,Co-founder & CMO,founder,2020-02-01,2024-01-01,True,True,False,True,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,10,,Working on something new,,2024-02-01,,False,,False,False,False
+/p/SAZwFQ0JABobAjoKFy0XCQ4RHAY=,11,,Working on something new,operator,2024-08-01,,False,True,False,False,False
+/p/SAZwFQ0OHTcDAhICBA==,1,/c/SBVwRFAf,"Managing Director, CEO & Founder",founder,2018-04-01,,True,,False,True,
+/p/SAZwFQ0OHTcZDAkLBQ==,01,/c/SBVwGw0CEw0dMhIeGz4a,Associate,employee,2005-09-01,2009-03-01,False,True,False,False,False
+/p/SAZwFQ0OHTcZDAkLBQ==,02,/c/SBVwBwwCEQAJBAALEgAXABgA,Co-founder and Director,founder,2011-05-01,2013-02-01,False,,False,True,
+/p/SAZwFQ0OHTcZDAkLBQ==,03,/c/SBVwAAkOOgsHDBUGBA==,Founder & Co-CEO,founder,2011-05-01,2013-02-01,True,True,False,True,False
+/p/SAZwFQ0OHTcZDAkLBQ==,04,/c/SBVwBwwCEQAJBAALEgAXABgA,Co-Founder,founder,2011-09-01,,False,True,False,True,False
+/p/SAZwFQ0OHTcZDAkLBQ==,05,,Advisor & Board Member,advisor,2013-03-01,2022-12-01,False,False,False,False,True
+/p/SAZwFQ0OHTcZDAkLBQ==,06,/c/SBVwBw4IDAkDMhUIHzEA,VP of Product & Studio GM,executive,2014-01-01,2019-09-01,False,True,True,False,False
+/p/SAZwFQ0OHTcZDAkLBQ==,07,/c/SBVwBw4IDAkDMhUIHzEA,VP of Product,executive,2014-01-20,2019-09-01,False,,True,False,
+/p/SAZwFQ0OHTcZDAkLBQ==,08,,Digital Advisor,advisor,2015-04-01,,False,,False,False,
+/p/SAZwFQ0OHTcZDAkLBQ==,09,,Board Member,board_member,2015-04-01,,False,,False,False,
+/p/SAZwFQ0OHTcZDAkLBQ==,10,/c/SBVwERkEEQEMDgQ=,Chief Product Officer,advisor,2019-10-01,2020-05-01,True,False,False,False,False
+/p/SAZwFQ0OHTcZDAkLBQ==,11,/c/SBVwRFBaDQ==,Founder & CPO,founder,2020-05-01,2023-03-01,True,True,False,True,False
+/p/SAZwFQ0OHTcZDAkLBQ==,12,/c/SBVwERkEEQEMDgQ=,Advisor,advisor,2020-06-01,2022-06-01,False,False,False,False,False
+/p/SAZwFQ0OHTcZDAkLBQ==,13,,Founder & Co-CEO,founder,2024-09-01,,True,True,False,True,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,1,/c/SBVwEAgKCQ0MGTpWT2ZB,Sales,employee,2011-06-01,2012-12-01,False,True,False,False,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,2,,Sales,employee,2013-06-01,2013-12-01,False,True,False,False,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,3,/c/SBVwFREbCQ0=,Specialist,employee,2013-12-01,2016-02-01,False,True,False,False,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,4,/c/SBVwR1dbFQQOFAAV,Co-Founder,founder,2014-01-01,,False,True,False,True,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,5,/c/SBVwFREbCQ0=,Technical Specialist,employee,2016-02-01,2017-06-01,False,True,False,False,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,6,/c/SBVwR1dbFQQOFAAV,Chief Product Officer,executive,2019-01-01,,True,True,True,False,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,7,/c/SBVwEAgKCQ0MGTpWT2ZB,Sales,,,2012-12-01,False,,False,False,False
+/p/SAZwFQ0OHQkBCQAVKTQGAAIRGwYG,8,,Sales,,,2013-12-01,False,,False,False,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,01,/c/SBVwGg4TAAQDMgYIBC8bEwoRAQAD,Marketing Intern,intern,2008-06-01,2008-08-01,False,False,False,False,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,02,,Summer Analyst,intern,2009-06-01,2009-09-01,False,False,False,False,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,03,/c/SBVwFg4YEQcBMgYIGCwBDR8MBggyAhUZKgQ=,Associate,employee,2010-10-01,2011-09-01,False,True,False,False,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,04,/c/SBVwRVFbCA0BGQoVBQ==,Co-Founder,founder,2013-09-01,2015-02-01,False,True,False,True,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,05,,Co-Founder,founder,2015-02-01,2025-04-01,False,True,False,True,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,06,,Investor,,2015-10-01,,False,,False,False,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,07,,Investor,investor,2015-10-01,,False,False,False,False,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,08,,Founder,founder,2016-04-01,,False,,False,True,
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,09,/c/SBVwGAgfABoAMgQO,Founder,founder,2024-01-01,,False,True,False,True,False
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,10,,CEO,executive,,,True,,True,False,
+/p/SAZwFQ0OHQ0WMhUIHT4ACAcK,11,,Co-founder,founder,,,False,,False,True,
+/p/SAZwFQwCFzcNDAsDEz4YCA==,1,/c/SBVwFwkEFRgKHzoTBD4QCAUC,Trading Assistant,employee,2012-08-01,2014-04-01,False,True,False,False,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,2,/c/SBVwFwkEFRgKHzoTBD4QCAUC,Trader,employee,2014-03-01,2015-01-01,False,True,False,False,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,3,,Trader,employee,2015-01-01,2016-07-01,False,True,False,False,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,4,/c/SBVwEBMcOhwdDAEOGDgrBhkKHR8=,Trader,,2015-01-01,2016-07-01,False,,False,False,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,5,/c/SBVwRBkbFwcFCAYT,CTO,executive,2016-10-01,2020-09-01,True,True,True,False,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,6,/c/SBVwRBkbFwcFCAYT,Co-Chief Executive Officer & Co-Founder,founder,2017-01-01,,True,True,False,True,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,7,/c/SBVwRBkbFwcFCAYT,Co-CEO,executive,2020-09-01,,True,True,True,False,False
+/p/SAZwFQwCFzcNDAsDEz4YCA==,8,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,01,,Senior Manager,operator,1988-01-01,1995-10-31,False,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,02,,CFO,executive,1995-11-01,1999-06-30,True,True,True,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,03,,CFO,executive,1999-08-01,2000-05-31,True,True,True,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,04,,Managing Director and CFO,executive,2000-05-01,2002-01-31,True,True,True,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,05,/c/SBVwBA0OHRwdAgsOFSw=,"Chief Executive Officer, Board Member, President & Co-Founder",founder,2002-07-01,2014-03-01,True,True,False,True,False
+/p/SAZwFQ8PHDcHDAsJFzc=,06,,Adjunct Professor of Entrepreneurship,employee,2002-09-01,2007-05-31,False,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,07,/c/SBVwGxUDChw=,"Co-Founder, President, Chief Partnership Officer & Chairman",founder,2014-04-01,2020-02-29,True,True,False,True,True
+/p/SAZwFQ8PHDcHDAsJFzc=,08,/c/SBVwHQgKCwkDFBEOFSw=,Faculty Member and Advisor,advisor,2015-08-01,,False,False,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,09,/c/SBVwGxUDChw=,President and Co-Founder,founder,2020-01-01,,True,,False,True,
+/p/SAZwFQ8PHDcHDAsJFzc=,10,/c/SBVwGxUDChw=,President and Co-Founder; AI and Data Science Solutions at Liaison,operator,2020-02-01,2024-11-30,True,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,11,/c/SBVwRVVTUzcDDAcU,"Founder, Chief Executive Office, Executive Director & Board Member",founder,2021-01-01,,False,True,False,True,True
+/p/SAZwFQ8PHDcHDAsJFzc=,12,/c/SBVwRVVTUzcDDAcU,Executive Director,operator,2022-10-01,,False,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,13,,Chief Executive Officer,executive,2023-11-01,,True,True,True,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,14,/c/SBVwBwgGBgcODg0AFzIREg==,Director,employee,,,False,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,15,/c/SBVwHQgKCwkDFBEOFSw=,Faculty Member and Advisor,employee,,,False,True,False,False,False
+/p/SAZwFQ8PHDcHDAsJFzc=,16,/c/SBVwGAgaEAELMh0=,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwFQ8MDAMwHgQVHT4G,01,,Undergraduate Research Fellow,employee,2004-12-01,2007-04-30,False,True,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,02,,Undergraduate Research Fellow,,2004-12-01,2007-04-01,False,,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,03,,Research Intern,,2006-05-01,2006-08-01,False,,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,04,,Research Intern,intern,2006-05-01,2006-08-31,False,False,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,05,,Research Intern,intern,2006-05-01,2006-08-31,False,False,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,06,,Graduate student (PhD),employee,2007-08-01,2012-10-31,False,True,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,07,/c/SBVwBBQZAR0KMhAJHykRExgMHBY=,Graduate student (PhD),,2007-08-01,2012-10-01,False,,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,08,/c/SBVwHQ8fAAQ=,Sr. Software Engineer,employee,2012-10-01,2016-06-01,False,True,False,False,False
+/p/SAZwFQ8MDAMwHgQVHT4G,09,/c/SBVwAwASCQc=,CEO and Founder,founder,2016-11-01,2020-12-01,True,True,False,True,False
+/p/SAZwFQ8MDAMwHgQVHT4G,10,,CTO & Co Founder,founder,2016-05-01,2016-11-01,True,True,False,True,False
+/p/SAZwFQ8MDAMwHgQVHT4G,11,/c/SBVwRVETBBo=,Co-Founder & Chief Executive Officer,founder,2021-01-01,,True,True,False,True,False
+/p/SAZwFQ8MDAMwHgQVHT4G,12,/c/SBVwRVETBBo=,Co-founder and Chief Executive Officer,founder,2022-11-01,,True,True,False,True,False
+/p/SAZwFQ8MDAMwHgQVHT4G,13,/c/SBVwEwQfFw0cDhAC,Founder,founder,,,False,,False,True,
+/p/SAZwFQ8MDAMwHgQVHT4G,14,/c/SBVwBQIGCTcDDAcU,Manager,employee,,,False,True,False,False,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,01,,Summer Analyst,intern,2009-05-01,2009-06-01,False,False,False,False,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,02,,Analyst,employee,2010-06-01,2013-02-01,False,True,False,False,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,03,,Associate,employee,2013-02-01,2013-07-01,False,True,False,False,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,04,,Co-founder,founder,2013-07-01,2014-02-01,False,True,False,True,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,05,,Co-founder,,2013-07-01,2014-02-01,False,,False,True,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,06,,Co-founder & COO,false_position,2014-06-01,2016-12-01,True,False,False,False,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,07,,Co-founder & COO,,2014-06-01,2016-12-01,True,,False,True,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,08,/c/SBVwHA4fFhwOHw==,"Director, Product Management",operator,2017-03-01,2018-10-01,False,True,False,False,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,09,/c/SBVwRVFbCBs=,Co-Founder & Chief Operating Officer,founder,2020-01-01,,True,True,False,True,False
+/p/SAZwFQ8CDg0bMgcCHjoGAA==,10,/c/SBVwRVFbCBs=,Co-Founder,founder,2020-10-01,,False,True,False,True,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,01,,Studentermedhjælp,employee,1998-01-01,2000-12-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,02,,Studentermedhjælp,employee,2000-01-01,2004-12-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,03,,Fuldmægtig,employee,2004-11-01,2005-12-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,04,,Politisk konsulent,employee,2005-12-01,2011-09-30,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,05,,Politisk chefkonsulent,employee,2011-10-01,2011-11-30,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,06,,Souschef,employee,2011-11-01,2012-09-30,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,07,,Seniorkonsulent,employee,2012-09-01,2013-10-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,08,,Kommentator,employee,2013-04-01,2013-10-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,09,,Særlig rådgiver,employee,2013-11-01,2015-05-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,10,/c/SBVwERQZChgKDAs4EzEREwwc,Communications and public affairs manager,employee,2016-02-01,2017-10-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,11,,Freelance rådgiver,advisor,2017-11-01,2018-09-30,False,False,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,12,,Rådgiver (projektansættelse),employee,2017-11-01,2018-01-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,13,,klima attaché,employee,2018-09-01,2021-01-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,14,/c/SBVwRD4GDBscBAoJ,CEO & co-founder,founder,2021-01-01,,True,True,False,True,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,15,/c/SBVwFQ8fCQ0d,Iværksætter,employee,2021-08-01,2021-12-31,False,True,False,False,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,16,/c/SBVwRD4GDBscBAoJ,Co-Founder & Chief Executive Officer,founder,2022-01-01,,True,True,False,True,False
+/p/SAZwFQ8FBDcdBAwUKTcRBQ4CCQ4fAQ==,17,/c/SBVwRD4GDBscBAoJ,Co-Founder & CEO,founder,,,True,,False,True,
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,01,,Sales Assistant,employee,2013-10-01,2014-05-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,02,,Sales Assistant,employee,2014-06-01,2014-10-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,03,,Founder,false_position,2015-01-01,2017-12-31,False,False,False,True,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,04,,Legislation,employee,2016-01-01,2016-01-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,05,,"Co-Founder, CEO",employee,2017-01-01,2018-01-01,True,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,06,,Manager Accounting Financial Reporting,employee,2017-05-01,2018-01-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,07,/c/SBVwFgIMOgsAAA==,Associate,alumni,2018-01-01,2020-01-01,False,False,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,08,,Quality Controller,employee,2018-03-01,2018-07-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,09,,Junior Accountant,employee,2019-05-01,2021-03-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,10,/c/SBVwDRQdCg==,Junior Accountant,employee,2019-07-01,2021-03-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,11,,Exploring,employee,2020-01-01,2022-01-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,12,/c/SBVwAwgADBgKCQwG,Founder,,2021-01-01,2022-01-01,False,,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,13,/c/SBVwRQcEFxw=,"Co-Founder, CEO",founder,2022-01-01,,True,True,False,True,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,14,/c/SBVwABMCCwkwHgoLFy0rDR8B,Account Receivable Specialist,employee,2022-02-01,2023-05-01,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,15,/c/SBVwABMCCwkwHgoLFy0rDR8B,General Ledger Accountant,employee,2023-05-01,,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoKFy0HCQI=,16,,Founder,founder,,,False,True,False,True,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,01,/c/SBVwBxQFOgQGCwA4EDYaAAUGAQ4BOggQABcABQQMDg==,Sales and Marketing Director,operator,1983-04-01,1987-03-31,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,02,,Group Chief Executive,executive,1987-04-01,1998-09-30,False,True,True,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,03,,Co founder and Chairman,founder,1998-07-01,2019-12-01,False,True,False,True,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,04,,Non Executive Director,operator,2007-01-01,2010-12-31,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,05,/c/SBVwGQQfFwcwDwQJHQ==,Founder and former Chairman,founder,2007-09-01,2012-12-31,False,True,False,True,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,06,,Co-founder,founder,2009-09-01,2017-12-31,False,True,False,True,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,07,,Visiting Professor,employee,2011-03-01,2014-03-31,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,08,/c/SBVwFRUECDcNDAsM,Founder and former chairman,founder,2013-03-01,2018-01-31,False,True,False,True,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,09,,Chairman,advisor,2013-07-01,2017-11-30,False,False,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,10,/c/SBVwFRUECDcNDAsM,Co-Founder and Chairman,founder,2013-09-20,,False,True,False,True,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,11,,Non Executive Director,operator,2014-01-01,2018-07-31,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,12,,Goldman Visiting Professor of Innovation and Enterprise,employee,2017-03-01,2018-03-31,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,13,,Co-Author,,2018-03-01,,False,,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,14,/c/SBVwHQ0KOgoOAw4=,Member of the Advisory Board,advisor,2018-03-01,2024-07-01,False,False,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,15,,Co-Author,employee,2018-03-01,,False,True,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,16,/c/SBVwTFc0UVhf,Co-founder and former chairman,founder,2018-06-01,,False,,False,True,
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,17,,Co-founder and former chairman,false_position,2018-06-01,2021-12-01,False,False,False,True,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,18,/c/SBVwDggbCAcBCBw4Bj4NDA4LHBw=,"Chairman, Zip Co UK",advisor,2021-04-01,2022-06-01,False,False,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,19,,Advisor,advisor,2022-01-01,2024-07-01,False,False,False,False,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,20,,Independent Non-Executive Director,operator,2022-01-01,2025-02-01,False,True,False,False,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,21,/c/SBVwHBQGCDcIHwoSBg==,Independent non executive director,operator,2022-10-01,2024-10-01,False,True,False,False,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,22,/c/SB9wFRMIDQEKMgIVGSgACQ==,Chairman & Co-Founder,founder,2023-01-01,,False,True,False,True,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,23,,Co-Founder and Chair,founder,2023-08-01,,False,True,False,True,False
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,24,/c/SBVwEQoACg==,NED,advisor,2024-07-01,,False,False,False,False,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,25,/c/SBVwAwAGCg==,Board Member,board_member,2024-08-22,,False,False,False,False,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,26,/c/SBVwEQoACg==,Board Member,board_member,2024-08-22,,False,False,False,False,True
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,27,/c/SBVwFRUECDcNDAsM,Chairman,board_member,,,False,,False,False,
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,28,/c/SBVwGQQfFwcwDwQJHQ==,Founder,founder,,,False,,False,True,
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,29,/c/SBVwGQQfFwcwDwQJHQ==,Chairman,board_member,,,False,,False,False,
+/p/SAZwFQ8fDQcBFDoTHjAZEgQL,30,,Chairman,board_member,,,False,,False,False,
+/p/SAZwFRMGAAYwHgQAHj4ABAcMCQE=,1,,Senior Software Developer,employee,2008-05-01,2010-04-01,False,True,False,False,False
+/p/SAZwFRMGAAYwHgQAHj4ABAcMCQE=,2,,Project Manager,employee,2010-04-01,2011-06-01,False,True,False,False,False
+/p/SAZwFRMGAAYwHgQAHj4ABAcMCQE=,3,,"Co-Founder, Chief Operating Officer",founder,2011-06-01,2017-07-31,True,True,False,True,False
+/p/SAZwFRMGAAYwHgQAHj4ABAcMCQE=,4,,"Co-Founder, Chief Operating Officer",,2011-06-01,2017-07-01,True,,False,True,False
+/p/SAZwFRMGAAYwHgQAHj4ABAcMCQE=,5,/c/SBVwRVEcAAo=,Co-Founder & Vice President of Engineering,founder,2017-01-01,,False,True,False,True,False
+/p/SAZwFRMGAAYwHgQAHj4ABAcMCQE=,6,/c/SBVwRVEcAAo=,"Co-Founder, Vice President Of Engineering",founder,2017-07-01,,False,True,False,True,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,01,,Managing Partner,operator,2008-01-01,2014-01-01,False,True,False,False,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,02,,CEO,,2011-11-01,2017-02-01,True,,False,False,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,03,,CEO,executive,2011-11-01,2017-02-01,True,True,True,False,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,04,/c/SBVwBxUCBgMKHzoKFy0fBB8=,"Co-Founder, President, Chief Executive Officer & Board Member",founder,2016-01-01,,True,True,False,True,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,05,/c/SBVwBxUCBgMKHzoKFy0fBB8=,CEO,executive,2016-09-01,2017-09-01,True,True,True,False,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,06,/c/SBVwRVEcAAo=,"Co-Founder, Co-Chief Executive Officer & Chairman",founder,2017-01-01,,True,True,False,True,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,07,/c/SBVwHxMCFhg=,"Co-Founder, President, Chief Marketing Officer & Board Member",founder,2017-01-01,,True,True,False,True,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,08,/c/SBVwRVEcAAo=,Co-Founder & CEO,founder,2017-10-01,,True,True,False,True,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,09,/c/SBVwHxMCFhg=,Co-Founder & President,founder,2017-10-01,,False,True,False,True,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,10,/c/SBVwEA4IEBs=,Founding advisor,advisor,2021-08-01,,False,False,False,False,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,11,,Board Member,advisor,2021-10-01,,False,False,False,False,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,12,,Partner,investor,2021-11-01,,False,False,False,False,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,13,/c/SB9wFggMFhwAHxw4ADw=,Co-Founder & Partner,founder,2021-11-01,,False,True,False,True,False
+/p/SAZwFRMfCjcCBAsGBSYVDw==,14,/c/SBVwEA4IEBs=,Chairman,board_member,2022-06-20,,False,False,False,False,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,15,,Board Member,advisor,2022-11-01,,False,False,False,False,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,16,/c/SBVwFw4ZFQcdDDpXFzwS,Lead Advisor,advisor,2022-12-01,2023-12-15,False,,False,False,
+/p/SAZwFRMfCjcCBAsGBSYVDw==,17,/c/SB9wEg4ZCB0DDDoRFQ==,Member of the Investment And Advisory Board,executive,,,True,False,True,False,True
+/p/SAZwFRMfCjcCBAsGBSYVDw==,18,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwFRIDChwwCQQJHzoYGAoL,1,,Information Technology Support Manager,employee,2015-06-01,2018-05-01,False,True,False,False,False
+/p/SAZwFRIDChwwCQQJHzoYGAoL,2,,Information Technology Support Manager,,2015-06-01,2018-05-01,False,,False,False,False
+/p/SAZwFRIDChwwCQQJHzoYGAoL,3,/c/SBVwR1dbFhwAHwwCBQ==,Unity3D Developer,employee,2018-05-01,2020-01-01,False,True,False,False,False
+/p/SAZwFRIDChwwCQQJHzoYGAoL,4,/c/SBVwRVETOgECAAAVBTYCBA==,Co-Founder | Lead Developer,founder,2021-01-01,2024-08-01,False,True,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,01,/c/SBVwFgI0Bx0L,Co-Founder and Chief Executive Officer & Director,founder,1987-09-17,,True,True,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,02,,Founder & CEO,,2007-01-01,,True,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,03,,Founder & CEO,,2009-05-01,,True,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,04,/c/SBVwFRQZChoOMgYGGDEVAwIW,Director Of Business Development,,2015-07-01,2016-06-01,False,,False,False,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,05,,Co-Founder & Director,,2016-06-01,,False,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,06,/c/SB9wEQ8fDTcAHg==,"Founder, Chief Executive Officer and Board Member",founder,2017-01-01,,True,True,False,True,True
+/p/SAZwFhMKHAwKAzoUAysADgU=,07,/c/SB9wFwAFCwkNBBY4ES0bFh8NNwAdFQgEKwEPAhER,Board Member,board_member,2017-05-01,2020-02-01,False,False,False,False,True
+/p/SAZwFhMKHAwKAzoUAysADgU=,08,/c/SBVwRVhYVjcGAwESBSsGCA4W,Co-Founder,,2017-05-01,2020-07-01,False,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,09,,Founder & CEO,,2017-06-01,,True,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,10,/c/SB9wBxUKAQYWBjoGGDsrEQoXHAEIFxQ=,Partner,employee,2018-01-01,,False,True,False,False,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,11,,Founder & Director,,2019-02-01,,False,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,12,,Co-Founder & Advisor,,2020-01-01,,False,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,13,,Founder & Director,,2020-09-01,,False,,False,True,False
+/p/SAZwFhMKHAwKAzoUAysADgU=,14,,Founder & CEO,,2024-09-01,,True,,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,01,,Associate,employee,1994-01-01,1997-01-01,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,02,,Business Development,,1996-01-01,1997-01-01,False,,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,03,/c/SBVwGAAYEQUGAxATEwBFWFJd,Co-Founder and CEO,founder,1998-01-01,2006-01-01,True,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,04,/c/SBVwEg4eCwwKHxY4EDAGFAY=,Co-Founder and Executive Chair,founder,2006-01-01,,False,True,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,05,,Investor,employee,2007-01-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,06,,Governor,advisor,2007-01-01,2012-09-01,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,07,,Non-Executive Board Director,operator,2007-01-01,2015-11-01,False,True,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,08,/c/SBVwGRgPAAsA,Chairman and Co-Founder,founder,2007-01-01,2014-03-01,False,,False,True,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,09,/c/SBVwExQKFwwGDAs4GzoQCAo6Dx0CEBc=,Non-Executive Member of the Board of Directors,board_member,2007-01-01,2015-11-01,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,10,/c/SB9wGQgIFwcCGBYC,Co-Founder,founder,2009-01-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,11,,Co-Founder,founder,2009-07-01,2016-01-01,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,12,/c/SBVwGQAPADcMAgg=,Co-Founder & Board Member,founder,2010-03-01,2016-06-01,False,True,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,13,/c/SBVwAAAHDhwOAQ4=,Non Executive Director,operator,2010-03-01,2016-07-01,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,14,/c/SB9wEg4eCwwKHxY4EDAGFAY=,Co-Founder & Executive Chairman,founder,2010-03-01,,False,False,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,15,/c/SBVwAAgGADcAGBE4ES0bFBs=,Non Executive Director,operator,2011-03-01,2013-09-01,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,16,,Council Member,advisor,2011-10-01,2014-09-01,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,17,/c/SBVwEQAYHAsOHw==,Board Member,board_member,2011-12-03,2014-08-14,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,18,/c/SBVwHRUZBB4KAQ==,Member of the Advisory Board,advisor,2012-06-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,19,/c/SBVwDREHBAY=,Investor,board_member,2012-07-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,20,/c/SBVwFhQYEB0=,Member of the Advisory Board,advisor,2012-09-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,21,,Fellow,employee,2012-10-01,2015-05-01,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,22,/c/SBVwBwkKHwkC,Board Member,board_member,2012-12-01,2015-12-01,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,23,/c/SBVwEg4eCwwKHxY4BjMRBQwA,Co-Founder,founder,2013-01-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,24,/c/SBVwEg4eCwwKHxY4HzEABAcJAQgICwQT,Co-Founder,founder,2013-01-01,2024-03-01,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,25,,Co-Founder,founder,2014-01-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,26,/c/SBVwBwwKFxwaHToOGQ==,Co-Founder,founder,2014-01-01,2020-07-07,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,27,/c/SBVwExMCFQ==,Co-Founder & Board Member,founder,2014-01-01,,False,True,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,28,/c/SBVwEg4eCwwKHxY4BjMRBQwA,Advisor,advisor,2014-03-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,29,/c/SBVwExMCFQ==,Co-Founder,founder,2015-01-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,30,/c/SBVwEg4eCwwKHxYBFzwADhkc,Co-Founder and Executive Chair,founder,2015-01-01,,False,True,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,31,,Non Executive Director,operator,2015-12-01,2018-12-01,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,32,/c/SBVwAAAGCgsA,Advisor to Board of Directors,advisor,2016-01-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,33,,Co-Founder and Chair,founder,2016-01-01,2024-03-01,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,34,/c/SBVwAAkOOg0MAgsIGzYHFTQCGgAYFQ==,Board Member,board_member,2016-01-01,,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,35,,Co-Founder,founder,2016-05-01,,False,,False,True,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,36,,Co-Founder,founder,2016-05-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,37,/c/SBVwGQAPADcMAgg=,Co-Founder and Non Executive Director,operator,2016-07-01,2021-05-01,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,38,/c/SBVwEggZFhwCBAsSAjorAgoVARsMCQ==,Co-Founder and Executive Chair,founder,2017-06-01,,False,True,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,39,/c/SB9wEggZFhwCBAsSAjorAgoVARsMCQ==,Co-Founder & Managing Partner,founder,2017-06-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,40,/c/SBVwGw0dDAY=,Board Member,board_member,2017-11-22,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,41,,Ambassador,advisor,2018-01-01,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,42,/c/SBVwBg4SBAQwDAYGEjoZGDQKDjAMFxMF,Corporate Advisory Board,advisor,2018-01-01,2023-01-01,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,43,/c/SBVwEg4eCwwKHxY4FzwVBQ4IEQ==,Co-Founder & Chairman,founder,2018-01-01,,False,True,False,True,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,44,/c/SBVwHwAZBAMaHww4FzY=,Co-Founder,founder,2018-02-27,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,45,/c/SBVwEg4eCwwKHxY4FzwVBQ4IEQ==,Co-Founder,founder,2019-01-01,2021-12-01,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,46,/c/SBVwGw0dDAY=,Advisor,advisor,2019-01-16,2023-10-13,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,47,/c/SBVwExMEEBgDDAEDEy0=,Board Member,board_member,2019-08-01,,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,48,/c/SBVwHQwbABoGDAk4FTAYDQ4CDTABCgkSMBo=,"Advisor, Innovation Fund",advisor,2020-03-01,2021-12-01,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,49,,Co-Host,employee,2020-11-01,,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,50,/c/SBVwRFANCh0BCQAVBQ==,Co-Founder,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,51,,Co-Founder,founder,2021-01-01,,False,,False,True,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,52,,Advisor,advisor,2021-11-01,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,53,/c/SBVwEw4EAgQK,Google Cloud EMEA Advisory Board,advisor,2021-12-01,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,54,,Advisor,advisor,2022-06-01,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,55,/c/SBVwEg4eCwwKHxY4Gj4D,Co-Founder,founder,2022-06-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,56,/c/SB9wBA0KCw0bMgMSGDs=,Advisor,advisor,2022-06-01,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,57,/c/SBVwEg4eCwwKHxY4Gz4fBBkW,Co-Founder,founder,2022-11-01,,False,True,False,True,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,58,/c/SBVwGw8NDAwA,Investor,board_member,,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,59,/c/SBVwGQAPADcMAgg=,Chairman of the Board of Directors,board_member,,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,60,/c/SBVwGAQfEQ0dAgsC,Member of the Advisory Board,advisor,,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,61,/c/SBVwFxMEEgwGGToLAjs=,Member of the Advisory Board,advisor,,,False,,False,False,
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,62,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,63,/c/SB9wGAQfEQ0dAgsCKSwV,"Advisor, L1 Technology",employee,,,False,True,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,64,/c/SBVwFxMEEgwGGToLAjs=,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,65,/c/SB9wGFA0EQ0MBQsIGjATGA==,Advisory Board Member,advisor,,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,66,/c/SBVwHRUZBB4KAQ==,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,67,/c/SBVwAw4ZCQwCDBEC,Advisor & Board Member,board_member,,,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,68,/c/SB9wAAAHDhwOAQ44AjoYBAgKBTAKFwgDLw==,Board Member,board_member,,2016-07-20,False,False,False,False,True
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,69,/c/SBVwAAAGCgsA,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwFhMOCxwwBQoFEy0ZAAU=,70,,Entrepreneur Partner,executive,,,False,,True,False,
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,1,,IT Manager & Ethical Hacker,employee,1998-01-01,2000-01-31,False,True,False,False,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,2,/c/SBVwAQ8CBjdeVF1X,System Administrator,employee,2000-01-01,2004-01-31,False,True,False,False,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,3,,Managing Director,operator,2001-01-01,2003-12-31,False,True,False,False,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,4,,Hewlett-Packard Enterprise & HP Inc. Brand Manager,employee,2005-02-01,2022-07-31,False,True,False,False,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,5,,Gamer,false_position,2005-09-01,2015-09-30,False,False,False,False,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,6,,Founder and Chief Hacking Officer,founder,2017-06-01,,True,True,False,True,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,7,/c/SBVwRBMIEBs=,Co-Founder & CHO,founder,2023-09-01,,True,True,False,True,False
+/p/SAZwFwkZDBswDAcIAwAXCQoHAzA=,8,/c/SBVwRBMIEBs=,"Co-Founder, Chief Technology Officer & CHO",founder,2024-01-01,,True,True,False,True,False
+/p/SAZwEAAFOgQWAwA=,1,,Judicial Clerk,,1998-01-01,2000-02-01,False,,False,False,False
+/p/SAZwEAAFOgQWAwA=,2,/c/SBVwAw4ZCQwwDxAUHzEREhg6CwcEBgYRMA==,"Assistant Director, Business Development",,2000-02-01,2002-03-01,False,,False,False,False
+/p/SAZwEAAFOgQWAwA=,3,/c/SBVwAw4ZCQwwDxAUHzEREhg6CwcEBgYRMA==,"Director, Business Development - Technology & Digital Media",,2002-03-01,2013-05-01,False,,False,False,False
+/p/SAZwEAAFOgQWAwA=,4,/c/SBVwRVlcVA==,Co-Founder,,2011-01-01,,False,,False,True,False
+/p/SAZwEAAFOgQWAwA=,5,,Co-Founder & Executive Director,,2011-02-01,2013-05-01,False,,False,True,False
+/p/SAZwEAAFOgQWAwA=,6,/c/SBVwGQAfEQ0dMlc=,Co-Founder,,2012-06-01,,False,,False,True,False
+/p/SAZwEAAFOgQWAwA=,7,/c/SBVwFwMZADcIHwoSBg==,Senior Vice President - Global Health & Life Sciences / Global Tech & Media,executive,2013-05-01,,False,,True,False,False
+/p/SAZwEAAFOgQWAwA=,8,/c/SBVwFwMZADcIHwoSBg==,Executive Vice President - Global Health & Life Sciences / Global Tech & Media,,2022-12-01,,False,,False,False,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,01,/c/SBVwFgQZCQEBMgcVFzEQEjQCGgAYFQ==,Chief Marketing Officer,executive,2010-01-01,2012-01-01,True,True,True,False,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,02,/c/SBVwBg4IDg0bMgwJAjoGDw4R,Marketing for various global ventures,employee,2012-01-01,2013-01-01,False,True,False,False,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,03,,Entrepreneur In Residence,employee,2013-01-01,2013-07-01,False,True,False,False,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,04,/c/SBVwABMKAQ0CDAYPHzEREg==,Founder,founder,2013-01-01,2018-01-01,False,True,False,True,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,05,,Advisor,advisor,2013-08-01,2014-08-01,False,False,False,False,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,06,/c/SBVwABMKAQ0CDAYPHzEREg==,Co-Founder,founder,2013-08-01,2015-01-01,False,True,False,True,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,07,,Co-Founder,founder,2015-07-01,2018-11-01,False,True,False,True,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,08,,"Co-Founder, Partner",founder,2018-01-01,2022-10-01,False,True,False,True,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,09,/c/SBVwGAgaEAELGRcCEyw=,Founder,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,10,,Venture Partner,investor,2021-09-01,2022-03-01,False,False,False,False,False
+/p/SAZwEAAFDA0DMgsCEysOBAc=,11,/c/SBVwRVFaVQ==,Founder,founder,2022-04-01,,False,True,False,True,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,1,/c/SBVwFQwP,Senior Device Engineer and later Member of the Technical Staff,employee,1996-01-01,2000-01-01,False,True,False,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,2,/c/SBVwGQgIFwcwCgY4Bi0bBR4GHDABDAkTABUGAgkNARk6ExM8HA8ECQcIBAAU,Principal Investigator,employee,2000-01-01,2004-01-01,False,True,False,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,3,,President & CEO,executive,2004-12-01,2015-05-01,True,True,True,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,4,,President & CEO,,2015-06-01,2017-04-01,True,,False,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,5,,President & CEO,executive,2015-06-01,2017-04-30,True,True,True,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,6,/c/SBVwHwQZCw0DMgYI,Chief Commercial Officer,executive,2017-04-01,2019-10-01,True,True,True,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,7,/c/SBVwRRJaOg0BCBcADw==,CEO,executive,2019-10-01,,True,True,True,False,False
+/p/SAZwEAAFDA0DMhYIFDofPhsNNws=,8,/c/SBVwRRJaOg0BCBcADw==,Co-Founder and Chief Executive Officer,founder,2019-12-17,,True,True,False,True,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,01,/c/SBVwFwwOOg8dAhAX,Intern - Live Cattle Futures,intern,2009-05-01,2009-08-01,False,False,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,02,/c/SBVwRxE0CQcIBAY=,National Account Manager,employee,2010-01-01,2012-12-01,False,True,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,03,/c/SBVwAQMY,Intern - Financial Analysis,intern,2010-01-01,2010-05-01,False,False,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,04,/c/SBVwGQQfFwcfAgkOAj4aPggEGAYZBAspPRUPADocHRgWEw==,Asset Operations Manager,employee,2012-01-01,2014-12-01,False,True,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,05,,Software Engineer & Hacker in Residence,employee,2015-06-01,2015-11-30,False,True,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,06,/c/SBVwHAAIDjcdCAQEAjAG,Software Engineer & Hacker in Residence,,2015-06-01,2015-11-01,False,,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,07,/c/SBVwHAQSEgEdCA==,Software Engineer,employee,2015-11-01,2020-02-01,False,True,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,08,,Co-Founder,founder,2018-01-01,2018-12-01,False,True,False,True,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,09,,Founder Fellow,,2020-06-01,2020-08-01,False,,False,True,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,10,/c/SBVwHg4CCwcLCw==,Founder Fellow,employee,2020-06-01,2020-08-31,False,True,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,11,/c/SBVwHAAdEw0B,Core Contributor,employee,2020-12-01,2021-11-01,False,True,False,False,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,12,/c/SBVwRBkGBAsdAg==,Co-Founder,founder,2021-09-01,,False,True,False,True,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,13,/c/SBVwBgQPOhoODwcOAgAGDgkKHAYOFg==,Co-Founder,founder,2024-12-01,,False,True,False,True,False
+/p/SAZwEAAdDAwwCgoLEj0REww6WF5Z,14,,Co-Founder,founder,2024-06-01,,False,True,False,True,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,01,,Internal auditor,employee,1997-01-01,1998-01-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,02,,Sales Project Director,operator,1998-03-01,1999-11-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,03,,Senior CRM Consultant,employee,2000-01-01,2004-08-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,04,,Manager new digital marketing & E-commerce solutions,employee,2004-08-01,2008-04-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,05,,Manager of Strategic Planning,employee,2008-04-01,2009-11-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,06,,Senior Manager Revenue Development projects,employee,2009-11-01,2012-02-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,07,,"Senior Manager Marketing and new Businesses development, Retail division",employee,2012-02-01,2014-08-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,08,,Director,operator,2015-08-01,2017-12-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,09,,Director,executive,2015-08-17,,False,,True,False,
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,10,,Strategic advisory and Program Management,advisor,2017-06-01,2019-04-01,False,False,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,11,/c/SBVwHwAPDAUOHhECGw==,Board Member,advisor,2017-08-01,2020-12-01,False,False,False,False,True
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,12,,Advisory Board Member,advisor,2017-09-01,2020-11-01,False,False,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,13,,Strategic Advisor to the CEO,employee,2018-02-01,2021-01-01,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,14,,Alchemist,employee,2019-01-01,,False,True,False,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,15,,Chief Operating Officer,executive,2019-03-01,,True,True,True,False,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,16,,Chief Operating Officer,executive,2019-03-01,,True,,True,False,
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,17,,Co-Founder,founder,2019-03-01,,False,True,False,True,False
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,18,/c/SBVwRFANCh0BCQAVBQ==,Board Member & Co-founder,founder,2021-04-01,,False,True,False,True,True
+/p/SAZwEAAdDAwwHhALAj4aPltVWQ==,19,,Strategic advisory,advisor,2022-02-01,,False,False,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,01,/c/SBVwBgQFBB0DGToUKT4=,Product Manager - After Sales Services,employee,2003-01-01,2003-12-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,02,,Teaching Assistant,employee,2004-01-01,2004-12-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,03,,Junior Consultant in Branding and Packaging,employee,2004-04-01,2004-08-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,04,/c/SBVwBBMEBhwKHzoGGDsrBgoICgMI,"MARKETING LEADER Fabric Care, Global brands",employee,2006-02-01,2010-02-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,05,/c/SBVwBBMEBhwKHzoGGDsrBgoICgMI,"MARKETING LEADER  Fabric Care, Global brands",employee,2010-03-01,2014-04-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,06,/c/SBVwGgQYEQQwBQAGGiscPhgGAQoDBgI=,INNOVATION ACCELERATION MANAGER - Medical Nutrition,employee,2015-03-01,2016-01-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,07,/c/SBVwGgQYEQQwBQAGGiscPhgGAQoDBgI=,GLOBAL MARKETING  - Oncology Care & Surgery,employee,2016-01-01,2018-08-01,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,08,/c/SBVwRVNYDgEL,"Co-Founder, Chief Executive Officer & Board Member",founder,2019-01-01,,True,True,False,True,True
+/p/SAZwEAgKCw0wAQQXFy4BBA==,09,/c/SBVwRVNYDgEL,"CEO & Founder 1,2,3 Kid",founder,2019-02-01,,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,10,/c/SBVwBAAZAAYbBQoIEgACBAURHR0IFg==,Founder Member,employee,2023-01-01,,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,11,,Head of operations & Family Experience,operator,2024-09-01,,False,True,False,False,False
+/p/SAZwEAgKCw0wAQQXFy4BBA==,12,,Head of operations & Family Experience,operator,2024-09-01,,False,True,False,False,False
+/p/SAZwEA4FOhwGAQkCDwAECTQB,1,/c/SBVwRRJaOg0BCBcADw==,Co-Founder,founder,2019-12-17,,False,True,False,True,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,01,,Art Director,,1993-01-01,1996-01-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,02,,Art Director,,1997-01-01,1998-01-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,03,,Art Director,,1998-01-01,1999-01-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,04,,Creative Director,,1999-01-01,2009-01-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,05,/c/SBVwBgQKCQEcCA==,Executive Creative Director,,2009-04-01,2017-04-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,06,/c/SBVwFlBbVQU=,Founder & Board Member,founder,2016-09-14,,False,True,False,True,True
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,07,,Creative & Innovation Consultant (& Inventor),,2017-01-01,,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,08,/c/SBVwRQ8DBAQKHw==,"Co-Founder, Chief Innovation Officer & Board Member",founder,2017-01-01,,True,True,False,True,True
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,09,,CO-Founder & CIO (Chief Innovation Officer),,2017-08-01,,True,,False,True,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,10,,Strategic Creative Director,,2019-08-01,2023-01-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,11,,Entrepreneur (Inventor) in Residence,,2019-10-01,2021-01-01,False,,False,False,False
+/p/SAZwEA4FBAQLMhYKHyscPltXWg==,12,,Inventor and Founder,,2021-06-01,,False,,False,True,False
+/p/SAZwEBM0AQkZBAE4DD4GBgoXEQ4D,1,/c/SBVwGgAfDAcBDAk4HzEHFRkQBQoDERQ=,RF Systems Engineer,employee,2011-01-01,2013-10-01,False,True,False,False,False
+/p/SAZwEBM0AQkZBAE4DD4GBgoXEQ4D,2,,Founder  CTO,founder,2013-10-01,2020-03-01,False,True,False,False,False
+/p/SAZwEBM0AQkZBAE4DD4GBgoXEQ4D,3,/c/SBVwBAgFCgMGGQ==,Co-Founder & Chief Technology Officer,founder,2018-01-01,,True,True,False,True,False
+/p/SAZwEBM0AQkZBAE4DD4GBgoXEQ4D,4,/c/SBVwBAgFCgMGGQ==,Founder CTO,founder,2018-10-01,2019-12-01,True,True,False,True,False
+/p/SAZwEBM0AQkZBAE4DD4GBgoXEQ4D,5,,Co-Founder,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwEBM0AQkZBAE4DD4GBgoXEQ4D,6,/c/SBVwRVETOgECAAAVBTYCBA==,Co-Founder CEO,founder,2021-01-01,,True,True,False,True,False
+/p/SAZwEQ0CCwkwDwQdHzEVEg==,1,/c/SBVwRVFbCA0BGQoVBQ==,"Head, Business Development",founder,2013-01-01,,False,True,False,True,False
+/p/SAZwEQ0CCwkwDwQdHzEVEg==,2,/c/SBVwRVFbCA0BGQoVBQ==,CSO,executive,,,True,,True,False,
+/p/SAZwERgKCTcWDAwV,01,/c/SBVwFQwCBgkLDA==,Director of product and project manager,operator,2000-01-01,2003-12-01,False,True,False,False,False
+/p/SAZwERgKCTcWDAwV,02,,R&D Leader,employee,2002-01-01,2003-12-01,False,True,False,False,False
+/p/SAZwERgKCTcWDAwV,03,/c/SBVwEQ0JDBwwHhwUAjoZEg==,Projects Manager,operator,2003-01-01,2008-12-01,False,True,False,False,False
+/p/SAZwERgKCTcWDAwV,04,/c/SBVwEQ0JDBwwHhwUAjoZEg==,Department Manager,operator,2008-01-01,2010-09-01,False,True,False,False,False
+/p/SAZwERgKCTcWDAwV,05,/c/SBVwEQ0JDBwwHhwUAjoZEg==,CIO - Chief Innovation Officer,operator,2009-01-01,2010-12-01,True,True,False,False,False
+/p/SAZwERgKCTcWDAwV,06,,Co-Founder & CEO,founder,2010-06-01,2011-11-01,True,True,False,True,False
+/p/SAZwERgKCTcWDAwV,07,/c/SBVwFwAZEQsdGAsEHg==,Co-Founder & Chief Executive Officer,founder,2011-01-01,,True,True,False,True,False
+/p/SAZwERgKCTcWDAwV,08,/c/SBVwFwAZEQsdGAsEHg==,Co-Founder & CEO,founder,2011-12-01,2016-12-01,True,True,False,True,False
+/p/SAZwERgKCTcWDAwV,09,/c/SBVwGQAbCA0wXw==,Advisor,advisor,2015-10-01,,False,,False,False,
+/p/SAZwERgKCTcWDAwV,10,/c/SBVwGgQfCgYAABw4RG9FVg==,Co-Founder & CEO,founder,2016-08-01,,True,,False,True,False
+/p/SAZwERgKCTcWDAwV,11,,Co-Founder & CEO,executive,2016-08-01,,True,True,True,False,False
+/p/SAZwERgKCTcWDAwV,12,/c/SBVwRQwZCgoAGQwEBQ==,Co-Founder & CEO,founder,2021-02-01,,True,True,False,True,False
+/p/SAZwERgKCTcWDAwV,13,,Co-Founder & CEO,,2021-02-01,,True,,False,True,False
+/p/SAZwERgKCTcWDAwV,14,,Co-Founder & CEO,executive,2021-02-01,,True,True,True,False,False
+/p/SAZwERgKCTcWDAwV,15,/c/SBVwRQwZCgoAGQwEBQ==,"Co-Founder, Co-Chief Executive Officer & Chief Commercial Officer",founder,2021-03-01,,True,True,False,True,False
+/p/SAZwERgKCTcWDAwV,16,/c/SBVwRQwZCgoAGQwEBQ==,Co-Founder & CCO,founder,2024-08-01,,True,True,False,False,False
+/p/SAZwERgKCTcWDAwV,17,,,employee,,,False,True,False,False,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,1,,Creative Director & Co-Founder,founder,2015-03-01,2017-03-01,False,True,False,True,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,2,/c/SBVwFhQFHw==,Product Designer,executive,2017-07-01,2019-09-01,False,True,True,False,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,3,/c/SBVwFhQFHw==,Chief Product Officer,executive,2018-08-01,2019-09-01,True,True,True,False,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,4,/c/SBVwAwQJAwQAGjoOGQAeDgILCgMECBc=,Co-Founder & Chief Product Officer,founder,2020-01-01,2021-08-01,True,True,False,True,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,5,,Co-Founder,founder,2020-05-01,2021-02-01,False,True,False,True,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,6,/c/SBVwFg0CCBgwBQoKEyw=,CPO & Co-Founder,founder,2020-07-01,2021-08-01,True,True,False,True,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,7,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder & Head of Design,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,8,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder // Head of Design,founder,2021-02-01,,False,True,False,True,False
+/p/SAZwERgfDQkBMgE4FzIdAgQ=,9,/c/SBVwFgQKEw0dMgcOAjwbCAU=,Co-Founder & CPO,founder,,,True,True,False,True,False
+/p/SAZwEggfHw8KHwQLEgACBAURHR0M,1,,President,employee,1989-01-01,,True,True,False,False,False
+/p/SAZwEggfHw8KHwQLEgACBAURHR0M,2,,President,,1989-01-01,,False,,False,False,False
+/p/SAZwEggfHw8KHwQLEgACBAURHR0M,3,/c/SBVwRVFSXBgAAQwEDw==,"Co-Founder, Chief Executive Officer & President",founder,2019-06-27,,True,True,False,True,False
+/p/SAZwEggfHw8KHwQLEgACBAURHR0M,4,/c/SBVwRVFSXBgAAQwEDw==,Co-Founder and CEO,founder,2020-01-01,,True,True,False,True,False
+/p/SAZwEggfHw8KHwQLEgACBAURHR0M,5,,Co-Founder and CEO,,,,True,,False,True,False
+/p/SAZwEwAHAAYwAAQUGTE=,1,,Financial Analyst,,1998-01-01,1999-01-01,False,,False,False,False
+/p/SAZwEwAHAAYwAAQUGTE=,2,,Associate,,2002-09-01,2010-07-01,False,,False,False,False
+/p/SAZwEwAHAAYwAAQUGTE=,3,,Board Member,,2007-09-01,2015-03-01,False,,False,False,True
+/p/SAZwEwAHAAYwAAQUGTE=,4,/c/SBVwEg4HABEwAQQVEjEREw==,Special Counsel,employee,2010-08-01,2019-12-01,False,,False,False,False
+/p/SAZwEwAHAAYwAAQUGTE=,5,/c/SBVwRVlcVA==,Co-Founder/Board Member,founder,2011-08-01,2019-12-01,False,,False,True,True
+/p/SAZwEwAHAAYwAAQUGTE=,6,/c/SB9wBwQZEwEMCDoXBDACCA8AGjAOBBcfKxUN,Managing Director,employee,2015-09-01,,False,True,False,False,False
+/p/SAZwEwAHAAYwAAQUGTE=,7,,Managing Director,executive,2015-09-01,,False,,True,False,False
+/p/SAZwEwAHAAYwAAQUGTE=,8,/c/SBVwGQgIDQkKAToFEywAPg0XAQoJFw4VNw==,Partner; Co-Chair of Venture Best,,2019-12-01,,False,,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,01,,Software Architect,,1996-08-01,1997-11-01,False,,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,02,,Software Architect,employee,1996-08-01,1997-11-30,False,True,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,03,,Senior Director Engineering,operator,1997-01-01,2010-01-01,False,True,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,04,/c/SBVwBRQKCQsAAAg=,Senior Director Engineering,operator,1997-01-01,2010-01-01,False,True,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,05,,"VP Engineering, Founder",founder,2010-10-01,,False,True,False,True,False
+/p/SAZwEwQZBAQLMg0IBDoY,06,,client engineering lead,,2013-04-01,2015-09-01,False,,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,07,,client engineering lead,employee,2013-04-01,2015-09-30,False,True,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,08,,"CTO,Founder",,2014-06-01,2016-01-01,False,,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,09,,"CTO,Founder",false_position,2014-06-01,2016-01-31,True,False,False,False,False
+/p/SAZwEwQZBAQLMg0IBDoY,10,/c/SBVwRVgHBAoc,Co-Founder & Vice President of Engineering,founder,2015-01-01,,False,True,False,True,False
+/p/SAZwEwQZBAQLMg0IBDoY,11,/c/SBVwRVgHBAoc,VP Software Engineering -CoFounder,founder,2016-01-01,,False,True,False,True,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,01,/c/SBVwARIDDBg=,Web Developer Intern,intern,2008-05-01,2008-08-01,False,False,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,02,,Co-Founder & CTO,founder,2010-06-01,2010-12-01,True,True,False,True,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,03,,Freelance Web Consultant,employee,2011-01-01,2013-09-01,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,04,,co-founder,,2012-10-01,2013-06-01,False,,False,True,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,05,/c/SBVwGQAAABocHBAGBDo=,Instructor,employee,2013-09-01,2016-12-01,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,06,,Remote Software Engineer,employee,2016-12-01,2018-08-01,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,07,/c/SBVwHAAIDjcdCAQEAjAG,Remote Software Engineer,,2016-12-01,2018-08-01,False,,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,08,/c/SBVwEwAHEwkBBB8CAw==,Remote Software Engineer,employee,2018-08-01,2019-02-01,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,09,/c/SBVwFxIbBA==,Senior Software Engineer,employee,2019-02-01,2020-01-01,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,10,/c/SBVwFxMOEltd,Product Engineer,employee,2020-01-01,2020-04-01,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,11,/c/SBVwExQGARoAHQ==,Software Engineering Advisor,operator,2020-04-01,,False,True,False,False,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,12,/c/SBVwRBkGBAsdAg==,Co-Founder & Smart Contract Auditor,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwEwgHBw0dGToAFy0OAA==,13,/c/SBVwRBkGBAsdAg==,"Co-Founder, Smart Contract Auditor",founder,2021-07-01,,False,True,False,True,False
+/p/SAZwExMOAgcGHwA4HioGCA4f,1,/c/SBVwGQ4PABwGDg==,Co-Founder & Directeur Général,founder,2007-07-01,,False,True,False,True,False
+/p/SAZwExMOAgcGHwA4HioGCA4f,2,/c/SBVwRVFTVg==,Co-Founder & Directeur Général,founder,2013-01-01,,False,True,False,True,False
+/p/SAZwExMOAgcdFDoLGSgRPgIM,1,/c/SBVwGA4cAAMKFA==,CEO,executive,2008-04-01,,True,True,True,False,False
+/p/SAZwExMOAgcdFDoLGSgRPgIM,2,,Director of Mobile Development,operator,2011-04-01,2011-12-01,False,True,False,False,False
+/p/SAZwExMOAgcdFDoLGSgRPgIM,3,/c/SBVwRVFbOgsADgoJAysH,Founder and CEO,founder,2018-10-01,,True,True,False,True,False
+/p/SAZwExMOAgcdFDoLGSgRPgIM,4,/c/SBVwRVFbOgsADgoJAysH,Founder and Chief Executive Officer,founder,2019-03-11,,True,True,False,True,False
+/p/SAZwExMOAgcdFDoLGSgRPgIM,5,,Chief Executive Officer,executive,2020-07-01,,True,True,True,False,False
+/p/SAZwExMOAgcdFDoLGSgRPgIM,6,/c/SBVwGA4cAAMKFA==,CEO,executive,,,True,,True,False,
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,01,,Financial Analyst,employee,2013-12-01,2014-12-01,False,True,False,False,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,02,,Syndication / ECM (Focus on Healthcare),employee,2014-12-01,2016-07-01,False,True,False,False,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,03,,Founder & Owner,founder,2016-05-01,,False,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,04,/c/SBVwEhMOCwsHCwoSGDsRExg=,Active Member,employee,2016-05-01,,False,True,False,False,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,05,/c/SBVwFhMSBAYwCgQVGDYREzQGBw==,Equity Capital Market - Healthcare,employee,2016-07-01,2018-10-01,False,True,False,False,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,06,/c/SB9wEBQN,Founder & Owner,founder,2018-01-01,,False,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,07,/c/SBVwHA4HDB8GAw==,"Co-Founder, Publication Director & Chairman",founder,2018-10-10,,False,True,False,True,True
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,08,/c/SBVwGQ4JBAwc,Founder & Chief Executive Officer,founder,2019-01-01,2023-09-11,True,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,09,/c/SBVwFQUZDB4KHw==,"Founder, Chief Executive Officer & President",founder,2019-02-01,,True,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,10,/c/SBVwFQUZDB4KHw==,Founder & President,founder,2019-10-01,,True,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,11,/c/SBVwFQUZDB4KHzoUFywB,Founder,,2019-10-01,,False,,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,12,/c/SBVwFw4dEgcdAQE=,Founder & Owner,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,13,/c/SBVwEg4ZBw0c,30 Under 30 - Entrepreneur,employee,2020-01-01,2021-01-01,False,True,False,False,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,14,/c/SBVwFgQfCgYWAhA=,Board Member,board_member,2020-08-01,,False,False,False,False,True
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,15,/c/SBVwHA4HDB8GAw==,Co-founder & Chairman,founder,2022-01-01,,False,True,False,True,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,16,/c/SBVwFwAEBgkA,Board Member,advisor,2022-09-01,,False,False,False,False,True
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,17,,Chairman,employee,2023-01-01,,False,True,False,False,False
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,18,,Founder & Executive Chairman,founder,2023-05-01,,False,True,False,True,True
+/p/SAZwHAAPFwEKAzoDEwAYADQRBxof,19,,Chairman,operator,2023-07-01,,False,True,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,01,,Teaching Assistant,employee,2014-09-01,2015-09-01,False,True,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,02,,Teaching Assistant,employee,2014-09-01,2015-09-01,False,True,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,03,,Teaching Assistant,,2014-09-01,2015-09-01,False,,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,04,,Co-Founder,false_position,2016-11-01,2018-08-01,False,False,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,05,,Co-Founder,false_position,2016-11-01,2018-08-01,False,False,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,06,,Co-Founder,,2016-11-01,2018-08-01,False,,False,True,False
+/p/SAZwHAAZDBswHQoNFysV,07,,Chief of Cabinet,employee,2018-09-01,2019-07-01,False,True,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,08,,Board Secretary General,employee,2019-07-01,2025-05-01,False,True,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,09,/c/SBVwFggFBwEB,CFO,board_member,2019-10-01,,True,,False,False,
+/p/SAZwHAAZDBswHQoNFysV,10,/c/SBVwRVFbVTcWDBE4BAAZDQoXNwcCCQMfMRM=,Co-Founder & Board Member,founder,2022-03-01,,False,True,False,True,True
+/p/SAZwHAAZDBswHQoNFysV,11,/c/SBVwEAAC,Senior Finance and Banking Expert Consultant,employee,2022-10-01,2024-07-01,False,True,False,False,False
+/p/SAZwHAAZDBswHQoNFysV,12,,Executive Board Member & Member of the Board of Trustees,advisor,2024-03-01,,False,False,False,False,True
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,01,/c/SBVwBwACCxwwAQoSHywrFAUMHgofFg4CJg==,Biomechanics and Orthopedics Researcher,employee,2008-08-01,2009-10-01,False,True,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,02,,Emergency Department Researcher,employee,2009-05-01,2010-05-01,False,True,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,03,/c/SBVwBwgfAAUOAzoEFzEXBBk6CwoDEQIE,Emergency Department Researcher,,2009-05-01,2010-05-01,False,,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,04,/c/SBVwHwkKCzcODgQDEzIN,Volunteer - Teacher Toolkit Product,employee,2010-03-01,2012-07-01,False,True,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,05,/c/SBVwAAQKBgAwCwoVKT4ZBBkMCw4=,5th Grade Math & Science Teacher,employee,2010-06-01,2011-07-01,False,True,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,06,,Head of Product,,2011-01-01,2013-12-01,False,,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,07,/c/SBVwAAQKBgAwCwoVKT4ZBBkMCw4=,8th Grade Math & Science Teacher,employee,2011-07-01,2012-07-01,False,True,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,08,/c/SBVwGQAAABocHBAGBDo=,"Co-Founder, CEO",founder,2012-01-01,2016-01-01,True,True,False,True,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,09,/c/SBVwHA4HBw0dCgMOGD4aAgIEBA==,Board Member (Acquired),advisor,2015-01-01,2023-01-01,False,False,False,False,True
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,10,,"Founder, Board Chair",,2015-01-01,,False,,False,True,True
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,11,/c/SBVwGQAZDAYKHzoBHzEVDwgMCQMyEgIaMxoEGBY=,Board Member,advisor,2015-01-01,2023-01-01,False,False,False,False,True
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,12,,CEO (Acquired),executive,2016-01-01,2018-01-01,True,True,True,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,13,/c/SBVwHAAIDjcdCAQEAjAG,COO,,2016-01-01,2017-12-01,True,,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,14,/c/SBVwHAAIDjcdCAQEAjAG,CEO,,2017-01-01,2018-12-01,True,,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,15,/c/SBVwEwAHEwkBBB8CAw==,Chief Product Officer,executive,2018-01-01,2019-03-01,True,True,True,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,16,/c/SBVwEwAHEwkBBB8CAw==,CEO,executive,2019-01-01,2021-12-01,True,True,True,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,17,/c/SBVwEwAHEwkBBB8CAw==,CEO,executive,2019-04-01,2021-01-01,True,,True,False,
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,18,/c/SBVwEwAHEwkBBB8CAw==,Chief Executive Officer,executive,2019-04-18,,True,True,True,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,19,/c/SBVwRBkGBAsdAg==,Co-Founder,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,20,/c/SBVwRBkGBAsdAg==,Founder,founder,2021-07-01,,False,True,False,True,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,21,,Board Member,advisor,2022-01-01,2025-04-01,False,False,False,False,True
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,22,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwHAAZFgAwHQQTEzMrUVtU,23,/c/SBVwHAAIDjcdCAQEAjAG,"Chief Executive Officer, Interim Chief Operating Officer & Regional Manager- CA & Remote",executive,,2019-04-17,True,True,True,False,False
+/p/SAZwHj4JOhgdBBEdHToGPgEB,01,,Founder & Managing Partner,founder,1996-01-01,2017-03-01,False,,False,True,
+/p/SAZwHj4JOhgdBBEdHToGPgEB,02,/c/SBVwBBMCERIECBc4ES0bFBs=,Founder and Managing Partner,founder,1996-01-01,2017-03-31,False,True,False,True,False
+/p/SAZwHj4JOhgdBBEdHToGPgEB,03,/c/SB9wGgQcOh8AHwkDKTgGDh4V,Co-Founder,founder,2002-01-01,,False,True,False,True,False
+/p/SAZwHj4JOhgdBBEdHToGPgEB,04,/c/SB9wBBMCERIECBc4Bi0dFwoRDTAOBBcfKxUN,Co-Founder,founder,2002-01-01,,False,True,False,True,False
+/p/SAZwHj4JOhgdBBEdHToGPgEB,05,/c/SBVwBwwYOgkcHgwUAg==,Director,executive,2011-01-01,,False,,True,False,
+/p/SAZwHj4JOhgdBBEdHToGPgEB,06,/c/SBVwBAQICjcfDAkLEys=,Chairman,board_member,2011-03-01,2020-10-09,False,False,False,False,True
+/p/SAZwHj4JOhgdBBEdHToGPgEB,07,/c/SBVwBwwYOgkcHgwUAg==,Board Member,board_member,2011-06-22,,False,False,False,False,True
+/p/SAZwHj4JOhgdBBEdHToGPgEB,08,/c/SBVwRVlcVA==,Founder,founder,2012-01-01,2016-01-31,False,True,False,True,False
+/p/SAZwHj4JOhgdBBEdHToGPgEB,09,/c/SB9wGQgHABsbAgsCKT4CPh8ACwcDCgsZOB0EGA==,Chairman,board_member,2013-12-01,2017-08-02,False,False,False,False,True
+/p/SAZwHj4JOhgdBBEdHToGPgEB,10,,Governor,employee,2019-01-01,,False,True,False,False,False
+/p/SAZwHj4JOhgdBBEdHToGPgEB,11,/c/SBVwERkIAAQKHwQTEzMVAxg=,Mentor,advisor,,,False,,False,False,
+/p/SAZwHj4JOhgdBBEdHToGPgEB,12,/c/SBVwFQYOCxwGHjoCGDoGBhI=,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwHj4JOhgdBBEdHToGPgEB,13,/c/SBVwAAAdEw0=,Board Member,board_member,,2020-03-31,False,False,False,False,True
+/p/SAZwHj4JOhgdBBEdHToGPgEB,14,,Managing Director,executive,,,False,,True,False,
+/p/SAZwHj4JOhgdBBEdHToGPgEB,15,,Board of Directors,board_member,,,False,,False,False,
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,01,,Student Research Assistant,employee,2011-03-01,2011-05-01,False,True,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,02,,Student Research Assistant,employee,2011-03-01,2011-05-01,False,True,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,03,,Student Research Assistant,,2011-03-01,2011-05-01,False,,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,04,,Business Development Intern,,2013-07-01,2013-09-01,False,,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,05,,Business Development Intern,intern,2013-07-01,2013-09-01,False,False,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,06,,Business Development Intern,intern,2013-07-01,2013-09-01,False,False,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,07,,Undergraduate Researcher,employee,2013-09-01,2016-07-01,False,True,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,08,,Undergraduate Researcher,,2013-09-01,2016-07-01,False,,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,09,,Undergraduate Researcher,employee,2013-09-01,2016-07-01,False,True,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,10,/c/SBVwGQAYFgkMBRAUEysAEjQMBhwZDBMDKxE+BAM3GwgGDxgwGA4MHDcCBBE=,Graduate Student,alumni,2016-09-01,2023-06-01,False,False,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,11,,Graduate Student,employee,2016-09-01,2023-06-01,False,True,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,12,/c/SBVwGQAYFgkMBRAUEysAEjQMBhwZDBMDKxE+BAM3GwgGDxgwGA4MHDcCBBE=,"PhD Candidate, Christopher Voigt Lab",alumni,2017-05-01,2023-06-01,False,False,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,13,,"PhD Candidate, Christopher Voigt Lab",employee,2017-05-01,2023-06-01,False,True,False,False,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,14,/c/SBVwBg4JDA8A,"Co-Founder, Chief Scientific Officer & Board Member",founder,2020-01-01,,True,True,False,True,True
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,15,/c/SBVwBg4JDA8A,Co-Founder | Chief Scientific Officer,founder,2021-01-01,2023-01-01,True,True,False,True,False
+/p/SAZwHgACOhgOCQgGHSoZABk6GAcyAQ==,16,/c/SBVwRVlfXDcNBAo=,Co-Founder,founder,2024-01-01,,False,True,False,True,False
+/p/SAZwHgAGABswDxcCGDEVDw==,01,/c/SBVwBxQBBDcFGAwEEw==,Co-Founder and Board Member,founder,2011-01-01,,False,True,False,True,True
+/p/SAZwHgAGABswDxcCGDEVDw==,02,/c/SBVwBxQBBDcFGAwEEw==,Co-Founder/Board Member,founder,2012-05-01,,False,True,False,True,True
+/p/SAZwHgAGABswDxcCGDEVDw==,03,/c/SBVwHw4bBBoGMgcCFyoAGA==,Co-Founder/Chairman,founder,2014-10-01,,False,True,False,True,True
+/p/SAZwHgAGABswDxcCGDEVDw==,04,/c/SBVwHw4bBBoGMgcCFyoAGA==,Co-Founder & Chairman,founder,2015-01-01,,False,True,False,True,True
+/p/SAZwHgAGABswDxcCGDEVDw==,05,/c/SBVwGxMCAgEBDAk4ES0VCAU=,Partner & Board Member,board_member,2015-03-01,,False,True,False,False,True
+/p/SAZwHgAGABswDxcCGDEVDw==,06,,Founder & CEO,founder,2015-08-01,,True,True,False,True,False
+/p/SAZwHgAGABswDxcCGDEVDw==,07,/c/SBVwRVFbOgsA,Co-Founder & Chairman,founder,2020-01-01,,False,True,False,True,True
+/p/SAZwHgAGABswDxcCGDEVDw==,08,/c/SBVwRVFbOgsA,Chairman,employee,2021-04-01,,False,,False,False,
+/p/SAZwHgAGABswDxcCGDEVDw==,09,/c/SBVwBAACCw0wHQQVAjERExg=,Senior Advisor,advisor,2022-11-01,,False,False,False,False,False
+/p/SAZwHgAGABswDxcCGDEVDw==,10,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwHgAGABswDxcCGDEVDw==,11,/c/SB9wBAAZDDcfDBYUAwACBAURHR0IOhcXLQAPDhcb,Investor,employee,,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,01,,General Manager,executive,1975-01-01,,False,True,True,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,02,,Caddie,employee,1975-05-01,1982-07-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,03,,Manual Worker,employee,1976-05-01,1983-05-31,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,04,,Owner,employee,1976-05-01,1985-05-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,05,,Bat Boy,employee,1977-07-01,1977-07-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,06,,Intern,intern,1987-01-01,1989-06-01,False,False,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,07,,Intern/Runner,intern,1987-06-01,1987-08-01,False,False,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,08,,Construction Worker,,1988-06-01,1988-08-01,False,,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,09,,Construction Worker,employee,1988-06-01,1988-08-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,10,,Intern,intern,1989-01-01,1989-02-01,False,False,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,11,/c/SBVwGA0EHAwwHg==,Associate Broker,employee,1989-08-01,1989-12-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,12,,Volunteer Teacher,,1990-01-01,1991-01-01,False,,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,13,,Volunteer Teacher,employee,1990-01-01,1991-01-31,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,14,,Volunteer Teacher,employee,1990-01-01,1991-01-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,15,,Paralegal,employee,1991-01-01,1991-06-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,16,,Finance Committee Associate,employee,1991-06-01,1991-09-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,17,,Summer Associate,,1992-06-01,1992-08-01,False,,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,18,,Summer Associate,employee,1992-06-01,1992-08-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,19,,Intern - Ways and Means Committee,intern,1992-09-01,1994-05-01,False,False,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,20,,Summer Associate,employee,1993-06-01,1993-08-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,21,/c/SBVwFT4fOgMKDBcJEyY=,Manager,employee,1996-09-01,1998-09-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,22,,White House Fellowship - U.S. Treasury Department,employee,1998-09-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,23,,Fellowship,employee,1998-09-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,24,,Fellowship,,1998-09-01,,False,,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,25,/c/SBVwGQ4fChoAAQQ4BTAYFB8MBwEe,Co-Founder - MOTOROLA VENTURES,operator,1999-01-01,,False,True,False,True,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,26,,Co-Founder and Managing Director,executive,1999-09-01,2004-01-01,False,True,True,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,27,,Founder & Chairman,founder,2003-01-01,,False,,False,True,True
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,28,/c/SBVwFRIbAAYwBAsUAjYAFB8A,Fellow,employee,2003-01-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,29,,"Chief Innovation Officer - Corporate Vice President, Technology Acceleration",executive,2004-01-01,2007-11-30,False,True,True,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,30,/c/SBVwGQ4fChoAAQQ4BTAYFB8MBwEe,"Chief Innovation Officer - Corporate Vice President, Technology Acceleration",operator,2004-01-01,2007-12-01,True,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,31,/c/SBVwGRcIOgsOHQwTFzM=,Managing Director,executive,2008-01-01,2014-11-01,False,,True,False,
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,32,,Managing Director,operator,2008-01-01,2014-11-30,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,33,,Managing Director,operator,2008-01-01,2014-11-01,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,34,/c/SBVwRVlcVA==,Co-Founder & Chairman Emeritus,founder,2012-01-01,,False,True,False,True,True
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,35,/c/SBVwRVlcVA==,Chairman of the Board & Co-Founder,founder,2013-01-01,,False,True,False,True,True
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,36,/c/SBVwRVlcVA==,CEO,executive,2013-06-01,2014-01-01,True,True,True,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,37,/c/SB9wAwgHCQEOADoFGj4dEw==,"Managing Director, Venture Capital",employee,2014-01-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,38,/c/SBVwAwgHCQEOADoFGj4dEw==,Global Head of Venture Capital and Managing Director,operator,2014-11-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,39,/c/SBVwGQAfEQ0dMlc=,Board Member,board_member,2015-04-21,,False,False,False,False,True
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,40,,Co- Founding Advisor,advisor,2016-01-01,2016-08-01,False,False,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,41,,Committee Member - Tax Policy,employee,2017-01-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,42,/c/SBVwAAkOOgsHBAYGETArAgQIBRoDDBMPAAATHhYc,Investment Committee Member,employee,2019-05-01,,False,True,False,False,False
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,43,/c/SBVwGQ4fChoAAQQ4BTAYFB8MBwEe,Senior Management,employee,,,False,,False,False,
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,44,/c/SBVwHwQOFQ0dMhYCFSoGCB8c,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,45,,Managing Director,executive,,,False,,True,False,
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,46,,Managing Director and Co-Founder,founder,,,False,,False,True,
+/p/SAZwHgAGABswAjoEGTEaDhk6Ah0y,47,,Team Member,employee,,,False,,False,False,
+/p/SAZwHgAFOgUOARw=,01,/c/SBVwGgQfUQ8OHjoEDA==,Deputy for Head Of Technical Services,operator,2013-09-01,2014-10-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,02,,Vývojář na volné noze,employee,2014-01-01,2016-01-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,03,,Vývojář na volné noze,,2014-01-01,2016-01-01,False,,False,False,False
+/p/SAZwHgAFOgUOARw=,04,,Software Engineering,employee,2016-01-01,2016-01-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,05,,Software Engineering,employee,2017-01-01,2018-01-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,06,,Machine Learning Specialist,employee,2017-01-01,2017-01-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,07,,Software Engineering,,2017-01-01,2018-01-01,False,,False,False,False
+/p/SAZwHgAFOgUOARw=,08,,Machine Learning Specialist,,2017-01-01,2017-01-01,False,,False,False,False
+/p/SAZwHgAFOgUOARw=,09,/c/SBVwG1M0BhI=,Data Scientist,employee,2018-09-01,2020-01-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,10,,Data Science Department Lead,employee,2020-02-01,2022-09-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,11,,Machine Learning Engineer,employee,2022-10-01,2023-01-01,False,True,False,False,False
+/p/SAZwHgAFOgUOARw=,12,/c/SBVwRVJYUjddXVdU,Co-Founder & Chief Technical Officer,founder,2023-01-01,,True,True,False,True,False
+/p/SAZwHgAFOgUOARw=,13,,"CTO, Co-Founder",founder,2023-03-01,,True,True,False,True,False
+/p/SAZwHgAFOgUOARw=,14,/c/SBVwRVJYUjddXVdU,Chief Technical Officer,executive,2023-03-01,,True,True,True,False,False
+/p/SAZwHgQNAzcIHwACGA==,01,/c/SBVwBxUKCBgcMgYIGw==,Founder & VP Marketing,founder,1996-05-01,1999-12-01,False,True,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,02,,Founder & VP Marketing,,2000-01-01,2003-12-01,False,,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,03,,Founder & VP Marketing,founder,2000-01-01,2003-12-01,False,True,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,04,/c/SBVwGgAFCgBdAg==,"Co-Founder, Chief Executive Officer & Board Member",founder,2005-01-01,,True,True,False,True,True
+/p/SAZwHgQNAzcIHwACGA==,05,,"Founder, CEO & Board Chair",founder,2005-09-01,2014-12-01,True,True,False,True,True
+/p/SAZwHgQNAzcIHwACGA==,06,,Founder & Managing Partner,founder,2015-01-01,,False,True,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,07,/c/SB9wARIZAjcdCAsCAT4WDQ46DgYDBAkVOg==,Co-Founder & Managing Director,founder,2015-01-01,,False,True,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,08,/c/SBVwGQ4HAAkKHw==,Executive Chairman & Investor,investor,2017-01-01,,False,False,False,False,True
+/p/SAZwHgQNAzcIHwACGA==,09,/c/SBVwFwAZBwcBMgAJETYaBA4XAQEK,Investor,investor,2017-02-01,,False,False,False,False,False
+/p/SAZwHgQNAzcIHwACGA==,10,,Founder & Board Member,founder,2017-12-01,,False,True,False,True,True
+/p/SAZwHgQNAzcIHwACGA==,11,/c/SBVwGQ4HAAkKHw==,Executive Chairman,board_member,2018-05-29,,False,False,False,False,True
+/p/SAZwHgQNAzcIHwACGA==,12,/c/SBVwRREEDAYbCwwREw==,Co-Founder,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,13,/c/SBVwRREEDAYbCwwREw==,Founder,founder,2020-08-01,,False,True,False,True,False
+/p/SAZwHgQNAzcIHwACGA==,14,/c/SBVwHRYdBg==,Board Member,advisor,2022-01-01,,False,False,False,False,True
+/p/SAZwHgQNAzcIHwACGA==,15,/c/SBVwFwAZBwcBHwwDETo=,Board Member and Investor,investor,2022-01-01,,False,False,False,False,True
+/p/SAZwHgQNAzcIHwACGA==,16,/c/SBVwFwAZBwcBHwwDETo=,Board Member,board_member,2022-09-12,,False,False,False,False,True
+/p/SAZwHgQNAzcIHwACGA==,17,/c/SBVwBAQZCAEOAwkOEjo=,Board Member,advisor,2023-03-01,,False,False,False,False,True
+/p/SAZwHgQNAzcIHwACGA==,18,/c/SBVwFxMOBBwGGwA4EjoHFRkQCxsECgkpMxUD,Associate,employee,,,False,,False,False,
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,01,/c/SBVwEwQEFw8KMhIGBTcdDwwRBwEyEAkfKRETGAwcFg==,"HHMI Fellow, Molecular Genetics",employee,2008-05-01,2008-08-31,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,02,/c/SBVwFw0KAwQGAzoSGDYCBBkWARsUOggEPhoGDgcdHQo=,"HHMI-SC Life Fellow, Protein Biochemistry",employee,2009-01-01,2009-12-01,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,03,,"HHMI-SC Life Fellow, Protein Biochemistry",employee,2009-01-01,2009-12-31,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,04,/c/SBVwDQAHADcaAwwREy0HCB8c,"Raymond & Beverly Sackler Fellow, Biophysics & Biochemistry",alumni,2009-05-01,2009-08-01,False,False,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,05,,"Raymond & Beverly Sackler Fellow, Biophysics & Biochemistry",alumni,2009-05-01,2009-08-31,False,False,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,06,/c/SBVwEQ0COgQGAQke,"R&D Associate, Biotherapeutics Discovery Research",employee,2010-05-01,2010-06-30,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,07,/c/SBVwGg4dBBobBBY4FTAZ,"R&D Associate, Oncology Drug Discovery",employee,2010-06-01,2010-08-31,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,08,/c/SBVwGg4dBBobBBY4FTAZ,"R&D Associate, Chemical & Pharmaceutical Profiling",employee,2011-06-01,2011-08-31,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,09,,"HHMI Fellow, Pharmacology & Experimental Therapeutics",employee,2011-09-01,2016-04-30,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,10,/c/SBVwABQNERswGAsOADoGEgIREQ==,"HHMI Fellow, Pharmacology & Experimental Therapeutics",employee,2011-09-01,2016-04-01,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,11,/c/SBVwEBMeCBoAAQk4RG9FUA==,Director of Business Development,operator,2013-02-01,2016-07-31,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,12,/c/SBVwFg4YEQcBMgYPHzMQEw4LNxwyDQgFLx0VCgk=,"HHMI Fellow, Sickle Cell Disease Drug Discovery",employee,2015-01-01,2016-04-30,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,13,/c/SBVwFgACCzcMAg==,Management Consultant,employee,2016-06-01,2017-10-31,False,True,False,False,False
+/p/SAZwHgQFCwEJCBc4GCgVDwASBzAdDTgS,14,/c/SBVwRVhaVTcICAsCAjYXEg==,Founder & CEO,founder,2018-05-01,,True,True,False,True,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,01,/c/SBVwGxMKBgQKMgYIGw==,"Applications Product Development, Operations and Marketing",employee,1997-08-01,2003-08-01,False,True,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,02,/c/SBVwAwgHCQEOABY4BTAaDgYE,Merchant,employee,2003-09-01,2005-06-01,False,True,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,03,,Account Director,,2006-07-01,2008-04-01,False,,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,04,,Account Director,operator,2006-07-01,2008-04-01,False,True,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,05,,Founder and Principal Strategist,,2008-04-01,2012-04-01,False,,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,06,,Founder and Principal Strategist,operator,2008-04-01,2012-04-01,False,True,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,07,/c/SBVwGxQfBgkcGQ==,Partner,operator,2012-05-01,2017-10-01,False,True,False,False,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,08,,Founder and Strategy Consultant,,2017-01-01,,False,,False,True,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,09,,Founder and Strategy Consultant,founder,2017-01-01,,False,,False,True,
+/p/SAZwHgQFCxEwCQAGBDYaBg==,10,,Founder and Principal Strategy Consultant,founder,2017-01-01,,False,True,False,True,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,11,,Founder and Strategy Consultant,founder,2017-01-01,,False,True,False,True,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,12,/c/SBVwRVJYUjddXVdU,Co-Founder,founder,2023-01-01,2025-04-01,False,True,False,True,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,13,,Co-Founder,founder,2023-04-01,,False,True,False,True,False
+/p/SAZwHgQFCxEwCQAGBDYaBg==,14,/c/SBVwRVJYUjddXVdU,Co-Founder + CEO,founder,2023-04-01,,True,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,01,,Facilitator Management Training,employee,1996-04-01,1999-09-01,False,True,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,02,,Senior manager Strategy Resources,false_position,2000-08-01,2007-02-01,False,False,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,03,,Founder Accenture Sustainability Services Benelux,false_position,2007-02-01,2013-03-01,False,False,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,04,/c/SBVwFwUbOlpfXVU=,Writer CDP Netherlands Top-50 report,employee,2010-10-01,2010-12-01,False,True,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,05,,Owner / Founder,founder,2013-03-01,2015-02-01,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,06,/c/SBVwEw4EAQ4aCAkU,Co-founder / MD Road & Rail / Group Bus Dev,founder,2015-04-01,2019-12-01,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,07,/c/SBVwFwAZBwcBAQAGBg==,Co-Founder,founder,2020-01-01,2021-11-01,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,08,/c/SBVwRVNYBgkdDwoJ,Co-Founder & Managing Director,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,09,/c/SBVwRVNYBgkdDwoJ,Founder / Managing Director,founder,2021-11-01,,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABg==,10,,GEN Starters Club Member,employee,2023-03-01,,False,True,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,1,,Senior manager Strategy Resources,operator,2000-08-01,2007-02-01,False,True,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,2,,Senior manager Strategy Resources,false_position,2000-08-01,2007-02-01,False,False,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,3,,Founder Accenture Sustainability Services Benelux,false_position,2007-02-01,2013-03-01,False,False,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,4,,Founder Accenture Sustainability Services Benelux,operator,2007-02-01,2013-03-01,False,True,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,5,/c/SBVwFwUbOlpfXVU=,Writer CDP Netherlands Top-50 report,employee,2010-10-01,2010-12-01,False,True,False,False,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,6,,Owner / Founder,founder,2013-03-01,2015-02-01,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,7,/c/SBVwEw4EAQ4aCAkU,Co-founder / MD Road & Rail / Group Bus Dev,founder,2015-04-01,2019-12-01,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,8,/c/SBVwFwAZBwcBAQAGBg==,Co-Founder,founder,2020-01-01,2021-11-01,False,True,False,True,False
+/p/SAZwHgQZCg0BMg0CHzEdDwwABjAbBAk=,9,/c/SBVwRVNYBgkdDwoJ,Founder / Managing Director,founder,2021-11-01,,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,01,/c/SBVwFRQIEQkBCA==,Founder,founder,1996-01-01,,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,02,/c/SBVwBxUKCBgcMgYIGw==,Founder & CEO (NASDAQ:STMP),founder,1996-05-01,1999-12-01,True,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,03,,Summer Associate,employee,1996-05-01,1996-08-01,False,True,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,04,,Associate,employee,1997-01-01,1997-01-01,False,True,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,05,,Associate,,1997-01-01,1997-01-01,False,,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,06,/c/SBVwBxEEDg0=,Co-Founder & Board Member,founder,2002-07-01,2014-01-14,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,07,,Founder & Board Member,false_position,2003-01-01,2014-04-01,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,08,/c/SB9wARI0Fw0BCBIGFDMREjQCGgAYFQ==,Managing Partner & Managing Director,employee,2003-01-01,2017-01-01,False,True,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,09,/c/SBVwGgAFCgBdAg==,Founder & Board Member,founder,2003-01-01,2014-04-01,False,False,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,10,/c/SBVwARI0Fw0BCBIGFDMREg==,Founder & Managing Partner,founder,2003-01-01,2017-01-01,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,11,/c/SBVwGgQfEgcdBjoBGS0rFQ4ECwcECwApOhoVGQAYHQgLAgMtBwkCFQ==,Board Member,advisor,2005-01-01,2009-01-01,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,12,/c/SBVwBw4HBBodCBYCBCkR,"Founder, Board Member & Investor",investor,2006-01-01,2019-01-01,False,False,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,13,/c/SBVwEhQHBhoaADoFHzARDw4XDxY=,Founder & Lead Investor,founder,2007-01-01,2023-09-30,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,14,/c/SBVwBgQICh4KHxw4AjoXCQUKBAAKHDgFMBgUHwwHAR4=,Board Member,board_member,2011-12-01,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,15,,Board Member,advisor,2012-06-01,2016-01-01,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,16,,Founder & Board Chair,founder,2013-01-01,2014-01-01,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,17,/c/SBVwHxYKCxwGFQ==,Founder & Board Member,founder,2014-01-01,2016-10-01,False,,False,True,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,18,,Founder & Board Member,founder,2014-01-01,2016-10-01,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,19,/c/SBVwGA4YOgkBCgALEywrAgcACQEZAAQeAB0PCBAKDhkKFQ==,Board Member,advisor,2014-05-01,2021-01-01,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,20,/c/SBVwGA4YOgkBCgALEywrAgcACQEZAAQeAB0PCBAKDhkKFQ==,Board Member,board_member,2014-05-16,2021-01-01,False,,False,False,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,21,,Founder & Managing Partner,founder,2015-01-01,,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,22,/c/SBVwGQ4HAAkKHw==,Board Observer & Investor,board_member,2017-01-01,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,23,,Board Member & Investor,investor,2017-02-01,2021-05-01,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,24,/c/SBVwGAQdAAQbCAs4EzEREwwc,Investor,investor,2017-06-01,,False,False,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,25,,Founder & Managing Partner,founder,2017-10-01,2020-11-01,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,26,,Founder & Board Member,founder,2018-01-01,2023-10-01,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,27,,Founder & Board Member,,2018-01-01,2023-10-01,False,,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,28,/c/SBVwFwAZBwcBMgAJETYaBA4XAQEK,Board Member,board_member,2019-01-09,2023-08-15,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,29,/c/SBVwRREEDAYbCwwREw==,Co-Founder and Chief Executive Officer,founder,2020-01-01,,True,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,30,/c/SBVwRREEDAYbCwwREw==,"Founder, CEO and Board Member",founder,2020-03-01,2021-06-01,True,,False,True,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,31,,"Founder, CEO & Board Member",executive,2020-03-01,2021-06-01,True,True,True,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,32,/c/SBVwEAIZBxgDGBY=,Board Member,board_member,2020-10-01,2021-07-16,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,33,,Lead Independent Board Director,operator,2020-10-01,2021-07-01,False,True,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,34,/c/SBVwFwAZBwcBHwwDETo=,Co-Founder & Lead Investor,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,35,,Lead Independent Board Director,operator,2021-02-01,2021-02-01,False,True,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,36,,Lead Independent Board Director,operator,2021-03-01,2022-02-01,False,True,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,37,/c/SBVwBgQGChoOMgNQQG8=,Investor,investor,2021-04-01,,False,False,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,38,,Investor,investor,2021-08-01,,False,False,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,39,/c/SBVwHRYdBg==,Founder and Board Member,founder,2022-01-01,,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,40,/c/SBVwFwAZBwcBHwwDETo=,Founder & Lead Investor,investor,2022-01-01,,False,False,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,41,,Founder & Lead Investor,investor,2022-08-01,,False,False,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,42,,Founder & Lead Investor,founder,2022-08-01,,False,,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,43,/c/SBVwBAQZCAEOAwkOEjo=,Board Member,advisor,2023-03-01,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,44,,Founder & Board Member,false_position,2023-10-01,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,45,/c/SBVwDgQZCjcGAwESBSsGCAoJ,Co-Founder & Board Member,founder,2024-01-01,,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,46,,Founder & Board Member,false_position,2025-01-01,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,47,/c/SBVwDgQZCjcGAwESBSsGCAoJ,Founder & Board Member,founder,2025-01-01,,False,True,False,True,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,48,/c/SBVwABMKBg0wDBQ=,Investor,investor,2025-04-01,,False,False,False,False,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,49,/c/SBVwBxEEDg0=,Founder and CEO,founder,,,True,,False,True,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,50,/c/SBVwBxUKCBgcMgYIGw==,Founder,founder,,,False,,False,True,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,51,/c/SBVwGgAFCgBdAg==,Founder and Board Member,founder,,,False,,False,True,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,52,/c/SBVwBgQKCRgdDAYTHzwR,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,53,/c/SBVwFRMIDQEZCAYIBC8rUFJdWA==,Founder and CEO,founder,,,True,,False,True,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,54,/c/SB9wARIZAjcdCAsCAT4WDQ46DgYDBAkVOg==,Managing Partner & Co-Founder,founder,,,False,True,False,True,False
+/p/SAZwHggGOgUMCQAVGzAAFQ==,55,/c/SBVwGgAFCgBdAg==,Board Member,board_member,,2014-04-01,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,56,/c/SB9wGA4YOgkBCgALEywrAgcACQEZAAQeAB0PCBAKDhkKFSkzFQIC,Board of Director,board_member,,,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,57,/c/SBVwEAQIBBoNAgsODD4ACAQLNx8BEBQpPhcQHgwbBhkMCBgAFw4ZFQcdDBEOGTErCB0=,Board Member,board_member,,2023-02-23,False,False,False,False,True
+/p/SAZwHggGOgUMCQAVGzAAFQ==,58,,Private Equities Investor,employee,,,False,,False,False,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,59,,Investor,board_member,,,False,,False,False,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,60,,Director,executive,,,False,,True,False,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,61,,Private Equities Investor,employee,,,False,,False,False,
+/p/SAZwHggGOgUMCQAVGzAAFQ==,62,,OWNER,,,,False,,False,False,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,1,/c/SBVwFgACCzcMAg==,Senior Associate Consultant,employee,1999-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,2,,Managing Director,operator,2002-06-01,2006-08-01,False,True,False,False,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,3,/c/SBVwBBMCEwkDBAQ=,Co-Founder & CEO,founder,2006-01-01,2019-01-01,True,True,False,True,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,4,/c/SBVwRFBaDQ==,Co-Founder of 011h,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,5,/c/SBVwRFBaDQ==,Co-Founder & Co-CEO,founder,,,True,,False,True,
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,6,/c/SB9wGAAFBAEwHQQVAjERExg=,Investor & Advisor,advisor,,,False,False,False,False,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,7,/c/SB9wBwkCFVoN,Advisory Committee Member,advisor,,,False,False,False,False,False
+/p/SAZwHg4YADcCDAsSEzMrFwIJBA4DEAIAPg==,8,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwHg4YADcABwADFw==,01,/c/SBVwGQIADAYcCBw4FTAZEQoLEQ==,Strategy Consultant,employee,2005-09-01,2008-08-01,False,True,False,False,False
+/p/SAZwHg4YADcABwADFw==,02,/c/SBVwAAkOOgsHDBUGBA==,Founder & Co-CEO,founder,2011-01-01,2012-12-01,True,True,False,True,False
+/p/SAZwHg4YADcABwADFw==,03,/c/SBVwBwwCEQAJBAALEgAXABgA,Co-Founder,founder,2011-01-01,,False,True,False,True,False
+/p/SAZwHg4YADcABwADFw==,04,/c/SBVwEw0EBwkDMgMGBTcdDgU6Dx0CEBc=,Founder & Country CEO,founder,2013-01-01,2015-07-01,True,True,False,True,False
+/p/SAZwHg4YADcABwADFw==,05,/c/SBVwGBgYEQ==,COO,executive,2015-08-01,2020-07-01,True,,True,False,
+/p/SAZwHg4YADcABwADFw==,06,/c/SBVwGBgYEQ==,COO & Board Member,advisor,2015-09-01,2020-08-01,True,False,False,False,True
+/p/SAZwHg4YADcABwADFw==,07,/c/SBVwGBgYEQ==,Board Member,advisor,2018-01-01,2021-05-31,False,False,False,False,True
+/p/SAZwHg4YADcABwADFw==,08,/c/SBVwRFBaDQ==,"Co-Founder, Chief Operating Officer & Board Member",founder,2020-01-01,,True,True,False,True,True
+/p/SAZwHg4YADcABwADFw==,09,/c/SBVwRFBaDQ==,Founder & COO,founder,2020-08-01,2023-03-01,True,True,False,True,False
+/p/SAZwHg4YADcABwADFw==,10,,"Founding Chapter Director, Barcelona",operator,2022-01-01,,False,True,False,False,False
+/p/SAZwHg4YADcABwADFw==,11,,Founder & Co-CEO,founder,2024-09-01,,True,True,False,True,False
+/p/SAZwHg4YADcABwADFw==,12,/c/SBVwBwwCEQAJBAALEgAXABgA,Co-Founder & Director,founder,,,False,,False,True,
+/p/SAZwHg4YABgwDwQVFDoGAA==,01,,Audit Senior,employee,2003-09-01,2006-01-31,False,True,False,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,02,/c/SBVwABMKAQ0NCDpWT2dA,Financial Controller,operator,2006-01-01,2007-07-31,False,True,False,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,03,/c/SBVwABMKAQ0NCDpWT2dA,UK Finance Director,operator,2007-08-01,2009-08-31,False,True,False,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,04,/c/SBVwBBMCEwkDBAQ=,Group Chief Financial Officer,executive,2009-09-01,2016-03-01,True,True,True,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,05,/c/SBVwFwAfBgAAAgg=,Board Member,board_member,2012-01-01,2020-01-31,False,False,False,False,True
+/p/SAZwHg4YABgwDwQVFDoGAA==,06,/c/SBVwBBMCEwkDBAQ=,Group CFO,executive,2012-02-01,2016-03-31,True,True,True,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,07,/c/SBVwFwAfBgAAAgg=,Group CFO at Privalia.com,executive,2014-10-01,,True,,True,False,
+/p/SAZwHg4YABgwDwQVFDoGAA==,08,,CFO Southern Europe & LATAM Privalia & vente-privee,executive,2016-04-01,2017-06-30,True,True,True,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,09,,Group Deputy CFO,employee,2017-07-01,2019-02-28,True,True,False,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,10,,Group Deputy CFO,employee,2017-09-01,2019-02-28,True,True,False,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,11,,Group CFO,executive,2019-03-01,2020-04-30,True,True,True,False,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,12,/c/SBVwRFBaDQ==,"Co-Founder, Advisor, Chief Financial Officer & Board Member",founder,2020-01-01,,True,True,False,True,True
+/p/SAZwHg4YABgwDwQVFDoGAA==,13,/c/SBVwRFBaDQ==,Co-Founder & CFO at 011h,founder,2020-05-01,,True,True,False,True,False
+/p/SAZwHg4YABgwDwQVFDoGAA==,14,/c/SBVwRFBaDQ==,Co-Founder & CFO,founder,,,True,,False,True,
+/p/SAZwHg4YABgHMgYIGjorUVtU,1,/c/SBVwRBkJCh8=,Co-Founder & Chief Operating Officer,founder,2023-01-01,,True,True,False,True,False
+/p/SAZwHhE0EgEICgwJBQ==,01,,VP Logistics,executive,1991-01-01,1995-12-31,False,True,True,False,False
+/p/SAZwHhE0EgEICgwJBQ==,02,,VP Logistics,executive,1991-01-01,1995-12-31,False,True,True,False,False
+/p/SAZwHhE0EgEICgwJBQ==,03,/c/SBVwEAQYBgkdGQAUKSwNEh8ABRwyAhUZKgQ=,VP Logistics - Product Management,executive,1997-01-01,1999-12-31,False,True,True,False,False
+/p/SAZwHhE0EgEICgwJBQ==,04,/c/SBVwGxMKBgQKMgYIGw==,"Co-founder, Exec team,",false_position,1999-01-01,2004-12-31,False,False,False,False,False
+/p/SAZwHhE0EgEICgwJBQ==,05,/c/SBVwEAQYBgkdGQAUKSwNEh8ABRwyAhUZKgQ=,GM / CRO,executive,2004-01-01,2006-12-31,True,True,True,False,False
+/p/SAZwHhE0EgEICgwJBQ==,06,,"Supply Chain - Chief Industry Marketing, Sales",employee,2006-01-01,2013-12-31,False,True,False,False,False
+/p/SAZwHhE0EgEICgwJBQ==,07,/c/SBVwRwYfCBs=,"Co-Founder & Vice President, Corporate Development",founder,2013-01-01,,False,True,False,True,False
+/p/SAZwHhE0EgEICgwJBQ==,08,,Co-Founder & Corporate Development,founder,2013-04-01,2023-02-28,False,True,False,True,False
+/p/SAZwHhE0EgEICgwJBQ==,09,/c/SBVwRwYfCBs=,Co-Founder,founder,2013-04-01,2023-02-01,False,,False,True,
+/p/SAZwHhE0EgEICgwJBQ==,10,/c/SBVwRQ0EAhwKDg0=,"Co-Founder, Chief Executive Officer & Board Member",founder,2023-01-01,,True,True,False,True,True
+/p/SAZwHhE0EgEICgwJBQ==,11,/c/SBVwRQ0EAhwKDg0=,Chief Executive Officer,executive,2023-02-01,,True,True,True,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,01,,Partner,employee,1996-01-01,2007-08-01,False,True,False,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,02,/c/SBVwBgQFEQkMAhcXGS0VAgIKBg==,CEO,executive,2007-09-01,2011-07-01,True,True,True,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,03,/c/SBVwGQgTEQk=,CEO,executive,2010-05-01,2011-06-01,True,True,True,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,04,,Partner,employee,2011-07-01,2015-03-01,False,True,False,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,05,/c/SB9wGgQCCwcdMg0IGzoH,Chief Executive Officer,executive,2014-12-01,,True,True,True,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,06,/c/SBVwGgQCCwcdMg0IGzoH,CEO,executive,2015-04-01,2019-04-01,True,True,True,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,07,,Profesor in the Master in Real Estate Development,employee,2017-03-01,,False,True,False,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,08,/c/SBVwFQ0KCxwdDA==,Senior Managing Partner,employee,2019-07-01,2020-04-01,False,True,False,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,09,/c/SBVwRFBaDQ==,Co-Founder & Executive of Corporate and Commercial Strategy,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwHhQKCzcZCAkGDzAH,10,,Founding Partner,employee,2020-05-01,,False,True,False,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,11,/c/SBVwFQ0KCxwdDA==,"Managing Partner, Real Estate",employee,,,False,True,False,False,False
+/p/SAZwHhQKCzcZCAkGDzAH,12,/c/SBVwFhMCBgMNHwo=,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwHhQKCzcZCAkGDzAH,13,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,01,/c/SBVwGQQPOhsbDAsBGS0Q,Professor of Molecular and Cellular Physiology,employee,1999-01-01,,False,,False,False,
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,02,/c/SBVwBxUKCw4AHwE4AzEdFw4XGwYZHA==,Professor,employee,1999-12-01,,False,,False,False,
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,03,/c/SBVwHA4cBBoLMg0SETcREjQIDQsEBgYaAB0PGBEBGxgRAg==,investigator,employee,2005-01-01,,False,,False,False,
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,04,/c/SBVwEQ0OEw0BMgcOGSscBBkEGAoYEQ4VLA==,Co-Founder,founder,2008-02-25,2023-03-07,False,True,False,True,False
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,05,/c/SBVwBxQZFwcVCAs=,Co-Founder & Advisor,founder,2015-08-12,,False,True,False,True,False
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,06,/c/SBVwRxU0BwEAHgYOEzEXBBg=,Co-Founder & Chairman,founder,2017-01-01,,False,True,False,True,True
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,07,/c/SBVwBxgFEQAKBgwJEw==,Founder & Scientific Advisor,founder,2018-01-01,,False,True,False,True,False
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,08,/c/SBVwEQ0OEw0BMgcOGSscBBkEGAoYEQ4VLA==,Founder,founder,,,False,,False,True,
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,09,/c/SBVwFQ0TCgYMAgkIESY=,Board Observer,board_observer,,,False,,False,False,
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,10,/c/SBVwBxQZFwcVCAs=,Co-Founder,founder,,,False,,False,True,
+/p/SAZwHz4IDRoGHhEIBjcREzQCCR0ODAY=,11,/c/SBVwGQ4RBBobMhEPEy0VEQ4QHAYOFg==,Scientific Co-Founder & Advisory Board Member,founder,,,False,True,False,True,False
+/p/SAZwHwAPDBowDAcDHzQ=,1,/c/SBVwFggFBwEB,Co-Founder,founder,2019-06-01,,False,True,False,True,False
+/p/SAZwHwAPDBowDAcDHzQ=,2,/c/SB9wFggFBwEB,"Co-Founder & Founding Partner, CEO, Deputy Chairman of the Board of Directors",founder,2019-09-22,,True,True,False,True,False
+/p/SAZwHwAPDBowDAcDHzQ=,3,/c/SBVwFggFBwEB,CEO,board_member,2019-10-01,,True,,False,False,
+/p/SAZwHwAPDBowDAcDHzQ=,4,/c/SBVwRVFbVTcWDBE4BAAZDQoXNwcCCQMfMRM=,Co-Founder & CEO,founder,2022-03-01,,True,True,False,True,False
+/p/SAZwHwAPDBowDAcDHzQ=,5,/c/SBVwBQIDBBoICA==,Co-Founder,founder,2022-08-01,,False,True,False,True,False
+/p/SAZwHwAPDBowDAcDHzQ=,6,,Co-Founder,founder,2022-08-01,,False,True,False,True,False
+/p/SAZwHwAPDBowDAcDHzQ=,7,/c/SBVwRVFbVTcWDBE4BAAZDQoXNwcCCQMfMRM=,Board Member,board_member,,,False,,False,False,
+/p/SAZwHwQHCREwGgQTEy0HPltVWQ==,1,/c/SBVwRVFaOh8OFBY=,Founder & Chairman,founder,2013-04-01,,False,,False,True,
+/p/SAZwHwgKCzcCDBcGGDsd,01,,Vehicle Communications,,2004-05-01,2005-08-01,False,,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,02,/c/SBVwFgwc,Central Region: Sales & Marketing,employee,2007-05-01,2007-08-01,False,True,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,03,,Central Region: Sales & Marketing,,2007-05-01,2007-08-01,False,,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,04,/c/SBVwFgwc,ConnectedDrive Specialist,employee,2009-06-01,2015-01-01,False,True,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,05,,Senior Product Manager,employee,2015-01-01,2016-05-01,False,True,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,06,/c/SBVwFg0KBgMNCBcVDw==,Senior Product Manager,,2015-01-01,2016-05-01,False,,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,07,,"Manager, Connected Car",employee,2016-05-01,2019-09-01,False,True,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,08,,Managing Director,,2017-02-01,2019-09-01,False,,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,09,,Managing Director,operator,2017-02-01,2019-09-01,False,True,False,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,10,,President,executive,2019-09-01,,False,True,True,False,False
+/p/SAZwHwgKCzcCDBcGGDsd,11,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder,founder,2021-03-01,2022-02-01,False,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,01,,Director of Marketing & Sales,operator,1999-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,02,/c/SBVwDAUZDB4K,Director of Marketing & Sales,executive,1999-01-01,2001-01-01,False,,True,False,
+/p/SAZwHwgGOhgKHwALGg==,03,/c/SBVwEhMECxwDBAsCKTsdEw4GHA==,CEO and founder,founder,2002-01-01,2011-01-01,True,,False,True,
+/p/SAZwHwgGOhgKHwALGg==,04,,CEO and Founder,founder,2003-01-01,2008-01-01,True,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,05,/c/SBVwFQUICgYGAgs4EjYGBAgR,Founder and CEO,founder,2003-01-01,2008-01-01,True,,False,True,
+/p/SAZwHwgGOhgKHwALGg==,06,,CEO,executive,2009-01-01,2014-01-01,True,True,True,False,False
+/p/SAZwHwgGOhgKHwALGg==,07,/c/SBVwFQUICgYGAgs4GzoQCAo6Dx0CEBc=,President,executive,2009-01-01,2014-01-01,True,True,True,False,False
+/p/SAZwHwgGOhgKHwALGg==,08,/c/SBVwFQwEBw0K,CEO,,2009-01-01,2014-01-01,True,,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,09,/c/SBVwFQUICgYGAgs4EjYGBAgR,CEO,executive,2011-01-01,2014-08-01,True,,True,False,
+/p/SAZwHwgGOhgKHwALGg==,10,/c/SB9wEA4eBwQKMgg4Bj4GFQUAGhwyVVdH,Fund Advisor,advisor,2013-01-01,2014-01-01,False,False,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,11,/c/SBVwGgQTHQ0BMldXRmg=,President,executive,2014-01-01,2016-01-01,False,True,True,False,False
+/p/SAZwHwgGOhgKHwALGg==,12,/c/SBVwFQwEBw0K,Chief Executive Officer,executive,2014-08-01,,True,True,True,False,False
+/p/SAZwHwgGOhgKHwALGg==,13,/c/SBVwFw4FEw0dHgwIGDMbBgIG,Board Member,board_member,2014-08-14,2020-03-18,False,False,False,False,True
+/p/SAZwHwgGOhgKHwALGg==,14,/c/SBVwFQwEBw0K,CEO,executive,2016-01-01,2019-12-01,True,True,True,False,False
+/p/SAZwHwgGOhgKHwALGg==,15,/c/SBVwFQwEBw0K,CEO,executive,2017-02-01,2020-01-01,True,True,True,False,False
+/p/SAZwHwgGOhgKHwALGg==,16,,"Keynote Speaker, 2X Bestselling Author, Business and Leadership Expert",,2018-01-01,,False,,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,17,/c/SBVwBwwKFxwCCAEOFwAABAgN,Co-Founder,founder,2019-01-01,,False,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,18,/c/SBVwBwwKFxwCCAEOFwAABAgN,Co-Founder and Board Director,founder,2019-06-01,,False,,False,True,
+/p/SAZwHwgGOhgKHwALGg==,19,,CEO,executive,2020-01-01,,True,,True,False,
+/p/SAZwHwgGOhgKHwALGg==,20,/c/SBVwRVFbOgsA,Co-Founder & Co-Chief Executive Officer,founder,2021-01-01,,True,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,21,/c/SBVwRVFbOgsA,CEO & Founder,founder,2021-03-01,,True,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,22,/c/SBVwFwASOhsEBAs=,Co-Founder,founder,2022-03-01,,False,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,23,/c/SBVwHg4SChwKDA==,Co-Founder,founder,2022-09-01,,False,True,False,True,False
+/p/SAZwHwgGOhgKHwALGg==,24,/c/SBVwEhMECxwDBAsCKTsdEw4GHA==,President and Founder,founder,,,True,,False,True,
+/p/SAZwHwgGOhgKHwALGg==,25,/c/SBVwFQUICgYGAgs4GzoQCAo6Dx0CEBc=,President,executive,,,True,,True,False,
+/p/SAZwHwgGOhgKHwALGg==,26,/c/SBVwFw4FEw0dHgwIGDMbBgIG,Director,board_member,,,False,,False,False,
+/p/SAZwHwgGOhgKHwALGg==,27,/c/SBVwBw4IDAkDMgsGAjYCBA==,"President, Amobee",board_member,,,True,,False,False,
+/p/SAZwHwgGOhgKHwALGg==,28,/c/SBVwRVFbOgsA,CEO & Co-Founder,founder,,,True,,False,True,
+/p/SAZwHwgGOhgKHwALGg==,29,/c/SBVwBw4IDAkDMgsGAjYCBA==,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,30,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,31,/c/SB9wBgQdAAQwHQQVAjERExg=,Venture Partner,employee,,,False,True,False,False,False
+/p/SAZwHwgGOhgKHwALGg==,32,/c/SB9wFg4FAwEdCA==,Investment Committee Member,board_member,,,False,False,False,False,True
+/p/SAZwHwgGOhgKHwALGg==,33,/c/SBVwExMKAQEKAxE4Dg==,Board Member,executive,,2013-09-05,True,False,True,False,True
+/p/SAZwHwgGOhgKHwALGg==,34,/c/SBVwEAAKFgAwBAsTEzMYCAwABgwI,Board Member,board_member,,,False,False,False,False,True
+/p/SAZwHwgGOhgKHwALGg==,35,,Partner,executive,,,False,,True,False,
+/p/SAZwHwgGOhgKHwALGg==,36,,Venture Partner,executive,,,False,,True,False,
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,01,,"Co-Founder, CEO",false_position,2007-10-01,2009-09-30,True,False,False,False,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,02,,"Co-Founder, CEO",,2007-10-01,2009-09-01,True,,False,True,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,03,/c/SBVwHAAHBhEAAwgIGjoXFAcEGg==,RE Strategy,,2009-08-01,2011-11-01,False,,False,False,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,04,,RE Strategy,false_position,2009-08-01,2011-11-30,False,False,False,False,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,05,/c/SBVwGQQFEQcdAAoF,Co-Founder & Chief Executive Officer,founder,2010-09-01,2021-05-30,True,True,False,True,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,06,/c/SBVwRVlcVA==,Co-Founder,employee,2011-11-01,2016-11-01,False,True,False,True,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,07,/c/SB9wRVlcVA==,Co-Founder,founder,2012-01-01,2021-02-12,False,True,False,True,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,08,/c/SBVwGQQFEQcdAAoF,"Co-Founder, CEO",founder,2013-09-01,2020-12-01,True,True,False,False,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,09,,Director of Innovation,,2016-11-01,2023-11-01,False,,False,False,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,10,,Director of Innovation,operator,2016-11-01,2023-11-30,False,True,False,False,False
+/p/SAZwHxMCFjcMBQwJGSwbEwU=,11,,Co-Founder,founder,2021-07-01,2023-12-01,False,True,False,True,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,01,/c/SBVwHQ8NDAYKAgs=,Software Engineer,employee,2000-06-01,2002-06-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,02,/c/SBVwAAg0BgcC,Software Design Engineer,employee,2002-01-01,2004-01-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,03,/c/SBVwFwAPAAYMCDoDEywdBgU6GxYeEQIbLA==,Senior Member Technical Staff,employee,2004-01-01,2007-01-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,04,/c/SBVwEAgHDBwHBBAKKTERFRwKGgQe,Senior software engr,operator,2007-03-01,2008-03-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,05,/c/SBVwEAgHDBwHBBAKKTERFRwKGgQe,Engineering Manager,operator,2008-03-01,2010-07-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,06,,"Prinicipal Development Manager, Video Products",employee,2010-12-01,2011-11-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,07,/c/SBVwEAgKCQcIBAY=,"Prinicipal Development Manager, Video Products",,2010-12-01,2011-11-01,False,,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,08,,Director of Media Server,,2011-11-01,2013-12-01,False,,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,09,,Director of Media Server,operator,2011-11-01,2013-12-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,10,,Director Engineering,,2013-12-01,2016-02-01,False,,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,11,,Director Engineering,operator,2013-12-01,2016-02-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,12,,Technical PM (Video Infra),,2016-02-01,2017-10-01,False,,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,13,,Technical PM (Video Infra),employee,2016-02-01,2017-10-01,False,True,False,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,14,/c/SBVwHA4fFhwOHw==,Vice President Of Engineering,executive,2017-11-01,2020-10-01,False,True,True,False,False
+/p/SAZwHxIDDBwGBzoAAy8AAA==,15,/c/SBVwRVFbCBs=,CEO and Co-Founder,founder,2020-10-01,,True,True,False,True,False
+/p/SAZwGAQKDTccBAcCGDoG,1,/c/SBVwAQ8CEw0dHgwTDwAbBzQGAAYOBAAZ,High School Research Intern,intern,2008-01-01,2008-01-01,False,False,False,False,False
+/p/SAZwGAQKDTccBAcCGDoG,2,,REU Awardee in Molecular Biology and Biochemistry,intern,2010-06-01,2010-08-01,False,False,False,False,False
+/p/SAZwGAQKDTccBAcCGDoG,3,,REU Awardee in Molecular Biology and Biochemistry,,2010-06-01,2010-08-01,False,,False,False,False
+/p/SAZwGAQKDTccBAcCGDoG,4,/c/SBVwHRI0Agw=,Undergraduate Research Assistant,employee,2011-01-01,2013-06-01,False,True,False,False,False
+/p/SAZwGAQKDTccBAcCGDoG,5,/c/SBVwEwQFAAYbCAYP,Early Discovery Immunology,employee,2011-06-01,2011-08-01,False,True,False,False,False
+/p/SAZwGAQKDTccBAcCGDoG,6,/c/SBVwBxUKCw4AHwE4AzEdFw4XGwYZHA==,PhD Candidate in Immunology,employee,2013-09-01,2017-01-01,False,True,False,False,False
+/p/SAZwGAQKDTccBAcCGDoG,7,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"Co-founder, VP of Therapeutic Discovery",founder,2017-01-01,,False,True,False,True,False
+/p/SAZwGAQKDTccBAcCGDoG,8,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"Co-founder, Head of Therapeutic Discovery",founder,2019-03-01,,False,,False,True,
+/p/SAZwGAQKDTccBAcCGDoG,9,/c/SBVwFxQZDA0wDwwI,"Senior Director, CSO Partner Team",operator,2024-03-01,,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,01,,Trainee Chartered Account,employee,1993-01-01,1995-01-01,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,02,,Account Manager,employee,1995-01-01,1998-01-01,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,03,,Account Director,operator,1998-01-01,2000-01-01,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,04,/c/SBVwGAQEOgoaHwsCAis=,Senior Business Director,operator,2000-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,05,/c/SBVwAwQYEQ4GCAkDKTwbExsKGg4ZDAgY,Group Marketing Manager,employee,2002-01-01,2007-01-01,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,06,/c/SBVwAwQYEQ4GCAkDKTwbExsKGg4ZDAgY,Marketing Consultant,employee,2007-06-01,2010-07-01,False,True,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,07,,Founder,founder,2010-01-01,2014-12-01,False,True,False,True,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,08,,Vice Chair,advisor,2012-01-01,2015-12-01,False,False,False,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,09,,Founder,founder,2012-05-01,2014-12-01,False,True,False,True,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,10,,Co-Founder,founder,2013-08-01,2020-12-01,False,True,False,True,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,11,/c/SBVwAQ0fDAUOGQA4EDYaAAUGDQ==,Chief Marketing Officer,executive,2015-11-01,2018-01-01,True,True,True,False,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,12,/c/SBVwRQ8DBAQKHw==,Co-Founder & Chief Executive Officer,founder,2017-01-01,,True,True,False,True,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,13,/c/SBVwRQ8DBAQKHw==,Co-Founder and CEO,founder,2017-10-01,,True,True,False,True,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,14,,Commercial Director & Co-Founder,founder,2021-06-01,,False,True,False,True,False
+/p/SAZwGAgYBDcCDggeGABEUVo=,15,,Commercial Director,operator,2021-06-01,2022-12-01,False,True,False,False,False
+/p/SAZwGBQIBBswDgQVGDo=,1,/c/SBVwFgACCzcMAg==,Senior Manager,operator,1999-09-01,2005-11-01,False,True,False,False,False
+/p/SAZwGBQIBBswDgQVGDo=,2,/c/SBVwBBMCEwkDBAQ=,Co-Founder,founder,2006-06-01,2018-12-01,False,True,False,True,False
+/p/SAZwGBQIBBswDgQVGDo=,3,/c/SBVwRFBaDQ==,Co-Founder,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwGBQIBBswDgQVGDo=,4,/c/SBVwRFBaDQ==,Co-Founder & Co-CEO,founder,,,True,,False,True,
+/p/SAZwGBQAADcDCAA4Rm9F,01,/c/SBVwHRI0Agw=,Laboratory Assistant,employee,2007-11-01,2011-05-01,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,02,,Summer Researcher,employee,2009-07-01,2009-08-01,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,03,,Consultant,employee,2012-01-01,2013-01-01,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,04,,Associate,advisor,2013-01-01,2016-01-01,False,False,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,05,/c/SBVwAwAZBx0dCjoXHzEXFBg=,Project Manager,employee,2013-01-01,2013-01-01,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,06,/c/SB9wFRIYABwwAAQJFzgRDA4LHDAbAAkCKgYEGDoJAhs=,Advisor,advisor,2013-06-01,,False,False,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,07,,Advisor,advisor,2013-06-01,,False,,False,False,
+/p/SAZwGBQAADcDCAA4Rm9F,08,/c/SBVwFRMfABoWHg==,Board Observer,board_member,2013-06-25,2022-10-05,False,False,False,False,True
+/p/SAZwGBQAADcDCAA4Rm9F,09,,Founding Course Instructor,employee,2015-01-01,2015-01-01,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,10,,Principal,advisor,2016-01-01,2019-01-01,False,False,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,11,/c/SBVwEhMOAAYAAAA=,Board Observer,employee,2017-01-01,2019-01-01,False,True,False,False,True
+/p/SAZwGBQAADcDCAA4Rm9F,12,/c/SBVwRxU0BwEAHgYOEzEXBBg=,Co-Founder & Chief Executive Officer,founder,2017-01-01,2020-01-01,True,True,False,True,False
+/p/SAZwGBQAADcDCAA4Rm9F,13,,Advisor,advisor,2019-01-01,2020-01-01,False,False,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,14,,Principal,employee,2021-01-01,2022-01-01,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,15,,Consulting and Investments,employee,2022-01-01,,False,True,False,False,False
+/p/SAZwGBQAADcDCAA4Rm9F,16,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"CEO, Co-Founder",founder,,2020-01-01,True,,False,True,
+/p/SAZwGQAZDjcOCQECBSwb,1,/c/SBVwBBMCBg0DBAsC,Senior Software Engineer,,2005-01-01,2006-01-01,False,,False,False,False
+/p/SAZwGQAZDjcOCQECBSwb,2,/c/SBVwGAgNAAUKCToKEzsdAA==,Senior Software Developer,,2007-01-01,2008-01-01,False,,False,False,False
+/p/SAZwGQAZDjcOCQECBSwb,3,,Manager - Production application Software,,2008-09-01,2013-11-01,False,,False,False,False
+/p/SAZwGQAZDjcOCQECBSwb,4,,"Director, Logistics Software Engineering at 3GTMS, Inc",,2013-11-01,2021-12-01,False,,False,False,False
+/p/SAZwGQAZDjcOCQECBSwb,5,/c/SBVwFxMEEgQKFA==,Solutions Architect,,2021-12-01,2024-10-01,False,,False,False,False
+/p/SAZwGQAZDjcOCQECBSwb,6,/c/SBVwRQ0EAhwKDg0=,"Co-Founder, Chief Technology Officer & Board Member",founder,2023-01-01,,True,True,False,True,True
+/p/SAZwGQAZDjcOCQECBSwb,7,,CTO,,2024-10-01,,True,,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,01,,Founding Partner,,2006-07-01,2019-12-01,False,,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,02,/c/SB9wBwwKFxwwDAsEHjAGPh0ABhsYFwIF,Co-Founder Director,founder,2014-09-01,,False,True,False,True,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,03,,Founder Director,founder,2014-09-01,,False,,False,True,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,04,/c/SBVwBAQZFQ0bGAQLKSlGBg==,Advisory Board Member / Investor,advisor,2014-11-01,2019-12-01,False,False,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,05,/c/SBVwGhQPDw0L,Board Member,board_member,2015-06-11,2020-12-08,False,False,False,False,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,06,/c/SBVwRgM0AAYbCBcXBDYHCAUC,"Co-Founder, Co-Owner and Chairman",founder,2016-10-05,,False,True,False,True,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,07,/c/SBVwFgQKCxswCAsTEy0AAAILBQoDEQ==,Advisor,advisor,2017-02-10,,False,False,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,08,/c/SBVwRgM0AAYbCBcXBDYHCAUC,"Chairman, Co-Founder & Investor",,2017-06-01,,False,,False,True,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,09,/c/SBVwBAkSEQcfAgsOFSw=,Chairman and Investor,board_member,2018-06-01,2020-09-18,False,,False,False,
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,10,,Managing Partner,,2018-12-01,2021-06-01,False,,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,11,,Non Executive Advisor,,2019-11-01,,False,,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,12,/c/SBVwAwAHABswBAsTEy0VAh8MHgo=,Chairman,,2020-10-01,,False,,False,False,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,13,,Non Executive Director,,2021-05-01,2024-03-01,False,,False,False,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,14,,Non Executive Director,,2023-04-01,,False,,False,False,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,15,,Non Executive Director,,2025-05-01,,False,,False,False,True
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,16,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwGQAZDjcHBAsDGz4GEgM=,17,/c/SBVwBAkSEQcfAgsOFSw=,Chairman,board_member,,2022-03-01,False,True,False,False,True
+/p/SAZwGQAZEwEBMgICEw==,01,,Researcher,employee,2008-01-01,2009-01-01,False,True,False,False,False
+/p/SAZwGQAZEwEBMgICEw==,02,/c/SBVwFwAHEQ0MBQ==,Researcher,employee,2010-06-01,2010-08-01,False,True,False,False,False
+/p/SAZwGQAZEwEBMgICEw==,03,/c/SBVwFwAHEQ0MBQ==,Researcher,employee,2010-09-01,2013-06-01,False,True,False,False,False
+/p/SAZwGQAZEwEBMgICEw==,04,/c/SBVwBxUKCw4AHwE4AzEdFw4XGwYZHA==,Immunology PhD Candidate,alumni,2013-09-01,2017-09-01,False,False,False,False,False
+/p/SAZwGQAZEwEBMgICEw==,05,/c/SBVwRxU0BwEAHgYOEzEXBBg=,Co-Founder & Chief Research Officer,founder,2017-01-01,,True,True,False,True,False
+/p/SAZwGQAZEwEBMgICEw==,06,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"Head of Target Discovery, Co-Founder",founder,2017-02-01,2021-09-01,False,True,False,True,False
+/p/SAZwGQAZEwEBMgICEw==,07,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"VP, Target Discovery, Co-Founder",operator,2021-09-01,,False,True,False,False,False
+/p/SAZwGQAZEwEBMgICEw==,08,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"VP, Head of Research, Co-Founder",operator,2024-03-01,2025-03-01,False,True,False,False,False
+/p/SAZwGQAZEwEBMgICEw==,09,/c/SBVwRxU0BwEAHgYOEzEXBBg=,"Chief Research Officer, Co-Founder",executive,2025-03-01,,True,True,True,False,False
+/p/SAZwGQAZEwEBMgICEw==,10,/c/SB9wFwgdDAQGFwQTHzAaPh0ABhsYFwIF,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,01,/c/SBVwEAAHAAsOHwsCETYR,Coach - Sales Training,employee,1991-05-01,1996-12-01,False,True,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,02,,Entrepreneur - Coach - Manager,,1995-12-01,2001-09-01,False,,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,03,,CEO - Founder,founder,1995-12-01,1998-08-01,True,True,False,True,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,04,,Entrepreneur - Coach - Manager,employee,1995-12-01,2001-09-01,False,True,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,05,,CTO,employee,1998-08-01,1999-12-01,True,True,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,06,,CEO,executive,1999-11-01,2001-08-01,True,True,True,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,07,,CEO,,1999-11-01,2001-08-01,True,,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,08,,CEO,,2001-09-01,2004-08-01,True,,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,09,,CEO,executive,2001-09-01,2004-08-01,True,True,True,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,10,,CEO,,2004-08-01,2005-05-01,True,,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,11,,CEO,executive,2004-08-01,2005-05-01,True,True,True,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,12,,"CEO - Founder, company developer and entreprenuer",founder,2005-05-01,,False,,False,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,13,,"CEO - Founder, company developer and entreprenuer",founder,2005-05-01,,True,True,False,True,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,14,/c/SBVwFQIIAAwAMgcVGT4QAwoLDA==,Chairman,board_member,2005-06-01,2016-06-01,False,False,False,False,True
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,15,/c/SBVwEAgKCQ0MGTpWT2ZB,President and CEO,executive,2007-01-01,2013-09-01,True,True,True,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,16,/c/SB9wEAgKCQ0MGQ==,Chief Executive Officer & President,executive,2007-01-01,2013-09-01,True,True,True,False,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,17,/c/SBVwR1dbFQQOFAAV,Founder & CEO,founder,2013-10-01,,True,True,False,True,False
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,18,,Founder & Chairman,founder,2014-06-01,2017-10-01,False,True,False,True,True
+/p/SAZwGQAfFjcEHwQOAiwdCjQOCQMbDAw=,19,/c/SBVwFQIIAAwAMgcVGT4QAwoLDA==,Board Member,advisor,2016-06-01,2020-10-01,False,False,False,False,True
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,1,/c/SBVwAggZAgEBBAQ4AjoXCQ==,Graduate Research Assistant,,2007-12-01,2011-12-01,False,,False,False,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,2,,Postdoc,employee,2012-01-01,2013-01-01,False,True,False,False,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,3,/c/SBVwGQAYFgkMBRAUEysAEjQCDQEIFwYaABwOGBUBGwwJ,Postdoc,,2012-01-01,2013-01-01,False,,False,False,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,4,/c/SBVwERgOCw0bHwQ=,Senior R&D Engineer,employee,2013-07-01,2015-08-01,False,True,False,False,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,5,/c/SBVwEg4ZCAQODxY=,Team Lead,employee,2015-09-01,2018-02-01,False,True,False,False,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,6,/c/SBVwGBQGDAsKAQk=,"Director, Product Development",operator,2018-03-01,2020-02-01,False,True,False,False,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,7,/c/SBVwRVNYOhsKCA==,Founder,founder,2020-02-01,,False,,False,True,
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,8,/c/SBVwERgOBwcb,"Co-Founder, President, Chief Executive Officer & Board Member",founder,2021-01-01,,True,True,False,True,False
+/p/SAZwGQAfEQAGDBY4HjASDAoLBjAdDTgS,9,/c/SBVwERgOBwcb,Co-founder & CEO,founder,2021-03-01,,True,True,False,True,False
+/p/SAZwGQgIDQkKAToMGT0N,01,,Corporate Finance Analyst,employee,1995-01-01,1997-01-31,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,02,,Corporate Finance Analyst,,1995-01-01,1997-01-01,False,,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,03,/c/SBVwEwAHAAYwHQQVAjERExg=,Venture Capital Associate,employee,1997-01-01,1999-01-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,04,,Business Development & Finance,employee,2000-01-01,2002-01-31,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,05,,Business Development & Finance,,2000-01-01,2002-01-01,False,,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,06,/c/SBVwGQQPERoAAwwE,Business Development,employee,2003-05-01,2003-08-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,07,/c/SBVwEwAHAAYwHQQVAjERExg=,Principal,employee,2004-01-01,2010-09-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,08,,Managing Director,operator,2010-09-01,2014-05-31,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,09,/c/SBVwBAAHCB4KAxESBDoH,Managing Director,executive,2010-09-01,2014-05-01,False,,True,False,False
+/p/SAZwGQgIDQkKAToMGT0N,10,/c/SB9wBAAHCA==,Managing Director,employee,2010-09-01,2014-05-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToMGT0N,11,/c/SB9wRVJaUDcMDBUOAj4Y,"Co-Founder, Partner & Investment Executive",founder,2014-01-01,,False,True,False,True,False
+/p/SAZwGQgIDQkKAToMGT0N,12,/c/SBVwRVJaUDcMDBUOAj4Y,Co-Founder & Partner,founder,2014-05-01,,False,True,False,True,False
+/p/SAZwGQgIDQkKAToMGT0N,13,/c/SBVwBw4HEAoDCDoUDywABAYW,Board Member,board_member,2017-10-26,,False,False,False,False,True
+/p/SAZwGQgIDQkKAToMGT0N,14,/c/SB9wGQgYCgYGFTpXRm4=,Board Member,board_member,2019-01-01,,False,False,False,False,True
+/p/SAZwGQgIDQkKAToKEzMbDw4=,01,,Language Learning Center Computer Lab Student Assistant and Help Desk Tech,,2009-11-01,2013-06-01,False,,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,02,,Language Learning Center Computer Lab Student Assistant and Help Desk Tech,employee,2009-11-01,2013-06-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,03,,Mt. Sac ESL Department - Information Technology Help Desk,,2010-08-01,2011-01-01,False,,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,04,,Mt. Sac ESL Department - Information Technology Help Desk,employee,2010-08-01,2011-01-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,05,/c/SBVwBAQZCAkcGgQAEwAXDg==,IT HelpDesk/system/network Intern,,2014-11-01,2015-07-01,False,,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,06,,IT HelpDesk/system/network Intern,intern,2014-11-01,2015-07-01,False,False,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,07,/c/SBVwFw4KCQ4GHwA4BSYHFQ4I,Technology Assessment and Advisory Team Intern,employee,2015-07-01,2015-12-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,08,/c/SBVwFw4KCQ4GHwA4BSYHFQ4I,Associate IT Security Consultant,employee,2016-01-01,2016-04-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,09,/c/SBVwEQ8EEwk=,Security Engineer I,employee,2016-05-01,2017-05-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,10,/c/SBVwEQ8EEwk=,Security Engineer II,employee,2017-05-01,2018-09-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,11,/c/SBVwFg0eADcAHwwAHzE=,Information Security Engineer III,employee,2018-10-01,2021-04-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,12,/c/SBVwRBEKFhs=,"Co-Founder, Chief Operating Officer & CISO",founder,2021-01-01,,True,True,False,True,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,13,/c/SBVwBxEKBg0wCB0XGjAGAB8MBwEyEQIVNxoOBwoPBggW,Information Security Engineer,employee,2021-04-01,2022-11-01,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,14,/c/SBVwRBEKFhs=,"Co-Founder, COO, CISO",founder,2022-11-01,2024-06-01,True,True,False,True,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,15,,Senior Security Engineer,employee,2024-09-01,,False,True,False,False,False
+/p/SAZwGQgIDQkKAToKEzMbDw4=,16,/c/SBVwBAAHCjcOAREIKTERFRwKGgQe,Extended Expertise Consultant,employee,2024-09-01,,False,True,False,False,False
+/p/SAZwGQgHEQEOCQwUKSURCAkAAwYe,1,,Software Engineer,employee,2008-01-01,2013-03-01,False,True,False,False,False
+/p/SAZwGQgHEQEOCQwUKSURCAkAAwYe,2,/c/SBVwBAQZFgkLAg==,Senior Software Engineer,employee,2013-03-01,2013-11-01,False,True,False,False,False
+/p/SAZwGQgHEQEOCQwUKSURCAkAAwYe,3,,Senior Software Engineer / Web Applications Developer,employee,2013-11-01,2014-01-01,False,True,False,False,False
+/p/SAZwGQgHEQEOCQwUKSURCAkAAwYe,4,/c/SBVwRVFbCA0BGQoVBQ==,Co-Founder & Chief Technology Officer,founder,2014-01-01,,True,True,False,True,False
+/p/SAZwGQgHEQEOCQwUKSURCAkAAwYe,5,/c/SBVwFRUSFQcBMhYeBSsRDBg=,Senior Software Engineer,employee,2014-02-01,2014-09-01,False,True,False,False,False
+/p/SAZwGQgHEQEOCQwUKSURCAkAAwYe,6,/c/SBVwRVFbCA0BGQoVBQ==,CTO & Co-Founder,founder,2014-09-01,,True,True,False,True,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,01,,Head Of Operations,operator,2014-04-01,2015-11-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,02,,Head Of Operations,,2014-04-01,2015-11-01,False,,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,03,,Head Of Operations,operator,2014-04-01,2015-11-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,04,/c/SBVwEg4EAQcdDA==,Head of Fleet,operator,2015-11-01,2016-08-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,05,/c/SBVwEg4EAQcdDDpVRm9A,Head of Hr Fleet Manager,operator,2016-07-01,2017-04-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,06,/c/SBVwEg4EAQcdDDpVRm9A,Head of Service at foodora Italy,operator,2017-04-01,2018-04-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,07,/c/SBVwEAQHDB4KHxw4HjoGDg==,Operation Team Lead | Service Operations,operator,2017-11-01,2018-10-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,08,/c/SBVwFwgfHBsMAgoT,Head Of Operations | Italy,operator,2018-10-01,2020-02-01,False,True,False,False,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,09,/c/SBVwRVFbVQ4OHwgGFTYR,Co-Founder & Chief Operating Officer,founder,2019-01-01,,True,True,False,True,False
+/p/SAZwGQ4DBAUKCToeGSoaBBg=,10,/c/SBVwRVFbVQ4OHwgGFTYR,Co-founder & COO,founder,2020-02-01,,True,True,False,True,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,01,,Summer Intern,intern,2016-08-01,2016-09-01,False,False,False,False,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,02,,Legal Intern,employee,2018-09-01,2019-09-01,False,True,False,False,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,03,/c/SBVwFggFBwEB,Co-Founder,founder,2019-06-01,,False,True,False,True,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,04,,Associate,employee,2019-09-01,2020-01-01,False,True,False,False,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,05,/c/SBVwFggFBwEB,CLO,board_member,2019-10-01,,True,,False,False,
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,06,,Partner,employee,2020-01-01,,False,True,False,False,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,07,/c/SBVwRVFbVTcWDBE4BAAZDQoXNwcCCQMfMRM=,Co-Founder,founder,2022-05-01,,False,True,False,True,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,08,/c/SBVwBQIDBBoICA==,Co-Founder,founder,2022-08-01,,False,True,False,True,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,09,,Co-Founder,founder,2022-08-01,,False,True,False,True,False
+/p/SAZwGRQYEQkJDDoUFzYZPgkMGh8yCwYE,10,/c/SBVwRVFbVTcWDBE4BAAZDQoXNwcCCQMfMRM=,Board Member,board_member,,,False,,False,False,
+/p/SAZwGgAfDQkBBAALKTkGCA4B,01,,Co-Founder and Co-Owner,founder,2016-10-01,,False,,False,True,
+/p/SAZwGgAfDQkBBAALKTkGCA4B,02,/c/SBVwABQZAg0BHgAE,Co-Founder & Chief Executive Officer,founder,2019-06-19,2022-10-19,True,True,False,True,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,03,/c/SBVwABQZAg0BHgAE,Founder (Acquired Oct/22),founder,2019-08-01,2022-10-31,False,True,False,True,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,04,/c/SBVwFg0KBgMDDA4CKTgGDh4V,Partner,employee,2022-10-01,2024-03-01,False,True,False,False,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,05,/c/SBVwRBkJCh8=,Co-Founder & Chief Executive Officer,founder,2023-01-01,,True,True,False,True,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,06,,Chief Executive Officer,executive,2023-06-01,,True,True,True,False,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,07,,Founding Member,operator,2024-05-01,,False,True,False,False,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,08,,Founding Member,employee,2024-05-01,,False,True,False,False,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,09,/c/SBVwRBkJCh8=,Co-Founder & CEO,executive,2024-07-01,,True,True,True,False,False
+/p/SAZwGgAfDQkBBAALKTkGCA4B,10,,Co-Founder,founder,2024-08-01,,False,True,False,True,False
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,1,,Project Intern,intern,2019-05-01,2019-08-01,False,False,False,False,False
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,2,/c/SBVwBBMCCF4=,Founder & CEO,founder,2020-08-01,2024-02-01,True,True,False,True,False
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,3,,Board Member,advisor,2022-07-01,2023-06-01,False,False,False,False,True
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,4,,Co-Founder & CEO,founder,2023-07-01,,True,True,False,True,False
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,5,,Co-Founder & CEO,executive,2023-12-01,,True,True,True,False,False
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,6,/c/SBVwRBMIEBs=,Co-Founder & Chief Executive Officer,founder,2024-01-01,,True,True,False,True,False
+/p/SAZwGggIDQcDDBY4FzsVDBg6WF5d,7,/c/SBVwRBMIEBs=,Co-Founder & CEO,founder,2024-02-01,,True,True,False,True,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,01,,"Venture Development, APAC",employee,2013-06-01,2013-10-01,False,True,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,02,,Corporate Finance,employee,2014-01-01,2014-08-01,False,True,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,03,,Corporate Finance,,2014-01-01,2014-08-01,False,,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,04,/c/SBVwGQQPDAsG,Founder and MD Europe (acquired by Prove),founder,2015-10-01,,False,,False,True,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,05,,Founder and MD Europe (acquired by Prove),operator,2015-10-01,2020-04-01,False,True,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,06,/c/SBVwBA0eAjcOAwE4BjMVGA==,FinTech and Insurtech Mentor,advisor,2017-05-01,2020-11-01,False,False,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,07,/c/SBVwEhMCAAYLARw4BTwbEw4=,Investor & Advisor,investor,2018-01-01,,False,False,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,08,,Adjunct Professor - RegTech,employee,2018-01-01,2019-07-01,False,True,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,09,/c/SBVwRVFbVQ4OHwgGFTYR,Co-Founder & Chief Executive Officer,founder,2019-01-01,,True,True,False,True,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,10,,Guest Lecturer,employee,2019-04-01,2020-07-01,False,True,False,False,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,11,/c/SBVwBwkKBwccBQ==,"Co-Founder, Advisor & Chairman",founder,2020-01-01,,False,True,False,True,True
+/p/SAZwGggICgQAMhUCAi0bDw4=,12,/c/SBVwBwkKBwccBQ==,Founder and CEO,founder,2020-03-01,,True,True,False,True,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,13,/c/SBVwRVFbVQ4OHwgGFTYR,Founder and CEO,founder,2020-04-01,,True,True,False,True,False
+/p/SAZwGggICgQAMhUCAi0bDw4=,14,/c/SBVwEhMCAAYLARw4BTwbEw4=,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,01,,Founder,employee,2016-01-01,2018-09-01,False,True,False,True,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,02,,Founder,,2016-01-01,2018-09-01,False,,False,True,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,03,,Advanced Technical Support,,2016-02-01,2017-09-01,False,,False,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,04,,Advanced Technical Support,employee,2016-02-01,2017-09-01,False,True,False,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,05,,Founder,employee,2017-01-01,2020-06-01,False,True,False,True,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,06,,Founder,,2017-01-01,2020-06-01,False,,False,True,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,07,/c/SBVwBxEKBg0wCB0XGjAGAB8MBwEyEQIVNxoOBwoPBggW,"Security Engineer, Identity Lead",employee,2020-07-01,2022-06-01,False,True,False,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,08,/c/SBVwRBEKFhs=,Co-Founder & Chief Executive Officer,founder,2021-01-01,,True,True,False,True,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,09,/c/SBVwHAAIDjcbBQA4FDAM,Engineering Consultant,employee,2021-10-01,2022-04-01,False,True,False,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,10,,"Founder, CEO",executive,2022-05-01,2024-08-01,True,True,True,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,11,/c/SBVwRBEKFhs=,"Founder, CEO",founder,2022-05-01,2024-08-01,True,True,False,True,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,12,/c/SBVwFQwKHwcBMhICFAAHBBkTAQwIFg==,"Security Engineer, AWS Identity",employee,2022-06-01,2022-12-01,False,True,False,False,False
+/p/SAZwGg4KDTccGQQJEDAGBQ==,13,,Host,employee,2023-09-01,,False,True,False,False,False
+/p/SAZwGxIIBBowAAQV,1,,"Lighter, motion and graphic designer",employee,2007-03-01,2009-02-01,False,True,False,False,False
+/p/SAZwGxIIBBowAAQV,2,/c/SBVwAQMCFgcJGToEGTI=,Motion designer and Concept artist,employee,2009-04-01,2013-02-01,False,True,False,False,False
+/p/SAZwGxIIBBowAAQV,3,,Graphic Design Director,operator,2013-03-01,2015-01-01,False,True,False,False,False
+/p/SAZwGxIIBBowAAQV,4,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder + Art Director,founder,2021-02-01,,False,True,False,True,False
+/p/SAZwGxIIBBowAAQV,5,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder & Art Director,founder,2021-03-01,,False,True,False,True,False
+/p/SAZwBAAeCTcdAhYCGA==,01,,Partner,employee,1990-09-01,1996-11-01,False,True,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,02,,Partner,,1990-09-01,1996-11-01,False,,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,03,/c/SBVwFQUb,District Sales Manager,employee,1991-01-01,1994-01-31,False,True,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,04,,General Counsel and CFO,,1993-10-01,2010-04-01,True,,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,05,,General Counsel and CFO,executive,1993-10-01,2010-04-01,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,06,,CEO,executive,1996-12-01,,True,,True,False,
+/p/SAZwBAAeCTcdAhYCGA==,07,,Regional Vice President of Sales,executive,1998-03-01,2001-09-30,False,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,08,,Founder & Chairman,operator,1999-12-01,,False,True,False,True,True
+/p/SAZwBAAeCTcdAhYCGA==,09,/c/SBVwBAASBgAKFToEGTI=,Sales Manager,employee,2001-01-01,2002-01-31,False,True,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,10,,VP of Sales,executive,2003-03-01,2011-05-31,False,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,11,,Adjunct Professor,employee,2009-12-01,2011-12-31,False,True,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,12,/c/SBVwGw8PAAsE,Senior Vice President of Sales,employee,2011-01-01,2017-01-01,False,,False,False,
+/p/SAZwBAAeCTcdAhYCGA==,13,/c/SBVwGw8PAAsE,Chief Sales Officer,executive,2011-05-01,2017-09-07,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,14,/c/SBVwFxMECwccMgIVGSoE,CEO and President,executive,2011-12-01,2016-06-01,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,15,/c/SBVwFxMECwccMgIVGSoE,CEO and President,,2012-03-01,2016-06-01,True,,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,16,/c/SBVwFxMECwccMgIVGSoE,President & Chief Executive Officer,executive,2013-03-01,,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,17,/c/SBVwHRM0Fw0LGg0OAjoWDQQKBQ==,Chief Executive Officer & Director,executive,2017-07-20,,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,18,/c/SBVwFw4dABoYDAkLEys=,Chief Operating Officer,executive,2017-09-07,2018-09-30,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,19,/c/SBVwBwkCFQoADw==,Chief Revenue Officer,executive,2018-09-01,2025-02-28,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,20,,Board Member,board_member,2019-05-01,,False,,False,False,
+/p/SAZwBAAeCTcdAhYCGA==,21,/c/SBVwGAQKAw==,Board Member,board_member,2019-05-10,,False,False,False,False,True
+/p/SAZwBAAeCTcdAhYCGA==,22,/c/SBVwRVhYVjcGAwESBSsGCA4W,Contract CEO,executive,2020-06-01,2025-01-01,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,23,,President,,2022-03-01,2023-05-01,False,,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,24,,President,false_position,2022-03-01,2023-05-01,True,False,False,False,False
+/p/SAZwBAAeCTcdAhYCGA==,25,,Board Member,advisor,2024-03-01,2024-11-30,False,False,False,False,True
+/p/SAZwBAAeCTcdAhYCGA==,26,/c/SBVwBgQbChobFDpV,Chief Revenue Officer (CRO),executive,2025-03-01,,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,27,/c/SBVwRVhYVjcGAwESBSsGCA4W,Founder,founder,,,False,,False,True,
+/p/SAZwBAAeCTcdAhYCGA==,28,/c/SBVwFxMECwccMgIVGSoE,"Co-Founder, President and CEO",founder,,,True,,False,True,
+/p/SAZwBAAeCTcdAhYCGA==,29,/c/SBVwAAgPBAQwHwoeFzMAGA==,"CEO, Chairman & Founder",founder,,,True,,False,True,
+/p/SAZwBAAeCTcdAhYCGA==,30,/c/SBVwBgQbChobFDpV,Chief Revenue Officer,executive,,,True,True,True,False,False
+/p/SAZwBAAeCTcdAhYCGA==,31,/c/SB9wAAgPBAQwHwoeFzMAGA==,"Founder, Chairman & Chief Executive Officer",founder,,2019-05-01,True,True,False,True,True
+/p/SAZwBAAeCTcdAhYCGA==,32,/c/SB9wHwQSOgEBGwAUAjIRDx86GA4fEQkTLQc=,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,01,/c/SBVwFwYC,co-op: IT Architecture Consultant,,2006-12-01,2008-12-01,False,,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,02,,co-op: IT Architecture Consultant,employee,2007-01-01,2009-01-01,False,True,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,03,/c/SBVwAAU0BwkBBg==,co-op: Project Analyst - Business Continuity Management,,2007-12-01,2008-12-01,False,,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,04,,co-op: Project Analyst - Business Continuity Management,employee,2008-01-01,2009-01-01,False,True,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,05,/c/SBVwFwYC,Technical Consultant - Financial Services,employee,2010-05-01,2012-04-01,False,True,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,06,,Director of Operations,operator,2012-04-01,2013-03-31,False,True,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,07,,Director of Operations,,2012-04-01,2013-03-01,False,,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,08,/c/SBVwFQweCREbCA==,Co-Founder,founder,2013-03-01,2014-07-01,False,True,False,True,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,09,/c/SB9wAAU0BwkBBg==,Senior Solution Designer - Payments Innovation,employee,2014-07-01,,False,True,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,10,/c/SBVwAAU0BwkBBg==,Senior Solution Designer / Tech Lead - Payments Innovation,employee,2014-07-01,2017-04-01,False,True,False,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,11,/c/SBVwFhQFHw==,CTO,executive,2017-04-01,2019-10-01,True,True,True,False,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,12,/c/SBVwAwQJAwQAGjoOGQAeDgILCgMECBc=,Co-Founder & Chief Technology Officer,founder,2020-01-01,,True,True,False,True,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,13,/c/SBVwFg0CCBgwBQoKEyw=,Co-Founder/CTO,founder,2020-07-01,,False,True,False,True,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,14,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder,founder,2021-03-01,,False,True,False,True,False
+/p/SAZwBAQZFxEwBQQLEjoaAxI=,15,/c/SBVwFhQFHw==,Chief Technology Officer,executive,,,True,True,True,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,1,,Agents service,,2011-05-01,2013-01-01,False,,False,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,2,,Agents service,employee,2011-05-01,2013-01-01,False,True,False,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,3,,Analyst Department of Statistics,employee,2013-03-01,2013-03-01,False,True,False,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,4,,Fianancial analyst,employee,2017-11-01,2019-02-01,False,True,False,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,5,/c/SBVwFRMGFh8GHhYFFzEf,Corporate Sales Specialist,employee,2018-10-01,2019-09-01,False,True,False,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,6,/c/SBVwRVETOgECAAAVBTYCBA==,"Co-Founder, Chief Financial Officer & Chief Operating Officer",founder,2021-01-01,,True,True,False,True,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,7,/c/SBVwRVETOgECAAAVBTYCBA==,Chief Operating Officer,executive,2021-09-01,2024-01-01,True,True,True,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,8,,"CEO, Founder",executive,2024-01-01,,True,True,True,False,False
+/p/SAZwBAQfFwccMg0CBDgaGAoL,9,,"CEO, Founder",,2024-01-01,,True,,False,True,False
+/p/SAZwBgAGOg4GHg0=,01,/c/SBVwHQAN,Squadron 192,alumni,1987-01-01,1991-01-01,False,False,False,False,False
+/p/SAZwBgAGOg4GHg0=,02,,Strategic Marketing Manager,,1995-01-01,1997-01-01,False,,False,False,False
+/p/SAZwBgAGOg4GHg0=,03,,Strategic Marketing Manager,employee,1995-01-01,1997-12-31,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,04,/c/SBVwGxEOCx8OGwA=,"Director, Product Management & Business Development, Client Group",operator,2000-07-01,2004-01-01,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,05,/c/SBVwHRkCCAcNBAkC,VP Software product marketing,executive,2004-06-01,2005-07-01,False,True,True,False,False
+/p/SAZwBgAGOg4GHg0=,06,,Founder & CEO,founder,2005-11-01,2007-06-30,True,True,False,True,False
+/p/SAZwBgAGOg4GHg0=,07,,Founder & CEO,,2005-11-01,2007-06-01,True,,False,True,False
+/p/SAZwBgAGOg4GHg0=,08,/c/SBVwBRU0FgcJGRIGBDo=,"General Manager, Digital Home Products",employee,2007-06-01,2008-06-01,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,09,/c/SBVwGg4ADAk=,"New Strategic Initiative, Devices Group",employee,2008-07-01,2009-02-01,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,10,,Founder & CEO,founder,2010-04-01,2012-02-01,True,True,False,True,False
+/p/SAZwBgAGOg4GHg0=,11,/c/SBVwFREbCQ0=,iPods,false_position,2012-01-01,2013-06-01,False,False,False,False,False
+/p/SAZwBgAGOg4GHg0=,12,,"VP, Digital Health",,2013-07-01,2015-09-01,False,,False,False,False
+/p/SAZwBgAGOg4GHg0=,13,,"VP, Digital Health",employee,2013-07-01,2015-09-30,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,14,,"VP, Digital Health",employee,2013-07-01,2015-09-30,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,15,/c/SBVwHAQZCA0cMgwJGDACAB8MBwE=,Advisor,advisor,2015-01-01,,False,,False,False,
+/p/SAZwBgAGOg4GHg0=,16,/c/SBVwRVgHBAoc,Co-Founder & Chief Executive Officer,founder,2015-01-01,,True,True,False,True,False
+/p/SAZwBgAGOg4GHg0=,17,/c/SBVwEA4BCjcDDAcU,Board Member,board_member,2015-04-01,2016-08-16,False,False,False,False,True
+/p/SAZwBgAGOg4GHg0=,18,/c/SBVwBwAGFh0BCjoCGjoXFRkKBgYOFg==,"VP, mHealth",executive,2015-04-01,,False,,True,False,
+/p/SAZwBgAGOg4GHg0=,19,,Board Member & Seed Investor,investor,2015-04-01,2016-04-01,False,False,False,False,True
+/p/SAZwBgAGOg4GHg0=,20,/c/SBVwRVgHBAoc,Founder &CEO,founder,2015-09-01,,True,True,False,True,False
+/p/SAZwBgAGOg4GHg0=,21,,Member Board Of Trustees,advisor,2017-05-01,2020-05-01,False,False,False,False,True
+/p/SAZwBgAGOg4GHg0=,22,/c/SBVwFwAYADcYCBYTEy0aPhkAGwofEwIpKhoIHQAaHAQRHg==,"Adjunct Professor, Technology Management",,2022-01-01,,False,,False,False,False
+/p/SAZwBgAGOg4GHg0=,23,,"Adjunct Professor, Technology Management",employee,2022-01-01,,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,24,,"Lecturer, Technology Managment",employee,2022-01-01,,False,True,False,False,False
+/p/SAZwBgAGOg4GHg0=,25,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,01,,Marketing and Communication Assistant,employee,2006-03-01,2006-07-01,False,True,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,02,,Advertising manager,,2007-01-01,2007-07-01,False,,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,03,,"CEO, Owner",,2008-01-01,2011-12-01,True,,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,04,,Online marketing manager,employee,2012-01-01,2014-10-01,False,True,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,05,,Online marketing manager,,2012-01-01,2014-10-01,False,,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,06,/c/SBVwERQZBAYEDA==,Chief Executive Officer & Co-Founder,founder,2014-01-01,,True,True,False,True,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,07,,Formateur RTA,,2014-06-01,2016-06-01,False,,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,08,,Formateur RTA,employee,2014-06-01,2016-06-01,False,True,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,09,/c/SBVwERQZBAYEDA==,CEO & Co-Founder,founder,2014-08-01,,True,True,False,True,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,10,,Board Member / Membership chair,employee,2015-10-01,2019-07-01,False,True,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,11,/c/SBVwFhMCAgAbMldXR2g=,Co-Founder,founder,2019-09-01,2021-01-01,False,True,False,True,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,12,/c/SBVwFxMEDg0A,Co-Founder & Board Member,founder,2019-01-01,,False,True,False,True,True
+/p/SAZwBgAbDQkKAToAFy0XCAo=,13,/c/SBVwRVNYDgEL,Co-Founder,founder,2019-10-01,,False,True,False,True,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,14,,Member / Forum moderator,employee,2019-07-01,2021-09-01,False,True,False,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,15,/c/SBVwFxMEDg0A,CEO,executive,2019-10-01,2024-10-01,True,True,True,False,False
+/p/SAZwBgAbDQkKAToAFy0XCAo=,16,,SEA Teacher,employee,2019-10-01,2020-10-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,01,/c/SBVwGgAYBA==,Engineer in Training (Co-op),intern,2000-01-01,2002-05-01,False,False,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,02,,Intellectual Property Attorney,employee,2006-06-01,2010-04-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,03,,Founder,founder,2010-04-01,2012-02-01,False,,False,True,False
+/p/SAZwBgASOh4KAxESBD4=,04,,Founder,employee,2010-04-01,2012-02-01,False,True,False,True,False
+/p/SAZwBgASOh4KAxESBD4=,05,/c/SBVwBwgGFQ0dBBAK,Software Engineer,employee,2012-02-01,2012-08-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,06,/c/SBVwGAgdAA4WHwA=,Engineering,employee,2012-08-01,2015-01-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,07,/c/SBVwGAgdAA4WHwA=,"Software Engineer, Dev Manager",executive,2012-09-15,2013-10-09,False,,True,False,
+/p/SAZwBgASOh4KAxESBD4=,08,/c/SBVwGQgYFgEAAzoLFzER,Engineering,employee,2015-04-01,2018-10-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,09,/c/SBVwGQgYFgEAAzoLFzER,Engineering Manager,employee,2017-10-01,2018-10-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,10,/c/SBVwBAAfFw0AAw==,Engineering,operator,2018-12-01,2023-10-01,False,True,False,False,False
+/p/SAZwBgASOh4KAxESBD4=,11,/c/SBVwRVFSXBgAAQwEDw==,Co-Founder & Chief Technology Officer,founder,2019-06-27,,True,True,False,True,False
+/p/SAZwBgASOh4KAxESBD4=,12,/c/SBVwRVFSXBgAAQwEDw==,"Co-Founder, CTO",founder,2023-10-01,,True,True,False,True,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,01,,Co-Founder,founder,2007-01-01,,False,,False,True,
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,02,/c/SBVwFQ0HHDcMAggKEy0XBA==,Co-Founder & Board Member,founder,2007-01-01,2022-10-28,False,True,False,True,True
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,03,,Co-Founder,,2007-01-01,,False,,False,True,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,04,/c/SBVwFQ0HHDcMAggKEy0XBA==,Co-Founder,founder,2013-06-01,,False,True,False,False,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,05,,Managing Partner,operator,2016-08-01,,False,True,False,False,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,06,/c/SBVwFwkEFg0BMhUGDzIRDx8W,Managing Partner,executive,2016-08-01,,False,,True,False,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,07,/c/SBVwEw4MFw0KAwMCFyscBBk=,Investor,investor,2020-04-01,,False,False,False,False,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,08,,"Investor (Acquired by iCoreConnect, NASDAQ: ICCT)",,2020-04-01,,False,,False,False,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,09,/c/SBVwRVFbAhoAGBU=,Co-founder & Chief Revenue Officer (CRO),founder,2021-08-01,,True,True,False,True,False
+/p/SAZwBggIDQkdCToUFT4YBBgWDQ==,10,,,employee,,,False,True,False,False,False
+/p/SAZwBg4JDAYwHwQUDDQV,1,/c/SBVwBAgCBhwa,Product Designer,employee,2010-12-01,2012-06-01,False,True,False,False,False
+/p/SAZwBg4JDAYwHwQUDDQV,2,/c/SBVwERkIAAQKHwQTEzMVAxg=,Alumni,alumni,2011-07-01,2011-10-01,False,False,False,False,False
+/p/SAZwBg4JDAYwHwQUDDQV,3,/c/SBVwBxQGCAQW,Product designer,employee,2011-12-01,2012-09-01,False,,False,False,
+/p/SAZwBg4JDAYwHwQUDDQV,4,,Product Designer,employee,2012-01-01,2012-09-01,False,True,False,False,False
+/p/SAZwBg4JDAYwHwQUDDQV,5,/c/SBVwDQADCgcGAwY=,Product Designer,employee,2013-05-01,2013-08-01,False,True,False,False,False
+/p/SAZwBg4JDAYwHwQUDDQV,6,/c/SBVwEgAIAAUABww=,"Co-Founder, Chief Executive Officer, President & Board Member",founder,2017-01-01,2022-08-01,True,True,False,True,False
+/p/SAZwBg4JDAYwHwQUDDQV,7,/c/SBVwEgAIAAUABww=,Founder,founder,2017-03-01,2022-08-01,False,True,False,True,False
+/p/SAZwBg4JDAYwHwQUDDQV,8,/c/SBVwRVJYUjddXVdU,Founder,founder,2023-01-01,,False,True,False,True,False
+/p/SAZwBg4JDAYwHwQUDDQV,9,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,01,,"Embedded Software Developer, Office of the CTO",employee,2005-08-01,2007-08-31,True,True,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,02,,"Embedded Software Developer, Office of the CTO",,2005-08-01,2007-08-01,False,,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,03,,Owner,employee,2007-01-01,2015-01-31,False,True,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,04,,Owner,,2007-01-01,2015-01-01,False,,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,05,,CEO,,2008-01-01,2012-01-01,True,,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,06,,CEO,executive,2008-01-01,2012-01-31,True,True,True,False,False
+/p/SAZwBg4OADcbGBMGGg==,07,,Founder,founder,2013-01-01,2015-08-01,False,True,False,True,False
+/p/SAZwBg4OADcbGBMGGg==,08,/c/SBVwGQAMDAswAQAGBg==,"Senior Manager, Engineering",operator,2015-08-01,2018-07-01,False,True,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,09,/c/SBVwRQwZCgoAGQwEBQ==,Co-Founder & Chief Operating Officer,founder,2021-03-01,,True,True,False,True,False
+/p/SAZwBg4OADcbGBMGGg==,10,,Chief Operating Officer,,2021-04-01,,True,,False,False,False
+/p/SAZwBg4OADcbGBMGGg==,11,/c/SBVwRQwZCgoAGQwEBQ==,Chief Operating Officer,executive,2021-04-01,,True,True,True,False,False
+/p/SAZwBg4OADcbGBMGGg==,12,/c/SBVwRQwZCgoAGQwEBQ==,Co-founder & COO,founder,,,True,,False,True,
+/p/SAZwBg4OADcbGBMGGg==,13,/c/SBVwGQAMDAswAQAGBg==,"Senior Manager, Engineering",executive,,,False,,True,False,
+/p/SAZwBg4FOgoKHwsUAjodDw==,01,,"Prop Trader, Comex, NYFE, NYBOT, CSCE",,1983-09-01,2013-01-01,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,02,/c/SBVwFw0CCAkbCDoOGy8VAh86EA==,Prop Trader,,1990-01-01,2013-01-01,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,03,,"Founder, Director",,2012-11-01,2015-12-01,False,,False,True,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,04,,"CEO Tradesports Technology Holdings, Inc.",,2013-12-01,,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,05,/c/SBVwFRQMEBowXw==,Advisor,advisor,2015-01-01,2019-01-01,False,,False,False,
+/p/SAZwBg4FOgoKHwsUAjodDw==,06,/c/SBVwFRQMEBowXw==,Advisor,,2015-02-01,2019-12-01,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,07,,Managing Director,,2016-01-01,2020-01-01,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,08,/c/SBVwERUDABoGHgY=,Advisor,,2017-03-01,2019-12-01,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,09,/c/SBVwBAAZBAwKFQ==,CEO,founder,2017-06-01,2019-08-01,True,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,10,/c/SBVwFw4CCwoOHgA=,"General Manager, DEX (Paradex)",,2018-05-01,2019-08-01,False,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,11,,Chief Executive Officer,,2020-04-01,2022-10-01,True,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,12,,Chief Executive Officer,,2022-10-01,,True,,False,False,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,13,/c/SBVwRBkbFwcFCAYT,Co-Founder,founder,,,False,True,False,True,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,14,/c/SBVwBAAZBAwKFQ==,Founder & Chief Executive Officer,founder,,2018-05-23,True,True,False,True,False
+/p/SAZwBg4FOgoKHwsUAjodDw==,15,,CEO,executive,,,True,,True,False,
+/p/SAZwBhgKCzcDCAQRHysA,01,,Co-Founder & Co-Owner,,2004-04-01,2006-05-01,False,,False,True,False
+/p/SAZwBhgKCzcDCAQRHysA,02,,Co-Founder & Co-Owner,founder,2004-04-01,2006-05-01,False,True,False,True,False
+/p/SAZwBhgKCzcDCAQRHysA,03,/c/SBVwEw4HAQUOAzoUFzwcEg==,Analyst,employee,2007-06-01,2009-10-01,False,True,False,False,False
+/p/SAZwBhgKCzcDCAQRHysA,04,/c/SBVwEAgKCAcBCQYIGCwBDR8EBhse,Consultant,employee,2010-02-01,2011-04-01,False,True,False,False,False
+/p/SAZwBhgKCzcDCAQRHysA,05,,"Co-Founder, CEO",,2011-04-01,2012-08-01,True,,False,True,False
+/p/SAZwBhgKCzcDCAQRHysA,06,,"Co-Founder, CEO",founder,2011-04-01,2012-08-01,True,True,False,True,False
+/p/SAZwBhgKCzcDCAQRHysA,07,/c/SBVwRVlcVA==,Co-Founder & Board Member,employee,2011-09-01,,False,True,False,True,True
+/p/SAZwBhgKCzcDCAQRHysA,08,/c/SB9wRVlcVA==,Co-Founder & Board Member,founder,2012-01-01,2021-02-12,False,True,False,True,True
+/p/SAZwBhgKCzcDCAQRHysA,09,/c/SBVwGAQKFwYMAhcC,Co-Founder & Chief Revenue Officer,executive,2012-04-01,2019-03-01,True,True,True,True,False
+/p/SAZwBhgKCzcDCAQRHysA,10,/c/SBVwBwIZAA0BDgQUAjYSGA==,Advisor,advisor,2016-09-29,,False,False,False,False,False
+/p/SAZwBhgKCzcDCAQRHysA,11,,Mentor at VentureSCALE,advisor,2017-12-01,,False,False,False,False,False
+/p/SAZwBhgKCzcDCAQRHysA,12,/c/SBVwBwkEEhgOCQ==,Head of Growth & Strategy,operator,2018-06-01,2019-03-01,False,True,False,False,False
+/p/SAZwBhgKCzcDCAQRHysA,13,/c/SBVwBwIZAA0BDgQUAjYSGA==,"Board Member, Growth Advisor",advisor,2018-06-01,,False,False,False,False,False
+/p/SAZwBhgKCzcDCAQRHysA,14,/c/SBVwBAgHCQkdMgcIGSsc,Co-Founder & Chief Executive Officer,founder,2019-01-01,,True,True,False,True,False
+/p/SAZwBhgKCzcDCAQRHysA,15,/c/SBVwBAgHCQkdMgcIGSsc,CEO & Co-Founder,founder,2019-07-01,,True,True,False,True,False
+/p/SAZwBhgKCzcDCAQRHysA,16,,Founder and CEO,founder,,,True,,False,True,
+/p/SAZwBwAZEw0cBToDATYCBA8M,1,/c/SBVwFQ0fFwkBMldXRms=,Software Engineer,employee,2010-06-01,2011-04-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,2,/c/SBVwGw8GCgoGAQA=,Software Engineer,employee,2011-05-01,2012-07-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,3,,Software Engineer,employee,2012-07-01,2015-12-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,4,,Senior Software Engineer,employee,2015-12-01,2018-05-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,5,,Senior Software Development Engineer,employee,2018-05-01,2020-07-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,6,/c/SBVwHA4fFhwOHw==,Senior Software Development Engineer,employee,2018-05-01,2020-07-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,7,/c/SBVwRVFbCBs=,Co-Founder & Vice President of Engineering,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,8,/c/SBVwAwAHCAkdGQ==,Staff Software Engineer,employee,2020-08-01,2020-10-01,False,True,False,False,False
+/p/SAZwBwAZEw0cBToDATYCBA8M,9,/c/SBVwRVFbCBs=,Co-Founder,founder,2020-11-01,,False,True,False,True,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,01,/c/SBVwAAU0BwkBBg==,Business Analyst & Project Lead,employee,2008-05-01,2011-02-01,False,True,False,False,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,02,/c/SBVwAAU0BwkBBg==,"Manager, AML Enhanced Due Diligence Program",employee,2011-02-01,2014-02-01,False,True,False,False,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,03,/c/SBVwFhQFHw==,Co-Founder & Chief Executive Officer,founder,2013-01-01,,True,True,False,True,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,04,/c/SBVwFhQFHw==,CEO,executive,2014-01-01,2020-01-01,True,True,True,False,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,05,/c/SBVwAAU0BwkBBg==,Manager Distribution Strategy,employee,2014-02-01,2015-07-01,False,True,False,False,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,06,/c/SBVwAAU0BwkBBg==,"Manager, New Platforms Technologies",employee,2015-07-01,2016-08-01,False,True,False,False,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,07,/c/SBVwAwQJAwQAGjoOGQAeDgILCgMECBc=,Co-Founder & Advisor,founder,2020-01-01,,False,True,False,True,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,08,,Co-Founder,founder,2020-05-01,,False,True,False,True,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,09,/c/SBVwFg0CCBgwBQoKEyw=,Advisor,advisor,2020-07-01,,False,False,False,False,False
+/p/SAZwBwAYBgAOMggIHCsVCQ4BAQ==,10,/c/SBVwRVNcXVteVVA4FT4aAA8E,Co-Founder,founder,2021-03-01,,False,True,False,True,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,01,,Software Developer,employee,2008-08-01,2010-05-01,False,True,False,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,02,,Project Manager,employee,2010-05-01,2011-07-01,False,True,False,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,03,,Chief Executive Officer,executive,2011-07-01,2013-09-01,True,True,True,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,04,,Chief Executive Officer,executive,2011-07-01,2013-09-30,True,True,True,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,05,,Chief Executive Officer,,2011-07-01,2013-09-01,True,,False,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,06,,Chief technology officer,,2013-09-01,2017-07-01,True,,False,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,07,,Chief technology officer,executive,2013-09-01,2017-07-01,True,True,True,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,08,/c/SBVwRVEcAAo=,"Co-Founder, Chief Technology Officer & Vice President",founder,2017-01-01,,True,True,False,True,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,09,/c/SBVwRVEcAAo=,Vice President,executive,2017-07-01,,False,True,True,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,10,/c/SBVwRVEcAAo=,CTO at 10Web,executive,2020-11-01,,True,True,True,False,False
+/p/SAZwBwQZAg0WMggGBDQbEhIEBg==,11,/c/SBVwRVEcAAo=,chief technology officer at 10web,executive,,,True,True,True,False,False
+/p/SAZwBwkEEwkBMggGHysNPhsNNws=,1,/c/SBVwRVETBBo=,Co-Founder and Head of Research,founder,2021-01-01,,False,True,False,True,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,01,,Graduate Research Assistant and Intel PhD Fellow,employee,2006-08-01,2011-08-01,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,02,/c/SBVwEwQEFw8GDDoOGCwACB8QHAoyCgEpKxECAwsHAwICHg==,Graduate Research Assistant and Intel PhD Fellow,,2006-08-01,2011-08-01,False,,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,03,/c/SBVwBRQKCQsAAAg=,RFIC Design Intern,intern,2008-01-01,2008-08-01,False,False,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,04,/c/SBVwBgAGBx0c,High Frequency IO Communication Circuit Design Research,employee,2009-05-01,2009-08-01,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,05,/c/SBVwHQ8fAAQ=,"Research Scientist, Circuit Research Lab (CRL)",employee,2011-09-01,2015-01-01,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,06,/c/SBVwHQ8fAAQ=,"Research Scientist, Wireless Communication Research (WCR)",employee,2015-02-01,2015-12-01,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,07,/c/SBVwBBQZAR0KMhAJHykRExgMHBY=,Assistant Professor,,2016-01-01,2020-06-01,False,,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,08,,Assistant Professor,employee,2016-01-01,2020-06-30,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,09,/c/SBVwGQ4BCjcZBBYOGTE=,Scientific Consultant,advisor,2017-05-01,2017-07-01,False,False,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,10,,Scientific Consultant,advisor,2018-05-01,2018-08-01,False,False,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,11,/c/SBVwFgUSEho=,"Founder, Chief Technology Officer & President",founder,2018-11-29,,True,True,False,True,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,12,,Associate Professor with Tenure,employee,2020-07-01,2021-05-31,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,13,/c/SBVwBBQZAR0KMhAJHykRExgMHBY=,Associate Professor with Tenure,,2020-07-01,2021-05-01,False,,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,14,/c/SBVwRVETBBo=,"Co-Founder, Chief Technology Officer & Chairman",founder,2021-01-01,,True,True,False,True,True
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,15,/c/SBVwHQ8fFwEBHgwfKTwbExs=,Scientific Consultant,employee,2021-04-01,2022-06-01,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,16,,Elmore Associate Professor of Electrical and Computer Engineering,employee,2021-05-01,,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,17,/c/SBVwBBQZAR0KMhAJHykRExgMHBY=,Elmore Associate Professor of Electrical and Computer Engineering,,2021-05-01,,False,,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,18,,"Director, Center for Internet of Bodies (C-IoB)",employee,2021-08-01,,False,True,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,19,/c/SBVwBBQZAR0KMhAJHykRExgMHBY=,"Director, Center for Internet of Bodies (C-IoB)",,2021-08-01,,False,,False,False,False
+/p/SAZwBwkZABEOHjoUEzErEQM6DA==,20,/c/SBVwRVETBBo=,Founder and CTO (ex-CEO),founder,2022-11-01,,True,True,False,True,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,01,/c/SBVwHQ8dABsMAjoXEy0EBB8QCQM=,Vice President & Senior Equity Analyst,employee,1997-10-01,2003-01-01,False,True,False,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,02,,Senior Vice President & Portfolio Manager,,2003-01-01,2005-02-01,False,,False,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,03,,Senior Vice President & Portfolio Manager,employee,2003-01-01,2005-02-28,False,True,False,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,04,,Founder & Portfolio Manager,,2005-02-01,2013-05-01,False,,False,True,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,05,,Founder & Portfolio Manager,false_position,2005-02-01,2013-05-31,False,False,False,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,06,/c/SBVwFwQHAAodDBECKToMERkAGxw=,Chairman of the Board,advisor,2006-08-01,2008-08-01,False,False,False,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,07,/c/SBVwBxESOgEBDg==,Board Member,executive,2009-07-01,2019-09-01,False,True,True,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,08,/c/SBVwFwAHBAUAHjoOGCkREh8IDQEZFg==,Senior Vice President & Sector Head,executive,2013-06-01,2015-06-01,False,True,True,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,09,,CEO,executive,2015-06-01,2018-12-31,True,True,True,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,10,,CEO,,2015-06-01,2018-12-01,True,,False,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,11,,President and Board Member,executive,2016-06-01,2019-09-30,True,True,True,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,12,,President and Board Member,,2016-06-01,2019-09-01,False,,False,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,13,/c/SBVwBxEOCwsKHzoVEw==,Board Member,advisor,2017-01-01,2018-12-01,False,False,False,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,14,,Chairman of the Board,advisor,2017-01-01,2018-12-01,False,False,False,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,15,,"President, CEO and Board Member",executive,2018-01-01,2018-12-01,True,True,True,False,True
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,16,/c/SBVwBxESOgEBDg==,Chief Executive Officer,executive,2018-10-01,2020-01-01,True,True,True,False,False
+/p/SAZwBxUOFQAKAzoVGSwRDAoL,17,/c/SBVwRVhcVTcIHwoSBg==,"Founder, Chairman and Chief Executive Officer",founder,2020-01-01,,True,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,01,,Animateur / Technicien,employee,1999-01-01,2004-12-31,False,True,False,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,02,,"CEO, Owner",executive,2000-10-01,2014-12-31,True,True,True,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,03,,Co-founder and CEO,founder,2000-10-01,2014-12-01,True,,False,True,
+/p/SAZwBxUOEw0wHgQRHzAO,04,/c/SB9wAggZER0OMhY=,"Owner, Co-Founder, Chief Executive Officer and Director",founder,2000-10-01,,True,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,05,,Member of the board,advisor,2004-06-01,2008-12-31,False,False,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,06,,Member of the board / Owner,investor,2009-10-01,2015-01-31,False,False,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,07,,Member of the board / Owner,investor,2009-10-01,2015-01-31,False,False,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,08,,Special Advisor,advisor,2010-01-01,2016-01-31,False,False,False,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,09,,Course Instructor,employee,2010-11-01,2013-03-31,False,True,False,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,10,/c/SBVwFRUfFwkMGQwREwADDhkJDA==,Member of the Board,advisor,2012-01-01,2016-09-30,False,False,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,11,/c/SBVwERQZBAYEDA==,"Co-Founder, Owner & Chairman",founder,2012-01-01,,False,True,False,True,True
+/p/SAZwBxUOEw0wHgQRHzAO,12,/c/SBVwERQZBAYEDA==,"Founder, Owner, Chairman of the board",founder,2014-01-01,,False,True,False,True,True
+/p/SAZwBxUOEw0wHgQRHzAO,13,/c/SBVwHA4YBgc=,Board Member,advisor,2014-03-01,,False,False,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,14,/c/SB9wFQoCAQ0BMhMCGCsBEw4W,Founder & Chief Executive Officer,founder,2016-09-01,2017-12-01,True,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,15,,"Founder, CEO",false_position,2016-09-01,2017-12-31,True,False,False,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,16,/c/SBVwFgAfCAkGCToEHg==,Investor,investor,2016-12-01,,False,False,False,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,17,/c/SBVwFhMCAgAbMldXR2g=,Co-Founder & Chief Executive Officer,founder,2017-01-01,,True,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,18,/c/SBVwAAAJABsbAg==,Board Member,advisor,2017-09-01,2024-11-30,False,False,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,19,/c/SBVwGgQDCg==,Co-Founder & Technical Advisor,founder,2017-11-01,,False,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,20,/c/SBVwFhMCAgAbMldXR2g=,Co-Founder,founder,2019-01-01,,False,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,21,/c/SBVwFxMEDg0A,Partner & Board Member,board_member,2019-01-01,,False,True,False,False,True
+/p/SAZwBxUOEw0wHgQRHzAO,22,/c/SBVwRVNYDgEL,Co-Founder & Board Member,founder,2019-01-01,,False,True,False,True,True
+/p/SAZwBxUOEw0wHgQRHzAO,23,/c/SBVwFhMCAgAbMldXR2g=,"Co-Founder, CEO",founder,2019-09-01,,True,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,24,/c/SBVwFxMEDg0A,Partner,employee,2019-09-01,,False,True,False,False,False
+/p/SAZwBxUOEw0wHgQRHzAO,25,/c/SBVwRVNYDgEL,Co-Founder,founder,2019-10-01,2024-08-31,False,True,False,True,False
+/p/SAZwBxUOEw0wHgQRHzAO,26,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwBxQOOhgAAgkC,1,,Enterprise Manager,employee,2000-09-01,2018-09-01,False,True,False,False,False
+/p/SAZwBxQOOhgAAgkC,2,/c/SBVwRgM0AAYbCBcXBDYHCAUC,Founder Director and Board Member resigned March 2023,founder,2016-02-01,2023-03-01,False,True,False,True,True
+/p/SAZwBxQOOhgAAgkC,3,,Director,operator,2019-03-01,,False,True,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,1,/c/SBVwAQ8CEw0dHgwTDwAbBzQIARweDBQFNgQRAg==,Research Assistant Professor,employee,1995-02-01,1998-07-01,False,True,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,2,/c/SBVwFRMMCgYOGBE=,"Group Leader, Reagents & Applications",employee,1998-07-01,2004-11-01,False,True,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,3,/c/SBVwGQ4HAAsaAQQVKTsRFwIGDRw=,"Director, Reagents & Assays",operator,2005-02-01,2008-11-01,False,True,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,4,,Chief Technology Officer,,2008-12-01,2015-06-01,True,,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,5,,Chief Executive Officer,,2009-06-01,2019-12-01,True,,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,6,,Chief Executive Officer,,2015-07-01,,True,,False,False,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,7,/c/SBVwRRJaOg0BCBcADw==,Co-founder & Chief Technology Officer,founder,2019-11-01,,True,True,False,True,False
+/p/SAZwBxQABAYbDDoFHj4AFQoGAA4fHB4X,8,/c/SBVwRRJaOg0BCBcADw==,Co-Founder & Chief Technology Officer,founder,2019-12-17,,True,True,False,True,False
+/p/SAZwBxQYBAYwHQoIGjo=,1,/c/SBVwRgM0AAYbCBcXBDYHCAUC,Co-Founder and Director,founder,2016-10-05,,False,True,False,True,False
+/p/SAZwAD4PCgYwGQwLGjoN,1,/c/SBVwRRJaOg0BCBcADw==,Co-Founder,founder,2019-01-01,,False,,False,True,
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,1,,Junior Analyst,employee,2009-07-01,2011-02-01,False,True,False,False,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,2,,Wealth Advisor,advisor,2011-02-01,2012-02-01,False,False,False,False,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,3,,Sócio,executive,2012-09-01,,False,True,True,False,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,4,/c/SBVwEA4IEQEJFA==,Board Member,advisor,2015-03-01,2016-08-01,False,False,False,False,True
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,5,,CEO,executive,2018-05-01,2020-10-01,True,True,True,False,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,6,/c/SBVwRRJaOg0BCBcADw==,Co-Founder and Chief Business Officer,founder,2019-12-17,,True,True,False,True,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,7,/c/SBVwRRJaOg0BCBcADw==,Chief Business Officer,executive,2020-10-01,,True,True,True,False,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,8,/c/SBVwRRJaOg0BCBcADw==,Chief Business Officer,,2023-09-01,,True,,False,False,False
+/p/SAZwAAkCBA8AMgMOESoRCBkADAA=,9,/c/SB9wGAgNADcDBAsM,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,01,,Sales Trainee,employee,1993-01-01,1995-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,02,,Sales Trainee,employee,1993-01-01,1995-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,03,,Project Leader,operator,1995-01-01,1997-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,04,,Project Leader,operator,1995-01-01,1997-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,05,,Sales Manager,operator,1997-01-01,2000-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,06,,Sales Manager,operator,1997-01-01,2000-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,07,,Sales Manager,employee,2000-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,08,,Managing Director,operator,2000-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,09,,Managing Director,operator,2000-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,10,,Sales Manager,employee,2000-01-01,2002-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,11,,Sales Manager Denmark,employee,2002-01-01,2004-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,12,,Sales Manager,employee,2002-01-01,2004-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,13,,Sales Manager Denmark,employee,2002-01-01,2004-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,14,,Sales Manager,employee,2002-01-01,2004-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,15,,Co-owner,operator,2004-01-01,2018-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,16,,Co-owner,operator,2004-01-01,2018-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,17,,Senior Account Manager,employee,2004-07-01,2014-01-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,18,,Senior Account Manager,executive,2004-07-01,2014-01-01,False,True,True,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,19,,"Vice President, Sales",executive,2014-01-01,2022-02-01,False,True,True,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,20,,"Vice President, Sales",employee,2014-01-01,2022-02-01,False,True,False,False,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,21,/c/SBVwRD4GDBscBAoJ,"Co-Founder, Head of Sales",founder,2022-01-01,,False,True,False,True,False
+/p/SAZwAAkECAkcMgIVFzEcDg0=,22,/c/SBVwRD4GDBscBAoJ,CSO & Co-Founder,founder,,,True,,False,True,
+/p/SAZwAAkECAkcMg0SBDYRGw==,1,/c/SBVwGQ4PABwGDg==,Co-Founder & President,founder,2007-01-01,,True,True,False,True,False
+/p/SAZwAAkECAkcMg0SBDYRGw==,2,/c/SBVwRVFTVg==,"Co-Founder, Chief Executive Officer & President",founder,2013-01-01,,True,True,False,True,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,1,,Teacher,employee,2009-01-01,2013-09-30,False,True,False,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,2,,PHD Student,employee,2011-06-01,2014-05-31,False,True,False,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,3,,Research Associate,employee,2014-06-01,2014-11-30,False,True,False,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,4,,Web Developer,operator,2014-12-01,2015-03-31,False,True,False,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,5,,R&D Team Lead,operator,2015-04-01,2017-06-30,False,True,False,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,6,/c/SBVwRVEcAAo=,"Co-Founder, Co-Chief Executive Officer & Chief Innovation Officer",founder,2017-01-01,,True,True,False,True,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,7,/c/SBVwRVEcAAo=,VP of R&D,executive,2017-07-01,2020-10-31,False,True,True,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,8,/c/SBVwRVEcAAo=,Chief Executive Officer,executive,2020-10-01,2023-10-31,True,True,True,False,False
+/p/SAZwAAgMFwkBMgsGDD4GGAoLNx8FOgM=,9,/c/SBVwRVEcAAo=,Chief Innovation Officer,executive,2023-11-01,,True,True,True,False,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,01,,Digital Art Director,operator,1999-03-01,2008-06-01,False,True,False,False,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,02,,Founder,,2008-01-01,2012-12-01,False,,False,True,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,03,,Creative Consultant,employee,2008-01-01,2009-12-01,False,True,False,False,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,04,,Founder,employee,2008-01-01,2012-01-31,False,True,False,True,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,05,,"Managing Director, Co-Founder",founder,2010-11-01,,False,True,False,True,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,06,/c/SBVwRVFbCA0BGQoVBQ==,CDO & Co-Founder,founder,2013-07-01,,True,True,False,True,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,07,/c/SBVwRVFbCA0BGQoVBQ==,Co-Founder & Chief Development Officer,founder,2014-01-01,,True,True,False,True,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,08,/c/SBVwBw4KFTcOBA==,Head of Product,operator,2018-01-01,2018-09-01,False,True,False,False,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,09,/c/SBVwBRQCCQc=,CMO,executive,2021-12-01,,True,True,True,False,False
+/p/SAZwAAgGChswGQoMGSoHAwoJAQsIFg==,10,/c/SBVwBQ4EFgAwGQAEHjEbDQQCEQ==,Chief Marketing Officer,executive,,,True,True,True,False,False
+/p/SAZwAA4JHDcHGAsA,01,,Editorial Intern,,2013-01-01,2013-01-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,02,,Editorial Intern,,2013-10-01,2013-01-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,03,,Reporter,,2015-01-01,2015-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,04,,Researcher,,2015-01-01,2015-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,05,/c/SBVwGgMIEAYGGwAVBT4Y,Marketing Specialist,,2016-01-01,2017-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,06,,Editor-in-Chief,,2016-01-01,2017-12-01,True,,False,False,False
+/p/SAZwAA4JHDcHGAsA,07,,IT Management Consulting,,2016-01-01,2016-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,08,,Researcher,,2017-01-01,2017-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,09,,Co-Founder,,2017-01-01,2017-12-01,False,,False,True,False
+/p/SAZwAA4JHDcHGAsA,10,/c/SBVwFQgKOg8dAhAX,Project Management,,2017-01-01,2018-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,11,,Ads,,2018-01-01,2019-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,12,,Google for Startups,,2019-01-01,2021-12-01,False,,False,False,False
+/p/SAZwAA4JHDcHGAsA,13,/c/SBVwRQcEFxw=,Co-Founder,founder,2022-01-01,,True,True,False,True,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,1,,Consultant,operator,2000-10-01,2006-03-01,False,True,False,False,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,2,/c/SBVwBAA0BgcBHhALAjYaBjQCGgAYFQ==,Consultant,employee,2006-04-01,2007-11-01,False,True,False,False,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,3,,Director,operator,2007-12-01,2018-06-01,False,True,False,False,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,4,,Associate Partner,employee,2018-06-01,2021-02-01,False,True,False,False,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,5,,Sabbatical,employee,2021-03-01,2021-12-01,False,True,False,False,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,6,/c/SBVwRVNYBgkdDwoJ,Chief Technology Officer,executive,2022-01-01,,True,True,True,False,False
+/p/SAZwAA4GOg0GBw4CGjoaCgoIGA==,7,/c/SBVwRVNYBgkdDwoJ,Co-Founder & Chief Technology Officer,founder,,,True,True,False,True,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,01,,Arquitecto colaborador,,1995-01-01,1998-01-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,02,,Arquitecto colaborador,,1998-01-01,2001-12-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,03,,Arquitecto fundador,,2001-01-01,2007-12-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,04,,Arquitecto fundador,,2007-09-01,2012-12-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,05,,Founding Partner & General Manager,,2011-09-01,2016-10-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,06,,Miembro del Consell Ciutadà per la Sostenibilitat,,2014-09-01,2016-10-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,07,,"Tutor Máster en Hábitat, Urbanismo y Edificación Sostenible y Diplomatura en Construcción Sostenible",,2016-07-01,2018-01-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,08,,Arquitecto prescriptor. Sostenibilidad y Salud,,2016-10-01,2018-12-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,09,,Vocal en la Junta de AuS - Arquitectura i Sostenibilitat COAC,,2017-09-01,2021-08-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,10,,Socio cofundador en Merarki Green Living Projects,,2019-01-01,2020-03-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,11,/c/SBVwRFBaDQ==,Co-founder & Chief Sustainability Officer (CSO) at 011h,,2020-01-01,2024-11-01,True,,False,True,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,12,,Vicepresidente en la Junta Directiva de AuS - Arquitectura i Sostenibilitat COAC,,2021-09-01,,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,13,,Miembro en la Junta Directiva,,2025-01-01,,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,14,,Director de Desarrollo de Negocio,,2025-02-01,2025-06-01,False,,False,False,False
+/p/SAZwAA4FDDcKHgYSEjorEQQQBAoDBg==,15,,Consultor Senior Real Estate Positive Impact,,2025-06-01,,False,,False,False,False
+/p/SAZwAggYDQkDMhYPFzc=,01,/c/SBVwFwgfDA8dAhAX,Alternative Investment Intern,intern,2006-05-01,2006-08-01,False,False,False,False,False
+/p/SAZwAggYDQkDMhYPFzc=,02,/c/SBVwFwgfDDcZCAsTAy0RPggEGAYZBAspNhoVDhcGDhkMCBg+GD5Z,Alternative Investment Intern,intern,2006-05-01,2006-08-01,False,False,False,False,False
+/p/SAZwAggYDQkDMhYPFzc=,03,/c/SBVwHQ8fAAQ=,Corporate Finance Analyst,employee,2007-01-01,2008-01-01,False,True,False,False,False
+/p/SAZwAggYDQkDMhYPFzc=,04,,Investment Banking,employee,2008-06-01,2010-01-01,False,True,False,False,False
+/p/SAZwAggYDQkDMhYPFzc=,05,,,executive,2010-12-01,2018-06-01,False,True,True,False,False
+/p/SAZwAggYDQkDMhYPFzc=,06,,"Co-Founder, CEO",executive,2010-12-01,2018-06-01,True,True,True,False,False
+/p/SAZwAggYDQkDMhYPFzc=,07,,"Co-Founder, CEO",executive,2010-12-01,2018-06-30,True,True,True,False,False
+/p/SAZwAggYDQkDMhYPFzc=,08,/c/SBVwGAQKFwYMAhcC,"Co-Founder, CEO",founder,2010-12-01,2018-06-01,True,True,False,True,False
+/p/SAZwAggYDQkDMhYPFzc=,09,/c/SBVwRVlcVA==,Co-Founder,founder,2011-01-01,2021-02-01,False,True,False,True,False
+/p/SAZwAggYDQkDMhYPFzc=,10,/c/SB9wRVlcVA==,Co-Founder,founder,2012-01-01,,False,True,False,True,False
+/p/SAZwAggYDQkDMhYPFzc=,11,/c/SBVwBwIZAA0BDgQUAjYSGA==,Board Member,executive,2015-01-01,,False,True,True,False,True
+/p/SAZwAggYDQkDMhYPFzc=,12,/c/SBVwBwkEEhgOCQ==,Head of Corporate Development,operator,2018-06-01,2019-08-01,False,True,False,False,False
+/p/SAZwAggYDQkDMhYPFzc=,13,/c/SBVwHxECOhsKAxYC,Board Member,advisor,2019-01-01,2024-03-01,False,False,False,False,True
+/p/SAZwAggYDQkDMhYPFzc=,14,/c/SBVwHxECOhsKAxYC,Board Member,board_member,2021-03-18,,False,False,False,False,True
+/p/SAZwAggYDQkDMhYPFzc=,15,/c/SBVwBwIZAA0BDgQUAjYSGA==,CEO,executive,2023-02-01,,True,True,True,False,False
+/p/SAZwAggYDQkDMhYPFzc=,16,/c/SBVwGAQKFwYMAhcC,"CEO, Founder",founder,,2018-06-01,True,,False,True,
+/p/SAZwAggYDQkDMhYPFzc=,17,/c/SBVwBwIZAA0BDgQUAjYSGA==,Chief Executive Officer,executive,,,True,True,True,False,False
+/p/SAZwAggYDQkDMhYPFzc=,18,/c/SB9wGRQPDBwOMhMCGCsBEw46GA4fEQkTLQc=,Advisor,advisor,,,False,False,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,01,,Undergraduate Student Researcher,employee,2012-01-01,2013-06-01,False,True,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,02,,Undergraduate Student Researcher,,2012-01-01,2013-06-01,False,,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,03,/c/SBVwGA4YOgkDDAgIBQAaAB8MBwEMCTgaPhYOGQQcAB8c,Post Baccalaureate Research,employee,2013-06-01,2014-08-01,False,True,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,04,/c/SBVwGA4YOgkDDAgIBQAaAB8MBwEMCTgaPhYOGQQcAB8c,Graduate Research Assistant,employee,2015-06-01,2016-06-01,False,True,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,05,,Co-founder & CEO,,2016-10-01,,True,,False,True,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,06,/c/SBVwRBkbFwcFCAYT,Co-founder & CEO,founder,2016-10-01,,True,True,False,True,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,07,/c/SBVwRBkbFwcFCAYT,"Co-Founder, Co-Chief Executive Officer & Board Member",founder,2017-01-01,,True,True,False,True,True
+/p/SAZwAwgHCTcYDBcVEzErUVtU,08,,Technical Advisor,advisor,2017-03-01,2017-05-01,False,False,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,09,/c/SBVwFgAYDAswDBETEzEACAQLNxsCDgIY,Technical Advisor,advisor,2017-03-01,2017-05-01,False,,False,False,False
+/p/SAZwAwgHCTcYDBcVEzErUVtU,10,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,01,/c/SBVwFg4EHzcOAQkCGAAcAAYMBBsCCw==,Summer Intern,intern,2010-06-01,2010-08-01,False,False,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,02,,Summer Analyst,employee,2011-06-01,2011-08-01,False,True,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,03,,Summer Analyst,,2011-06-01,2011-08-01,False,,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,04,/c/SBVwFg0KBgMcGQoJEwATEwQQGA==,Summer Analyst,employee,2012-06-01,2012-08-01,False,True,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,05,/c/SBVwFg0KBgMcGQoJEwATEwQQGA==,Analyst,employee,2013-06-01,2014-12-01,False,True,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,06,/c/SBVwFwAPFw0=,Director,employee,2014-12-01,2016-09-01,False,True,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,07,,Cofounder,founder,2017-01-01,2017-06-01,False,True,False,True,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,08,,Founder,founder,2017-11-01,2019-11-01,False,True,False,True,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,09,,Independent,employee,2020-01-01,2021-08-01,False,True,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,10,,Independent,,2020-01-01,2021-08-01,False,,False,False,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,11,/c/SBVwRBkYFQQGGRY=,Co-Founder & Chief Executive Officer,founder,2021-01-01,,True,True,False,True,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,12,/c/SBVwRBkYFQQGGRY=,Cofounder,founder,2021-09-01,,False,True,False,True,False
+/p/SAZwAwgHCQEOADoKHzEHCQ4S,13,,Co-Founder,founder,2021-09-01,,False,,False,True,
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,01,,Finance & Logistics Intern,employee,2008-06-01,2008-09-30,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,02,,Founder & Director (3 yearly tenures),false_position,2009-04-01,2010-03-31,False,False,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,03,,Marketing and Sales Manager,employee,2009-07-01,2009-12-31,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,04,,VC Sales (Fulbright Academic Training Program),employee,2009-07-01,2010-02-01,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,05,,Associate Analyst,employee,2009-10-01,2010-09-01,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,06,,M&A Investment Analyst,employee,2011-06-01,2011-09-01,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,07,,Capstone Financial Analyst,employee,2011-08-01,2012-01-01,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,08,,The European Institute Departmental Research Fellow,employee,2011-09-01,2013-01-01,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,09,/c/SBVwRVFbCA0BGQoVBQ==,Co-Founder & Chief Executive Officer,founder,2013-01-01,,True,True,False,True,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,10,,"Private, Artillery, Military service",employee,2013-11-01,2014-08-01,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,11,,Admissions Consultant,employee,2014-09-01,2016-10-31,False,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,12,,CEO,executive,2016-11-01,2020-08-31,True,True,True,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,13,,Co-founder & CEO,founder,2016-11-01,2021-08-01,True,True,False,True,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,14,,"CoFounder, Board of Directors, Technology Partner",founder,2017-09-01,,False,True,False,True,True
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,15,/c/SBVwRVFbCA0BGQoVBQ==,CEO,executive,2020-09-01,,True,True,True,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,16,/c/SBVwRVFbCA0BGQoVBQ==,Co-founder & CEO,founder,2021-09-01,,True,True,False,False,False
+/p/SAZwDQgEFw8AHjoJHzQbDQ4RCQQEFg==,17,/c/SBVwRVFbCA0BGQoVBQ==,CEO & Founder,founder,,,True,,False,True,
+/p/SAZwDQ4FAgIGAzoXFy0f,01,,Bachelor of Science,alumni,2008-02-01,2012-05-01,False,False,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,02,,Bachelor of Science,alumni,2008-02-01,2012-05-01,False,False,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,03,/c/SBVwHAAZEwkdCToSGDYCBBkWARsU,Research Assistant,employee,2010-06-01,2011-02-01,False,True,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,04,/c/SBVwGQAYFgkMBRAUEysAEjQMBhwZDBMDKxE+BAM3GwgGDxgwGA4MHDcCBBE=,Ph.D. candidate,alumni,2012-09-01,2019-07-01,False,False,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,05,/c/SBVwGQAYFgkMBRAUEysAEjQMBhwZDBMDKxE+BAM3GwgGDxgwGA4MHDcCBBE=,Postdoctoral Researcher,alumni,2019-07-01,2019-12-01,False,False,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,06,/c/SBVwEwgFDg8AMgcOGSgbEwAW,Scientist I,employee,2019-12-01,2020-05-01,False,True,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,07,/c/SBVwBAgdChwNBAo=,Scientist I,employee,2020-07-01,2021-02-01,False,True,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,08,,Synthetic Biology Consultant,employee,2020-07-01,2022-12-01,False,True,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,09,/c/SBVwEQwbFw0cHjoTHjoGABsAHRsEBhQ=,Synthetic Biology Consultant,,2020-07-01,2022-12-01,False,,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,10,/c/SBVwBAgdChwNBAo=,Scientist II,employee,2021-03-01,2023-09-01,False,True,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,11,/c/SBVwBAgdChwNBAo=,"Scientist III, Technical Project Lead",employee,2023-10-01,2024-05-01,False,True,False,False,False
+/p/SAZwDQ4FAgIGAzoXFy0f,12,/c/SBVwRVlfXDcNBAo=,Co-Founder & CSO,founder,2024-01-01,,True,True,False,True,False
+/p/SAZwDQ4FAgIGAzoXFy0f,13,/c/SBVwRVlfXDcNBAo=,"Founder, CSO",founder,2024-06-01,,True,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,01,,Communications Engineer,employee,2006-06-01,2011-08-01,False,True,False,False,False
+/p/SAZwDgAAOgsAAQA=,02,,Design Engineer,employee,2013-08-01,2015-12-01,False,True,False,False,False
+/p/SAZwDgAAOgsAAQA=,03,,Design Engineer,,2013-08-01,2015-12-01,False,,False,False,False
+/p/SAZwDgAAOgsAAQA=,04,,Web Developer,employee,2015-11-01,2016-03-01,False,True,False,False,False
+/p/SAZwDgAAOgsAAQA=,05,,Co-Founder,founder,2015-12-01,2017-05-01,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,06,,Co-Founder,founder,2016-01-01,2018-02-01,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,07,,Founder,employee,2016-11-01,2017-07-01,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,08,/c/SBVwFREbChsGGQA4AjoXCQUKBAAKDAIF,Technical Product Manager,employee,2017-07-01,2018-06-01,False,True,False,False,False
+/p/SAZwDgAAOgsAAQA=,09,/c/SBVwHQIECzddXVRR,Community Lead,employee,2017-08-01,2018-03-01,False,True,False,False,False
+/p/SAZwDgAAOgsAAQA=,10,,Chief Technology Officer,executive,2018-01-01,2019-03-31,True,True,True,False,False
+/p/SAZwDgAAOgsAAQA=,11,/c/SBVwBw0CCw8cBQoTKTkdDwoLCwo=,Co-Founder & Chief Technology Officer,founder,2018-01-01,,True,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,12,,Chief Technology Officer,,2018-01-01,2019-03-01,True,,False,False,False
+/p/SAZwDgAAOgsAAQA=,13,,CEO,executive,2018-03-10,2020-08-01,False,,True,False,
+/p/SAZwDgAAOgsAAQA=,14,,"Chairman, Testing Working group",employee,2018-11-01,2021-04-01,False,True,False,False,False
+/p/SAZwDgAAOgsAAQA=,15,,Founder/CEO,,2019-03-01,2022-03-01,True,,False,True,False
+/p/SAZwDgAAOgsAAQA=,16,,Founder/CEO,founder,2019-03-01,2022-03-31,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,17,,Technical Advisor,advisor,2020-07-01,2022-08-01,False,False,False,False,False
+/p/SAZwDgAAOgsAAQA=,18,,Co-Founder/CTO,founder,2020-08-01,2023-10-01,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,19,/c/SBVwFw4FCw0XGQQXHw==,Technical Advisor,advisor,2020-09-12,,False,,False,False,
+/p/SAZwDgAAOgsAAQA=,20,/c/SBVwFw4PAFwdCAsG,Co-Founder,founder,2021-03-01,2024-01-01,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,21,/c/SBVwFw4PAFwdCAsG,Founder,founder,2021-02-08,,False,,False,True,
+/p/SAZwDgAAOgsAAQA=,22,,Technical Advisor,advisor,2021-08-01,2022-11-01,False,False,False,False,False
+/p/SAZwDgAAOgsAAQA=,23,,Technical Advisor,advisor,2022-04-01,,False,False,False,False,False
+/p/SAZwDgAAOgsAAQA=,24,/c/SBVwRBkJCh8=,Co-Founder,founder,2023-01-01,,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,25,/c/SB9wGhQGBw0dMgYGBjYAAAc=,Co-Founder & Managing Partner,founder,2023-06-01,,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,26,,Co-Founder & Managing Partner,founder,2023-06-01,,False,True,False,True,False
+/p/SAZwDgAAOgsAAQA=,27,/c/SBVwBw0CCw8cBQoTKTkdDwoLCwo=,Co-founder,founder,,,False,,False,True,
+/p/SAZwDgAAOgsAAQA=,28,/c/SB9wHQ8PDB4GCRAGGg==,Angel Investor,employee,,,False,True,False,False,False

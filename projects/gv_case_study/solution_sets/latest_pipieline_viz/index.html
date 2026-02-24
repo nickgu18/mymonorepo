@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founder Ranking Pipeline</title>
+  <style>
+    :root {
+      --background-color: #f8f9fa;
+      --text-color: #212529;
+      --heading-color: #343a40;
+      --primary-color: #007bff;
+      --border-color: #dee2e6;
+      --card-background-color: #ffffff;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: var(--heading-color);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    .iterations {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .iter {
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .iter:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .iter-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .iter-title a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .iter-title a:hover {
+      text-decoration: underline;
+    }
+    .iter-desc {
+      font-size: 1rem;
+      color: #495057;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Founder Ranking Pipeline</h1>
+    <p>
+      Click into each iteration to see how the data pipeline evolves.
+      Or <a href="compare.html" style="color: var(--primary-color); font-weight: 600;">compare two iterations</a> side-by-side.
+    </p>
+
+    <h2>Iterations</h2>
+    <div class="iterations">
+      <div class="iter">
+        <div class="iter-title"><a href="iteration_initial.html">Initial Iteration</a></div>
+        <div class="iter-desc">
+          Notebook-only implementation: ad-hoc loading/cleaning, founder matrix built directly in the notebook,
+          labels joined on the last founded company, and a single per-industry Train/Test split.
+        </div>
+      </div>
+
+      <div class="iter">
+        <div class="iter-title"><a href="iteration_2.html">Iteration 2</a></div>
+        <div class="iter-desc">
+          Pipeline moved into shared library code (config, loaders, <code>FeaturePipeline</code>, training dataset,
+          splitters, <code>train_ranker</code>) with a per-industry temporal Train/Test split and NDCG reporting.
+        </div>
+      </div>
+
+      <div class="iter">
+        <div class="iter-title"><a href="iteration_3.html">Iteration 3</a></div>
+        <div class="iter-desc">
+          Refined label construction (last labeled company per founder), reduced row loss, and introduced a
+          per-industry temporal Train / Validation / Test split, with training on Train+Val and true held-out
+          evaluation on Test plus SHAP explanations.
+        </div>
+      </div>
+
+      <div class="iter">
+        <div class="iter-title"><a href="iteration_4.html">Iteration 4 (Proposed)</a></div>
+        <div class="iter-desc">
+          Fixes temporal logic by using <strong>best exit (max multiple) company</strong> as the label instead of
+          last labeled company. Features are strictly built from information available <em>as of the founding date</em>
+          of that best company, and data-dependent transformations are fit on train only to prevent leakage.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

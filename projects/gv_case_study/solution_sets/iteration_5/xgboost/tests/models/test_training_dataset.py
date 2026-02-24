@@ -1,0 +1,52 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+import pandas as pd
+import sys
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.common.config import load_config
+from src.data.loaders import clean, load_raw, load_targets
+from src.models.training_pipeline import build_training_dataset
+
+
+def test_build_training_dataset_matches_xgboost_process_step_3_2() -> None:
+    cfg = load_config()
+
+    raw_training = load_raw(cfg.data, dataset="training")
+    raw_ranking = load_raw(cfg.data, dataset="ranking")
+    clean_training = clean(raw_training)
+    clean_ranking = clean(raw_ranking)
+    targets = load_targets(cfg.data)
+
+    train_df = build_training_dataset(clean_training, clean_ranking, targets, cfg.features)
+
+    # After attaching targets, removing leakage, and dropping rows with missing
+    # founding year, we expect 4,763 founders.
+    assert train_df.shape[0] == 4763
+
+    # Training frame should contain IDs, metadata, simplified pre-split features, and label.
+    expected_cols = [
+        "person_id",
+        "company_id",
+        "industry",
+        "company_founded",
+        cfg.features.target_column,
+        "performance",
+        "education_tier",
+        "education_level_score",
+    ]
+    for col in expected_cols:
+        assert col in train_df.columns
+
+    # All training companies should come from the labeled target table.
+    target_company_ids = set(targets["company_id"].astype(str))
+    assert train_df["company_id"].astype(str).isin(target_company_ids).all()
+
+    # company_founded should be present for every training founder; rows with
+    # missing founding year are removed inside the training dataset builder.
+    assert train_df["company_founded"].isna().sum() == 0

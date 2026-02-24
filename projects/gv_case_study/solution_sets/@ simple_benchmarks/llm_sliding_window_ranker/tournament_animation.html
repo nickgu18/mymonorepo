@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Ranker (Top 4)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: #569cd6;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #858585;
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #252526;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        .node {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #333333;
+            border: 2px solid #454545;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #d4d4d4;
+            transition: all 0.8s ease;
+            z-index: 2;
+            font-size: 14px;
+        }
+
+        .node.active-bracket {
+            background-color: #264f78;
+            border-color: #3794ff;
+        }
+
+        .node.winner-bracket {
+            background-color: #264f78;
+            border-color: #3794ff;
+            box-shadow: 0 0 10px #3794ff;
+        }
+
+        .node.loser-bracket {
+            opacity: 0.3;
+            background-color: #2d2d2d;
+        }
+
+        .node.top-k {
+            background-color: #d7ba7d;
+            border-color: #dcdcaa;
+            color: #1e1e1e;
+            box-shadow: 0 0 15px #dcdcaa;
+            transform: scale(1.1);
+            z-index: 3;
+        }
+
+        .top-area {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            height: 100px;
+            border: 2px dashed #454545;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top-area-label {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            color: #d7ba7d;
+            font-weight: bold;
+        }
+
+        .controls {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #0e639c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1177bb;
+        }
+
+        button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+
+        .info {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ce9178;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tournament Ranker (Top 4)</h1>
+    <div class="subtitle">Finding the Top 4 nodes sequentially using tournament brackets.</div>
+    <div class="info" id="info">Press Start to find Top 4</div>
+
+    <div class="container" id="container">
+        <div class="top-area" id="top-area">
+            <div class="top-area-label">Top 4 Found</div>
+        </div>
+        <!-- Nodes will be added here -->
+    </div>
+
+    <div class="controls">
+        <button id="start-btn">Start Tournament</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const infoEl = document.getElementById('info');
+        const startBtn = document.getElementById('start-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const topArea = document.getElementById('top-area');
+
+        const NUM_NODES = 16;
+        let nodeElements = [];
+        let isRunning = false;
+        let topFoundCount = 0;
+
+        function init() {
+            // Keep top area and label, clear nodes
+            const nodesToKeep = [topArea];
+            Array.from(container.children).forEach(child => {
+                if (!nodesToKeep.includes(child)) {
+                    container.removeChild(child);
+                }
+            });
+
+            const nodes = Array.from({ length: NUM_NODES }, (_, i) => i + 1);
+            // Shuffle nodes
+            for (let i = nodes.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [nodes[i], nodes[j]] = [nodes[j], nodes[i]];
+            }
+
+            nodeElements = [];
+            for (let i = 0; i < NUM_NODES; i++) {
+                const el = document.createElement('div');
+                el.className = 'node';
+                el.textContent = nodes[i];
+                // Random initial positions
+                el.style.left = `${Math.random() * 500 + 50}px`;
+                el.style.top = `${Math.random() * 400 + 100}px`;
+                container.appendChild(el);
+                nodeElements.push({ el: el, val: nodes[i], active: true, inTop: false });
+            }
+            infoEl.textContent = 'Press Start to find Top 4';
+            startBtn.disabled = false;
+            topFoundCount = 0;
+        }
+
+        async function findNextTop() {
+            if (topFoundCount >= 4) return;
+            topFoundCount++;
+            infoEl.textContent = `Finding Rank ${topFoundCount}...`;
+
+            // Reset non-top nodes for next round
+            nodeElements.forEach(node => {
+                if (!node.inTop) {
+                    node.el.className = 'node';
+                    node.active = true;
+                    node.el.style.opacity = 1;
+                }
+            });
+
+            // Arrange remaining active nodes into groups
+            const activeNodes = nodeElements.filter(n => n.active && !n.inTop);
+            const numActive = activeNodes.length;
+            const numGroups = Math.ceil(numActive / 4);
+
+            const groupPositions = [
+                { x: 50, y: 150 }, { x: 250, y: 150 }, { x: 450, y: 150 },
+                { x: 50, y: 350 }, { x: 250, y: 350 }, { x: 450, y: 350 }
+            ];
+
+            activeNodes.forEach((node, i) => {
+                const groupIdx = Math.floor(i / 4);
+                const inGroupIdx = i % 4;
+                const gx = groupPositions[groupIdx].x + (inGroupIdx % 2) * 45;
+                const gy = groupPositions[groupIdx].y + Math.floor(inGroupIdx / 2) * 45;
+                node.el.style.left = `${gx}px`;
+                node.el.style.top = `${gy}px`;
+            });
+
+            await new Promise(r => setTimeout(r, 1000));
+
+            // Round 1 of this iteration
+            const round1Winners = [];
+            for (let g = 0; g < numGroups; g++) {
+                const groupNodes = activeNodes.slice(g * 4, (g + 1) * 4);
+                if (groupNodes.length === 0) continue;
+
+                let bestNode = null;
+                groupNodes.forEach(node => {
+                    if (!bestNode || node.val < bestNode.val) bestNode = node;
+                });
+
+                groupNodes.forEach(node => {
+                    if (node === bestNode) {
+                        node.el.classList.add('winner-bracket');
+                    } else {
+                        node.el.classList.add('loser-bracket');
+                        node.active = false;
+                    }
+                });
+                round1Winners.push(bestNode);
+            }
+
+            await new Promise(r => setTimeout(r, 1000));
+
+            // Move winners to center for final round of this iteration
+            const centerPositions = [
+                { x: 250, y: 250 }, { x: 300, y: 250 },
+                { x: 250, y: 300 }, { x: 300, y: 300 },
+                { x: 275, y: 275 } // fallback
+            ];
+            round1Winners.forEach((node, i) => {
+                const pos = centerPositions[i] || centerPositions[4];
+                node.el.style.left = `${pos.x}px`;
+                node.el.style.top = `${pos.y}px`;
+            });
+
+            await new Promise(r => setTimeout(r, 1000));
+
+            // Find winner of this iteration
+            let champion = null;
+            round1Winners.forEach(node => {
+                if (!champion || node.val < champion.val) champion = node;
+            });
+
+            // Move champion to Top area
+            champion.el.className = 'node top-k';
+            champion.inTop = true;
+            champion.active = false;
+
+            // Position in top area
+            const topX = 20 + (topFoundCount - 1) * 45;
+            const topY = 30;
+            // Get absolute position of top area to place node correctly
+            // Actually, simpler to append to topArea but that breaks absolute positioning relative to container
+            // Let's calculate absolute position within container
+            champion.el.style.left = `${600 + (topFoundCount - 1) * 45}px`;
+            champion.el.style.top = `${50}px`;
+
+            // Mark others as losers for this round
+            round1Winners.forEach(node => {
+                if (node !== champion) {
+                    node.el.classList.remove('winner-bracket');
+                    node.el.classList.add('loser-bracket');
+                    node.active = false;
+                }
+            });
+
+            await new Promise(r => setTimeout(r, 1000));
+        }
+
+        async function animate() {
+            if (isRunning) return;
+            isRunning = true;
+            startBtn.disabled = true;
+
+            for (let i = 0; i < 4; i++) {
+                if (!isRunning) break;
+                await findNextTop();
+            }
+
+            if (isRunning) {
+                infoEl.textContent = "Top 4 Found!";
+                isRunning = false;
+                startBtn.disabled = false;
+            }
+        }
+
+        startBtn.addEventListener('click', animate);
+        resetBtn.addEventListener('click', () => {
+            isRunning = false;
+            init();
+        });
+
+        init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+guyu@eldergu:~/Desktop/gcli/agent-prototypes$ /usr/local/google/home/guyu/Desktop/gcli/agent-prototypes/venv/bin/python /usr/local/google/home/guyu/Desktop/gcli/tools/verify_questions.py /usr/local/google/home/guyu/Desktop/gcli/agent-prototypes/experiments/qabench/2025-10-08/4-goofy-goodall/multi/Stremio__stremio-web --concurrency 25
+Found 116 verification files to analyze.
+
+--- Analysis for: 0d1951bc_verification_ans1.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the provided answer specify that the user's language selection is persisted using the browser's `localStorage`?"
+      Reason: The question uses the phrase 'the provided answer', which directly refers to a response generated in a previous step, matching the definition of 'generated_answer'.
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the answer state that a React Context is used to make the current language available throughout the application's component tree?"
+      Reason: The question uses the phrase 'Does the answer state that...', which explicitly refers to and asks to verify the content of a pre-existing answer.
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the answer explain that translated strings are loaded from language-specific JSON files?"
+      Reason: The question uses the term 'the answer' to refer to a response that has already been provided, which aligns with the definition of a 'generated_answer'. It seeks to verify the content within that response.
+
+--- Analysis for: 0d1951bc_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `useSettings` hook (`src/common/useSettings.ts`) use the `useModelState` hook to subscribe to the `core.settings.changed` event?"
+      Reason: The question is asking to verify a very specific implementation detail: whether the `useSettings` hook uses the `useModelState` hook for the explicit purpose of subscribing to the `core.settings.changed` event. This level of specificity suggests it is fact-checking a statement that could have been made in a `generated_answer`.
+
+--- Analysis for: 0d1951bc_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 0d1951bc_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `useTranslate` hook, defined in `src/common/useTranslate.js`, call the `useSettings` hook to get the current language and then dynamically import the corresponding language JSON file?"
+      Reason: The question is asking to verify a detailed, multi-step implementation within a specific piece of code. It's not a general inquiry, but a factual check of a sequence of actions (calling a hook, getting a value, and dynamically importing a file). This structure is characteristic of a question designed to validate a specific claim, such as one that would be found in a `generated_answer`.
+
+--- Analysis for: 1553b1b7_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the router file at `src/router/index.js` import and use a configuration from `src/App/routerViewsConfig.js` to map routes to components?"
+      Reason: The question asks to verify a specific, factual claim about how two files in the codebase interact. This is a direct check of information that would typically be found in an AI-generated answer explaining the project's routing mechanism.
+
+--- Analysis for: 1553b1b7_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 1553b1b7_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 159c81f2_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 245bee7d_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the `toast.show` method's options object accept a `type` property that can be one of the following strings: 'success', 'error', 'info', or 'alert'?"
+      Reason: The question is asking to verify a specific, factual claim about the properties of a method's options. This is a direct way to check the correctness of a potential AI-generated code snippet or explanation that used that method, and therefore conceptually refers to a 'generated_answer'.
+
+--- Analysis for: 245bee7d_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Is the duration for toast notifications fixed at 3000 milliseconds and not configurable as an argument to the `addToast` function?"
+      Reason: The question seeks to confirm a specific technical implementation detail: a hardcoded value (3000 milliseconds) and the lack of a configuration option in a specific function (`addToast`). This is a classic verification of a factual statement that would likely have been presented in a `generated_answer`.
+
+--- Analysis for: 3884af73_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3884af73_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 3d8a1369_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Is there a hook named `useProfile` defined in `src/common/useProfile.js` that returns the user's profile information, including the `authKey`?"
+      Reason: The question is asking to verify a specific, factual claim about the codebase (the existence, location, and return value of a hook). This is a direct check on information that could have been provided in a `generated_answer`.
+
+--- Analysis for: 4841f118_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 4841f118_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the `selectServerUrl` function dispatch an action object where the `action` property is `'Ctx'` and the `args.action` property is `'UpdateSettings'`?"
+      Reason: The question is asking to verify the specific behavior and implementation details of a function (`selectServerUrl`). This is a direct examination of a code artifact. If this code were produced by an AI, the question would be verifying the 'generated_answer'.
+
+--- Analysis for: 4841f118_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 50ff1d5e_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 588ef3d8_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Is it true that the `ModalsContainerProvider` is not used within the component defined in `src/App/App.js`?"
+      Reason: The question asks to verify a factual statement about the codebase. This statement is the kind of information that would be contained within a `generated_answer`, and the user is asking for it to be confirmed.
+
+--- Analysis for: 58d1d529_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 58d1d529_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 603a22bc_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the application use a hook named `useModelState` to access the user's profile, which contains the list of installed addons?"
+      Reason: The question is asking to verify a specific, detailed claim about how the application's code is implemented. This type of detailed statement is what a `generated_answer` would typically contain when explaining how a feature works. The question is conceptually checking the factual accuracy of such a generated response.
+
+--- Analysis for: 61be376c_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 61be376c_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 651898e6_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 82f0c213_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans1.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `useOutsideClick` hook accept a function as its primary argument and return a React `ref` object?"
+      Reason: The question seeks to verify the functionality of a specific code component (`useOutsideClick` hook), asking about its argument and return types. This is the kind of factual statement that a `generated_answer` would provide when explaining how to use the hook. The question is therefore conceptually verifying the claims made in a potential `generated_answer`.
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the implementation of the `useOutsideClick` hook involve checking if a `mousedown` or `click` event's target is contained within the element associated with its returned `ref`?"
+      Reason: The question seeks to verify the specific technical implementation of a piece of code (a `useOutsideClick` hook). This is a direct check on the factual correctness of a potential `generated_answer` that would have provided or explained this implementation.
+
+--- Analysis for: 86705ba5_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 86705ba5_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `useOutsideClick` hook's implementation show that it accepts a callback function as its primary argument?"
+      Reason: The question asks to verify a specific detail about a piece of code's implementation. This is a direct check on information that would likely have been presented as the 'generated_answer' in a prior turn.
+
+--- Analysis for: 903ad80b_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Is a component named `Loader` used as the `fallback` prop for the React `<Suspense>` boundary that catches promises thrown by `CoreSuspender`?"
+      Reason: The question is asking to verify a specific technical implementation detail. This detail would be contained within the 'generated_answer' (the code produced by the AI). The question checks the content of that answer for correctness without referring to the answer itself.
+
+--- Analysis for: 903ad80b_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 903ad80b_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is a higher-order component named `withCoreSuspender` used to wrap page components (like `Board`) and provide a specific fallback component (like `BoardFallback`)?"
+      Reason: The question is asking to verify a very specific and detailed implementation pattern. This level of detail suggests it is confirming a statement that was likely made in a prior AI-generated response.
+
+--- Analysis for: 98904ff8_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 98904ff8_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 98904ff8_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: 98904ff8_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is the final "Continue Watching" list sorted in descending order based on the `lastWatched` timestamp of each item?"
+      Reason: The question is asking to verify a specific property (descending sort order by `lastWatched` timestamp) of a final artifact (the '"Continue Watching" list'). This list is the result of a previous step, which corresponds to the 'generated_answer'.
+
+--- Analysis for: a63a57da_verification_ans1.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the data structure used for the full metadata details page include properties like `cast`, `director`, or `streams`, which are absent from the `MetaItem` and `LibraryItem` types?"
+      Reason: The user is asking to verify the contents of a specific data structure ('the full metadata details page'). This implies that this data structure was the subject of a previous turn, making this a question about the `generated_answer`.
+
+--- Analysis for: a63a57da_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: a63a57da_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: a63a57da_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `MetaItem` type definition in `src/types/MetaItem.d.ts` include all of the properties from the `MetaPreview` type, making it a superset?"
+      Reason: The question is asking to verify a specific, factual condition about the state of the code. This is a common pattern for checking if a code modification, which would be the `generated_answer`, has resulted in the desired state.
+
+--- Analysis for: a63a57da_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the `MetaItemPreview` object definition include properties such as `posterShape` and `behaviorHints`?"
+      Reason: The question is asking to verify the contents of a specific object definition (`MetaItemPreview`). This implies that the definition was likely provided or 'generated' in a previous turn, and the user is now asking a follow-up question to confirm details about that 'generated_answer'.
+
+--- Analysis for: b310ec73_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: b310ec73_verification_ans3.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "In `src/common/useStreamingServer.js`, does the `useStreamingServer` hook call the `useModelState` hook with the string `'streaming_server'` as an argument?"
+      Reason: The question asks to verify a specific, factual claim about the codebase. This implies the user is checking the validity of information they have received, which is conceptually the 'generated_answer'.
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the `useStreamingServer` hook's returned state include an `error` property that originates from the `streaming_server` model?"
+      Reason: The question is asking about the properties of a state returned by a hook that interacts with a model. This state is conceptually the `generated_answer` or contains the `generated_answer`.
+
+--- Analysis for: b310ec73_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: b310ec73_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "In the `useStreamingServer` hook's `useEffect`, is `core.transport.getStreamingServerSettings()` called to fetch server settings?"
+      Reason: The question is structured to verify a specific factual claim about the code's implementation. It is not asking for a general explanation but is confirming a detail that would likely be present in a `generated_answer` describing the code's functionality.
+
+--- Analysis for: be576224_verification_ans1.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Is a React Context named `ServicesContext` initialized and provided in `src/App/App.js` to make services available throughout the application?"
+      Reason: The question asks to verify a specific state of the code, which is a direct result of a previous code generation or modification step. It is checking if the 'generated_answer' (the code change) was implemented correctly according to the specified requirements.
+
+--- Analysis for: be576224_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: be576224_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: be576224_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `useModelState` hook, defined in `src/common/useModelState.js`, consume the `ServicesContext` to allow a component to subscribe to a specific part of the core service's state?"
+      Reason: The question is asking to verify a specific, factual claim about the implementation and purpose of the `useModelState` hook. It's not an open-ended query, but rather a confirmation of a detailed statement that could have been a `generated_answer`.
+  [!] Self-reference DETECTED in Question #3:
+      Question: "Does the `useProfile.js` hook internally call the `useModelState` hook with the string literal `'profile'` as an argument?"
+      Reason: The question seeks to confirm a specific, factual detail about the internal workings of a piece of code. This is the type of assertion that a `generated_answer` would make when explaining or describing the code's functionality. Therefore, the question is conceptually verifying a claim from a potential `generated_answer`.
+
+--- Analysis for: be576224_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the implementation of the `useModelState` hook involve adding an event listener for a 'NewState' event on the core service instance?"
+      Reason: The question seeks to confirm a specific, factual detail about a piece of code's implementation. This is a form of verification that checks the correctness of information that would typically be found in a previously generated, detailed explanation of that code.
+
+--- Analysis for: cc40b3b9_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans2.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the file `src/services/KeyboardShortcuts/KeyboardShortcuts.js` contain the primary logic that handles keyboard shortcuts for video playback?"
+      Reason: The question is asking to verify a specific, factual claim about the codebase. This is a typical pattern for confirming information that would have been presented in a 'generated_answer' from a previous turn.
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Is there a function specifically named `streamKeydownHandler` within the `src/services/KeyboardShortcuts/KeyboardShortcuts.js` file?"
+      Reason: The question is asking to verify a specific, factual claim (the existence of a function in a file), which is a common way to check the accuracy of a previous statement or a 'generated_answer'.
+
+--- Analysis for: cc40b3b9_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: cc40b3b9_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Inside the keydown event handler within `src/routes/Player/Player.js`, is the 'Space' key mapped to an action that plays or pauses the video?"
+      Reason: The question is a closed-ended (yes/no) query that seeks to confirm a specific, factual detail about the codebase. This structure is typical for verifying a piece of information that could have been provided as a `generated_answer` in a prior step.
+
+--- Analysis for: cc40b3b9_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: ce677642_verification_ans5.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans4.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: db254ecb_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #3:
+      Question: "When a torrent file is processed, does the code call `streams.push` to add a new stream object that includes the torrent's info hash and announce trackers?"
+      Reason: The question seeks to confirm a specific, detailed fact about a process ('does the code call `streams.push`...'). This is a typical way to verify the accuracy of information that would have been presented in a 'generated_answer' explaining the code's functionality.
+
+--- Analysis for: f71306a4_verification_ans1.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: f71306a4_verification_ans2.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: f71306a4_verification_ans3.json ---
+  [+] No self-referential questions found.
+
+--- Analysis for: f71306a4_verification_ans4.json ---
+  [!] Self-reference DETECTED in Question #1:
+      Question: "Does the codebase contain a utility function named `getVisibleChildrenRange` that is used to calculate the range of visible items in a scrollable container?"
+      Reason: The question seeks to verify a specific, factual claim about the codebase—the existence and purpose of a function named `getVisibleChildrenRange`. This is a direct check on information that would typically be provided in a `generated_answer`.
+
+--- Analysis for: f71306a4_verification_ans5.json ---
+  [!] Self-reference DETECTED in Question #2:
+      Question: "Does the `HorizontalScroll` component import and use the `getVisibleChildrenRange` utility to determine which child elements to render?"
+      Reason: The question asks to verify a specific, factual claim about the state of the codebase (i.e., whether one component uses a specific utility). This is the kind of assertion an AI's `generated_answer` would make when describing or implementing a code change. The question is designed to check if that assertion is true.

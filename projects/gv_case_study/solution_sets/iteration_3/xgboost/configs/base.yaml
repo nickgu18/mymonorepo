@@ -1,0 +1,59 @@
+project:
+  root: ~/Desktop/gehirn/gv_case_study/xgboost
+
+data:
+  raw_dir: ${project.root}/src/data/real
+  curated_dir: ${project.root}/src/data/training
+  training_file: ${data.curated_dir}/target_variable_training.csv
+  schema_version: v1
+  ranking_files:
+    founder_experience: founder_experience.csv
+    education: education.csv
+    company_info: company_info.csv
+  training_files:
+    founder_experience: founder_experience_training.csv
+    education: education_training.csv
+    company_info: company_info_training.csv
+
+features:
+  registry: ${project.root}/src/data/features
+  current_year: 2025
+  target_column: label
+  selected_columns:
+    - performance
+    - education_tier
+    - education_level_score
+    - founder_has_perf
+    - founder_perf_mean
+    - founder_perf_max
+    - founder_perf_last
+
+model:
+  artifact_dir: ${project.root}/mlruns/models
+  algorithm: xgboost_ranker
+  hyperparameters:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.7
+    tree_method: hist
+    eval_metric: ndcg@20
+    objective: rank:ndcg
+
+tracking:
+  uri: file:///Users/yugu/Desktop/gehirn/gv_case_study/xgboost/mlruns
+  experiment_name: founder_ranking_v3
+
+registry:
+  uri: ${model.artifact_dir}/artifacts.json
+  model_path: ${model.artifact_dir}/ranker.json
+
+outputs:
+  batch_predictions: ${project.root}/outputs/preds.csv
+
+logging:
+  level: INFO
+  format: json
+  redact_fields:
+    - company_name

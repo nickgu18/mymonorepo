@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saga Configuration</title>
+  <style>
+    body {
+      font-family: 'Hiragino Mincho ProN', 'MS PMincho', serif;
+      background-color: #f4f1e9;
+      color: #333;
+      margin: 0;
+      padding: 2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+    .user-info {
+      text-align: right;
+      margin-bottom: 2em;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .config-section {
+      margin-bottom: 2em;
+    }
+    .config-item, .rule-item {
+      margin-bottom: 1em;
+      padding: 0.5em;
+      border-left: 3px solid #8b4513;
+    }
+    .config-key, .rule-name {
+      font-weight: bold;
+    }
+    .config-value, .rule-description {
+      margin-left: 1em;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      background-color: #f9f9f9;
+      margin-bottom: 0.5em;
+      padding: 0.8em;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="user-info">Logged in as: <?= user ?></div>
+    <h1>Saga Configuration</h1>
+
+    <div class="config-section">
+      <h2>Parameters</h2>
+      <? Object.keys(config).forEach(key => { ?>
+        <? if (key !== 'RULES') { ?>
+          <div class="config-item">
+            <span class="config-key"><?= key ?>:</span>
+            <span class="config-value"><?= config[key] ?></span>
+          </div>
+        <? } ?>
+      <? }); ?>
+    </div>
+
+    <? if (config && config.RULES) { ?>
+      <div class="config-section">
+        <h2>Rules</h2>
+        <ul>
+          <? if (Array.isArray(config.RULES)) { ?>
+            <? config.RULES.forEach(rule => { ?>
+              <li><?= rule ?></li>
+            <? }); ?>
+          <? } else { ?>
+            <li><?= config.RULES ?></li>
+          <? } ?>
+        </ul>
+      </div>
+    <? } ?>
+  </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founder Ranking Pipeline – Initial Iteration</title>
+  <style>
+    :root {
+      --background-color: #f8f9fa;
+      --text-color: #212529;
+      --heading-color: #343a40;
+      --primary-color: #007bff;
+      --border-color: #dee2e6;
+      --card-background-color: #ffffff;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      --arrow-color: #6c757d;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+    .iteration-label {
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: var(--heading-color);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    .pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: stretch;
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stage {
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 0;
+    }
+    .stage:hover {
+      transform: translateX(5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .stage-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+    }
+    .stage-sub {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 1rem;
+      color: #495057;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .pipeline-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--arrow-color);
+      font-size: 2rem;
+      padding: 1rem 0;
+      flex-shrink: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back to Overview</a>
+    <h1>Founder Ranking Pipeline</h1>
+    <div class="iteration-label">Iteration: <strong>initial</strong></div>
+
+    <h2>High-level Flow</h2>
+    <div class="pipeline">
+      <div class="stage">
+        <div class="stage-title">1. Data Load</div>
+        <div class="stage-sub">Notebooks + raw CSVs</div>
+        <ul>
+          <li>Load <code>founder_experience_training.csv</code>, <code>education_training.csv</code>, <code>company_info_training.csv</code>.</li>
+          <li>Load <code>target_variable_training.csv</code> (company-level multiples).</li>
+          <li>Load separate ranking (inference) tables.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">2. Cleaning</div>
+        <div class="stage-sub">Notebook logic</div>
+        <ul>
+          <li>Normalize IDs and dates inside the notebook.</li>
+          <li>Basic filtering on founders and companies.</li>
+          <li>No shared library for cleaning yet; logic lives in analysis cells.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">3. Feature Matrix (Baseline)</div>
+        <div class="stage-sub">Notebook-only feature building</div>
+        <ul>
+          <li>For each founder, filter rows with <code>is_founder = True</code>.</li>
+          <li>Select the <strong>last founded company</strong> by <code>order</code>.</li>
+          <li>Join education and company_info for that company.</li>
+          <li>Aggregate performance features (mean / max / last) over founded companies.</li>
+          <li>Result: founder matrix with ~4,772 founders.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">4. Label Construction (Baseline)</div>
+        <div class="stage-sub">Notebook joins</div>
+        <ul>
+          <li>Left-join founder matrix with <code>target_variable_training</code> on <code>company_id</code>.</li>
+          <li>Compute label as <code>floor(log1p(multiple))</code> for the last founded company.</li>
+          <li>Rows where the last company has no target row keep <code>company_founded</code> as <code>NaN</code>.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">5. Split & Drop</div>
+        <div class="stage-sub">Per-industry temporal split</div>
+        <ul>
+          <li>Split by industry and <code>company_founded</code>, older → Train, newer → Test.</li>
+          <li>Rows with missing <code>company_founded</code> (~25%) are dropped at this step.</li>
+          <li>No separate validation set; only Train/Test.</li>
+        </ul>
+      </div>
+      <span class="pipeline-connector">↓</span>
+      <div class="stage">
+        <div class="stage-title">6. Model Training & Inference</div>
+        <div class="stage-sub">Notebook training</div>
+        <ul>
+          <li>Train XGBoost ranker per industry using NDCG@K as objective/metric.</li>
+          <li>Evaluate on the single test split.</li>
+          <li>Run inference on ranking founders using the same feature logic.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="meta">
+      This initial iteration implemented the core idea (founder-level ranking with multiples) entirely in notebooks,
+      with a single per-industry Train/Test split and significant row loss due to missing <code>company_founded</code>
+      after attaching labels to the last founded company.
+    </div>
+  </div>
+</body>
+</html>
+

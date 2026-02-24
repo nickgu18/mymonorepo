@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Pipeline Iterations</title>
+  <style>
+    :root {
+      --background-color: #f8f9fa;
+      --text-color: #212529;
+      --heading-color: #343a40;
+      --primary-color: #007bff;
+      --border-color: #dee2e6;
+      --card-background-color: #ffffff;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      --arrow-color: #6c757d;
+      --same-color: #e8f4f8;
+      --different-color: #fff3cd;
+      --added-color: #d4edda;
+      --removed-color: #f8d7da;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+    .controls {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .controls label {
+      display: inline-block;
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+    .controls select {
+      padding: 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      margin-right: 2rem;
+      font-size: 1rem;
+    }
+    .controls button {
+      padding: 0.5rem 1.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .controls button:hover {
+      background-color: #0056b3;
+    }
+    .legend {
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .legend-box {
+      width: 20px;
+      height: 20px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+    }
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .iteration-column {
+      min-width: 0;
+    }
+    .iteration-header {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--heading-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+    .pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .stage {
+      background-color: var(--card-background-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      margin-bottom: 0;
+      transition: transform 0.2s;
+    }
+    .stage:hover {
+      transform: translateX(5px);
+    }
+    .stage.same {
+      background-color: var(--same-color);
+      border-left: 4px solid #17a2b8;
+    }
+    .stage.different {
+      background-color: var(--different-color);
+      border-left: 4px solid #ffc107;
+    }
+    .stage.added {
+      background-color: var(--added-color);
+      border-left: 4px solid #28a745;
+    }
+    .stage.removed {
+      background-color: var(--removed-color);
+      border-left: 4px solid #dc3545;
+    }
+    .stage-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+    }
+    .stage-sub {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .pipeline-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--arrow-color);
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: #6c757d;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back to Overview</a>
+    <h1>Compare Pipeline Iterations</h1>
+
+    <div class="controls">
+      <label for="iteration1">First Iteration:</label>
+      <select id="iteration1">
+        <option value="">Select...</option>
+        <option value="initial">Initial Iteration</option>
+        <option value="2">Iteration 2</option>
+        <option value="3">Iteration 3</option>
+        <option value="4">Iteration 4 (Proposed)</option>
+      </select>
+
+      <label for="iteration2">Second Iteration:</label>
+      <select id="iteration2">
+        <option value="">Select...</option>
+        <option value="initial">Initial Iteration</option>
+        <option value="2">Iteration 2</option>
+        <option value="3">Iteration 3</option>
+        <option value="4">Iteration 4 (Proposed)</option>
+      </select>
+
+      <button onclick="compare()">Compare</button>
+    </div>
+
+    <div id="legend" class="legend" style="display: none;">
+      <div class="legend-item">
+        <div class="legend-box" style="background-color: var(--same-color); border-left: 4px solid #17a2b8;"></div>
+        <span>Unchanged</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-box" style="background-color: var(--different-color); border-left: 4px solid #ffc107;"></div>
+        <span>Modified</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-box" style="background-color: var(--added-color); border-left: 4px solid #28a745;"></div>
+        <span>Added</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-box" style="background-color: var(--removed-color); border-left: 4px solid #dc3545;"></div>
+        <span>Removed</span>
+      </div>
+    </div>
+
+    <div id="result" class="empty-state">
+      Select two iterations above and click "Compare" to see the differences.
+    </div>
+  </div>
+
+  <script>
+    const pipelineData = {
+      initial: {
+        name: "Initial Iteration",
+        stages: [
+          {
+            id: "load",
+            title: "1. Data Load",
+            subtitle: "Notebooks + raw CSVs",
+            items: [
+              "Load founder_experience_training.csv, education_training.csv, company_info_training.csv.",
+              "Load target_variable_training.csv (company-level multiples).",
+              "Load separate ranking (inference) tables."
+            ]
+          },
+          {
+            id: "clean",
+            title: "2. Cleaning",
+            subtitle: "Notebook logic",
+            items: [
+              "Normalize IDs and dates inside the notebook.",
+              "Basic filtering on founders and companies.",
+              "No shared library for cleaning yet; logic lives in analysis cells."
+            ]
+          },
+          {
+            id: "features",
+            title: "3. Feature Matrix (Baseline)",
+            subtitle: "Notebook-only feature building",
+            items: [
+              "For each founder, filter rows with is_founder = True.",
+              "Select the last founded company by order.",
+              "Join education and company_info for that company.",
+              "Aggregate performance features (mean / max / last) over founded companies.",
+              "Result: founder matrix with ~4,772 founders."
+            ]
+          },
+          {
+            id: "labels",
+            title: "4. Label Construction (Baseline)",
+            subtitle: "Notebook joins",
+            items: [
+              "Left-join founder matrix with target_variable_training on company_id.",
+              "Compute label as floor(log1p(multiple)) for the last founded company.",
+              "Rows where the last company has no target row keep company_founded as NaN."
+            ]
+          },
+          {
+            id: "split",
+            title: "5. Split & Drop",
+            subtitle: "Per-industry temporal split",
+            items: [
+              "Split by industry and company_founded, older → Train, newer → Test.",
+              "Rows with missing company_founded (~25%) are dropped at this step.",
+              "No separate validation set; only Train/Test."
+            ]
+          },
+          {
+            id: "train",
+            title: "6. Model Training & Inference",
+            subtitle: "Notebook training",
+            items: [
+              "Train XGBoost ranker per industry using NDCG@K as objective/metric.",
+              "Evaluate on the single test split.",
+              "Run inference on ranking founders using the same feature logic."
+            ]
+          }
+        ]
+      },
+      "2": {
+        name: "Iteration 2",
+        stages: [
+          {
+            id: "load",
+            title: "1. Config & Data Load",
+            subtitle: "Config-driven loading via src.common / src.data",
+            items: [
+              "Use load_config() to read configs/base.yaml.",
+              "Call load_raw(..., dataset=\"training\") and load_raw(..., dataset=\"ranking\").",
+              "Call load_targets() for target_variable_training.csv."
+            ]
+          },
+          {
+            id: "clean",
+            title: "2. Cleaning",
+            subtitle: "src.data.loaders.clean",
+            items: [
+              "Normalize IDs (strip /p/, /c/ prefixes).",
+              "Parse dates in experience (start_date, end_date).",
+              "Coerce company_info.performance to numeric, preserving NaN.",
+              "Return RankingCleanData for training and ranking datasets."
+            ]
+          },
+          {
+            id: "features",
+            title: "3. Founder Feature Matrix",
+            subtitle: "FeaturePipeline.build_matrix",
+            items: [
+              "For each founder, build history from clean_training.experience.",
+              "Select the last founded company (by order, ignoring missing company_id).",
+              "Join education features (education_tier, highest_level → score).",
+              "Attach company context (industry, performance).",
+              "Aggregate performance across all founded companies: founder_has_perf, founder_perf_mean, founder_perf_max, founder_perf_last.",
+              "Emit one row per founder (4,772 rows) → FeatureMatrix."
+            ]
+          },
+          {
+            id: "labels",
+            title: "4. Label Construction & Leakage Removal",
+            subtitle: "build_training_dataset",
+            items: [
+              "Join founder matrix with target_variable_training on company_id.",
+              "Attach company_founded, multiple, and target industry metadata.",
+              "Compute integer label via calculate_relevance_grade(multiple).",
+              "Remove founders whose last founded company appears as the last company in the ranking dataset (no train/inference leakage).",
+              "Coerce company_founded to numeric; rows with missing values were still being dropped later in the splitter.",
+              "Result: 4,769 founders with labels."
+            ]
+          },
+          {
+            id: "split",
+            title: "5. Split: Train / Test (Per Industry)",
+            subtitle: "split_by_industry",
+            items: [
+              "Drop rows with missing company_founded inside the splitter.",
+              "Group by industry; within each group, sort by company_founded, then split 80% Train / 20% Test.",
+              "Return: X_train, y_train, X_test, y_test, train_groups, test_groups, industry_names",
+              "No separate validation set; Test was used to reason about underfitting vs. generalization."
+            ]
+          },
+          {
+            id: "train",
+            title: "6. Model Training & Evaluation",
+            subtitle: "train_ranker + NDCG",
+            items: [
+              "Train XGBRanker with: eval_set=[(X_train, y_train), (X_test, y_test)] and per-industry group arrays.",
+              "Log metrics and artifacts via MLflow.",
+              "Compute NDCG@20 per industry and macro Train/Test NDCG.",
+              "Test NDCG often > Train NDCG due to easier, label-0-heavy test cohorts."
+            ]
+          }
+        ]
+      },
+      "3": {
+        name: "Iteration 3",
+        stages: [
+          {
+            id: "setup",
+            title: "Phase 1: Environment Setup",
+            subtitle: "Configuration and initialization",
+            items: [
+              "Load configuration via load_config().",
+              "Set up MLflow tracking and logging.",
+              "Initialize random seeds for reproducibility."
+            ]
+          },
+          {
+            id: "data_loading",
+            title: "Phase 2: Data Loading & Feature Engineering",
+            subtitle: "Load data and build founder features",
+            items: [
+              "2.1 Data Loading & Cleaning: Call load_raw for training and ranking datasets. Call clean() to get RankingCleanData. Call load_targets() for curated targets + founding metadata.",
+              "2.5 Feature Matrix Construction: Build FeaturePipeline founder matrix with education, experience, and company features. Build label metadata using _build_last_labeled_company_metadata. Filter founder rows with non-null company_id. Inner-join with targets to keep only labeled companies. Select the last labeled company per founder. Join founder features with label metadata via build_training_dataset. Compute integer labels via calculate_relevance_grade(multiple). Remove train/inference leakage. Result: 4,763 founders with labels and valid founding years.",
+              "2.7 Manual Feature Engineering: Additional derived features if needed."
+            ]
+          },
+          {
+            id: "split",
+            title: "Phase 3: Data Splitting",
+            subtitle: "temporal_train_val_test_split_by_industry",
+            items: [
+              "Group training_df by industry.",
+              "Within each industry: Sort by company_founded, company_id, person_id. Split into ~70% Train, 15% Validation, 15% Test (adjusting small cohorts).",
+              "Return: X_train, y_train, X_val, y_val, X_test, y_test + groups."
+            ]
+          },
+          {
+            id: "validation",
+            title: "Phase 4: Data Validation",
+            subtitle: "Verify split quality and data integrity",
+            items: [
+              "Print per-industry counts and label distributions for all three splits.",
+              "Verify temporal ordering (no train rows after test rows).",
+              "Check for missing values and feature ranges."
+            ]
+          },
+          {
+            id: "train",
+            title: "Phase 5: Model Training",
+            subtitle: "train_ranker with validation as eval set",
+            items: [
+              "Train XGBRanker with: X_train, y_train, train_groups; X_val, y_val, val_groups as the eval set",
+              "MLflow logs parameters, label histograms, feature importance, and NDCG@20 for Train and Validation.",
+              "Validation is used for model selection / tuning; Test remains untouched.",
+              "After training, compute final Test NDCG@20 using calculate_mean_ndcg."
+            ]
+          },
+          {
+            id: "persistence",
+            title: "Phase 6: Model Persistence",
+            subtitle: "Save model and metadata",
+            items: [
+              "Persist the trained model and feature metadata under mlruns/models/notebook_runs/<timestamp>.",
+              "Save model bundle for later loading."
+            ]
+          },
+          {
+            id: "inference",
+            title: "Phase 7: Inference",
+            subtitle: "Run predictions on ranking dataset",
+            items: [
+              "Reload the bundle with load_model_bundle.",
+              "Build ranking features via FeaturePipeline on clean_ranking.",
+              "Run predict_batch to get scores and rankings."
+            ]
+          },
+          {
+            id: "explanation",
+            title: "Phase 8: Ranking Explanation",
+            subtitle: "SHAP analysis for interpretability",
+            items: [
+              "Generate global and per-industry SHAP plots.",
+              "Compute top-N SHAP explanations for feature importance.",
+              "Visualize how different features contribute to founder rankings."
+            ]
+          }
+        ]
+      },
+      "4": {
+        name: "Iteration 4 (Proposed)",
+        stages: [
+          {
+            id: "setup",
+            title: "Phase 1: Environment Setup",
+            subtitle: "Same as Iteration 3",
+            items: [
+              "Load configuration via load_config().",
+              "Set up MLflow tracking and logging.",
+              "Initialize random seeds for reproducibility."
+            ]
+          },
+          {
+            id: "data_loading",
+            title: "Phase 2: Data Loading & Feature Engineering",
+            subtitle: "Modified label company selection logic",
+            items: [
+              "2.1 Data Loading & Cleaning: Load raw data and targets, same as Iteration 3.",
+              "2.5 Feature Matrix Construction: Key change - Select company with max multiple instead of last labeled company. Set as_of_year = founding year of that best company. Time-respecting features: Restrict experience to roles with dates ≤ as_of_year. Build education, experience counts, and performance aggregates using only pre-as_of_year data.",
+              "2.7 Manual Feature Engineering: Same as Iteration 3, but respecting temporal boundaries."
+            ]
+          },
+          {
+            id: "split",
+            title: "Phase 3: Data Splitting",
+            subtitle: "Temporal train/val/test split by as_of_year",
+            items: [
+              "Sort training_df by as_of_year within each industry.",
+              "Split into 70% Train / 15% Validation / 15% Test (oldest → newest).",
+              "Labels are already attached—fine because they're future outcomes relative to the snapshot.",
+              "Return: X_train, y_train, X_val, y_val, X_test, y_test + groups."
+            ]
+          },
+          {
+            id: "validation",
+            title: "Phase 4: Data Validation",
+            subtitle: "Same validation checks as Iteration 3",
+            items: [
+              "Print per-industry counts and label distributions for all splits.",
+              "Verify temporal ordering (no train rows after test rows).",
+              "Check for missing values and feature ranges."
+            ]
+          },
+          {
+            id: "preprocessing",
+            title: "Phase 4.5: Advanced Preprocessing (Optional)",
+            subtitle: "Split-aware feature transformations",
+            items: [
+              "If adding data-dependent features: Fit standardization/normalization on train only. Compute quantile bins, z-scores, industry averages from train. Apply train-derived parameters to val/test.",
+              "Optional future work: Network features (co-founder graph, centrality).",
+              "This phase is optional for initial implementation but shows where to add advanced features safely."
+            ]
+          },
+          {
+            id: "train",
+            title: "Phase 5: Model Training",
+            subtitle: "Same train_ranker approach as Iteration 3",
+            items: [
+              "Train XGBRanker with Train data, using Validation as eval set.",
+              "MLflow logs parameters, label histograms, feature importance, NDCG@20.",
+              "Validation used for tuning; Test remains held-out."
+            ]
+          },
+          {
+            id: "persistence",
+            title: "Phase 6: Model Persistence",
+            subtitle: "Same as Iteration 3",
+            items: [
+              "Save trained model and feature metadata to mlruns/models/notebook_runs/<timestamp>.",
+              "Persist model bundle for later loading."
+            ]
+          },
+          {
+            id: "inference",
+            title: "Phase 7: Inference",
+            subtitle: "Same as Iteration 3",
+            items: [
+              "Reload model bundle with load_model_bundle.",
+              "Build ranking features via FeaturePipeline on clean_ranking.",
+              "Run predict_batch to get scores and rankings."
+            ]
+          },
+          {
+            id: "explanation",
+            title: "Phase 8: Ranking Explanation",
+            subtitle: "Same SHAP analysis as Iteration 3",
+            items: [
+              "Generate global and per-industry SHAP plots.",
+              "Compute top-N SHAP explanations for interpretability."
+            ]
+          }
+        ]
+      }
+    };
+
+    function normalizeStageContent(stage) {
+      return {
+        title: stage.title.toLowerCase().replace(/\d+\.\s*/, '').trim(),
+        subtitle: stage.subtitle.toLowerCase().trim(),
+        items: stage.items.map(i => i.toLowerCase().trim()).sort().join('|')
+      };
+    }
+
+    function stagesAreSimilar(stage1, stage2) {
+      const n1 = normalizeStageContent(stage1);
+      const n2 = normalizeStageContent(stage2);
+      return n1.title === n2.title;
+    }
+
+    function stagesAreIdentical(stage1, stage2) {
+      const n1 = normalizeStageContent(stage1);
+      const n2 = normalizeStageContent(stage2);
+      return n1.title === n2.title && n1.subtitle === n2.subtitle && n1.items === n2.items;
+    }
+
+    function compare() {
+      const iter1 = document.getElementById('iteration1').value;
+      const iter2 = document.getElementById('iteration2').value;
+
+      if (!iter1 || !iter2) {
+        alert('Please select both iterations to compare.');
+        return;
+      }
+
+      if (iter1 === iter2) {
+        alert('Please select two different iterations.');
+        return;
+      }
+
+      const data1 = pipelineData[iter1];
+      const data2 = pipelineData[iter2];
+
+      document.getElementById('legend').style.display = 'flex';
+
+      const result = document.getElementById('result');
+      result.className = 'comparison';
+      result.innerHTML = `
+        <div class="iteration-column">
+          <div class="iteration-header">${data1.name}</div>
+          <div class="pipeline" id="pipeline1"></div>
+        </div>
+        <div class="iteration-column">
+          <div class="iteration-header">${data2.name}</div>
+          <div class="pipeline" id="pipeline2"></div>
+        </div>
+      `;
+
+      const pipeline1 = document.getElementById('pipeline1');
+      const pipeline2 = document.getElementById('pipeline2');
+
+      // Track which stages from data2 have been matched
+      const matched2 = new Set();
+
+      // Process stages from iteration 1
+      data1.stages.forEach((stage1, idx1) => {
+        let matchIdx = -1;
+        let isIdentical = false;
+
+        // Look for matching stage in iteration 2
+        data2.stages.forEach((stage2, idx2) => {
+          if (!matched2.has(idx2) && stagesAreSimilar(stage1, stage2)) {
+            matchIdx = idx2;
+            isIdentical = stagesAreIdentical(stage1, stage2);
+          }
+        });
+
+        let className = 'removed';
+        if (matchIdx >= 0) {
+          matched2.add(matchIdx);
+          className = isIdentical ? 'same' : 'different';
+        }
+
+        pipeline1.innerHTML += createStageHTML(stage1, className);
+        if (idx1 < data1.stages.length - 1) {
+          pipeline1.innerHTML += '<span class="pipeline-connector">↓</span>';
+        }
+      });
+
+      // Process stages from iteration 2
+      data2.stages.forEach((stage2, idx2) => {
+        let matchIdx = -1;
+        let isIdentical = false;
+
+        // Look for matching stage in iteration 1
+        data1.stages.forEach((stage1, idx1) => {
+          if (stagesAreSimilar(stage1, stage2)) {
+            matchIdx = idx1;
+            isIdentical = stagesAreIdentical(stage1, stage2);
+          }
+        });
+
+        let className = 'added';
+        if (matchIdx >= 0) {
+          className = isIdentical ? 'same' : 'different';
+        }
+
+        pipeline2.innerHTML += createStageHTML(stage2, className);
+        if (idx2 < data2.stages.length - 1) {
+          pipeline2.innerHTML += '<span class="pipeline-connector">↓</span>';
+        }
+      });
+    }
+
+    function createStageHTML(stage, className) {
+      return `
+        <div class="stage ${className}">
+          <div class="stage-title">${stage.title}</div>
+          <div class="stage-sub">${stage.subtitle}</div>
+          <ul>
+            ${stage.items.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
