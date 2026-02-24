@@ -1,0 +1,45 @@
+digraph BenchHub {
+    rankdir=LR;
+    node [shape=box, style=filled, fillcolor=lightblue];
+    
+    subgraph cluster_user {
+        label = "User Machine";
+        style=dashed;
+        CLI [label="Bench-Hub CLI"];
+    }
+
+    subgraph cluster_gcp {
+        label = "Google Cloud Platform";
+        style=filled;
+        color=lightgrey;
+
+        Orchestrator [label="Orchestrator
+(Cloud Run)", shape=component];
+        Batch [label="Cloud Batch", shape=component];
+        
+        subgraph cluster_worker {
+            label = "Worker Instance";
+            style=filled;
+            fillcolor=white;
+            Worker [label="Worker Script
+(entrypoint.sh)"];
+            Harbor [label="Harbor
+(Cloned Runtime)", style=filled, fillcolor=lightgreen];
+            Sidecar [label="Sidecar Monitor"];
+        }
+
+        BigQuery [label="BigQuery", shape=cylinder, fillcolor=yellow];
+        GCS [label="Cloud Storage
+(GCS)", shape=cylinder, fillcolor=yellow];
+    }
+
+    CLI -> Orchestrator [label="Submit Job (HTTP)"];
+    Orchestrator -> Batch [label="Create Job"];
+    Batch -> Worker [label="Provision & Start"];
+    Worker -> Harbor [label="1. Clone & Install
+2. Execute"];
+    Worker -> Sidecar [label="Start"];
+    Sidecar -> BigQuery [label="Stream Logs/Status"];
+    Worker -> GCS [label="Upload Artifacts"];
+    Harbor -> BigQuery [label="Task Results"];
+}

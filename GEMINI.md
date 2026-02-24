@@ -46,6 +46,20 @@ During your interaction with the user, if you find anything reusable across proj
 1. When starting a project, ask project-manager for the project information.
 2. If you are stuck, stop and ask for tech lead input (human).
 
+### Git Workflow
+
+1.  **Never commit directly to `main`**.
+2.  Create a feature branch for your changes: `git checkout -b feat/your-feature-name`.
+3.  Commit your changes to the feature branch.
+4.  Push the feature branch to origin: `git push -u origin feat/your-feature-name`.
+5.  Create a Pull Request (PR) to merge into `main` with a clear description: `gh pr create --title "feat: Description" --body "Detailed description"`.
+6.  After the PR is created, switch back to `main` and reset it to the latest upstream state if necessary, or just keep it clean.
+
+### Problem Research
+
+1. Before making any changes, always explain the problem and create a plan using `projects/ngtools/skill_base/task_tools/template.md`.
+2. Create a plan and store it under ~/Desktop/mymonorepo/docs/plans
+
 ## Directory Structure
 
 - projects/ directory that contains all projects. The list below should be updated when projects is modified.

@@ -1,7 +1,5 @@
 # Standalone projects
 projects/bench-hub/
-projects/harbor/
-projects/koe/
 
 # Common ignores
 __pycache__/
@@ -14,3 +12,6 @@ venv/
 .env
 .idea/
 .vscode/
+
+# Large files
+projects/ngcourse/gemini_lobster/output.txt

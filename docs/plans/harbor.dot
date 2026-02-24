@@ -1,0 +1,42 @@
+digraph Harbor {
+    rankdir=TB;
+    node [shape=box, style=filled, fillcolor=lightgreen];
+
+    Entry [label="Harbor CLI/Entry", shape=invhouse];
+    Config [label="Configuration
+(Dataset, Agent, LLM)"];
+    
+    subgraph cluster_execution {
+        label = "Execution Loop";
+        style=rounded;
+        
+        Orchestrator [label="Orchestrator
+(Loop Manager)"];
+        Agent [label="Agent"];
+        LLM [label="LLM Interface"];
+        Environment [label="Environment
+(Docker/Local)"];
+    }
+
+    Dataset [label="Dataset
+(Tasks)", shape=folder];
+    Metrics [label="Metrics/Verifier"];
+    Output [label="Results/Logs", shape=note];
+
+    Entry -> Config [label="Parse Args"];
+    Config -> Orchestrator [label="Initialize"];
+    Config -> Dataset [label="Load"];
+    
+    Dataset -> Orchestrator [label="Provide Tasks"];
+    
+    Orchestrator -> Agent [label="1. State/Obs"];
+    Agent -> LLM [label="2. Prompt"];
+    LLM -> Agent [label="3. Completion"];
+    Agent -> Orchestrator [label="4. Action"];
+    Orchestrator -> Environment [label="5. Execute Action"];
+    Environment -> Orchestrator [label="6. Observation"];
+    
+    Orchestrator -> Metrics [label="Evaluate Trajectory"];
+    Metrics -> Output [label="Save"];
+}
+
