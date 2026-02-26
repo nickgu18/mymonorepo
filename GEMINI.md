@@ -65,6 +65,7 @@ During your interaction with the user, if you find anything reusable across proj
 - projects/ directory that contains all projects. The list below should be updated when projects is modified.
   - bench-hub: standalone repo
   - codex_wide_research: inside mymonorepo
+  - g3lobster: standalone repo
   - gv_case_study: inside mymonorepo
   - harbor: standalone repo
   - koe: standalone repo
