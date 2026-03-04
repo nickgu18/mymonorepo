@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program - Career Week 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .schedule-time {
+            color: hsl(var(--accent));
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .schedule-duration {
+            font-size: 0.8rem;
+            color: hsl(var(--muted-foreground));
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            background: hsla(var(--background), 0.5);
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Career Week 2026</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html" class="active">Program</a></li>
+                <li><a href="fireside-chat.html">Fireside Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="schedule">
+            <h2>Draft Schedule</h2>
+            <div class="grid">
+                <!-- Schedule Item 1 -->
+                <div class="card">
+                    <div class="schedule-time">10:00 AM – 10:15 AM</div>
+                    <span class="schedule-duration">15 min</span>
+                    <span class="card-title">Arrival & Welcome</span>
+                    <div class="card-content">Check-in, distribution of materials (e.g., T-shirts, agendas), and a brief
+                        welcome address.</div>
+                </div>
+
+                <!-- Schedule Item 2 -->
+                <div class="card">
+                    <div class="schedule-time">10:15 AM – 10:45 AM</div>
+                    <span class="schedule-duration">30 min</span>
+                    <span class="card-title">Fireside Chat</span>
+                    <div class="card-content">Host: Nick, Speaker: VP or Director (TBA). Inspirational talk covering
+                        career advice and the impact of AI on the future.</div>
+                </div>
+
+                <!-- Schedule Item 3 -->
+                <div class="card">
+                    <div class="schedule-time">10:45 AM – 11:45 AM</div>
+                    <span class="schedule-duration">60 min</span>
+                    <span class="card-title">AI Builders Workshop</span>
+                    <div class="card-content">Speaker: Nick. Students rotate through a hands-on session (e.g., UI/UX
+                        design challenge, intro to coding, or marketing simulation).</div>
+                </div>
+
+                <!-- Schedule Item 4 -->
+                <div class="card">
+                    <div class="schedule-time">11:45 AM – 12:30 PM</div>
+                    <span class="schedule-duration">45 min</span>
+                    <span class="card-title">Lunch & Networking</span>
+                    <div class="card-content">Catered lunch providing a chance for students to informally chat with 5-10
+                        Google volunteers.</div>
+                </div>
+
+                <!-- Schedule Item 5 -->
+                <div class="card">
+                    <div class="schedule-time">12:30 PM – 1:30 PM</div>
+                    <span class="schedule-duration">60 min</span>
+                    <span class="card-title">Career Panel</span>
+                    <div class="card-content">My Path to Google. A moderated panel featuring employees from diverse
+                        roles (Engineering, Sales, People Ops).</div>
+                </div>
+
+                <!-- Schedule Item 6 -->
+                <div class="card">
+                    <div class="schedule-time">1:30 PM – 2:15 PM</div>
+                    <span class="schedule-duration">45 min</span>
+                    <span class="card-title">Office Tour / Swag Stop</span>
+                    <div class="card-content">A brief tour highlighting unique office spaces.</div>
+                </div>
+
+                <!-- Schedule Item 7 -->
+                <div class="card">
+                    <div class="schedule-time">2:15 PM – 2:30 PM</div>
+                    <span class="schedule-duration">15 min</span>
+                    <span class="card-title">Wrap-up</span>
+                    <div class="card-content">Q&A, feedback collection, and safe departure.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ideas">
+            <h2>Interactive Content Ideas</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="card-title">AI Builders Workshop (60m)</span>
+                    <div class="card-content">
+                        Leverage Google products (Antigravity, Gemini CLI, AI Studio) to create meaningful artifacts
+                        live with students.
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="card-title">Career Path Exposure</span>
+                    <div class="card-content">
+                        <ul style="padding-left: 1.2rem; margin: 0.5rem 0;">
+                            <li><strong>Reverse Interview:</strong> Students ask employees questions.</li>
+                            <li><strong>Meet a "Noogler":</strong> Recent hires share their journey.</li>
+                            <li><strong>Team Spotlight:</strong> Deep dive into Search, Cloud, or AI teams.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Career Week Team</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -26,22 +26,37 @@ release:
 		echo "Available projects: $(PROJECTS)"; \
 		exit 1; \
 	fi
-	@echo "Syncing $(PROJECT) to $(GOOGLE3_BASE)/$(PROJECT)..."
-	@mkdir -p $(GOOGLE3_BASE)/$(PROJECT)
-	@IGNORE_FLAG=""; \
-	if [ -f "$(PROJECT)/.gitignore" ]; then \
-		IGNORE_FLAG="--exclude-from=$(PROJECT)/.gitignore"; \
-	fi; \
-	rsync $(RSYNC_FLAGS) $$IGNORE_FLAG $(PROJECT)/ $(GOOGLE3_BASE)/$(PROJECT)/
+	@if [ "$(PROJECT)" = "cdw-2026" ]; then \
+		echo "Syncing $(PROJECT) site to CNS..."; \
+		fileutil mkdir -p /cns/yv-d/home/guyu/projects/$(PROJECT); \
+		fileutil cp -f -R $(PROJECT)/site/* /cns/yv-d/home/guyu/projects/$(PROJECT)/; \
+		fileutil chmod -R a+rx /cns/yv-d/home/guyu/projects/$(PROJECT); \
+		echo "Sync complete. Accessible to all Googlers at /cns/yv-d/home/guyu/projects/$(PROJECT)/index.html"; \
+	else \
+		echo "Syncing $(PROJECT) to $(GOOGLE3_BASE)/$(PROJECT)..."; \
+		mkdir -p $(GOOGLE3_BASE)/$(PROJECT); \
+		IGNORE_FLAG=""; \
+		if [ -f "$(PROJECT)/.gitignore" ]; then \
+			IGNORE_FLAG="--exclude-from=$(PROJECT)/.gitignore"; \
+		fi; \
+		rsync $(RSYNC_FLAGS) $$IGNORE_FLAG $(PROJECT)/ $(GOOGLE3_BASE)/$(PROJECT)/; \
+	fi
 
 dry-release:
 	@if [ -z "$(PROJECT)" ]; then \
 		echo "Usage: make dry-release <project_name>"; \
 		exit 1; \
 	fi
-	@echo "[DRY RUN] Syncing $(PROJECT) to $(GOOGLE3_BASE)/$(PROJECT)..."
-	@IGNORE_FLAG=""; \
-	if [ -f "$(PROJECT)/.gitignore" ]; then \
-		IGNORE_FLAG="--exclude-from=$(PROJECT)/.gitignore"; \
-	fi; \
-	rsync -n $(RSYNC_FLAGS) $$IGNORE_FLAG $(PROJECT)/ $(GOOGLE3_BASE)/$(PROJECT)/
+	@if [ "$(PROJECT)" = "cdw-2026" ]; then \
+		echo "[DRY RUN] Syncing $(PROJECT) site to CNS..."; \
+		echo "fileutil mkdir -p /cns/yv-d/home/guyu/projects/$(PROJECT)"; \
+		echo "fileutil cp -f -R $(PROJECT)/site/* /cns/yv-d/home/guyu/projects/$(PROJECT)/"; \
+		echo "fileutil chmod -R a+rx /cns/yv-d/home/guyu/projects/$(PROJECT)"; \
+	else \
+		echo "[DRY RUN] Syncing $(PROJECT) to $(GOOGLE3_BASE)/$(PROJECT)..."; \
+		IGNORE_FLAG=""; \
+		if [ -f "$(PROJECT)/.gitignore" ]; then \
+			IGNORE_FLAG="--exclude-from=$(PROJECT)/.gitignore"; \
+		fi; \
+		rsync -n $(RSYNC_FLAGS) $$IGNORE_FLAG $(PROJECT)/ $(GOOGLE3_BASE)/$(PROJECT)/; \
+	fi
