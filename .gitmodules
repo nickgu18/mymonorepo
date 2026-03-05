@@ -1,0 +1,3 @@
+[submodule "projects/CrazyNano"]
+	path = projects/CrazyNano
+	url = https://github.com/NickGuAI/CrazyNano
