@@ -1,3 +1,9 @@
 [submodule "projects/CrazyNano"]
 	path = projects/CrazyNano
 	url = https://github.com/NickGuAI/CrazyNano
+[submodule "projects/harbor"]
+	path = projects/harbor
+	url = https://github.com/googlecloud-appeco-incubator/harbor
+[submodule "projects/bench-hub"]
+	path = projects/bench-hub
+	url = https://github.com/googlecloud-appeco-incubator/bench-hub

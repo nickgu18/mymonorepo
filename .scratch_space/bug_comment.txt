@@ -1,0 +1,23 @@
+Plan for Step 2:
+
+### task
+The system should natively transition job statuses to BROKEN if tasks fail upon completion, and the UI should only show the Heal button if this state is detected.
+
+### constraints
+Requires backend state machine changes to detect broken jobs and persist `BROKEN` status to DB/BigQuery. UI needs to rely on `status === 'BROKEN'` instead of dynamic `canHeal` logic to avoid mismatch between frontend calculation and backend state.
+
+### definition of done
+- Backend explicitly sets job status to `BROKEN` when processing job completion if there are any failed tasks.
+- The UI "Heal" button renders *only* if `job.status === 'BROKEN'`.
+
+### fix_plan
+1. Update `orchestrator` / `backend` sync logic that transitions job to `COMPLETED`. If total completed == total tasks, but `error_instances > 0`, it should transition to `BROKEN`.
+2. Update BigQuery schema if it uses an Enum, or just rely on string status for `BROKEN`.
+3. Update `web-ui/src/components/RunSummary.tsx` to set `canHeal = details.status === 'BROKEN'`.
+4. Update `RunSummary.test.tsx` to reflect the new `canHeal` condition.
+
+### files
+- `projects/bench-hub/orchestrator/main.py`
+- `projects/bench-hub/common/models.py`
+- `projects/bench-hub/web-ui/src/components/RunSummary.tsx`
+- `projects/bench-hub/web-ui/src/components/RunSummary.test.tsx`

@@ -2,7 +2,7 @@ GOOGLE3_BASE := /google/src/cloud/guyu/theg/google3/experimental/users/guyu
 
 # Get the project name from the command line arguments
 # We filter out the known targets to find the project name argument
-TARGETS := release dry-release
+TARGETS := release dry-release release-skills dry-release-skills
 PROJECT := $(firstword $(filter-out $(TARGETS),$(MAKECMDGOALS)))
 
 # Find all subdirectories to register them as phony targets
@@ -19,6 +19,16 @@ $(PROJECTS):
 # Dynamic check for .gitignore to avoid errors if it doesn't exist
 RSYNC_EXCLUDES = --exclude=.git --exclude=.DS_Store --exclude=.venv --exclude=__pycache__ --exclude=*.pyc
 RSYNC_FLAGS = -avh --delete $(RSYNC_EXCLUDES)
+
+GOOGLE3_SKILLS_BASE := /google/src/cloud/guyu/theg/google3/devtools/devassist/gemini_cli_for_google/extensions/coding/skills
+
+release-skills:
+	@echo "Syncing custom skills to $(GOOGLE3_SKILLS_BASE)..."
+	cp -RLf ../.gemini/skills/* $(GOOGLE3_SKILLS_BASE)/
+
+dry-release-skills:
+	@echo "[DRY RUN] Syncing custom skills to $(GOOGLE3_SKILLS_BASE)..."
+	@echo "cp -RLf ../.gemini/skills/* $(GOOGLE3_SKILLS_BASE)/"
 
 release:
 	@if [ -z "$(PROJECT)" ]; then \

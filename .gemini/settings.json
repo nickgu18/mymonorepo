@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "g3lobster-delegation": {
-      "command": "/usr/local/google/home/guyu/Desktop/mymonorepo/projects/g3lobster/.venv/bin/python",
+      "command": "/usr/local/google/home/guyu/Desktop/mymonorepo/projects/g3lobster/.venv/bin/python3",
       "args": [
         "-m",
         "g3lobster.mcp.delegation_server",
         "--base-url",
-        "http://127.0.0.1:8080"
+        "http://127.0.0.1:8081"
       ]
     }
   }
