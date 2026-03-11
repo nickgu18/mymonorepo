@@ -79,3 +79,4 @@ During your interaction with the user, if you find anything reusable across proj
 ## GEMINI Learned
 
 - **g3lobster Configuration**: The `g3lobster` application supports configuration overrides via environment variables using the pattern `G3LOBSTER_{SECTION}_{KEY}` (e.g., `G3LOBSTER_GEMINI_WORKSPACE_DIR` overrides `gemini.workspace_dir`). This allows controlling runtime parameters like the Gemini CLI working directory without modifying `config.yaml`.
+\n- **CRITICAL**: DO NOT MAKE FUCKING CHANGES UNLESS YOU GET APPROVAL. This is a strict read-only/investigate-only mandate for any environment marked as such.

@@ -1,23 +1,47 @@
-Plan for Step 2:
+## Investigation Summary
 
-### task
-The system should natively transition job statuses to BROKEN if tasks fail upon completion, and the UI should only show the Heal button if this state is detected.
+**Root Cause:** Currently, `bench-hub`'s "Heal" button functionality explicitly splits failed tasks from BigQuery into chunks of 20 and creates a separate Cloud Batch Job for each chunk, running Harbor with explicit `-t <task>` arguments. This approach circumvents Harbor's built-in `resume` feature, unnecessarily scatters results across multiple `run_id`s, risks hitting command-line length limits, and requires maintaining complex batching logic in the `orchestrator`.
 
-### constraints
-Requires backend state machine changes to detect broken jobs and persist `BROKEN` status to DB/BigQuery. UI needs to rely on `status === 'BROKEN'` instead of dynamic `canHeal` logic to avoid mismatch between frontend calculation and backend state.
+**Impact:** The current method is brittle, creates fragmented evaluation results, and duplicates logic already present in the underlying `harbor` execution layer. A high number of task failures results in numerous spawned Cloud Batch jobs instead of a single resumed job.
 
-### definition of done
-- Backend explicitly sets job status to `BROKEN` when processing job completion if there are any failed tasks.
-- The UI "Heal" button renders *only* if `job.status === 'BROKEN'`.
+**Reproduction:** Trigger a heal operation in `bench-hub` for a run with more than 20 failed tasks. Observe the creation of multiple Cloud Batch jobs instead of a single, resumed Harbor job.
 
-### fix_plan
-1. Update `orchestrator` / `backend` sync logic that transitions job to `COMPLETED`. If total completed == total tasks, but `error_instances > 0`, it should transition to `BROKEN`.
-2. Update BigQuery schema if it uses an Enum, or just rely on string status for `BROKEN`.
-3. Update `web-ui/src/components/RunSummary.tsx` to set `canHeal = details.status === 'BROKEN'`.
-4. Update `RunSummary.test.tsx` to reflect the new `canHeal` condition.
+## Order
 
-### files
-- `projects/bench-hub/orchestrator/main.py`
-- `projects/bench-hub/common/models.py`
-- `projects/bench-hub/web-ui/src/components/RunSummary.tsx`
-- `projects/bench-hub/web-ui/src/components/RunSummary.test.tsx`
+**Intent:** Refactor `bench-hub` to utilize Harbor's native `harbor jobs resume` feature for healing. This will simplify the orchestrator logic, consolidate healed results under the original `run_id`, and leverage Harbor's built-in capability to automatically detect and rerun failed or missing trials.
+
+**Constraints:** 
+- `worker/entrypoint.sh` must be robust enough to handle the download, extraction, execution, and re-upload of the job directory without losing previous trial results.
+- Do not lose successfully completed trials when resuming a job.
+
+**Done-when:**
+- [ ] `worker/entrypoint.sh` is updated to support a "resume" mode (e.g., via an environment variable `RESUME_FROM_RUN_ID`), downloading and extracting the original `raw_logs.zip` from GCS.
+- [ ] `orchestrator/main.py`'s `heal_job` endpoint is updated to create a *single* Cloud Batch Job that triggers this new resume mode instead of querying BigQuery and chunking tasks.
+- [ ] Harbor successfully resumes the job using `harbor jobs resume -p /home/harbor_workspace/jobs/<eval-id>`, skipping successful trials and running the failed ones.
+- [ ] The updated results are properly merged into BigQuery and GCS under the original (or a correctly associated) `run_id`.
+
+**Resources:**
+- `projects/bench-hub/orchestrator/main.py` (specifically `heal_job`)
+- `projects/bench-hub/worker/entrypoint.sh`
+- `projects/harbor/src/harbor/cli/jobs.py` (`jobs resume` implementation)
+
+**Fix Plan:**
+1. `projects/bench-hub/worker/entrypoint.sh` - Add logic to check for a `RESUME_FROM_RUN_ID` environment variable. If set, use `gsutil cp` to download `gs://$GCS_BUCKET/$RESUME_FROM_RUN_ID/raw_logs.zip`, unzip it to `/home/harbor_workspace/jobs/`, locate the run directory, and execute `harbor jobs resume -p <run_dir>`.
+2. `projects/bench-hub/orchestrator/main.py:1085` - Remove the BigQuery task fetching and chunking logic in `heal_job`. Instead, create a single Cloud Batch Job with the same environment variables, but inject `RESUME_FROM_RUN_ID=<original_job_id>`. Remove the `commands` override since the worker will override Harbor execution.
+3. Verify that `parser.py` in the worker handles the re-uploaded `raw_logs.zip` and deduplicates or overwrites rows correctly in BigQuery so healed tasks are reflected.
+
+## Related Files
+
+| File | Role |
+|------|------|
+| `projects/bench-hub/orchestrator/main.py` | Contains the current brittle `heal_job` implementation. |
+| `projects/bench-hub/worker/entrypoint.sh` | Needs to handle downloading the job context from GCS and executing `harbor jobs resume`. |
+| `projects/harbor/src/harbor/cli/jobs.py` | Harbor's built-in job resumption logic that should replace the custom orchestrator batching. |
+
+## Handoff Schema
+
+status:      complete
+result:      Investigated the heal functionality in Bench Hub and determined the required architectural changes to integrate Harbor's native `resume` feature.
+artifacts:   [None]
+deviations:  [None]
+concerns:    [Updating the original `run_id` in BigQuery could potentially create duplicate rows if `parser.py` simply appends. We need to ensure the BQ schema supports deduplication or that `parser.py` handles upserts/deletes properly.]

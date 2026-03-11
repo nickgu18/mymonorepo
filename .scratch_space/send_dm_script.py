@@ -1,18 +1,31 @@
 import sys
-sys.path.insert(0, '/usr/local/google/home/guyu/Desktop/mymonorepo/projects/g3lobster/g3lobster')
-from chat.services import ChatService
-from chat.models import Message
-from config import config
 import asyncio
+import os
 
-async def send_dm():
-    chat_service = ChatService(config=config)
-    message = Message(
-        room_id="dm/5Hql04AAAAE",
-        user_id="gemini-cli",
-        content="reload your skills"
+# Ensure the g3lobster package path is set up correctly
+sys.path.insert(0, '/usr/local/google/home/guyu/Desktop/mymonorepo/projects/g3lobster')
+
+# Activate the venv for g3lobster
+venv_path = '/usr/local/google/home/guyu/Desktop/mymonorepo/projects/g3lobster/.venv/bin/activate_this.py'
+if os.path.exists(venv_path):
+    with open(venv_path) as f:
+        exec(f.read(), {'__file__': venv_path})
+
+from g3lobster.chat.auth import get_authenticated_service
+
+async def send_dm_to_space():
+    service = get_authenticated_service()
+    
+    with open("/usr/local/google/home/guyu/Desktop/mymonorepo/.scratch_space/payload.txt", "r") as f:
+        payload = f.read()
+
+    msg = await asyncio.to_thread(
+        service.spaces().messages().create(
+            parent="spaces/AAQA9iI2rjA",
+            body={"text": payload}
+        ).execute
     )
-    await chat_service.send_message(message)
+    print("Sent message to spaces/AAQA9iI2rjA")
 
 if __name__ == "__main__":
-    asyncio.run(send_dm())
+    asyncio.run(send_dm_to_space())

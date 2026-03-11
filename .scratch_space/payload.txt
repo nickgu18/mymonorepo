@@ -1,0 +1,62 @@
+The `harbor jobs resume` functionality is designed to pick up an interrupted or partially failed job exactly where it left off, avoiding redundant work by skipping successfully completed trials. 
+
+Here is a breakdown of how it works under the hood, followed by an ASCII art illustration of the workflow.
+
+### How it Works (Technical Breakdown)
+
+1. **CLI Pre-processing (`src/harbor/cli/jobs.py`)**:
+   When you run `harbor jobs resume -p <job_dir>`, the CLI first inspects the job directory before the core `Job` object is even initialized. It iterates through the trial directories and looks for trials that failed with specific error types (by default, `CancelledError`). If a trial matches these error types, the CLI deletes its directory (`shutil.rmtree`). This effectively "resets" those specific failed trials so they can be re-run.
+
+2. **State Recovery (`Job._maybe_init_existing_job`)**:
+   Next, the `Job` object initializes using the `config.json` inside the job directory. It iterates over the remaining trial directories. 
+   - If a trial directory is missing a `result.json`, it means the trial was interrupted mid-execution. The system deletes this directory to start fresh.
+   - If a trial has a `result.json`, it is considered complete. Its configuration and result are loaded into the job's existing state (`_existing_trial_configs`).
+
+3. **Trial Diffing (`Job._init_remaining_trial_configs`)**:
+   The `Job` object generates the full list of expected trial configurations based on the `config.json`. It then subtracts the `_existing_trial_configs` (the completed ones) from this full list. The result is a list of `_remaining_trial_configs`.
+
+4. **Execution**:
+   The `Orchestrator` is spun up using *only* the `_remaining_trial_configs`. It executes these missing trials, appending their results to the existing job directory and merging the final stats.
+
+---
+
+### ASCII Art Illustration
+
+```text
+      User runs: `harbor jobs resume -p ./my_job_dir -f CancelledError`
+                                  │
+      ┌───────────────────────────▼────────────────────────────┐
+      │                 1. CLI Pre-Processing                  │
+      │                                                        │
+      │ Scans job directory for completed trials with errors.  │
+      │                                                        │
+      │ ├─ Trial 1 (Success)        ─> Keep                    │
+      │ ├─ Trial 2 (CancelledError) ─> 🗑️  Delete Directory      │
+      │ └─ Trial 3 (Incomplete)     ─> Ignore (for now)        │
+      └───────────────────────────┬────────────────────────────┘
+                                  │
+      ┌───────────────────────────▼────────────────────────────┐
+      │                 2. Job Initialization                  │
+      │                                                        │
+      │ Job object is created. Cleans up interrupted trials.   │
+      │                                                        │
+      │ ├─ Trial 1 (Has result.json)─> ✅ Add to Existing Dirs │
+      │ └─ Trial 3 (No result.json) ─> 🗑️  Delete Directory      │
+      └───────────────────────────┬────────────────────────────┘
+                                  │
+      ┌───────────────────────────▼────────────────────────────┐
+      │                   3. Trial Diffing                     │
+      │                                                        │
+      │   [ Full Expected Trials (from config.json) ]          │
+      │ - [ Existing Trials (Trial 1) ]                        │
+      │ ────────────────────────────────────────────────────── │
+      │ = [ Remaining Trials (Trial 2 & Trial 3) ]             │
+      └───────────────────────────┬────────────────────────────┘
+                                  │
+      ┌───────────────────────────▼────────────────────────────┐
+      │                4. Orchestrator Execution               │
+      │                                                        │
+      │ Executes ONLY the remaining trials (Trial 2 & 3) and   │
+      │ saves the new results alongside Trial 1.               │
+      └────────────────────────────────────────────────────────┘
+```
