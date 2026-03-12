@@ -3,6 +3,7 @@
 ## Instructions
 
 **ALWAYS FOLLOW YOUR GUIDING PRINCIPLES - `SIMPLED`**.
+**ALWAYS INVESTIGATE AND EXPLAIN WHAT YOU DO BEFORE MAKING ANY CHANGES**.
 
 ### Guiding Principles - SIMPLED
 
@@ -59,6 +60,7 @@ During your interaction with the user, if you find anything reusable across proj
 
 1. Before making any changes, always explain the problem and create a plan using `projects/ngtools/skill_base/task_tools/template.md`.
 2. Create a plan and store it under ~/Desktop/mymonorepo/docs/plans
+3. Gemini should ALWAYS investigate and use either github issue for the repo as task pad or a local markdown file in '/usr/local/google/home/guyu/Desktop/mymonorepo/.scratch_space' as scratch pad.
 
 ## Directory Structure
 
