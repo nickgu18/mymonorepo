@@ -44,10 +44,10 @@ Note all the tools are in python3. So in the case you need to do batch processin
 
 ## Skills
 
-Skills are located in the `/usr/local/google/home/guyu/Desktop/ngcourse/skills` directory. You can use them to perform specific tasks. To invoke a skill, use the following command:
+Skills are located in the `/usr/local/google/home/guyu/Desktop/mymonorepo/ng-skills-bundle` directory. You can use them to perform specific tasks. To invoke a skill, use the following command:
 
 ```bash
-/usr/local/google/home/guyu/Desktop/ngcourse/skills/<skill-name>/procedure.sh <arguments>
+/usr/local/google/home/guyu/Desktop/mymonorepo/ng-skills-bundle/<skill-name>/procedure.sh <arguments>
 ```
 
 ### Gemini API
