@@ -1,8 +1,0 @@
-# This file should contain your Gemini API keys.
-# It is not checked into version control.
-# Example format:
-keys:
-  - key: "YOUR_API_KEY_1"
-    concurrency: 2
-  - key: "YOUR_API_KEY_2"
-    concurrency: 2

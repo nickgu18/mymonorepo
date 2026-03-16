@@ -8,6 +8,12 @@
         "--base-url",
         "http://127.0.0.1:40000"
       ]
+    },
+    "playwright-mcp": {
+      "command": "node",
+      "args": [
+        "/usr/local/google/home/guyu/Desktop/mymonorepo/projects/playwright-mcp/packages/playwright-mcp/cli.js"
+      ]
     }
   }
 }

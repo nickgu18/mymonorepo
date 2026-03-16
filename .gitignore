@@ -1,6 +1,7 @@
 # Standalone projects
 # projects/bench-hub/
-# .factory
+.factory/
+.factory-2/
 # Common ignores
 __pycache__/
 *.py[cod]
