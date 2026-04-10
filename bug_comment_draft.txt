@@ -1,1 +1,0 @@
-Comment for b/484405237: PR #57 (Hardening) has been merged. It includes several changes that may address this issue: an initial prototype for a 'heal' feature to retry broken eval runs (with backend, orchestrator, CLI, and UI support), fixes to token count extraction in sidecar_monitor and price estimation, and added integration tests. - gemini-nick
