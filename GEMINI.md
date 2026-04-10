@@ -83,3 +83,11 @@ During your interaction with the user, if you find anything reusable across proj
 - **g3lobster Configuration**: The `g3lobster` application supports configuration overrides via environment variables using the pattern `G3LOBSTER_{SECTION}_{KEY}` (e.g., `G3LOBSTER_GEMINI_WORKSPACE_DIR` overrides `gemini.workspace_dir`). This allows controlling runtime parameters like the Gemini CLI working directory without modifying `config.yaml`.
 - **CRITICAL**: DO NOT MAKE FUCKING CHANGES UNLESS YOU GET APPROVAL. This is a strict read-only/investigate-only mandate for any environment marked as such.
 - **Data Schemas & Migrations**: Never change field names unless explicitly told to do so. Never run BigQuery migration scripts (e.g., `update_bq_schema.py`) without explicit approval from the user.
+
+
+## Standard Operating Procedure (SOP) for Complex Code Cleanup or Refactoring
+When assigned a complex cleanup, partial revert, or refactoring task (especially when extracting surgical changes from a large PR):
+1. **Investigate first:** Review the PR diff, the issue tracker requirements, and the current branch state to understand the scope.
+2. **Create a Task Breakdown:** Create a detailed markdown checklist of what you plan to do, and store it in `/usr/local/google/home/guyu/Desktop/mymonorepo/.scratch_space/tasks/<task_name>.md` as a checklist.
+3. **Wait for Approval:** Present the checklist path to the user and stop execution. Wait for the user to review and approve the plan before making any code modifications.
+4. **Execute Methodically:** Check off items in the markdown file as you complete them to track progress.
